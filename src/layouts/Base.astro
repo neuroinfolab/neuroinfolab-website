@@ -1,8 +1,8 @@
 ---
-import '@fontsource/instrument-serif/400.css';
-import '@fontsource/instrument-serif/400-italic.css';
+import '@fontsource-variable/bricolage-grotesque/opsz.css';
 import '@fontsource-variable/instrument-sans';
-import '@fontsource/jetbrains-mono/400.css';
+import '@fontsource-variable/instrument-sans/wght-italic.css';
+import '@fontsource-variable/space-grotesk';
 import '../styles/global.css';
 import { createHash } from 'node:crypto';
 import { url } from '../lib/url';
@@ -80,6 +80,33 @@ const lockHash = locked && passcode ? createHash('sha256').update(passcode).dige
           { rootMargin: '0px 0px -6% 0px', threshold: 0.05 }
         );
         targets.forEach((el) => io.observe(el));
+      }
+
+      // A small, compositor-friendly parallax for framed portraits. The image
+      // is oversized inside its frame and drifts a few pixels as it crosses
+      // the viewport. Reduced-motion visitors get the static crop.
+      const parallaxFrames = document.querySelectorAll<HTMLElement>('[data-parallax]');
+      if (parallaxFrames.length && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        let ticking = false;
+        const paintParallax = () => {
+          const viewport = window.innerHeight || 1;
+          parallaxFrames.forEach((frame) => {
+            const rect = frame.getBoundingClientRect();
+            if (rect.bottom < -80 || rect.top > viewport + 80) return;
+            const progress = (rect.top + rect.height / 2 - viewport / 2) / viewport;
+            const image = frame.querySelector<HTMLElement>('img');
+            if (image) image.style.transform = `translate3d(0, ${(progress * -22).toFixed(2)}px, 0) scale(1.06)`;
+          });
+          ticking = false;
+        };
+        const queueParallax = () => {
+          if (ticking) return;
+          ticking = true;
+          requestAnimationFrame(paintParallax);
+        };
+        window.addEventListener('scroll', queueParallax, { passive: true });
+        window.addEventListener('resize', queueParallax);
+        paintParallax();
       }
 
       const menuBtn = document.querySelector<HTMLButtonElement>('[data-menu]');

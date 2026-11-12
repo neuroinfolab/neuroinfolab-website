@@ -44,11 +44,22 @@ export interface CourseSection {
   list?: string[];
 }
 
+interface CourseImage {
+  src: string;
+  srcSmall?: string;
+  webp?: string;
+  webpSmall?: string;
+  alt: string;
+  caption?: string;
+  creditHref?: string;
+}
+
 interface Props {
   title: string;
   code: string;
   term: string;
   kicker?: string;
+  image?: CourseImage;
   intro: string[];
   info: CourseInfo[];
   team: CoursePerson[];
@@ -58,7 +69,7 @@ interface Props {
   previous?: CourseLink;
 }
 
-const { title, code, term, kicker, intro, info, team, sections = [], schedule, readings, previous } = Astro.props;
+const { title, code, term, kicker, image, intro, info, team, sections = [], schedule, readings, previous } = Astro.props;
 const href = (value: string) => (value.startsWith('/') ? url(value) : value);
 const description = intro[0] ?? '';
 ---
@@ -68,11 +79,36 @@ const description = intro[0] ?? '';
 
   <main id="main" class="course-page">
     <section class="course-head">
-      <div class="shell">
-        <span class="label">Course · {term}</span>
-        <h1>{title}</h1>
-        <p class="course-code">{code}</p>
-        {kicker && <p class="course-kicker">{kicker}</p>}
+      <div class:list={['shell', 'course-head-inner', { 'course-head-inner--solo': !image }]}>
+        <div class="course-head-copy">
+          <span class="label">Course · {term}</span>
+          <h1>{title}</h1>
+          <p class="course-code">{code}</p>
+          {kicker && <p class="course-kicker">{kicker}</p>}
+        </div>
+        {image && (
+          <figure class="course-head-media">
+            <picture>
+              {image.webp && (
+                <source media="(max-width: 700px)" type="image/webp" srcset={href(image.webpSmall ?? image.webp)} />
+              )}
+              {image.webp && <source type="image/webp" srcset={href(image.webp)} />}
+              {image.srcSmall && <source media="(max-width: 700px)" srcset={href(image.srcSmall)} />}
+              <img src={href(image.src)} alt={image.alt} width="1400" height="1036" />
+            </picture>
+            {image.caption && (
+              <figcaption>
+                <span>
+                  {image.creditHref ? (
+                    <a href={image.creditHref} target="_blank" rel="noopener noreferrer">{image.caption}</a>
+                  ) : (
+                    image.caption
+                  )}
+                </span>
+              </figcaption>
+            )}
+          </figure>
+        )}
       </div>
     </section>
 
@@ -154,7 +190,7 @@ const description = intro[0] ?? '';
           </div>
           <div class="course-body">
             {sections.map((section) => (
-              <div style="margin-bottom:1.8rem">
+              <div class="course-detail">
                 <h3>{section.title}</h3>
                 {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
                 {section.list && (
