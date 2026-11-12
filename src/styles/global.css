@@ -125,9 +125,9 @@ ol {
 
 .label {
   font-family: var(--mono);
-  font-size: 0.66rem;
+  font-size: 0.74rem;
   font-weight: 500;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -1051,8 +1051,14 @@ html:not(.locked) .gate {
 /* ------------------------------------------------------------------
    Course pages
    ------------------------------------------------------------------ */
+.course-page .section-head {
+  justify-content: center;
+  text-align: center;
+}
+
 .course-head {
   border-bottom: 1px solid var(--rule);
+  text-align: center;
 }
 
 .course-head .shell {
@@ -1071,7 +1077,7 @@ html:not(.locked) .gate {
 .course-code {
   margin-top: 0.9rem;
   font-family: var(--mono);
-  font-size: 0.72rem;
+  font-size: 0.9rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent);
@@ -1087,8 +1093,10 @@ html:not(.locked) .gate {
 
 .course-intro {
   max-width: 74ch;
+  margin-inline: auto;
+  text-align: center;
   color: var(--ink-soft);
-  font-size: clamp(1rem, 1.15vw, 1.1rem);
+  font-size: clamp(1.06rem, 1.2vw, 1.18rem);
 }
 
 .course-intro p + p {
@@ -1111,34 +1119,44 @@ html:not(.locked) .gate {
 }
 
 .course-info {
-  display: grid;
-  grid-template-columns: max-content minmax(0, 1fr);
-  gap: 0.55rem 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem 1.6rem;
   margin: 0;
-  padding: clamp(1.1rem, 2vw, 1.5rem);
+  padding: clamp(1.4rem, 2.4vw, 2rem);
   background: var(--panel);
   border: 1px solid var(--rule);
+  text-align: center;
+}
+
+.course-info-row {
+  display: flex;
+  flex: 0 1 220px;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
 .course-info dt {
   font-family: var(--mono);
-  font-size: 0.64rem;
+  font-size: 0.85rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
-  padding-top: 0.2rem;
 }
 
 .course-info dd {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: var(--ink-soft);
+  line-height: 1.5;
 }
 
 .course-team {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: clamp(0.9rem, 1.6vw, 1.4rem);
+  text-align: center;
 }
 
 .course-person {
@@ -1146,10 +1164,24 @@ html:not(.locked) .gate {
   border-top: 1px solid var(--rule);
 }
 
+.course-person-media {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  margin-bottom: 0.7rem;
+  background: var(--bg-deep);
+  border: 1px solid var(--rule);
+}
+
+.course-person-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .course-person .role {
   display: block;
   font-family: var(--mono);
-  font-size: 0.62rem;
+  font-size: 0.82rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent);
@@ -1158,14 +1190,15 @@ html:not(.locked) .gate {
 .course-person .name {
   display: block;
   margin-top: 0.25rem;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-weight: 600;
 }
 
 .course-person .meta {
   display: block;
-  margin-top: 0.2rem;
-  font-size: 0.86rem;
+  margin-top: 0.3rem;
+  font-size: 0.98rem;
+  line-height: 1.45;
   color: var(--muted);
 }
 
@@ -1182,11 +1215,13 @@ html:not(.locked) .gate {
 
 .course-body {
   max-width: 78ch;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .course-body h3 {
   font-family: var(--sans);
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -1196,7 +1231,7 @@ html:not(.locked) .gate {
 }
 
 .course-body p {
-  font-size: 0.96rem;
+  font-size: 1.05rem;
   color: var(--ink-soft);
 }
 
@@ -1213,7 +1248,7 @@ html:not(.locked) .gate {
 .course-body li {
   position: relative;
   padding-left: 1rem;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: var(--ink-soft);
 }
 
@@ -1237,12 +1272,12 @@ html:not(.locked) .gate {
 }
 
 .schedule th {
-  padding: 0.7rem 0.8rem;
+  padding: 0.8rem 0.9rem;
   background: var(--bg-deep);
   border-bottom: 1px solid var(--rule);
-  text-align: left;
+  text-align: center;
   font-family: var(--mono);
-  font-size: 0.62rem;
+  font-size: 0.82rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -1250,10 +1285,11 @@ html:not(.locked) .gate {
 }
 
 .schedule td {
-  padding: 0.7rem 0.8rem;
+  padding: 0.8rem 0.9rem;
   border-top: 1px solid var(--rule-soft);
   vertical-align: top;
-  font-size: 0.9rem;
+  text-align: center;
+  font-size: 1rem;
   color: var(--ink-soft);
 }
 
@@ -1264,7 +1300,7 @@ html:not(.locked) .gate {
 .schedule td:first-child {
   white-space: nowrap;
   font-family: var(--mono);
-  font-size: 0.72rem;
+  font-size: 0.85rem;
   color: var(--accent);
 }
 
@@ -1281,44 +1317,52 @@ html:not(.locked) .gate {
 
 .schedule .note {
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.92rem;
 }
 
 .readings {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(1.4rem, 3vw, 2.6rem);
+  grid-template-columns: 1fr;
+  gap: clamp(1.6rem, 3vw, 2.4rem);
+  text-align: center;
+}
+
+.reading-group {
+  max-width: 88ch;
+  margin-inline: auto;
 }
 
 .reading-group h3 {
   font-family: var(--mono);
-  font-size: 0.66rem;
+  font-size: 0.86rem;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent);
   padding-bottom: 0.6rem;
   border-bottom: 1px solid var(--rule);
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.9rem;
 }
 
 .reading-group ul {
   display: grid;
-  gap: 0.6rem;
+  gap: 0.7rem;
 }
 
 .reading-group li {
-  font-size: 0.88rem;
-  line-height: 1.45;
+  font-size: 1rem;
+  line-height: 1.5;
   color: var(--ink-soft);
 }
 
 .course-foot {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 0.6rem 1.6rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--muted);
+  text-align: center;
 }
 
 /* ------------------------------------------------------------------
@@ -1502,18 +1546,21 @@ html:not(.locked) .gate {
     align-items: flex-start;
     gap: 0.5rem;
   }
+  .course-page .section-head {
+    align-items: center;
+    text-align: center;
+  }
   .alumni-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .course-info {
-    grid-template-columns: 1fr;
-    gap: 0.2rem;
+    gap: 1rem;
   }
-  .course-info dd {
-    margin-bottom: 0.5rem;
+  .course-info-row {
+    flex-basis: 100%;
   }
   .course-team {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .footer-grid {
     grid-template-columns: 1fr;

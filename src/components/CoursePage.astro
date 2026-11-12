@@ -20,6 +20,8 @@ export interface CoursePerson {
   name: string;
   email?: string;
   office?: string;
+  officeAfter?: string;
+  image?: string;
   links?: CourseLink[];
 }
 
@@ -64,7 +66,7 @@ const description = intro[0] ?? '';
 <Base title={`${title} (${code}) — ${term}`} description={description}>
   <Header />
 
-  <main id="main">
+  <main id="main" class="course-page">
     <section class="course-head">
       <div class="shell">
         <span class="label">Course · {term}</span>
@@ -89,7 +91,7 @@ const description = intro[0] ?? '';
         </div>
         <dl class="course-info">
           {info.map((item) => (
-            <>
+            <div class="course-info-row">
               <dt>{item.label}</dt>
               <dd>
                 {item.text}
@@ -100,7 +102,7 @@ const description = intro[0] ?? '';
                   </>
                 ))}
               </dd>
-            </>
+            </div>
           ))}
         </dl>
       </div>
@@ -114,6 +116,11 @@ const description = intro[0] ?? '';
         <div class="course-team">
           {team.map((person) => (
             <div class="course-person">
+              {person.image && (
+                <div class="course-person-media">
+                  <img src={href(person.image)} alt={person.name} loading="lazy" width="480" height="600" />
+                </div>
+              )}
               <span class="role">{person.role}</span>
               <span class="name">{person.name}</span>
               {person.email && (
@@ -130,6 +137,7 @@ const description = intro[0] ?? '';
                       <a href={href(link.href)}>{link.label}</a>
                     </>
                   ))}
+                  {person.officeAfter && <> {person.officeAfter}</>}
                 </span>
               )}
             </div>
