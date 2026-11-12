@@ -60,7 +60,6 @@ interface Props {
   title: string;
   code: string;
   term: string;
-  kicker?: string;
   image?: CourseImage;
   intro: string[];
   info: CourseInfo[];
@@ -71,7 +70,7 @@ interface Props {
   previous?: CourseLink;
 }
 
-const { title, code, term, kicker, image, intro, info, team, sections = [], schedule, readings, previous } = Astro.props;
+const { title, code, term, image, intro, info, team, sections = [], schedule, readings, previous } = Astro.props;
 const href = (value: string) => (value.startsWith('/') ? url(value) : value);
 const description = intro[0] ?? '';
 ---
@@ -86,7 +85,6 @@ const description = intro[0] ?? '';
           <span class="label">Course · {term}</span>
           <h1>{title}</h1>
           <p class="course-code">{code}</p>
-          {kicker && <p class="course-kicker">{kicker}</p>}
         </div>
         {image && (
           <figure class:list={['course-head-media', { 'course-head-media--light': image.tone === 'light' }]}>

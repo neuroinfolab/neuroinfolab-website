@@ -731,13 +731,44 @@ html:not(.locked) .gate {
 }
 
 .pub-year-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 0 0.45rem;
+  border-bottom: 1px solid var(--rule);
   font-family: var(--label);
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   color: var(--accent);
-  padding: 1.2rem 0 0.45rem;
-  border-bottom: 1px solid var(--rule);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.pub-year-head::-webkit-details-marker {
+  display: none;
+}
+
+.pub-year-head::after {
+  content: '';
+  flex: none;
+  width: 0.42rem;
+  height: 0.42rem;
+  margin-right: 0.2rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform 160ms ease;
+}
+
+.pub-year-group[open] > .pub-year-head::after {
+  transform: rotate(45deg);
+}
+
+.pub-year-head:hover {
+  color: var(--ink);
 }
 
 .pub-year-group:first-child .pub-year-head {
@@ -779,7 +810,7 @@ a.pub-title:hover {
 
 .pub-authors,
 .pub-venue {
-  color: var(--muted-strong);
+  color: var(--muted);
 }
 
 .pub-authors strong {
@@ -1176,14 +1207,6 @@ a.pub-title:hover {
   color: var(--accent);
 }
 
-.course-kicker {
-  margin-top: 0.8rem;
-  font-family: var(--sans);
-  font-style: italic;
-  font-size: clamp(1.25rem, 1.8vw, 1.55rem);
-  color: var(--accent);
-}
-
 .course-head-media {
   width: 100%;
   max-width: 640px;
@@ -1495,6 +1518,58 @@ a.pub-title:hover {
 .schedule .note {
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+/* Narrow screens: drop the Assignments column instead of forcing a
+   horizontally scrolling table. The remaining columns fit the viewport
+   and wrap at word boundaries (no mid-word breaks). */
+@media (max-width: 840px) {
+  .table-wrap {
+    overflow-x: visible;
+  }
+
+  .schedule {
+    min-width: 0;
+    table-layout: fixed;
+  }
+
+  .schedule th,
+  .schedule td {
+    padding: 0.55rem;
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: none;
+  }
+
+  .schedule th:nth-child(4),
+  .schedule td:nth-child(4) {
+    display: none;
+  }
+
+  .schedule th:nth-child(1),
+  .schedule td:nth-child(1) {
+    width: 28%;
+  }
+
+  .schedule th:nth-child(2),
+  .schedule td:nth-child(2) {
+    width: 43%;
+  }
+
+  .schedule th:nth-child(3),
+  .schedule td:nth-child(3) {
+    width: 29%;
+  }
+
+  .schedule td {
+    font-size: 0.84rem;
+    line-height: 1.45;
+  }
+
+  .schedule td:first-child {
+    white-space: normal;
+    font-size: 0.7rem;
+  }
 }
 
 .readings {

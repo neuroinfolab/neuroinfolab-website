@@ -21,6 +21,7 @@ const byYear = years.map((y) => ({
   year: y,
   items: site.publications.filter((p) => p.year === y),
 }));
+const openYears = new Set(byYear.slice(0, 4).map((group) => group.year));
 
 const alumniImg: Record<string, string> = {
   'Chenyi Li': '/img/alumni/li.jpg',
@@ -269,37 +270,39 @@ const life = [
 
         <div class="pubs">
           {byYear.map((group) => (
-            <section class="pub-year-group">
-              <h3 class="pub-year-head">{group.year}</h3>
-              {group.items.map((p) => {
-                const doi = doiFor(p.title);
-                return (
-                  <article class="pub" title={`${p.title} — ${p.authors} — ${p.venue}`}>
-                    <p class="pub-line">
-                      {doi ? (
-                        <a
-                          class="pub-title"
-                          href={`https://doi.org/${doi}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          title={`Open DOI: ${doi}`}
-                        >
-                          {p.title}
-                        </a>
-                      ) : (
-                        <span class="pub-title">{p.title}</span>
-                      )}
-                      <span class="pub-sep">·</span>
-                      <span class="pub-authors">
-                        {splitAuthors(p.authors).map((part) => (isVarol(part) ? <strong>{part}</strong> : part))}
-                      </span>
-                      <span class="pub-sep">·</span>
-                      <span class="pub-venue">{p.venue}</span>
-                    </p>
-                  </article>
-                );
-              })}
-            </section>
+            <details class="pub-year-group" open={openYears.has(group.year)}>
+              <summary class="pub-year-head">{group.year}</summary>
+              <div class="pub-year-body">
+                {group.items.map((p) => {
+                  const doi = doiFor(p.title);
+                  return (
+                    <article class="pub" title={`${p.title} — ${p.authors} — ${p.venue}`}>
+                      <p class="pub-line">
+                        {doi ? (
+                          <a
+                            class="pub-title"
+                            href={`https://doi.org/${doi}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title={`Open DOI: ${doi}`}
+                          >
+                            {p.title}
+                          </a>
+                        ) : (
+                          <span class="pub-title">{p.title}</span>
+                        )}
+                        <span class="pub-sep">·</span>
+                        <span class="pub-authors">
+                          {splitAuthors(p.authors).map((part) => (isVarol(part) ? <strong>{part}</strong> : part))}
+                        </span>
+                        <span class="pub-sep">·</span>
+                        <span class="pub-venue">{p.venue}</span>
+                      </p>
+                    </article>
+                  );
+                })}
+              </div>
+            </details>
           ))}
         </div>
       </div>
