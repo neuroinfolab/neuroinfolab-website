@@ -36,7 +36,7 @@ jobs:
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://pxndey.github.io' }}
           SITE_BASE: ${{ vars.SITE_BASE || '/neuroinfolab-demo' }}
-          PUBLIC_SITE_LOCKED: ${{ vars.PUBLIC_SITE_LOCKED || 'true' }}
+          PUBLIC_SITE_LOCKED: 'false'
           SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}
 
       - uses: actions/upload-pages-artifact@v3

@@ -50,6 +50,49 @@ const people: Record<string, string> = {
   'Sherlock & Toby the Basset Hounds': '/img/team/sherlock-toby.jpg',
 };
 
+const motion = [
+  {
+    webm: '/media/loops/transcriptomics.webm',
+    mp4: '/media/loops/transcriptomics.mp4',
+    poster: '/media/transcriptomics.jpg',
+    alt: 'Registering the imaged tissue to spatial transcriptomics, tile by tile.',
+    label: 'Transcriptomics',
+    caption: 'Spatiotemporal Integration of the Human Transcriptome and Connectome',
+  },
+  {
+    webm: '/media/loops/matching.webm',
+    mp4: '/media/loops/matching.mp4',
+    poster: '/media/matching.jpg',
+    alt: 'Matching the same neurons in vivo and in fixed, cleared tissue ex vivo.',
+    label: 'Cell matching',
+    caption: 'Matching the same neurons in vivo and ex vivo',
+  },
+  {
+    webm: '/media/loops/invivo.webm',
+    mp4: '/media/loops/invivo.mp4',
+    poster: '/media/invivo.jpg',
+    alt: 'Two-photon calcium imaging of neurons in the living mouse hippocampus.',
+    label: 'In vivo imaging',
+    caption: 'Two-photon calcium imaging of the living mouse hippocampus',
+  },
+  {
+    webm: '/media/loops/volume.webm',
+    mp4: '/media/loops/volume.mp4',
+    poster: '/media/volume.jpg',
+    alt: 'The registered multimodal volume: each cell with its activity, morphology and genes.',
+    label: 'Multimodal volume',
+    caption: 'Registered multimodal volume: activity, morphology and genes',
+  },
+  {
+    webm: '/media/loops/worm.webm',
+    mp4: '/media/loops/worm.mp4',
+    poster: '/media/worm.jpg',
+    alt: 'Tracking every neuron in a moving C. elegans, frame by frame.',
+    label: 'C. elegans tracking',
+    caption: 'Whole-brain neuron tracking in a moving C. elegans',
+  },
+];
+
 const life = [
   {
     full: '/img/life/whiteboard-1.jpg',
@@ -112,19 +155,59 @@ const life = [
             <p class="hero-lede">{site.tagline}</p>
           </div>
 
-          <figure class="hero-media">
-            <video
-              src={url('/media/transcriptomics.mp4')}
-              poster={url('/media/transcriptomics.jpg')}
-              muted
-              loop
-              autoplay
-              playsinline
-              preload="metadata"
-              aria-label="Spatiotemporal Integration of the Human Transcriptome and Connectome"
-            ></video>
+          <figure
+            class="hero-media"
+            data-hero-carousel
+            aria-roledescription="carousel"
+            aria-label="Lab imaging loops"
+          >
+            <div class="hero-media-stage">
+              {motion.map((item, i) => (
+                <video
+                  class:list={['hero-slide', { 'is-active': i === 0 }]}
+                  data-hero-slide
+                  data-caption={item.caption}
+                  data-label={item.label}
+                  muted
+                  loop
+                  playsinline
+                  preload={i === 0 ? 'auto' : 'none'}
+                  poster={url(item.poster)}
+                  aria-label={item.alt}
+                  width="1280"
+                  height="720"
+                >
+                  <source src={url(item.webm)} type="video/webm" />
+                  <source src={url(item.mp4)} type="video/mp4" />
+                </video>
+              ))}
+
+              <button class="hero-arrow hero-arrow--prev" type="button" data-hero-prev aria-label="Previous imaging loop">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </button>
+              <button class="hero-arrow hero-arrow--next" type="button" data-hero-next aria-label="Next imaging loop">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </button>
+
+              <div class="hero-dots" role="group" aria-label="Choose an imaging loop">
+                {motion.map((item, i) => (
+                  <button
+                    class="hero-dot"
+                    type="button"
+                    data-hero-dot
+                    aria-label={`Show ${item.label}`}
+                    aria-current={i === 0 ? 'true' : undefined}
+                  ></button>
+                ))}
+              </div>
+            </div>
+
             <figcaption>
-              <span>Spatiotemporal Integration of the Human Transcriptome and Connectome</span>
+              <span data-hero-caption>{motion[0].caption}</span>
             </figcaption>
           </figure>
         </div>
@@ -372,4 +455,97 @@ const life = [
   </main>
 
   <Footer />
+
+  <script>
+    const carousel = document.querySelector('[data-hero-carousel]');
+
+    if (carousel) {
+      const slides = [...carousel.querySelectorAll('[data-hero-slide]')];
+      const caption = carousel.querySelector('[data-hero-caption]');
+      const dots = [...carousel.querySelectorAll('[data-hero-dot]')];
+      const prev = carousel.querySelector('[data-hero-prev]');
+      const next = carousel.querySelector('[data-hero-next]');
+
+      if (slides.length && caption && dots.length) {
+        const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        let index = 0;
+        let timer = 0;
+        let focused = false;
+
+        const isPaused = () => reduced || focused || document.hidden;
+
+        const preloadNext = () => {
+          const upcoming = slides[(index + 1) % slides.length];
+          if (upcoming.preload === 'none') upcoming.preload = 'auto';
+        };
+
+        const update = () => {
+          const slide = slides[index];
+          caption.textContent = slide.dataset.caption || '';
+
+          slides.forEach((video, i) => {
+            const active = i === index;
+            video.classList.toggle('is-active', active);
+            if (active && !isPaused()) {
+              video.play().catch(() => {});
+            } else {
+              video.pause();
+            }
+          });
+
+          dots.forEach((dot, i) => {
+            if (i === index) dot.setAttribute('aria-current', 'true');
+            else dot.removeAttribute('aria-current');
+          });
+
+          preloadNext();
+        };
+
+        const schedule = () => {
+          window.clearTimeout(timer);
+          update();
+          if (isPaused()) return;
+          timer = window.setTimeout(() => {
+            index = (index + 1) % slides.length;
+            schedule();
+          }, 7000);
+        };
+
+        const go = (i) => {
+          index = (i + slides.length) % slides.length;
+          schedule();
+        };
+
+        prev?.addEventListener('click', (event) => {
+          go(index - 1);
+          if (event.detail > 0) prev?.blur();
+        });
+        next?.addEventListener('click', (event) => {
+          go(index + 1);
+          if (event.detail > 0) next?.blur();
+        });
+        dots.forEach((dot, i) =>
+          dot.addEventListener('click', (event) => {
+            go(i);
+            if (event.detail > 0) dot.blur();
+          }),
+        );
+
+        carousel.addEventListener('focusin', () => {
+          focused = true;
+          schedule();
+        });
+        carousel.addEventListener('focusout', (event) => {
+          if (!carousel.contains(event.relatedTarget)) {
+            focused = false;
+            schedule();
+          }
+        });
+        document.addEventListener('visibilitychange', schedule);
+
+        window.setTimeout(preloadNext, 2000);
+        schedule();
+      }
+    }
+  </script>
 </Base>
