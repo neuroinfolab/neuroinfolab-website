@@ -1,0 +1,110 @@
+name: Monthly publications refresh
+
+on:
+  schedule:
+    # 14:00 UTC on the first day of every month.
+    - cron: '0 14 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: publications-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      PR_BRANCH: publications/monthly
+      SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Refresh NeurIPS staging
+        continue-on-error: true
+        run: python3 scripts/scrape_nips.py --write
+
+      - name: Build review diff
+        run: pnpm publications:sync
+
+      - name: Apply the reviewed diff to the PR branch
+        run: pnpm publications:apply
+
+      - name: Check publication links
+        run: pnpm publications:check
+
+      - name: Build site for screenshots
+        env:
+          PUBLIC_SITE_LOCKED: 'false'
+          SITE_URL: 'http://127.0.0.1:4321'
+          SITE_BASE: '/'
+        run: pnpm build
+
+      - name: Install Playwright Chromium
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Serve the built site
+        run: |
+          pnpm preview --host 127.0.0.1 --port 4321 > /tmp/publications-preview.log 2>&1 &
+          echo $! > /tmp/publications-preview.pid
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4321/ >/dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat /tmp/publications-preview.log
+          exit 1
+
+      - name: Capture publication screenshots
+        run: node scripts/publication-screenshots.mjs http://127.0.0.1:4321 publications-review/screenshots
+
+      - name: Point screenshots at the PR branch
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+
+          body = Path('publications-review/pr-body.md')
+          base = f"https://raw.githubusercontent.com/{os.environ['GITHUB_REPOSITORY']}/{os.environ['PR_BRANCH']}"
+          body.write_text(body.read_text(encoding='utf-8').replace('SCREENSHOT_BASE', base), encoding='utf-8')
+          PY
+
+      - name: Open or update the publications PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ env.PR_BRANCH }}
+          delete-branch: false
+          base: main
+          title: Monthly publications refresh
+          body-path: publications-review/pr-body.md
+          commit-message: Refresh publications review
+          add-paths: |
+            src/data/site.json
+            src/data/dois.json
+            src/data/nips.json
+            src/data/publications.config.json
+            publications-review/**
+          labels: publications, automated

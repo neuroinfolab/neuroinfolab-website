@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "pipeline": "diff-and-review",
+  "publishStrategy": "B",
+  "approval": "github-pr",
+  "schedule": "0 14 1 * *",
+  "preprintPolicy": "replace-with-published",
+  "venueStyle": "short-label-and-year",
+  "match": ["doi", "normalized-title"],
+  "openalexAuthor": "Erdem Varol",
+  "serpApiAuthorId": "7GlElV0AAAAJ",
+  "sources": {
+    "openalex": true,
+    "crossref": true,
+    "europepmc": true,
+    "nips": true,
+    "scholar": true
+  },
+  "excludedTitles": [
+    "How Data Augmentation Shapes Neural Representations"
+  ]
+}

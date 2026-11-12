@@ -14,6 +14,7 @@ type Publication = {
   title: string;
   authors: string;
   venue: string;
+  venueShort?: string;
   doi?: string;
   url?: string;
   note?: string;
@@ -47,6 +48,45 @@ const authorNames = (authors: string) => {
   if (names.length <= 5) return names;
   if (varolAt < 3) return [...names.slice(0, 3), '…'];
   return [...names.slice(0, 3), '…', names[varolAt]];
+};
+
+// Short journal/venue labels with the year, per the 2026-11-12 decision.
+// The full venue remains in the row tooltip.
+const venueLabel = (publication: Publication) => {
+  if (publication.venueShort) return publication.venueShort;
+  let label = publication.venue.split(';')[0].split(',')[0].trim();
+  label = label.replace(/arxiv:\d+\.\d+/i, '').trim();
+  const embeddedYear = label.match(/\b(19|20)\d{2}\b/)?.[0];
+
+  const shortNames: Array<[RegExp, string]> = [
+    [/^international conference on information processing in medical imaging/i, 'IPMI'],
+    [/^icassp\b/i, 'ICASSP'],
+    [/^international conference on medical image computing/i, 'MICCAI'],
+    [/^proceedings of the ieee\/cvf winter conference on applications of computer/i, 'WACV'],
+    [/international symposium on biomedical imaging/i, 'ISBI'],
+    [/^symposium on advances in approximate bayesian inference/i, 'AABI'],
+    [/^arxiv\b/i, 'arXiv'],
+    [/^elsevier science inc/i, 'Elsevier'],
+  ];
+  for (const [pattern, short] of shortNames) {
+    if (pattern.test(label)) {
+      label = short;
+      break;
+    }
+  }
+
+  label = label
+    .replace(/\s+\d+\s*\(\s*suppl[^)]*\)\s*$/i, '')
+    .replace(/\s+\d+\s*\(\d+\)\s*$/, '')
+    .replace(/\s+\d+\s*$/, '')
+    .trim();
+
+  if (embeddedYear) {
+    if (!label.includes(embeddedYear)) label = `${label} ${embeddedYear}`;
+  } else if (/^\d{4}$/.test(publication.year) && !/(19|20)\d{2}/.test(label)) {
+    label = `${label} ${publication.year}`;
+  }
+  return label;
 };
 
 const years = [...new Set(publications.map((p) => p.year))];
@@ -427,7 +467,7 @@ const life = [
                           ))}
                         </span>
                         <span class="pub-sep">·</span>
-                        <span class="pub-venue">{p.venue}</span>
+                        <span class="pub-venue">{venueLabel(p)}</span>
                       </p>
                     </article>
                   );

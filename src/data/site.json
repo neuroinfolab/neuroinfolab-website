@@ -136,6 +136,20 @@
       "doi": "10.1016/j.neuron.2026.03.016"
     },
     {
+      "year": "2026",
+      "title": "Learning Neuronal Wiring Rules from Morphological Token Sequences",
+      "authors": "Sidharth Goel, Erdem Varol",
+      "venue": "NeurIPS 2026",
+      "url": "https://neurips.cc/virtual/2026/poster/153800"
+    },
+    {
+      "year": "2026",
+      "title": "Geometry-Aware Self-Supervised Electrophysiology Representation Learning",
+      "authors": "Subhrajit Dey, Ping-Jung Lu, Visweswar Parupudi, Malhar Patel, Margaret-Estefani Conde Paredes, Mihály Vöröslakos, Anna Maslarova, Gyorgy Buzsaki, Saurabh Vyas, Erdem Varol",
+      "venue": "NeurIPS 2026",
+      "url": "https://neurips.cc/virtual/2026/poster/150561"
+    },
+    {
       "year": "2025",
       "title": "Predicting Functional Brain Connectivity with Context-Aware Deep Neural Networks",
       "authors": "A Ratzan, S Goel, J Wen, C Davatzikos, E Varol",
@@ -211,13 +225,6 @@
       "title": "Genetic and clinical correlates of two neuroanatomical AI dimensions in the Alzheimer’s disease continuum",
       "authors": "J Wen, Z Yang, IM Nasrallah, Y Cui, G Erus, D Srinivasan, A Abdulkadir, ..., E Varol",
       "venue": "Translational Psychiatry 14 (1), 420"
-    },
-    {
-      "year": "2024",
-      "title": "Alternative splicing across the C. elegans nervous system",
-      "authors": "A Weinreb, E Varol, A Barrett, RM McWhirter, SR Taylor, I Courtney,...",
-      "venue": "bioRxiv, 2024.05.16.594567",
-      "doi": "10.1101/2024.05.16.594567"
     },
     {
       "year": "2024",
@@ -511,12 +518,6 @@
       "title": "Temporal Wasserstein non-negative matrix factorization for non-rigid motion segmentation and spatiotemporal deconvolution",
       "authors": "E Varol, A Nejatbakhsh, C McGrory",
       "venue": "arXiv preprint arXiv:1912.03463"
-    },
-    {
-      "year": "2019",
-      "title": "Neurocognitive and functional heterogeneity in depressed youth",
-      "authors": "EB Baller, AN Kaczkurkin, A Sotiras, A Adebimpe, DS Bassett, ME Calkins, ..., E Varol",
-      "venue": "bioRxiv, 778878"
     },
     {
       "year": "2019",

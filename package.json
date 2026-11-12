@@ -9,7 +9,11 @@
     "preview": "astro preview",
     "sync:site": "python3 scripts/sync-site-text.py",
     "sync:nips": "python3 scripts/scrape_nips.py",
-    "serp": "python3 scripts/serp.py"
+    "serp": "python3 scripts/serp.py",
+    "publications:sync": "python3 scripts/sync_publications.py",
+    "publications:apply": "python3 scripts/sync_publications.py --apply",
+    "publications:check": "python3 scripts/check_publications.py",
+    "publications:shots": "node scripts/publication-screenshots.mjs"
   },
   "dependencies": {
     "@fontsource-variable/instrument-sans": "^5.3.0",
