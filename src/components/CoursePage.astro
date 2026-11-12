@@ -12,6 +12,7 @@ export interface CourseLink {
 export interface CourseInfo {
   label: string;
   text: string;
+  href?: string;
   links?: CourseLink[];
 }
 
@@ -52,6 +53,7 @@ interface CourseImage {
   alt: string;
   caption?: string;
   creditHref?: string;
+  tone?: 'light';
 }
 
 interface Props {
@@ -87,7 +89,7 @@ const description = intro[0] ?? '';
           {kicker && <p class="course-kicker">{kicker}</p>}
         </div>
         {image && (
-          <figure class="course-head-media">
+          <figure class:list={['course-head-media', { 'course-head-media--light': image.tone === 'light' }]}>
             <picture>
               {image.webp && (
                 <source media="(max-width: 700px)" type="image/webp" srcset={href(image.webpSmall ?? image.webp)} />
@@ -130,7 +132,7 @@ const description = intro[0] ?? '';
             <div class="course-info-row">
               <dt>{item.label}</dt>
               <dd>
-                {item.text}
+                {item.href ? <a href={href(item.href)}>{item.text}</a> : item.text}
                 {item.links?.map((link) => (
                   <>
                     {' '}

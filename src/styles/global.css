@@ -13,7 +13,7 @@
   --rule-soft: #212125;
   --accent: #b48cff;
 
-  --display: 'Fraunces Variable', 'Instrument Sans Variable', ui-sans-serif, system-ui, sans-serif;
+  --display: 'Cardo', 'Iowan Old Style', Georgia, serif;
   --sans: 'Instrument Sans Variable', ui-sans-serif, system-ui, -apple-system, sans-serif;
   --label: 'Space Grotesk Variable', 'Instrument Sans Variable', ui-sans-serif, sans-serif;
   --mono: var(--label);
@@ -262,9 +262,9 @@ html:not(.locked) .gate {
 
 .brand {
   font-family: var(--display);
-  font-size: 1.34rem;
-  font-weight: 600;
-  letter-spacing: -0.025em;
+  font-size: 1.42rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -370,27 +370,12 @@ html:not(.locked) .gate {
   text-transform: none;
 }
 
-.hero h1,
-.section-head h2,
-.pi h2,
-.course-head h1,
-.course-body h3,
-.brand,
-.footer-mark,
-.opening h3,
-.gate-form h1,
-.card-big-index,
-.card--more .count,
-.card--more h3 {
-  font-variation-settings: 'SOFT' 35, 'WONK' 1;
-}
-
 .hero h1 {
   font-family: var(--display);
-  font-weight: 500;
+  font-weight: 400;
   font-size: clamp(2.8rem, 4.4vw, 5rem);
-  line-height: 0.98;
-  letter-spacing: -0.035em;
+  line-height: 1;
+  letter-spacing: -0.025em;
   max-width: 21ch;
 }
 
@@ -514,10 +499,10 @@ html:not(.locked) .gate {
 
 .section-head h2 {
   font-family: var(--display);
-  font-weight: 500;
+  font-weight: 400;
   font-size: clamp(1.8rem, 2.9vw, 2.55rem);
   line-height: 1;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.015em;
 }
 
 .section-head .more {
@@ -1132,7 +1117,7 @@ a.pub-title:hover {
    Course pages
    ------------------------------------------------------------------ */
 .course-page .section {
-  padding-block: clamp(1.2rem, 2vw, 1.8rem);
+  padding-block: clamp(0.7rem, 1.2vw, 1rem);
   border-bottom: 0;
 }
 
@@ -1141,7 +1126,7 @@ a.pub-title:hover {
   text-align: left;
   padding-bottom: 0;
   border-bottom: 0;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
 }
 
 .course-page .section-head h2 {
@@ -1169,15 +1154,15 @@ a.pub-title:hover {
 }
 
 .course-head-inner--solo .course-head-copy {
-  max-width: 54rem;
+  max-width: 64rem;
 }
 
 .course-head h1 {
   font-family: var(--display);
-  font-weight: 500;
+  font-weight: 400;
   font-size: clamp(2.8rem, 4.8vw, 5.2rem);
-  line-height: 0.98;
-  letter-spacing: -0.035em;
+  line-height: 1;
+  letter-spacing: -0.02em;
   margin-top: 0.55rem;
 }
 
@@ -1243,8 +1228,23 @@ a.pub-title:hover {
   border-color: var(--accent);
 }
 
+.course-head-media--light {
+  background: #fff;
+}
+
+.course-head-media--light figcaption {
+  background: #fff;
+  border-top-color: #ddd8ce;
+  color: #24242a;
+}
+
+.course-head-media--light a {
+  color: #24242a;
+  border-bottom-color: #c9c5bb;
+}
+
 .course-intro {
-  max-width: 72ch;
+  max-width: 80ch;
   margin-inline: 0;
   text-align: left;
   color: var(--ink-soft);
@@ -1302,6 +1302,17 @@ a.pub-title:hover {
   font-size: 1rem;
   color: var(--ink);
   line-height: 1.5;
+}
+
+.course-info dd a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+}
+
+.course-info dd a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 .course-team {
@@ -1369,9 +1380,8 @@ a.pub-title:hover {
 }
 
 .course-body {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 1.6rem 2.6rem;
+  columns: 22rem;
+  column-gap: 2.6rem;
   max-width: 1600px;
   margin-inline: 0;
   text-align: left;
@@ -1379,14 +1389,16 @@ a.pub-title:hover {
 
 .course-body h3 {
   font-family: var(--display);
-  font-size: 1.18rem;
-  font-weight: 600;
-  letter-spacing: -0.015em;
+  font-size: 1.22rem;
+  font-weight: 700;
+  letter-spacing: -0.005em;
   margin-bottom: 0.4rem;
 }
 
 .course-detail {
   min-width: 0;
+  break-inside: avoid;
+  margin-bottom: 1.6rem;
 }
 
 .course-body h3 + p {
@@ -1733,6 +1745,9 @@ a.pub-title:hover {
   }
   .course-info {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .course-body {
+    columns: 1;
   }
   .site-header .social {
     display: none;
