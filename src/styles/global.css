@@ -882,7 +882,7 @@ html:not(.locked) .gate {
   position: relative;
   display: block;
   white-space: normal;
-  font-size: 0.98rem;
+  font-size: 0.95rem;
   line-height: 1.6;
 }
 
