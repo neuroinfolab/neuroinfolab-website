@@ -109,7 +109,7 @@ All shared values are in the first block of `src/styles/global.css`: `--bg`, `--
 - Dark grey page `#1b1b1d`, ink `#edebe6`, violet `#b48cff` for links, year headers,
   role labels and in-text links.
 - Instrument Serif for headings, Instrument Sans for body, JetBrains Mono for labels.
-- 1px rules, no radius, no shadows, no cards on a dark background.
+- 1px rules, no radius, no shadows; panels are flat against the dark background.
 - Slowly drifting grid behind the hero (`.grid-bg`, 48s loop, disabled under
   reduce-motion).
 
