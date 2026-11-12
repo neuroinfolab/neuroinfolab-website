@@ -1,7 +1,9 @@
-# pxndey-site
+# neuroinfolab-demo
 
 The Neuroinformatics Lab site, rebuilt. Astro 7, static output, no backend, no runtime
 dependencies. Content is Markdown/JSON plus a handful of `.astro` components.
+
+Live preview: https://pxndey.github.io/neuroinfolab-demo/ (passcode gated).
 
 ```bash
 pnpm install
@@ -142,7 +144,7 @@ GitHub Actions → Pages. The workflow builds with:
 
 ```
 SITE_URL   https://pxndey.github.io
-SITE_BASE  /pxndey-site
+SITE_BASE  /neuroinfolab-demo
 PUBLIC_SITE_LOCKED true
 SITE_PASSWORD <secret>
 ```
