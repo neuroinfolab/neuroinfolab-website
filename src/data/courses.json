@@ -1,0 +1,1052 @@
+{
+  "neuroinformatics-spring26": {
+    "title": "Neuroinformatics (CS-GY 9223 / CS-UY 3943)",
+    "term": "Spring 2026",
+    "summary": [
+      "<p><strong>Chaos Circuitry</strong></p>",
+      "<p><strong>This is a Ph.D.-level topics course covering topics on modeling, signal processing as well as database management of neuroscience data.  </strong></p>",
+      "<p><strong>Students from statistics, neuroscience, and engineering are all welcome to attend. Neuroscience background is not required but self-motivated interest in neuroscience is highly recommended.</strong></p>",
+      "<p><strong>Advanced undergraduates may enroll upon permission from instructor.</strong></p>",
+      "<p><strong>A link to the previous iteration of this course is </strong><a href=\"/teaching/neuroinformatics-spring25\"><strong>here</strong></a><strong>.</strong></p>"
+    ],
+    "overview": [
+      "<p><strong>TA:</strong> Subhrajit Dey</p>",
+      "<p>Email: <a href=\"mailto:sd5963@nyu.edu?\"><span>sd5963@nyu.edu</span></a></p>",
+      "<p>Office Hours: Wednesdays 1-2 pm  on <a href=\"https://nyu.zoom.us/j/93706199603\" rel=\"noopener\" target=\"_blank\">Zoom</a>.</p>",
+      "<p>Photo credit : <em>Yusha Sun and Xin Wang, University of Pennsylvania </em>[<a href=\"https://braininitiative.nih.gov/news-events/brain-initiative-photo-and-video-contest\" rel=\"noopener\" target=\"_blank\">link</a>]</p>",
+      "<p><strong>TA:</strong> Visweswar Sirish Parupudi</p>",
+      "<p>Email: <a href=\"mailto:vsp7230@nyu.edu?\"><span>vsp7230@nyu.edu</span></a></p>",
+      "<p>Office Hours: Thursdays 1-2 pm on <a href=\"https://nyu.zoom.us/j/91676721767\" rel=\"noopener\" target=\"_blank\">Zoom</a>.</p>",
+      "<p><strong>Chaos Circuitry</strong></p>",
+      "<p><strong>This is a Ph.D.-level topics course covering topics on modeling, signal processing as well as database management of neuroscience data.  </strong></p>",
+      "<p><strong>Students from statistics, neuroscience, and engineering are all welcome to attend. Neuroscience background is not required but self-motivated interest in neuroscience is highly recommended.</strong></p>",
+      "<p><strong>Advanced undergraduates may enroll upon permission from instructor.</strong></p>",
+      "<p><strong>A link to the previous iteration of this course is </strong><a href=\"/teaching/neuroinformatics-spring25\"><strong>here</strong></a><strong>.</strong></p>",
+      "<p><strong>Course information:</strong> </p>",
+      "<p>Time: Tuesdays 2pm-4:30pm </p>",
+      "<p>Place: 2 MetroTech Center Room 817</p>",
+      "<p>Slack channel:  <a href=\"https://neuroinfoclass.slack.com\" rel=\"noopener\" target=\"_blank\">neuroinfoclass.slack.com</a></p>",
+      "<p><strong>Instructor:</strong> Prof. Erdem Varol </p>",
+      "<p>Email: <a href=\"mailto:ev2240@nyu.edu?\">ev2240@nyu.edu</a> </p>",
+      "<p>Office Hours: On <a href=\"https://nyu.zoom.us/my/evarol\" rel=\"noopener\" target=\"_blank\">Zoom</a>,15 min <a href=\"https://calendar.app.google/Pkg8P79Lh762aKiy8\" rel=\"noopener\" target=\"_blank\">appointments</a>.</p>",
+      "<p><strong>Course goal:</strong> We will introduce a number of advanced machine learning and computer vision tools relevant in neuroscience. Each technique will be illustrated via application to problems in neuroscience. We will cover topics including 1) computational models of the nervous system function and structure across several species, 2) development of computer vision and signal processing tools for analyzing neuroscience data and 3) tools and databases for management and sharing of large scale neural data. </p>",
+      "<p><strong>Prerequisites:</strong> A good working knowledge of basic statistical concepts such as likelihood, Bayes' rule, Gaussian random vectors and linear-algebraic concepts such as regression and principal components analysis. Coding experience in Python, Matlab and/or R is necessary for course projects.</p>",
+      "<p><strong>Evaluation:</strong> Final grades will be based on class participation and journal club presentations (20%), as well as performance on 4 neuroinformatics-based Kaggle competitions (80%).</p>",
+      "<p><strong>Syllabus</strong>: <a href=\"/docs/neuroinformatics_syllabus-ywpa.pdf\">Link</a></p>",
+      "<p><strong>TA:</strong> Nalini Ramanathan</p>",
+      "<p>Email: <a href=\"mailto:nar8991@nyu.edu?\"><span>nar8991@nyu.edu</span></a></p>",
+      "<p>Office Hours: Fridays 12:30-1:30pm on <a href=\"https://nyu.zoom.us/j/2254782546\" rel=\"noopener\" target=\"_blank\">Zoom</a>.</p>",
+      "<p><strong>TA:</strong> Lawrence Lu</p>",
+      "<p>Email: <a href=\"mailto:pl2820@nyu.edu?\"><span>pl2820@nyu.edu</span></a></p>",
+      "<p>Office Hours: Mondays 1-2pm on    <a href=\"https://nyu.zoom.us/j/9052715473\" rel=\"noopener\" target=\"_blank\">Zoom</a></p>"
+    ],
+    "schedule": {
+      "headers": [
+        "Date",
+        "Topic",
+        "Materials",
+        "Assignments"
+      ],
+      "rows": [
+        [
+          "<b>January 20, 2026</b><br/>",
+          "Intro and survey of topics<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1KhA3jOgpjHK1VQSh8cB2gJP7lomXcWtvSigTjJxk9U4/edit?slide=id.p#slide=id.p\" rel=\"noopener\" target=\"_blank\"><span>Lecture 1</span></a></u>",
+          ""
+        ],
+        [
+          "<b>January 27, 2026</b><br/>",
+          "Neuroimaging (Technologies)<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1_vO3enXKw1gEXSVXXJztlgzjbu5aorPNbhYfYH044nM/edit?pli=1&amp;slide=id.p#slide=id.p\" rel=\"noopener\" target=\"_blank\"><span>Lecture 2</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1rPv0AZdp2K_16GBreGyY154-MIRO-5FN?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Colab 2</span></a></u>",
+          ""
+        ],
+        [
+          "<b>February 3, 2026</b><br/>",
+          "Neuroimaging (Analysis pipelines)<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1EMytmrDXBwkOdGfZkcFkxMD_Lbny2Lry5wPk-sa78AY/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 3</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/18D2hryK1-CLQ-R2_YU1zvw5ZFcYHAyJc?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Colab 3</span></a></u>",
+          ""
+        ],
+        [
+          "<b>February 10, 2026<br/></b>",
+          "Machine learning for Neuroimaging<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1U5lQdTKR7sz-JlTBMdQ-KJ7WR-ZNLK8XkPV9_GIRw_w/edit?slide=id.g333d3a6744f_0_180#slide=id.g333d3a6744f_0_180\" rel=\"noopener\" target=\"_blank\"><span>Lecture 4</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1GRUdWB2Eh29AKRZsqk-wab1qGAtf78pl#scrollTo=koVFCo1bixEu\" rel=\"noopener\" target=\"_blank\"><span>Colab 4</span></a></u>",
+          ""
+        ],
+        [
+          "<b>February 17, 2026</b><br/>",
+          "<b>LEGISLATIVE DAY (No Class)</b>",
+          "",
+          "Project 1 Phase 1 Due"
+        ],
+        [
+          "<b>February 24, 2026</b><br/>",
+          "Electrophysiology<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1cij8d53RdOQFOaZYAAxO8Q7waLfRddLo93yqMJc7TJE/edit?slide=id.p#slide=id.p\" rel=\"noopener\" target=\"_blank\"><span>Lecture 5</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1J2BBlKPnEZmtMW3OF3r7n3gKmxbVzxJs?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Colab 5</span></a></u>",
+          "Project 1 Phase 2 Due"
+        ],
+        [
+          "<b>March 3, 2026</b><br/>",
+          "Spike localization and drift correction<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1SFraFgs9MyyUQuTeqAXONHAACK5Xz47f7ogYBWbiQNw/edit?slide=id.g3cc4aa379f6_0_92#slide=id.g3cc4aa379f6_0_92\" rel=\"noopener\" target=\"_blank\"><span>Lecture 6</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1R2-wiVGWLNUy8Pl5BEOnWKQChbA-pjlD?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Colab 6</span></a></u>",
+          "Project 1 Phase 2 Due"
+        ],
+        [
+          "<b>March 10, 2026</b><br/>",
+          "Electrophysiology Foundation Models",
+          "<u><a href=\"https://docs.google.com/presentation/d/1ashkxpPoTfrUOEbUKuIQwC0ENtlE3QtA1UBslZOSwMI/edit?slide=id.p#slide=id.p\" rel=\"noopener\" target=\"_blank\"><span>Lecture 7</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1rALl8ttP76_LbAGTofjTYg4FTkzJna7z?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Colab 7</span></a></u>",
+          "Project 2 Phase 1 Due"
+        ],
+        [
+          "<b>March 17, 2026</b><br/>",
+          "<b>Spring Break</b><br/>",
+          "",
+          ""
+        ],
+        [
+          "<b>March 24, 2026</b><br/>",
+          "Neural Decoding<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1BW9y7GHYeesu9suV8THq-xS52DbLl8SjPdowk7VPRXs/edit?slide=id.p#slide=id.p\" rel=\"noopener\" target=\"_blank\"><span>Lecture 8</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1UXI5D3Uchumoqv49KLl9cOeehdBsnW_v?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Colab 8</span></a></u>",
+          ""
+        ],
+        [
+          "<b>March 31, 2026</b><br/>",
+          "Spiking Neural Networks/Spiking Models<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1qoHjWWXg5fXH7bpVC_Vb31gSorGime2hh0uUMATXlJk/edit?slide=id.p#slide=id.p\" rel=\"noopener\" target=\"_blank\"><span>Lecture 9</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1O75SCcZnSnFA7zb6xiyxBg_BGHg2HfiE#scrollTo=4KZVJsrDqyO0\" rel=\"noopener\" target=\"_blank\"><span>Colab 9</span></a></u>",
+          "Project 2 Phase 2 Due"
+        ],
+        [
+          "<b>April 7, 2026</b><br/>",
+          "Microscopy and Transcriptomics: Theoretical<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1kwlZvqFR-UgCTiw-2dCrDdsSmreDo23rJXlCydKNJ4Y/edit?slide=id.p#slide=id.p\" rel=\"noopener\" target=\"_blank\"><span>Lecture 10</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1O75SCcZnSnFA7zb6xiyxBg_BGHg2HfiE#scrollTo=4KZVJsrDqyO0\" rel=\"noopener\" target=\"_blank\"><span>Colab 9 (SNNs) </span></a></u>",
+          ""
+        ],
+        [
+          "<b>April 14, 2026</b><br/>",
+          "Guest Lecture: Prof. Robert Kreuger, Biomedical Data Visualization<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1bDhwNXGhzpvlHxl6t68NYJGI0lPJDxLpk6MIzz5XQe0/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 11</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/12bkBNGr6QnsIzgDHBLFkPs0KTCTfBL5O?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Colab 10/11</span>, </a></u><u><a href=\"https://docs.google.com/presentation/d/1D6_dF1seeMnYj40PC5c0mhWUpR_x6TEITVghRd8Izns/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture for InfoViz</span></a></u>",
+          ""
+        ],
+        [
+          "<b>April 21, 2026</b><br/>",
+          "Microscopy and Transcriptomics: Data Collection and Preprocessing<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1mIPwuTeO994iavAHlO4lygCRnyO0fM1voyaYwPZUAls/edit?slide=id.p#slide=id.p\" rel=\"noopener\" target=\"_blank\"><span>Lecture 12</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1gRF52pBSfczhkCrLd25A-5RBxy9_Vllf\" rel=\"noopener\" target=\"_blank\"><span>Colab 12</span></a></u>",
+          ""
+        ],
+        [
+          "<b>April 28, 2026</b>",
+          "Microscopy and Transcriptomics: Modelling<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1k_YxqMtM_sBNUYQG9k-qroq8kuIl74HWFHjwZurZPPQ/edit?slide=id.p#slide=id.p\" rel=\"noopener\" target=\"_blank\"><span>Lecture 13</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1bQN7aCKWbEP5TEsimP-MkKujuS028a_J?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Colab 13</span></a></u>",
+          ""
+        ],
+        [
+          "<b>May 5, 2026</b><br/>",
+          "Guest Lecture: Junhao (Hao) Wen<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1Eql6bO0AHsWUyPYEgMJEfYCR-rcAxA6tz8l38a01icQ/edit?slide=id.p#slide=id.p\" rel=\"noopener\" target=\"_blank\"><span>Awards and Logistics</span>, </a></u><u><a href=\"https://drive.google.com/file/d/1P2NWt9DisLkWXOOo1ZlYAP0mW6ESdktv/view?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Guest Lecture</span></a></u>",
+          ""
+        ]
+      ]
+    },
+    "reads": [
+      "<p><strong>Textbooks: </strong></p>",
+      "<ul><li><p>Dayan, P., &amp; Abbott, L. F. (2005). <em>Theoretical neuroscience: computational and mathematical modeling of neural systems</em>. MIT press. </p></li><li><p>Gerstner, W., Kistler, W. M., Naud, R., &amp; Paninski, L. (2014). <em>Neuronal dynamics: From single neurons to networks and models of cognition</em>. Cambridge University Press. <a href=\"https://neuronaldynamics.epfl.ch/online/index.html\" rel=\"noopener\" target=\"_blank\">Online link.</a></p></li><li><p>Bassett, D. S., &amp; Sporns, O. (2017). Network neuroscience. <em>Nature neuroscience</em>, <em>20</em>(3), 353-364.</p></li></ul>",
+      "<p><strong>Papers</strong></p>",
+      "<ul><li><p>Horikawa, T., Tamaki, M., Miyawaki, Y., &amp; Kamitani, Y. (2013). Neural decoding of visual imagery during sleep. <em>Science</em>, <em>340</em>(6132), 639-642.</p></li><li><p>Kriegeskorte, N., Mur, M., &amp; Bandettini, P. A. (2008). Representational similarity analysis-connecting the branches of systems neuroscience. <em>Frontiers in systems neuroscience</em>, 4.</p></li><li><p>Pachitariu, M., Steinmetz, N. A., Kadir, S. N., Carandini, M., &amp; Harris, K. D. (2016). Fast and accurate spike sorting of high-channel count probes with KiloSort. <em>Advances in neural information processing systems</em>, <em>29</em>.</p></li><li><p>Pnevmatikakis, E. A., Soudry, D., Gao, Y., Machado, T. A., Merel, J., Pfau, D., ... &amp; Paninski, L. (2016). Simultaneous denoising, deconvolution, and demixing of calcium imaging data. <em>Neuron</em>, <em>89</em>(2), 285-299.</p></li><li><p>Gabitto, M. I., Pakman, A., Bikoff, J. B., Abbott, L. F., Jessell, T. M., &amp; Paninski, L. (2016). Bayesian sparse regression analysis documents the diversity of spinal inhibitory interneurons. <em>Cell</em>, <em>165</em>(1), 220-233.</p></li><li><p>Rao, A., Barkley, D., França, G. S., &amp; Yanai, I. (2021). Exploring tissue architecture using spatial transcriptomics. <em>Nature</em>, <em>596</em>(7871), 211-220.</p></li><li><p>Stringer, C., Wang, T., Michaelos, M., &amp; Pachitariu, M. (2021). Cellpose: a generalist algorithm for cellular segmentation. <em>Nature methods</em>, <em>18</em>(1), 100-106.</p></li><li><p>Zaimi, A., Wabartha, M., Herman, V., Antonsanti, P. L., Perone, C. S., &amp; Cohen-Adad, J. (2018). AxonDeepSeg: automatic axon and myelin segmentation from microscopy data using convolutional neural networks. <em>Scientific reports</em>, <em>8</em>(1), 3816.</p></li><li><p>Balakrishnan, G., Zhao, A., Sabuncu, M. R., Guttag, J., &amp; Dalca, A. V. (2019). VoxelMorph: a learning framework for deformable medical image registration. <em>IEEE transactions on medical imaging</em>, <em>38</em>(8), 1788-1800.</p></li><li><p>Xu, T., Nenning, K. H., Schwartz, E., Hong, S. J., Vogelstein, J. T., Goulas, A., ... &amp; Langs, G. (2020). Cross-species functional alignment reveals evolutionary hierarchy within the connectome. <em>Neuroimage</em>, <em>223</em>, 117346.</p></li><li><p>Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &amp; Bethge, M. (2018). DeepLabCut: markerless pose estimation of user-defined body parts with deep learning. <em>Nature neuroscience</em>, <em>21</em>(9), 1281-1289.</p></li><li><p>Biderman, D., Whiteway, M. R., Hurwitz, C., Greenspan, N., Lee, R. S., Vishnubhotla, A., ... &amp; Paninski, L. (2023). Lightning Pose: improved animal pose estimation via semi-supervised learning, Bayesian ensembling, and cloud-native open-source tools. <em>bioRxiv</em>.</p></li><li><p>Nehme, E., Weiss, L. E., Michaeli, T., &amp; Shechtman, Y. (2018). Deep-STORM: super-resolution single-molecule microscopy by deep learning. <em>Optica</em>, <em>5</em>(4), 458-464.</p></li><li><p>Boussard, J., Varol, E., Lee, H. D., Dethe, N., &amp; Paninski, L. (2021). Three-dimensional spike localization and improved motion correction for Neuropixels recordings. <em>Advances in Neural Information Processing Systems</em>, <em>34</em>, 22095-22105.</p></li><li><p>Glaser, J. I., Benjamin, A. S., Chowdhury, R. H., Perich, M. G., Miller, L. E., &amp; Kording, K. P. (2020). Machine learning for neural decoding. <em>Eneuro</em>, <em>7</em>(4).</p></li><li><p>Pandarinath, C., O’Shea, D. J., Collins, J., Jozefowicz, R., Stavisky, S. D., Kao, J. C., ... &amp; Sussillo, D. (2018). Inferring single-trial neural population dynamics using sequential auto-encoders. <em>Nature methods</em>, <em>15</em>(10), 805-815.</p></li><li><p>Lawhern, V. J., Solon, A. J., Waytowich, N. R., Gordon, S. M., Hung, C. P., &amp; Lance, B. J. (2018). EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces. <em>Journal of neural engineering</em>, <em>15</em>(5), 056013.</p></li><li><p>Kovács, I. A., Barabási, D. L., &amp; Barabási, A. L. (2020). Uncovering the genetic blueprint of the C. elegans nervous system. <em>Proceedings of the National Academy of Sciences</em>, <em>117</em>(52), 33570-33577.</p></li><li><p>Hu, T., Leonardo, A., &amp; Chklovskii, D. (2009). Reconstruction of sparse circuits using multi-neuronal excitation (RESCUME). <em>Advances in Neural Information Processing Systems</em>, <em>22</em>.</p></li><li><p>Mishchencko, Y., Vogelstein, J. T., &amp; Paninski, L. (2011). A Bayesian approach for inferring neuronal connectivity from calcium fluorescent imaging data. <em>The Annals of Applied Statistics</em>, 1229-1261.</p></li><li><p>Betzel, R. F., &amp; Bassett, D. S. (2017). Multi-scale brain networks. <em>Neuroimage</em>, <em>160</em>, 73-83.</p></li><li><p>Yan, G., Vértes, P. E., Towlson, E. K., Chew, Y. L., Walker, D. S., Schafer, W. R., &amp; Barabási, A. L. (2017). Network control principles predict neuron function in the Caenorhabditis elegans connectome. <em>Nature</em>, <em>550</em>(7677), 519-523.</p></li><li><p>Zalesky, A., Fornito, A., &amp; Bullmore, E. T. (2010). Network-based statistic: identifying differences in brain networks. <em>Neuroimage</em>, <em>53</em>(4), 1197-1207.</p></li></ul>",
+      "<p>New York University</p>",
+      "<p>Tandon School of Engineering</p>",
+      "<p>370 Jay Street</p>",
+      "<p>Rooms 1158 (Office) 1166 (Lab)</p>",
+      "<p>Brooklyn, NY 11201</p>",
+      "<p>Contact: <a href=\"mailto:ev2240@nyu.edu\">ev2240@nyu.edu</a></p>"
+    ],
+    "syllabus": "/docs/neuroinformatics_syllabus-ywpa.pdf",
+    "previous": "/teaching/neuroinformatics-spring25",
+    "slug": "neuroinformatics-spring26",
+    "legacy": "/neuroinformatics-cs-gy-9223-spring26",
+    "label": "Neuroinformatics · Spring 2026"
+  },
+  "neuroinformatics-spring25": {
+    "title": "Neuroinformatics (CS-GY 9223 / CS-UY 3943)",
+    "term": "Spring 2025",
+    "summary": [
+      "<p><strong>Chaos Circuitry</strong></p>",
+      "<p><strong>This is a Ph.D.-level topics course covering topics on modeling, signal processing as well as database management of neuroscience data.  Students from statistics, neuroscience, and engineering are all welcome to attend. Neuroscience background is not required but self-motivated interest in neuroscience is highly recommended.</strong></p>",
+      "<p><strong>Advanced undergraduates may enroll upon permission from instructor.</strong></p>",
+      "<p><strong>A link to the previous iteration of this course is </strong><a href=\"/teaching/neuroinformatics-spring24\"><strong>here</strong></a><strong>.</strong></p>"
+    ],
+    "overview": [
+      "<p><strong>Course Team :</strong></p>",
+      "<p><strong>TA:</strong> Rishabh Raj</p>",
+      "<p>Email: <a href=\"mailto:rr4574@nyu.edu\"><span>rr4574@nyu.edu</span></a></p>",
+      "<p>Office Hours: Mondays 2-3 pm  on <a href=\"https://nyu.zoom.us/j/97342291160\" rel=\"noopener\" target=\"_blank\">Zoom</a>.</p>",
+      "<p>Photo credit : <em>Yusha Sun and Xin Wang, University of Pennsylvania </em>[<a href=\"https://braininitiative.nih.gov/news-events/brain-initiative-photo-and-video-contest\" rel=\"noopener\" target=\"_blank\">link</a>]</p>",
+      "<p><strong>TA:</strong> Malhar Patel</p>",
+      "<p>Email: <a href=\"mailto:mkp6112@nyu.edu\"><span>mkp6112@nyu.edu</span></a></p>",
+      "<p>Office Hours: Fridays 1-2 pm on <a href=\"https://nyu.zoom.us/j/97342291160\" rel=\"noopener\" target=\"_blank\">Zoom</a>.</p>",
+      "<p><strong>Chaos Circuitry</strong></p>",
+      "<p><strong>This is a Ph.D.-level topics course covering topics on modeling, signal processing as well as database management of neuroscience data.  Students from statistics, neuroscience, and engineering are all welcome to attend. Neuroscience background is not required but self-motivated interest in neuroscience is highly recommended.</strong></p>",
+      "<p><strong>Advanced undergraduates may enroll upon permission from instructor.</strong></p>",
+      "<p><strong>A link to the previous iteration of this course is </strong><a href=\"/teaching/neuroinformatics-spring24\"><strong>here</strong></a><strong>.</strong></p>",
+      "<p><strong>Course information:</strong> </p>",
+      "<p>Time: Tuesdays 2pm-4:30pm </p>",
+      "<p>Place: 6 MetroTech Center Room 775 B </p>",
+      "<p>Slack channel:  <a href=\"https://neuroinfoclass.slack.com\" rel=\"noopener\" target=\"_blank\">neuroinfoclass.slack.com</a></p>",
+      "<p><strong>Instructor:</strong> Prof. Erdem Varol </p>",
+      "<p>Email: <a href=\"mailto:ev2240@nyu.edu?\">ev2240@nyu.edu</a> </p>",
+      "<p>Office Hours: On <a href=\"https://nyu.zoom.us/my/evarol\" rel=\"noopener\" target=\"_blank\">Zoom</a>,15 min <a href=\"https://calendar.app.google/Pkg8P79Lh762aKiy8\" rel=\"noopener\" target=\"_blank\">appointments</a>.</p>",
+      "<p><strong>Course goal:</strong> We will introduce a number of advanced machine learning and computer vision tools relevant in neuroscience. Each technique will be illustrated via application to problems in neuroscience. We will cover topics including 1) computational models of the nervous system function and structure across several species, 2) development of computer vision and signal processing tools for analyzing neuroscience data and 3) tools and databases for management and sharing of large scale neural data. </p>",
+      "<p><strong>Prerequisites:</strong> A good working knowledge of basic statistical concepts such as likelihood, Bayes' rule, Gaussian random vectors and linear-algebraic concepts such as regression and principal components analysis. Coding experience in Python, Matlab and/or R is necessary for course projects.</p>",
+      "<p><strong>Evaluation:</strong> Final grades will be based on class participation (20%), a midterm project (30%) as well as a final project (50%). The projects can involve either the implementation and justification of a novel analysis technique, or a standard analysis applied to a novel data set. Students can work in pairs or alone (paired team projects have to be twice as comprehensive).</p>",
+      "<p><strong>Syllabus</strong>: <a href=\"/docs/neuroinformatics_syllabus.pdf\">Link</a></p>",
+      "<p><a href=\"https://docs.google.com/spreadsheets/d/1PYbgSs-TVSD16Ih4lJYbXWokjFjwTSLmtIx4UtuWndk/edit?gid=1769860666#gid=1769860666\" rel=\"noopener\" target=\"_blank\"><strong>Class Supplementary Sheet</strong> </a></p>",
+      "<p>Summer‘25 Research Opportunities – Neuroinformatics Lab (NYU) - <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfDH4b_kah11ZvMNVF6Oc6pgPIrqR8mr_fylaYiBjNMzHbXeA/viewform?usp=sharing\" rel=\"noopener\" target=\"_blank\">FORM</a></p>"
+    ],
+    "schedule": {
+      "headers": [
+        "Date",
+        "Topic",
+        "Reading",
+        "Materials",
+        "Assignments"
+      ],
+      "rows": [
+        [
+          "<b>January 21, 2025</b><br/>",
+          "Intro and survey of topics<br/>",
+          "<u><a href=\"https://www.nature.com/articles/nrg3833\" rel=\"noopener\" target=\"_blank\"><span>Stegle '15</span></a>,</u> <u><a href=\"https://www.biorxiv.org/content/early/2017/10/02/196949\" rel=\"noopener\" target=\"_blank\"><span>Paninski '18</span></a>,</u> <a href=\"https://www.biorxiv.org/content/10.1101/2022.05.09.491042v3\" rel=\"noopener\" target=\"_blank\"><span><u>IBL '22</u></span></a><br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1U3PlnNo9BKDk6asEAwRSCqp2EwG7tdcA3IlAt73sMQo/edit#slide=id.p\" rel=\"noopener\" target=\"_blank\"><span>Lecture 1</span></a><u></u></u>",
+          ""
+        ],
+        [
+          "<b>January 28, 2025</b><br/>",
+          "Neuroimaging (Technologies)<br/>",
+          "<u><a href=\"https://www.sciencedirect.com/science/article/pii/S007965651830013X\" rel=\"noopener\" target=\"_blank\"><span>Ladd '18</span></a>,</u> <a href=\"https://www.mdpi.com/1424-8220/22/15/5865\" rel=\"noopener\" target=\"_blank\"><span><u>Li '22</u></span></a><br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1a2MsbN53lqGrL7upH4ZFkEsZ_7QdWTjsmJunit-IJxQ/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 2</span></a><u></u></u>",
+          ""
+        ],
+        [
+          "<b>February 4, 2025</b><br/>",
+          "Neuroimaging (Analysis pipelines)<br/>",
+          "<u><a href=\"http://www.stat.columbia.edu/~liam/teaching/neurostat-fall22/papers/EM/Lewicki-Network-98_1.pdf\" rel=\"noopener\" target=\"_blank\"><span>Lewicki '98</span></a>,</u> <a href=\"https://www.science.org/doi/10.1126/science.abf4588\" rel=\"noopener\" target=\"_blank\"><span><u>Pachitariu '16,</u> <u>Steinmetz '21</u></span></a><br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1kXrXON1eIL6Cqdun2nVQlTYeJmqXvZONXD_v9exejII/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 3</span></a><u> | <u><a href=\"https://colab.research.google.com/drive/1SQwRk5YsflF2b2uSRNkkxOxQMwYAOI50?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>fMRI workshop</span></a><u> </u></u></u></u>",
+          ""
+        ],
+        [
+          "<b>February 11, 2025<br/></b>",
+          "Machine learning for Neuroimaging<br/>",
+          "<u><a href=\"https://www.spiedigitallibrary.org/journals/neurophotonics/volume-9/issue-S1/013001/Neurophotonic-Tools-for-Microscopic-Measurements-and-Manipulation-Status-Report/10.1117/1.NPh.9.S1.013001.full?SSO=1\" rel=\"noopener\" target=\"_blank\"><span>Abdelfattah '22,</span></a></u><a href=\"https://www.cell.com/neuron/fulltext/S0896-6273(15)01084-3#%20\" rel=\"noopener\" target=\"_blank\"><span> <u>Pnevmatikakis '16</u></span></a>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1gV3CE0hKw_U7z9eK1CkSOyQYUi-Bmot8mrJuNi975Jc/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 4</span></a><u> | <u><a href=\"https://colab.research.google.com/drive/1RyC_fjcItRqZV6Y547rghs4xkXYEOke1\" rel=\"noopener\" target=\"_blank\"><span>Colab 1</span></a><u> , <u><a href=\"https://colab.research.google.com/drive/1AQZmMEsdvw_1lVAkopx1sGWVn52Ph5zZ?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Colab 2</span></a><u> </u></u></u></u></u></u>",
+          ""
+        ],
+        [
+          "<b>February 18, 2025</b><br/>",
+          "<b>LEGISLATIVE DAY (No Class)</b>",
+          "",
+          "<u><a href=\"https://nyu.zoom.us/rec/share/SFs57ybRTgniM6rPnJq5qGFrfIY4AjfGF-no3hVzP8humMQ9y5D7D4GDy_UN6i2U.tY2MsvcPzOWnY_Sb\" rel=\"noopener\" target=\"_blank\"><span>Journal Club on Graph-based networks</span></a></u>",
+          ""
+        ],
+        [
+          "<b>February 25, 2025</b><br/>",
+          "Electrophysiology<br/>",
+          "<u><a href=\"https://www.eneuro.org/content/7/4/ENEURO.0506-19.2020\" rel=\"noopener\" target=\"_blank\"><span>Glaser' 20</span></a>,</u> <a href=\"https://www.biorxiv.org/content/10.1101/2023.09.21.558869v1.abstract\" rel=\"noopener\" target=\"_blank\"><span><u>Zhang' 23</u></span></a><br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1WecJ_ZXWxyrOngfA-ss_udlCFY-vU15oHLBdYkz-s9w/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 5</span></a></u> | <u><a href=\"https://colab.research.google.com/drive/1wYFfJtwG03EEpim8dq47AG8hOXnBoAt6?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Allen Data Exploration</span></a></u>",
+          "Vizualisation Report Due 11:59 PM"
+        ],
+        [
+          "<b>March 4, 2025</b><br/>",
+          "Spike localization and drift correction<br/>",
+          "<u><a href=\"https://www.sciencedirect.com/science/article/pii/S0896627320301033\" rel=\"noopener\" target=\"_blank\"><span>Condylis '22</span></a></u>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1pl5LAQ7db8TTqOUILPYKGoclPad1N5ok7LOxD7x5X3g/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 6</span></a></u>",
+          "Background and Baseline Methods Due 11:59 PM"
+        ],
+        [
+          "<b>March 11, 2025</b><br/>",
+          "Neural Decoding: Guest lecture by <u><a href=\"https://colehurwitz.github.io/\" rel=\"noopener\" target=\"_blank\"><span>Cole Hurwitz</span></a></u>",
+          "<u><a href=\"https://ieeexplore.ieee.org/abstract/document/6522524\" rel=\"noopener\" target=\"_blank\"><span>Sotiras '13,</span></a></u><a href=\"https://www.biorxiv.org/content/10.1101/2023.10.24.563768v1\" rel=\"noopener\" target=\"_blank\"><span> <u>Windolf '23</u></span></a>",
+          "<u><a href=\"https://urldefense.proofpoint.com/v2/url?u=https-3A__nyu.zoom.us_rec_share_MtJUGKZrzJ4Kvw9V1plGWD4JsMymikUpt1LIEFKrONLp66bzYUdA5y2XcOD25wc.T2SVX5AvoOgGc7bk&amp;d=DwMFAw&amp;c=slrrB7dE8n7gBJbeO0g-IQ&amp;r=Ne4Cit5K1B0teTzZfVLjmw&amp;m=8EG7qX6oZAg9oZMprx9QrhLgLWXkZStjLwFZFy6JjrpLGy_FtgPXwZwaP94BGaU9&amp;s=V9RZJYdcncUb8Wuz1mVPCVzuiLm4VphxgWGdpRh3Wes&amp;e=\" rel=\"noopener\" target=\"_blank\"><span>Lecture Recording</span></a></u> | <u><a href=\"https://docs.google.com/presentation/d/1S3o4QMO1jnK5inZ8HvbaZQkLQo5bgKl_ygrx7t5MxHw/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\">Lecture Slides<span></span></a></u>",
+          "Baseline Results due 14 March 11:59 PM"
+        ],
+        [
+          "<b>March 18, 2025</b><br/>",
+          "<b>Midterm project presentations</b><br/>",
+          "<br/><b>Write-up due 21 March 11:59 PM</b>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1U7prwLVNd6c0LMwx6o5Tsg71eb-jTb5srMakcxzOdk0/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Announcements | </span></a><a href=\"https://nyu.zoom.us/rec/share/kBVCSNlExpZCYhJaGDDZrhlAN2uHfK-_N1X5ti-fDHi135XcutL5zNU2XR-TASOe.ZMNRjdu_jnRxTKWF?startTime=1742321835000\" rel=\"noopener\" target=\"_blank\"><span>Presentations Recording</span></a></u>",
+          ""
+        ],
+        [
+          "<b>March 25, 2025</b><br/>",
+          "<b>SPRING BREAK (No class)</b><br/>",
+          "",
+          "",
+          ""
+        ],
+        [
+          "<b>April 1, 2025</b><br/>",
+          "Microscopy and Transcriptome: Theoritical<br/>",
+          "<u><a href=\"https://proceedings.neurips.cc/paper/2021/hash/b950ea26ca12daae142bd74dba4427c8-Abstract.htmlCB0IC\" rel=\"noopener\" target=\"_blank\"><span>Boussard '21</span></a>,</u> <a href=\"https://www.nature.com/articles/s41592-023-01966-0\" rel=\"noopener\" target=\"_blank\"><span><u>Saguy '23</u></span></a><br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1aNVnAw2u3nw1WPvb9p1l4l6z34irjTWat63iFcV466Q/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 8 </span></a></u>",
+          ""
+        ],
+        [
+          "<b>April 8, 2025</b><br/>",
+          "Microscopy and Transcroptomics: Data Collection and Preprocessing<br/>",
+          "<a href=\"https://www.nature.com/articles/s41586-022-04915-7\" rel=\"noopener\" target=\"_blank\"><span><u>Bugeon '22</u></span></a><br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1QsgdIJsssMBAMN3YvUFkj6QJ7k2lcH-GiBABoAp6R-c/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 9</span> </a></u> | <u><a href=\"https://docs.google.com/presentation/d/14k2VWyOcJ3yaGfvvV6FG2iBcU6UYL7BezC6lreJBZnw/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>DeepSTORM</span></a></u>",
+          "Results from your method Due 11:59 PM, Friday 11th April"
+        ],
+        [
+          "<b>April 15, 2025</b>",
+          "Microscopy and Transcriptomics: Modelling<br/>",
+          "<a href=\"https://www.nature.com/articles/nn.4502\" rel=\"noopener\" target=\"_blank\"><u>Bassett '17</u></a><br/>",
+          "<a href=\"https://nyu.zoom.us/rec/share/sExjZRNF0E64yJ9OFVGcp3pwSp7ntpm-dXZ5Dri5Mdt3nvSxP0V8qZCto3w1sZsW.PGNwwMdPN4UV-y6U\" rel=\"noopener\" target=\"_blank\"><u>Lecture recording</u></a><br/>",
+          ""
+        ],
+        [
+          "<b>April 22, 2025</b><br/>",
+          "Transcriptomics & Connectomics: Modelling<br/>",
+          "<a href=\"https://www.biorxiv.org/content/10.1101/2022.09.14.507926v1\" rel=\"noopener\" target=\"_blank\"><u>Triplett '23</u></a><br/>",
+          "",
+          "Finetuned results from your method with clean code on git Due 22 March 11:59 PM"
+        ],
+        [
+          "<b>April 29, 2025</b><br/>",
+          "<b>Final project presentations</b><br/>",
+          "<b>Write-up Due 9 May 11:59 PM</b>",
+          "",
+          ""
+        ]
+      ]
+    },
+    "reads": [
+      "<p><strong>Textbooks: </strong></p>",
+      "<ul><li><p>Dayan, P., &amp; Abbott, L. F. (2005). <em>Theoretical neuroscience: computational and mathematical modeling of neural systems</em>. MIT press. </p></li><li><p>Gerstner, W., Kistler, W. M., Naud, R., &amp; Paninski, L. (2014). <em>Neuronal dynamics: From single neurons to networks and models of cognition</em>. Cambridge University Press. <a href=\"https://neuronaldynamics.epfl.ch/online/index.html\" rel=\"noopener\" target=\"_blank\">Online link.</a></p></li><li><p>Bassett, D. S., &amp; Sporns, O. (2017). Network neuroscience. <em>Nature neuroscience</em>, <em>20</em>(3), 353-364.</p></li></ul>",
+      "<p><strong>Papers</strong></p>",
+      "<ul><li><p>Horikawa, T., Tamaki, M., Miyawaki, Y., &amp; Kamitani, Y. (2013). Neural decoding of visual imagery during sleep. <em>Science</em>, <em>340</em>(6132), 639-642.</p></li><li><p>Kriegeskorte, N., Mur, M., &amp; Bandettini, P. A. (2008). Representational similarity analysis-connecting the branches of systems neuroscience. <em>Frontiers in systems neuroscience</em>, 4.</p></li><li><p>Pachitariu, M., Steinmetz, N. A., Kadir, S. N., Carandini, M., &amp; Harris, K. D. (2016). Fast and accurate spike sorting of high-channel count probes with KiloSort. <em>Advances in neural information processing systems</em>, <em>29</em>.</p></li><li><p>Pnevmatikakis, E. A., Soudry, D., Gao, Y., Machado, T. A., Merel, J., Pfau, D., ... &amp; Paninski, L. (2016). Simultaneous denoising, deconvolution, and demixing of calcium imaging data. <em>Neuron</em>, <em>89</em>(2), 285-299.</p></li><li><p>Gabitto, M. I., Pakman, A., Bikoff, J. B., Abbott, L. F., Jessell, T. M., &amp; Paninski, L. (2016). Bayesian sparse regression analysis documents the diversity of spinal inhibitory interneurons. <em>Cell</em>, <em>165</em>(1), 220-233.</p></li><li><p>Rao, A., Barkley, D., França, G. S., &amp; Yanai, I. (2021). Exploring tissue architecture using spatial transcriptomics. <em>Nature</em>, <em>596</em>(7871), 211-220.</p></li><li><p>Stringer, C., Wang, T., Michaelos, M., &amp; Pachitariu, M. (2021). Cellpose: a generalist algorithm for cellular segmentation. <em>Nature methods</em>, <em>18</em>(1), 100-106.</p></li><li><p>Zaimi, A., Wabartha, M., Herman, V., Antonsanti, P. L., Perone, C. S., &amp; Cohen-Adad, J. (2018). AxonDeepSeg: automatic axon and myelin segmentation from microscopy data using convolutional neural networks. <em>Scientific reports</em>, <em>8</em>(1), 3816.</p></li><li><p>Balakrishnan, G., Zhao, A., Sabuncu, M. R., Guttag, J., &amp; Dalca, A. V. (2019). VoxelMorph: a learning framework for deformable medical image registration. <em>IEEE transactions on medical imaging</em>, <em>38</em>(8), 1788-1800.</p></li><li><p>Xu, T., Nenning, K. H., Schwartz, E., Hong, S. J., Vogelstein, J. T., Goulas, A., ... &amp; Langs, G. (2020). Cross-species functional alignment reveals evolutionary hierarchy within the connectome. <em>Neuroimage</em>, <em>223</em>, 117346.</p></li><li><p>Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &amp; Bethge, M. (2018). DeepLabCut: markerless pose estimation of user-defined body parts with deep learning. <em>Nature neuroscience</em>, <em>21</em>(9), 1281-1289.</p></li><li><p>Biderman, D., Whiteway, M. R., Hurwitz, C., Greenspan, N., Lee, R. S., Vishnubhotla, A., ... &amp; Paninski, L. (2023). Lightning Pose: improved animal pose estimation via semi-supervised learning, Bayesian ensembling, and cloud-native open-source tools. <em>bioRxiv</em>.</p></li><li><p>Nehme, E., Weiss, L. E., Michaeli, T., &amp; Shechtman, Y. (2018). Deep-STORM: super-resolution single-molecule microscopy by deep learning. <em>Optica</em>, <em>5</em>(4), 458-464.</p></li><li><p>Boussard, J., Varol, E., Lee, H. D., Dethe, N., &amp; Paninski, L. (2021). Three-dimensional spike localization and improved motion correction for Neuropixels recordings. <em>Advances in Neural Information Processing Systems</em>, <em>34</em>, 22095-22105.</p></li><li><p>Glaser, J. I., Benjamin, A. S., Chowdhury, R. H., Perich, M. G., Miller, L. E., &amp; Kording, K. P. (2020). Machine learning for neural decoding. <em>Eneuro</em>, <em>7</em>(4).</p></li><li><p>Pandarinath, C., O’Shea, D. J., Collins, J., Jozefowicz, R., Stavisky, S. D., Kao, J. C., ... &amp; Sussillo, D. (2018). Inferring single-trial neural population dynamics using sequential auto-encoders. <em>Nature methods</em>, <em>15</em>(10), 805-815.</p></li><li><p>Lawhern, V. J., Solon, A. J., Waytowich, N. R., Gordon, S. M., Hung, C. P., &amp; Lance, B. J. (2018). EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces. <em>Journal of neural engineering</em>, <em>15</em>(5), 056013.</p></li><li><p>Kovács, I. A., Barabási, D. L., &amp; Barabási, A. L. (2020). Uncovering the genetic blueprint of the C. elegans nervous system. <em>Proceedings of the National Academy of Sciences</em>, <em>117</em>(52), 33570-33577.</p></li><li><p>Hu, T., Leonardo, A., &amp; Chklovskii, D. (2009). Reconstruction of sparse circuits using multi-neuronal excitation (RESCUME). <em>Advances in Neural Information Processing Systems</em>, <em>22</em>.</p></li><li><p>Mishchencko, Y., Vogelstein, J. T., &amp; Paninski, L. (2011). A Bayesian approach for inferring neuronal connectivity from calcium fluorescent imaging data. <em>The Annals of Applied Statistics</em>, 1229-1261.</p></li><li><p>Betzel, R. F., &amp; Bassett, D. S. (2017). Multi-scale brain networks. <em>Neuroimage</em>, <em>160</em>, 73-83.</p></li><li><p>Yan, G., Vértes, P. E., Towlson, E. K., Chew, Y. L., Walker, D. S., Schafer, W. R., &amp; Barabási, A. L. (2017). Network control principles predict neuron function in the Caenorhabditis elegans connectome. <em>Nature</em>, <em>550</em>(7677), 519-523.</p></li><li><p>Zalesky, A., Fornito, A., &amp; Bullmore, E. T. (2010). Network-based statistic: identifying differences in brain networks. <em>Neuroimage</em>, <em>53</em>(4), 1197-1207.</p></li></ul>",
+      "<p>New York University</p>",
+      "<p>Tandon School of Engineering</p>",
+      "<p>370 Jay Street</p>",
+      "<p>Rooms 1158 (Office) 1166 (Lab)</p>",
+      "<p>Brooklyn, NY 11201</p>",
+      "<p>Contact: <a href=\"mailto:ev2240@nyu.edu\">ev2240@nyu.edu</a></p>"
+    ],
+    "syllabus": "/docs/neuroinformatics_syllabus.pdf",
+    "previous": "/teaching/neuroinformatics-spring24",
+    "slug": "neuroinformatics-spring25",
+    "legacy": "/neuroinformatics-cs-gy-9223",
+    "label": "Neuroinformatics · Spring 2025"
+  },
+  "neuroinformatics-spring24": {
+    "title": "Neuroinformatics (CS-GY 9223 / CS-UY 3943)",
+    "term": "Spring 2024",
+    "summary": [
+      "<p><strong>This is a Ph.D.-level topics course covering topics on modeling, signal processing as well as database management of neuroscience data.  Students from statistics, neuroscience, and engineering are all welcome to attend. Neuroscience background is not required but self-motivated interest in neuroscience is highly recommended.</strong></p>",
+      "<p><strong>Advanced undergraduates may enroll upon permission from instructor.</strong></p>"
+    ],
+    "overview": [
+      "<p><strong>This is a Ph.D.-level topics course covering topics on modeling, signal processing as well as database management of neuroscience data.  Students from statistics, neuroscience, and engineering are all welcome to attend. Neuroscience background is not required but self-motivated interest in neuroscience is highly recommended.</strong></p>",
+      "<p><strong>Advanced undergraduates may enroll upon permission from instructor.</strong></p>",
+      "<p>TA: Tianxiao He <br/>Email: th3129@nyu.edu<br/>Office Hours: Friday 1-3pm @ 370 Jay Street, Room 1161</p>",
+      "<p><strong>Course goal:</strong> We will introduce a number of advanced machine learning and computer vision tools relevant in neuroscience. Each technique will be illustrated via application to problems in neuroscience. We will cover topics including 1) computational models of the nervous system function and structure across several species, 2) development of computer vision and signal processing tools for analyzing neuroscience data and 3) tools and databases for management and sharing of large scale neural data. </p>",
+      "<p><strong>Prerequisites:</strong> A good working knowledge of basic statistical concepts such as likelihood, Bayes' rule, Gaussian random vectors and linear-algebraic concepts such as regression and principal components analysis. Coding experience in Python, Matlab and/or R is necessary for course projects.</p>",
+      "<p><strong>Evaluation:</strong> Final grades will be based on class participation (20%), a midterm project (30%) as well as a final project (50%). The projects can involve either the implementation and justification of a novel analysis technique, or a standard analysis applied to a novel data set. Students can work in pairs or alone (paired team projects have to be twice as comprehensive).</p>"
+    ],
+    "schedule": {
+      "headers": [
+        "Date",
+        "Topic",
+        "Reading",
+        "Materials<br/>"
+      ],
+      "rows": [
+        [
+          "<b>January 23, 2024</b><br/>",
+          "Intro and survey of topics<br/>",
+          "<u><a href=\"https://www.nature.com/articles/nrg3833\" rel=\"noopener\" target=\"_blank\"><span>Stegle '15</span></a>,</u> <u><a href=\"https://www.biorxiv.org/content/early/2017/10/02/196949\" rel=\"noopener\" target=\"_blank\"><span>Paninski '18</span></a>,</u> <a href=\"https://www.biorxiv.org/content/10.1101/2022.05.09.491042v3\" rel=\"noopener\" target=\"_blank\"><span><u>IBL '22</u></span></a><br/>",
+          "<a href=\"https://docs.google.com/presentation/d/16U_mfj9wJdBCqJS4jHD1Z8fyOqwdgjU4sEG1zGR4MZM/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><u><span>Lecture 1 slides (1/23/2024)</span></u></a>"
+        ],
+        [
+          "<b>January 30, 2024</b><br/>",
+          "Macro-scale brain imaging: MRI, fMRI, EEG, fNIRS<br/>",
+          "<u><a href=\"https://www.sciencedirect.com/science/article/pii/S007965651830013X\" rel=\"noopener\" target=\"_blank\"><span>Ladd '18</span></a>,</u> <a href=\"https://www.mdpi.com/1424-8220/22/15/5865\" rel=\"noopener\" target=\"_blank\"><span><u>Li '22</u></span></a><br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1Xx3FHGN7_ijHEKF3wrry7X4PpItOxCekeOPAmBM7gSY/edit?usp=sharin\" rel=\"noopener\" target=\"_blank\"><span>Lecture 2 slides (1/30/2024)</span></a>,</u><u><a href=\"https://youtu.be/djAxjtN_7VE?si=txZuB7J_YDJ_w8rO\" rel=\"noopener\" target=\"_blank\"><span>MRI Video</span></a>,</u> <a href=\"https://www.youtube.com/watch?v=twsV81UFFcE\" rel=\"noopener\" target=\"_blank\"><span><u>DTI Video</u></span></a><br/>"
+        ],
+        [
+          "<b>February 6, 2024</b><br/>",
+          "Micro-scale brain imaging I: electrophysiology, voltage imaging<br/>",
+          "<u><a href=\"http://www.stat.columbia.edu/~liam/teaching/neurostat-fall22/papers/EM/Lewicki-Network-98_1.pdf\" rel=\"noopener\" target=\"_blank\"><span>Lewicki '98</span></a>,</u> <a href=\"https://www.science.org/doi/10.1126/science.abf4588\" rel=\"noopener\" target=\"_blank\"><span><u>Pachitariu '16,</u> <u>Steinmetz '21</u></span></a><br/>",
+          "<a href=\"https://docs.google.com/presentation/d/12CUcCqKEEBYqfYn0JsshyjItdl6PM4Ip7ypWE32dqGU/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><u><span>Lecture 3 slides (2/6/2024)</span></u></a>"
+        ],
+        [
+          "<b>February 13, 2024<br/></b>",
+          "Micro-scale brain imaging II: single cell resolution functional imaging, microscopy techniques<br/>",
+          "<u><a href=\"https://www.spiedigitallibrary.org/journals/neurophotonics/volume-9/issue-S1/013001/Neurophotonic-Tools-for-Microscopic-Measurements-and-Manipulation-Status-Report/10.1117/1.NPh.9.S1.013001.full?SSO=1\" rel=\"noopener\" target=\"_blank\"><span>Abdelfattah '22,</span></a></u><a href=\"https://www.cell.com/neuron/fulltext/S0896-6273(15)01084-3#%20\" rel=\"noopener\" target=\"_blank\"><span> <u>Pnevmatikakis '16</u></span></a>",
+          "<a href=\"https://docs.google.com/presentation/d/1i1_y6gduS0KObMP-r4TPaVsuq9dtH4W0u5L-2zJgkRY/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><u><span>Lecture 4 slides (2/13/2024)</span></u></a>"
+        ],
+        [
+          "<b>February 20, 2024</b><br/>",
+          "Molecular-scale imaging & genomics:  spatial transcriptomics, scRNA-seq<br/>",
+          "<u><a href=\"https://www.sciencedirect.com/science/article/pii/S0896627320301033\" rel=\"noopener\" target=\"_blank\"><span>Condylis '22</span></a>,</u> <a href=\"https://www.nature.com/articles/s41586-022-04915-7\" rel=\"noopener\" target=\"_blank\"><span><u>Bugeon '22</u></span></a><br/>",
+          "<a href=\"https://docs.google.com/presentation/d/1dhLpfaw0SD00n3espiR8n2DTSh5VXVlyBfNHhuBfSPc/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><u><span>Lecture 5 slides (2/20/2024)</span></u></a>"
+        ],
+        [
+          "<b>February 27, 2024</b><br/>",
+          "Biomedical image segmentation<br/>",
+          "<a href=\"https://www.nature.com/articles/s41592-020-01018-x\" rel=\"noopener\" target=\"_blank\"><u>Stringer '20</u></a><br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1kl9zGAqN22jm9sIeoX-EOE8lVobT6Dfzuq_IzjIVoPI/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 6 slides (2/27/2024)</span></a></u>"
+        ],
+        [
+          "<b>March 5, 2024</b><br/>",
+          "Biomedical image registration<br/>",
+          "<u><a href=\"https://ieeexplore.ieee.org/abstract/document/6522524\" rel=\"noopener\" target=\"_blank\"><span>Sotiras '13,</span></a></u><a href=\"https://www.biorxiv.org/content/10.1101/2023.10.24.563768v1\" rel=\"noopener\" target=\"_blank\"><span> <u>Windolf '23</u></span></a>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1dXUI0mgSFRpqHLMmqzWakkyvvdYGKDFdlvivDOkDlI0/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 7 slides (3/5/2024)</span></a></u>"
+        ],
+        [
+          "<b>March 12, 2024</b><br/>",
+          "<b>Midterm project presentations</b><br/>",
+          "<br/><b>Write-up due March 15</b>",
+          ""
+        ],
+        [
+          "<b>March 19, 2024</b><br/>",
+          "<b>SPRING BREAK (No class)</b><br/>",
+          "",
+          ""
+        ],
+        [
+          "<b>March 26, 2024</b><br/>",
+          "Pose estimation, behavioral video analysis<br/>",
+          "<u><a href=\"https://www.nature.com/articles/s41593-018-0209-y\" rel=\"noopener\" target=\"_blank\"><span>Mathis '18</span></a>,</u>  <a href=\"https://www.biorxiv.org/content/10.1101/2023.04.28.538703v1\" rel=\"noopener\" target=\"_blank\"><span><u>Biderman '23</u></span></a><br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1RIwK7xho_XmKJDcfiW2nzC_ZyPnKsn5zA0259nMbtSg/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 8 Slides (3/26/2024) (Guest lecture: Amin Nejatbakhsh)</span></a></u>"
+        ],
+        [
+          "<b>April 2, 2024</b><br/>",
+          "Super-resolution, signal localization<br/>",
+          "<u><a href=\"https://proceedings.neurips.cc/paper/2021/hash/b950ea26ca12daae142bd74dba4427c8-Abstract.htmlCB0IC\" rel=\"noopener\" target=\"_blank\"><span>Boussard '21</span></a>,</u> <a href=\"https://www.nature.com/articles/s41592-023-01966-0\" rel=\"noopener\" target=\"_blank\"><span><u>Saguy '23</u></span></a><br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1Yc7dUpqidVl6T_xbX1CPTy2S0qwQWIdr_3jx6GIFmy0/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 9 slides (4/2/2024),</span></a></u> <span><a href=\"https://youtu.be/gg6LhGs-54c?si=4wCGAWr9AULw_17k\" rel=\"noopener\" target=\"_blank\"><u><span>Video</span></u></a></span><br/>"
+        ],
+        [
+          "<b>April 9, 2024</b><br/>",
+          "Neural decoding<br/>",
+          "<u><a href=\"https://www.eneuro.org/content/7/4/ENEURO.0506-19.2020\" rel=\"noopener\" target=\"_blank\"><span>Glaser' 20</span></a>,</u> <a href=\"https://www.biorxiv.org/content/10.1101/2023.09.21.558869v1.abstract\" rel=\"noopener\" target=\"_blank\"><span><u>Zhang' 23</u></span></a><br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1xqZvgpt6SRL4jDW77oeosMsTtYTJtll-l6lqNPolzAg/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 10 Slides (4/9/2024) (TA lecture: Tianxiao He)</span></a></u>"
+        ],
+        [
+          "<b>April 16, 2024</b>",
+          "Network analysis<br/>",
+          "<a href=\"https://www.nature.com/articles/nn.4502\" rel=\"noopener\" target=\"_blank\"><u>Bassett '17</u></a><br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1zPvxa-lwnTJdIRrXtFXL8FmubwSZX7gEH3Lap6Srez0/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 11 slides (4/16/2024),</span></a></u> <u><a href=\"https://youtu.be/1K1f8TJf8ic?si=lkPX8HrKOhIbhqsv\" rel=\"noopener\" target=\"_blank\"><span>Video</span></a></u><br/>"
+        ],
+        [
+          "<b>April 23, 2024</b><br/>",
+          "Connectivity mapping<br/>",
+          "<a href=\"https://www.biorxiv.org/content/10.1101/2022.09.14.507926v1\" rel=\"noopener\" target=\"_blank\"><u>Triplett '23</u></a><br/>",
+          "<u><a href=\"http://www.stat.columbia.edu/~liam/teaching/neurostat-fall22/opto-mapping-lecture-2022.pdf\" rel=\"noopener\" target=\"_blank\"><span>Old slides</span></a></u>"
+        ],
+        [
+          "<b>April 30, 2024</b><br/>",
+          "<b>Final project presentations</b><br/>",
+          "<b>Write-up due May 8</b>",
+          ""
+        ]
+      ]
+    },
+    "reads": [
+      "<p><strong>Textbooks: </strong></p>",
+      "<ul><li><p>Dayan, P., &amp; Abbott, L. F. (2005). <em>Theoretical neuroscience: computational and mathematical modeling of neural systems</em>. MIT press. </p></li><li><p>Gerstner, W., Kistler, W. M., Naud, R., &amp; Paninski, L. (2014). <em>Neuronal dynamics: From single neurons to networks and models of cognition</em>. Cambridge University Press. <a href=\"https://neuronaldynamics.epfl.ch/online/index.html\" rel=\"noopener\" target=\"_blank\">Online link.</a></p></li><li><p>Bassett, D. S., &amp; Sporns, O. (2017). Network neuroscience. <em>Nature neuroscience</em>, <em>20</em>(3), 353-364.</p></li></ul>",
+      "<p><strong>Papers</strong></p>",
+      "<ul><li><p>Horikawa, T., Tamaki, M., Miyawaki, Y., &amp; Kamitani, Y. (2013). Neural decoding of visual imagery during sleep. <em>Science</em>, <em>340</em>(6132), 639-642.</p></li><li><p>Kriegeskorte, N., Mur, M., &amp; Bandettini, P. A. (2008). Representational similarity analysis-connecting the branches of systems neuroscience. <em>Frontiers in systems neuroscience</em>, 4.</p></li><li><p>Pachitariu, M., Steinmetz, N. A., Kadir, S. N., Carandini, M., &amp; Harris, K. D. (2016). Fast and accurate spike sorting of high-channel count probes with KiloSort. <em>Advances in neural information processing systems</em>, <em>29</em>.</p></li><li><p>Pnevmatikakis, E. A., Soudry, D., Gao, Y., Machado, T. A., Merel, J., Pfau, D., ... &amp; Paninski, L. (2016). Simultaneous denoising, deconvolution, and demixing of calcium imaging data. <em>Neuron</em>, <em>89</em>(2), 285-299.</p></li><li><p>Gabitto, M. I., Pakman, A., Bikoff, J. B., Abbott, L. F., Jessell, T. M., &amp; Paninski, L. (2016). Bayesian sparse regression analysis documents the diversity of spinal inhibitory interneurons. <em>Cell</em>, <em>165</em>(1), 220-233.</p></li><li><p>Rao, A., Barkley, D., França, G. S., &amp; Yanai, I. (2021). Exploring tissue architecture using spatial transcriptomics. <em>Nature</em>, <em>596</em>(7871), 211-220.</p></li><li><p>Stringer, C., Wang, T., Michaelos, M., &amp; Pachitariu, M. (2021). Cellpose: a generalist algorithm for cellular segmentation. <em>Nature methods</em>, <em>18</em>(1), 100-106.</p></li><li><p>Zaimi, A., Wabartha, M., Herman, V., Antonsanti, P. L., Perone, C. S., &amp; Cohen-Adad, J. (2018). AxonDeepSeg: automatic axon and myelin segmentation from microscopy data using convolutional neural networks. <em>Scientific reports</em>, <em>8</em>(1), 3816.</p></li><li><p>Balakrishnan, G., Zhao, A., Sabuncu, M. R., Guttag, J., &amp; Dalca, A. V. (2019). VoxelMorph: a learning framework for deformable medical image registration. <em>IEEE transactions on medical imaging</em>, <em>38</em>(8), 1788-1800.</p></li><li><p>Xu, T., Nenning, K. H., Schwartz, E., Hong, S. J., Vogelstein, J. T., Goulas, A., ... &amp; Langs, G. (2020). Cross-species functional alignment reveals evolutionary hierarchy within the connectome. <em>Neuroimage</em>, <em>223</em>, 117346.</p></li><li><p>Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &amp; Bethge, M. (2018). DeepLabCut: markerless pose estimation of user-defined body parts with deep learning. <em>Nature neuroscience</em>, <em>21</em>(9), 1281-1289.</p></li><li><p>Biderman, D., Whiteway, M. R., Hurwitz, C., Greenspan, N., Lee, R. S., Vishnubhotla, A., ... &amp; Paninski, L. (2023). Lightning Pose: improved animal pose estimation via semi-supervised learning, Bayesian ensembling, and cloud-native open-source tools. <em>bioRxiv</em>.</p></li><li><p>Nehme, E., Weiss, L. E., Michaeli, T., &amp; Shechtman, Y. (2018). Deep-STORM: super-resolution single-molecule microscopy by deep learning. <em>Optica</em>, <em>5</em>(4), 458-464.</p></li><li><p>Boussard, J., Varol, E., Lee, H. D., Dethe, N., &amp; Paninski, L. (2021). Three-dimensional spike localization and improved motion correction for Neuropixels recordings. <em>Advances in Neural Information Processing Systems</em>, <em>34</em>, 22095-22105.</p></li><li><p>Glaser, J. I., Benjamin, A. S., Chowdhury, R. H., Perich, M. G., Miller, L. E., &amp; Kording, K. P. (2020). Machine learning for neural decoding. <em>Eneuro</em>, <em>7</em>(4).</p></li><li><p>Pandarinath, C., O’Shea, D. J., Collins, J., Jozefowicz, R., Stavisky, S. D., Kao, J. C., ... &amp; Sussillo, D. (2018). Inferring single-trial neural population dynamics using sequential auto-encoders. <em>Nature methods</em>, <em>15</em>(10), 805-815.</p></li><li><p>Lawhern, V. J., Solon, A. J., Waytowich, N. R., Gordon, S. M., Hung, C. P., &amp; Lance, B. J. (2018). EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces. <em>Journal of neural engineering</em>, <em>15</em>(5), 056013.</p></li><li><p>Kovács, I. A., Barabási, D. L., &amp; Barabási, A. L. (2020). Uncovering the genetic blueprint of the C. elegans nervous system. <em>Proceedings of the National Academy of Sciences</em>, <em>117</em>(52), 33570-33577.</p></li><li><p>Hu, T., Leonardo, A., &amp; Chklovskii, D. (2009). Reconstruction of sparse circuits using multi-neuronal excitation (RESCUME). <em>Advances in Neural Information Processing Systems</em>, <em>22</em>.</p></li><li><p>Mishchencko, Y., Vogelstein, J. T., &amp; Paninski, L. (2011). A Bayesian approach for inferring neuronal connectivity from calcium fluorescent imaging data. <em>The Annals of Applied Statistics</em>, 1229-1261.</p></li><li><p>Betzel, R. F., &amp; Bassett, D. S. (2017). Multi-scale brain networks. <em>Neuroimage</em>, <em>160</em>, 73-83.</p></li><li><p>Yan, G., Vértes, P. E., Towlson, E. K., Chew, Y. L., Walker, D. S., Schafer, W. R., &amp; Barabási, A. L. (2017). Network control principles predict neuron function in the Caenorhabditis elegans connectome. <em>Nature</em>, <em>550</em>(7677), 519-523.</p></li><li><p>Zalesky, A., Fornito, A., &amp; Bullmore, E. T. (2010). Network-based statistic: identifying differences in brain networks. <em>Neuroimage</em>, <em>53</em>(4), 1197-1207.</p></li></ul>",
+      "<p>New York University</p>",
+      "<p>Tandon School of Engineering</p>",
+      "<p>370 Jay Street</p>",
+      "<p>Rooms 1158 (Office) 1166 (Lab)</p>",
+      "<p>Brooklyn, NY 11201</p>",
+      "<p>Contact: <a href=\"mailto:ev2240@nyu.edu\">ev2240@nyu.edu</a></p>"
+    ],
+    "syllabus": "",
+    "previous": "",
+    "slug": "neuroinformatics-spring24",
+    "legacy": "/neuroinformatics-cs-gy-9223-spring24",
+    "label": "Neuroinformatics · Spring 2024"
+  },
+  "computer-vision-fall26": {
+    "title": "Computer Vision (CS-GY 6643)",
+    "term": "Fall 2026",
+    "summary": [
+      "<p><span>Forecasting Motion in the Wild: Thakkar et al, EECV 2026 [</span><a href=\"https://motion-forecasting.github.io\" rel=\"noopener\" target=\"_blank\"><span>link</span></a><span>]</span></p>",
+      "<p>A central goal of signal processing and artificial intelligence (AI) is to enable computers to understand and interpret visual information. Computer vision focuses on extracting meaningful measurements and representations of physical objects from images using techniques from image processing, pattern recognition, geometric modeling, cognitive processing, and machine and deep learning. This course covers the fundamental concepts and techniques of image processing and computer vision at an intermediate level, combining theoretical understanding with practical application. Students will also participate in Kaggle competitions to apply course concepts to real datasets, along with a midterm examination to evaluate their understanding of the material.</p>",
+      "<p><strong>This is a graduate level course requiring working knowledge of linear algebra, data structures  and proficiency in programming (python). Advanced undergraduates may enroll upon permission from the instructor.</strong></p>"
+    ],
+    "overview": [
+      "<p><span>Forecasting Motion in the Wild: Thakkar et al, EECV 2026 [</span><a href=\"https://motion-forecasting.github.io\" rel=\"noopener\" target=\"_blank\"><span>link</span></a><span>]</span></p>",
+      "<p>A central goal of signal processing and artificial intelligence (AI) is to enable computers to understand and interpret visual information. Computer vision focuses on extracting meaningful measurements and representations of physical objects from images using techniques from image processing, pattern recognition, geometric modeling, cognitive processing, and machine and deep learning. This course covers the fundamental concepts and techniques of image processing and computer vision at an intermediate level, combining theoretical understanding with practical application. Students will also participate in Kaggle competitions to apply course concepts to real datasets, along with a midterm examination to evaluate their understanding of the material.</p>",
+      "<p><strong>This is a graduate level course requiring working knowledge of linear algebra, data structures  and proficiency in programming (python). Advanced undergraduates may enroll upon permission from the instructor.</strong></p>",
+      "<p><strong>Course information:</strong></p>",
+      "<p>Time: Thursdays 11am-1:30pm </p>",
+      "<p>Place: Room 475, 6 MetroTech Center</p>",
+      "<p>Slack channel: <a href=\"https://nyucomputervision.slack.com\" rel=\"noopener\" target=\"_blank\">nyucomputervision.slack.com</a></p>",
+      "<p>Syllabus: <a href=\"/docs/Syllabus-Computer-Vision-Fall-2026.pdf\">link</a></p>",
+      "<p><strong>Course team:</strong></p>",
+      "<p><strong>Instructor:</strong> Prof. Erdem Varol </p>",
+      "<p>Email: <a href=\"mailto:ev2240@nyu.edu?\">ev2240@nyu.edu</a></p>",
+      "<p>Office Hours: On <a href=\"https://nyu.zoom.us/my/evarol\" rel=\"noopener\" target=\"_blank\">Zoom</a>,15 min <a href=\"https://calendar.app.google/Pkg8P79Lh762aKiy8\" rel=\"noopener\" target=\"_blank\">appointments</a>.</p>",
+      "<p><strong>TA:</strong> Anushk Pandey</p>",
+      "<p>Email: <a href=\"mailto:ap7151@nyu.edu?\"><u>ap7151@nyu.edu</u></a></p>",
+      "<p>Office Hours: Fridays 4-5PM on <a href=\"https://nyu.zoom.us/launch/jc/97109498254\" rel=\"noopener\" target=\"_blank\">Zoom</a> and In-Person</p>",
+      "<p><strong>TA:</strong> Thiago Viegas</p>",
+      "<p>Email: <a href=\"mailto:tjv235@nyu.edu?\"><u>tjv235@nyu.edu</u></a></p>",
+      "<p>Office Hours: Thursdays 2-3PM on <a href=\"https://nyu.zoom.us/launch/jc/97109498254\" rel=\"noopener\" target=\"_blank\">Zoom</a> and In-Person.</p>",
+      "<p><strong>TA:</strong> Akshat Mishra</p>",
+      "<p>Email: <a href=\"mailto:am15577@nyu.edu?\"><u>am15577@nyu.edu</u></a></p>",
+      "<p>Office Hours: Mondays 2-3pm on <a href=\"https://nyu.zoom.us/j/92738806231\" rel=\"noopener\" target=\"_blank\">Zoom</a> and In-Person.</p>",
+      "<p><strong>TA:</strong> Dipesh Kumar</p>",
+      "<p>Email: <a href=\"mailto:dk5288@nyu.edu?\"><u>dk5288@nyu.edu</u></a></p>",
+      "<p>Office Hours: Tuesdays 10-11AM on <a href=\"https://nyu.zoom.us/j/91852571367\" rel=\"noopener\" target=\"_blank\">Zoom</a>.</p>",
+      "<p><strong>Grading breakdown:</strong> In-class midterm 25%, Programming Projects 75%</p>",
+      "<p><strong>Online Discussion:</strong> Preferred course communication will be via Slack, so please join our site from using this link: <a href=\"https://nyucomputervision.slack.com\" rel=\"noopener\" target=\"_blank\">nyucomputervision.slack.com</a>. All questions should also be posted to Slack (not sent via emails). We prefer that lectures or homework questions are asked publicly, since they will often help your classmates. Slack also supports private questions through direct messages for things relevant only to you.</p>",
+      "<p><strong>Python and Jupyter:</strong> Demos and labs in this class use Python, run through Jupyter notebooks. Jupyter lets you create and edit documents with live Python code and rich comments and images. We suggest that students run their Jupyter notebooks via Google Colaboratory, and we will share them via Colab.</p>",
+      "<p><strong>Assignments: </strong>Individual programming projects must be turned in to Brightspace by the specified deadline (11:59pm of the due date). Programming projects should be turned in as specified in the project. Note that projects include a competitive component or involve ranking based on performance, we will guide you on the submission for the same.  For written project reports, we encourage using <a href=\"https://astrobites.org/2018/01/20/getting-started-with-latex/\" rel=\"noopener\" target=\"_blank\">LaTeX</a>. You can use this <a href=\"https://www.overleaf.com/8961154795fmcsmfqgcbjt#69fe2a\" rel=\"noopener\" target=\"_blank\">template</a> for LaTeX. While there is a learning curve, these tools typically save  students time in the end! If you do write problems by hand, scan and  upload as a PDF. <u>Discussion is allowed on homework, but solutions and code must be written independently</u>. See the syllabus for policies. We have a zero tolerance policy for copied code or  solutions: any students with duplicate or very similar material will  receive a zero on the offending assignment.</p>",
+      "<p><strong>Late policy: </strong>Every hour that an assignment is late (rounded down) will cause 1% penalization of the total allotted grade. For example, an assignment that is 11 hours 45 minutes late will have a maximum possible score of 89%.</p>",
+      "<p><strong>Textbooks: </strong>Computer Vision (2nd edition) by Szeliski will accompany the lectures that we cover and specific chapters from this book will be mentioned under reading materials in the schedule below. Textbook is freely available digitally at<a href=\"https://szeliski.org/Book/download.php\" rel=\"noopener\" target=\"_blank\"> https://szeliski.org/Book/download.php</a>.</p>",
+      "<p><strong>AI Policy:</strong> Projects in this class will be divided into two tracks: AI Track and Human Track. Students in the AI Track are allowed to use AI for debugging, writing code, and other use cases. Students in the Human Track are <em>only allowed to use AI for debugging report generation; and not code generation, ideation or any other uses.</em> Students are allowed to use AI if they declare it in the team selection sheet shared along with the project. Student can switch from the Human to the AI track during a project, however, they <em>cannot switch back from the AI track to the Human Track</em>. Students are allowed to pick different tracks for different projects. Students will be curved based on the track they choose.</p>",
+      "<p><strong>Tutorials:</strong><a href=\"https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&amp;si=pFiWZ_-OtUUjNNLf\" rel=\"noopener\" target=\"_blank\">Linear algebra,</a><a href=\"https://cs231n.github.io/setup-instructions/#working-remotely-on-google-colaboratory\" rel=\"noopener\" target=\"_blank\">Google Colab</a>,<a href=\"https://www.codecademy.com/learn/learn-python-3\" rel=\"noopener\" target=\"_blank\"> Python</a></p>",
+      "<p>The previous iteration of the course is available <a href=\"/teaching/computer-vision-fall25\">here</a>.</p>"
+    ],
+    "schedule": {
+      "headers": [
+        "Date",
+        "Topic",
+        "Material<br/>",
+        "Projects<br/>"
+      ],
+      "rows": [
+        [
+          "<b>September 3, 2026</b><br/>",
+          "Intro and survey of topics, Image Formation, Filtering and Edge Detection<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1QqLBZQEinWhBwA1Lfdo5ESZ_pzfZgb2GBui3gN_pS8s/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 1</span></a></u>,\n        <u><a href=\"https://colab.research.google.com/drive/1iwHWYhxoqYqpPvAVtUu678L-HjjzyWOD?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Codelab 1</span></a></u>,\n        <u><a href=\"https://www.codecademy.com/learn/learn-python-3\" rel=\"noopener\" target=\"_blank\"><span>Python Tutorial</span></a></u>,\n        <u><a href=\"https://cs231n.github.io/setup-instructions/#working-remotely-on-google-colaboratory\" rel=\"noopener\" target=\"_blank\"><span>Google Colab Setup,</span></a></u>\n      Szeliski Ch. 1,3.1-3.2,3.3.1",
+          "First Project Released"
+        ],
+        [
+          "<b>September 10, 2026</b><br/>",
+          "Feature Detection & matching<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/19TdNzejfe3PpJYfbcG9a0kmWNXxPL6_6k_cqTMDyyfw/edit?slide=id.p#slide=id.p\" rel=\"noopener\" target=\"_blank\"><span>Lecture 2</span></a></u>,\n        <u><a href=\"https://colab.research.google.com/drive/1cs0AQcsV_wncEMHGLDOyC8uv54PlpaTw?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Codelab 2,</span></a></u>\n            Szeliski Ch. 7.1.1-7.1.3,7.2.1-7.2.2",
+          ""
+        ],
+        [
+          "<b>September 17, 2026</b><br/>",
+          "Image alignment<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1kJ7DZJuCqoZz66GTtbRt0dyjHcvJ06EjJxsXXUNfSoo/edit?slide=id.p#slide=id.p\" rel=\"noopener\" target=\"_blank\"><span>Lecture 3</span></a></u>,\n        <u><a href=\"https://colab.research.google.com/drive/1L4wovxjgCWbDHUThAdSR7BdzLh4QlvX3?authuser=1#scrollTo=9f90f725\" rel=\"noopener\" target=\"_blank\"><span>Codelab 3,</span></a></u>\n            Szeliski Ch. 2.1.1, 8.2",
+          ""
+        ],
+        [
+          "<b>September 24, 2026</b><br/>",
+          "Segmentation<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1m9_cxjXtEzXbz5Ac0yZ-pZIghMu8do2HMOXn6doDxOo/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 4</span></a></u>,\n        <u><a href=\"https://colab.research.google.com/drive/1m7jmMHQI5DsTv0zPJlkuCKp7pKHa1cfJ?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Codelab 4,</span></a></u>\n            Szeliski Ch. 6.4",
+          "Second Project Released, First Project due"
+        ],
+        [
+          "<b>October 1, 2026</b><br/>",
+          "Machine Learning ,Backprop with MLP, Neural Networks<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1REdoDn_LeLHpYYIw7ZqaiM-_aFaG_1J2avAtDH_tEJw/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 5</span></a></u>,\n        <u><a href=\"https://colab.research.google.com/drive/19NBSibp1WSTbe6DukSnnvft5fa5JzifM?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Codelab 5,</span></a></u>\nSzeliski Ch. 5.3–5.4, 6.3.3",
+          ""
+        ],
+        [
+          "<b>October 8, 2026</b><br/>",
+          "Convolutional Neural Networks; YOLO<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1sVrDwTKCRNbQX-TnOIkxX9ecUWWu3bxIIFzJNfDMwq4/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 6</span></a></u>,\n        <u><a href=\"https://colab.research.google.com/drive/1mDnNDmG2x8omopUl0x_gU61trM0Buqwu?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Codelab 6,</span></a></u>\nSzeliski Ch. 5.1–5.3, 4.1.2, 4.3, 7.5",
+          "Second Project due"
+        ],
+        [
+          "<b>October 15, 2026</b><br/>",
+          "<b>Midterm</b><br/>",
+          "",
+          "<b>Midterm</b>"
+        ],
+        [
+          "<b>October 22, 2026</b><br/>",
+          "Motion models, depth estimation and optical flow<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1ItHB0R1R0p9Xrhr94yMhyl-KIppQbWh4H-23Ln60aRw/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 7</span></a></u>,\n        <u><a href=\"https://colab.research.google.com/drive/13HNiSFHrwkZYTyMA62o9XhY3AGIf0h_-?usp=sharing&amp;authuser=1\" rel=\"noopener\" target=\"_blank\"><span>Codelab 7</span></a></u>",
+          "Third Project Released"
+        ],
+        [
+          "<b>October 29, 2026</b><br/>",
+          "Self Supervised Learning, CLIP Embeddings<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1-2d3CCVQX_l0dv9e9KbI9efkKe_2-UqrHfH0cZ2wqB4/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 8</span></a></u>,\n        <u><a href=\"https://colab.research.google.com/drive/1ce3um-2uez42_9asRF5OMG_UIkiFAsny?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Codelab 8</span></a></u>",
+          ""
+        ],
+        [
+          "<b>November 5, 2026</b><br/>",
+          "Attention Mechanism, Vision Transformer<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1XEC-DXqqvSTzxfPO6KSD7eLSZMsdFjHeNaK3C23nioo/edit?slide=id.h3b1c6aa5f9aa52b8_2_0#slide=id.h3b1c6aa5f9aa52b8_2_0\" rel=\"noopener\" target=\"_blank\"><span>Lecture 9</span></a></u>,\n        <u><a href=\"https://drive.google.com/file/d/1yY-NDTth5P7Th2Pu338A72vfwnEfNIQm/view?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Codelab 9</span></a></u>",
+          "Fourth Project Released, Third Project due"
+        ],
+        [
+          "<b>November 12, 2026</b><br/>",
+          "Structure from Motion<br/>",
+          "",
+          ""
+        ],
+        [
+          "<b>November 19, 2026</b><br/>",
+          "Gaussian Splatting<br/>",
+          "",
+          "Final Project Released, Fourth Project due"
+        ],
+        [
+          "<b>November 26, 2026</b><br/>",
+          "<b>THANKSGIVING</b><br/>",
+          "",
+          ""
+        ],
+        [
+          "<b>December 3, 2026</b><br/>",
+          "Guest Lecture: Neel Dey<br/>",
+          "",
+          ""
+        ],
+        [
+          "<b>December 10, 2026</b><br/>",
+          "Vision Language Models<br/>",
+          "",
+          "Final Project Due"
+        ]
+      ]
+    },
+    "reads": [
+      "<p><strong>Textbooks: </strong></p>",
+      "<ul><li><p>Szeliski, R. (2022). <em>Computer vision: algorithms and applications</em>. Springer Nature. [<a href=\"https://szeliski.org/Book/download.php\" rel=\"noopener\" target=\"_blank\">link</a>]</p></li><li><p>Milan Sonka, Vaclav Hlavac, and Roger Boyle, <em>Image Processing, Analysis, and Machine Vision</em>, 4th Ed, 2015 [<a href=\"https://link.springer.com/book/10.1007/978-1-4899-3216-7\" rel=\"noopener\" target=\"_blank\">link</a>]</p></li><li><p>David A. Forsyth and J Ponce, <em>Computer Vision: A Modern Approach</em>, 2012</p></li><li><p>Simon J. D. Prince, <em>Understanding Deep Learning</em>, 2023.</p></li><li><p>Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander J. Smola, <em>Dive into Deep Learning</em>, 2023. [<a href=\"https://d2l.ai/d2l-en.pdf\" rel=\"noopener\" target=\"_blank\">link</a>]</p></li></ul>",
+      "<p><strong>Papers</strong></p>",
+      "<ul><li><p>(Under construction)</p></li></ul>",
+      "<p><strong>Courses</strong></p>",
+      "<ul><li><p><a href=\"https://www.sainingxie.com/cv-fall2024/\" rel=\"noopener\" target=\"_blank\">(Advanced) Computer Vision - NYU Courant (Saining Xie)</a></p></li><li><p><a href=\"https://cs231n.stanford.edu/schedule.html\" rel=\"noopener\" target=\"_blank\">Deep Learning for Computer Vision - Stanford (Fei- Fei Li)</a></p></li></ul>",
+      "<p>New York University</p>",
+      "<p>Tandon School of Engineering</p>",
+      "<p>370 Jay Street</p>",
+      "<p>Rooms 1158 (Office) 1166 (Lab)</p>",
+      "<p>Brooklyn, NY 11201</p>",
+      "<p>Contact: <a href=\"mailto:ev2240@nyu.edu\">ev2240@nyu.edu</a></p>"
+    ],
+    "syllabus": "/docs/Syllabus-Computer-Vision-Fall-2026.pdf",
+    "previous": "/teaching/computer-vision-fall25",
+    "slug": "computer-vision-fall26",
+    "legacy": "/computer-vision-cs-gy-6643-2026",
+    "label": "Computer Vision · Fall 2026"
+  },
+  "computer-vision-fall25": {
+    "title": "Computer Vision (CS-GY 6643)",
+    "term": "Fall 2025",
+    "summary": [
+      "<p>An important goal of signal processing and artificial intelligence (AI) is to equip computers with the capability of interpreting visual inputs. Computer vision is an area that deals with the construction of explicit, meaningful measurements and descriptions of physical objects from images. It includes many techniques from image processing, pattern recognition, geometric modeling, cognitive processing, and machine and deep learning. This course explores the core concepts and practical techniques of image processing and computer vision at an intermediate level of depth and application.</p>",
+      "<p><strong>This is a graduate level course requiring working knowledge of linear algebra, data structures  and proficiency in programming (python). Advanced undergraduates may enroll upon permission from instructor.</strong></p>"
+    ],
+    "overview": [
+      "<p>An important goal of signal processing and artificial intelligence (AI) is to equip computers with the capability of interpreting visual inputs. Computer vision is an area that deals with the construction of explicit, meaningful measurements and descriptions of physical objects from images. It includes many techniques from image processing, pattern recognition, geometric modeling, cognitive processing, and machine and deep learning. This course explores the core concepts and practical techniques of image processing and computer vision at an intermediate level of depth and application.</p>",
+      "<p><strong>This is a graduate level course requiring working knowledge of linear algebra, data structures  and proficiency in programming (python). Advanced undergraduates may enroll upon permission from instructor.</strong></p>",
+      "<p><strong>Course information:</strong> </p>",
+      "<p>Time: Thursdays 11am-1:30pm </p>",
+      "<p>Place: Room 202, 370 Jay St</p>",
+      "<p>Slack channel: <a href=\"https://nyucomputervision.slack.com\" rel=\"noopener\" target=\"_blank\">nyucomputervision.slack.com</a></p>",
+      "<p><strong>Course team:</strong></p>",
+      "<p><strong>Instructor:</strong> Prof. Erdem Varol </p>",
+      "<p>Email: <a href=\"mailto:ev2240@nyu.edu?\">ev2240@nyu.edu</a> </p>",
+      "<p>Office Hours: On <a href=\"https://nyu.zoom.us/my/evarol\" rel=\"noopener\" target=\"_blank\">Zoom</a>,15 min <a href=\"https://calendar.app.google/Pkg8P79Lh762aKiy8\" rel=\"noopener\" target=\"_blank\">appointments</a>.</p>",
+      "<p><strong>TA:</strong> Visweswar Sirish Parupudi</p>",
+      "<p>Email: <a href=\"mailto:rr4574@nyu.edu\"><span>vsp7230@nyu.edu</span></a></p>",
+      "<p>Office Hours: Thursday 1-5pm in-person   4-5 pm on <a href=\"https://nyu.zoom.us/j/93008456780\" rel=\"noopener\" target=\"_blank\">Zoom.</a></p>",
+      "<p><strong>TA:</strong> Subhrajit Dey</p>",
+      "<p>Email: <a href=\"mailto:sd5963@nyu.edu?\"><span>sd5963@nyu.edu</span></a></p>",
+      "<p>Office Hours: Wednesday 1-2pm on <a href=\"https://nyu.zoom.us/j/93706199603\" rel=\"noopener\" target=\"_blank\">Zoom</a>.</p>",
+      "<p><strong>TA:</strong> Nalini Ramanathan</p>",
+      "<p>Email: <a href=\"mailto:nar8991@nyu.edu?\"><span>nar8991@nyu.edu</span></a></p>",
+      "<p>Office Hours: Mondays 2-3pm on <a href=\"https://nyu.zoom.us/j/2254782546\" rel=\"noopener\" target=\"_blank\">Zoom</a>.</p>",
+      "<p><strong>Grading breakdown:</strong> Individual homework 15%, In-class midterm 25%, Programming Projects 60%<br/><strong><em>Note</em></strong><em>: 20% of the Programming Project Grade will be competition based.</em></p>",
+      "<p><strong>Online Discussion:</strong> Preferred course communication will be via Slack, so please join our site from using this link: <a href=\"https://nyucomputervision.slack.com\" rel=\"noopener\" target=\"_blank\">nyucomputervision.slack.com</a>. All questions should also be posted to Slack (not sent via emails). We prefer that lectures or homework questions are asked publicly, since they will often help your classmates. Slack also supports private questions through direct messages for things relevant only to you.</p>",
+      "<p><strong>Python and Jupyter:</strong> Demos and labs in this class use Python, run through Jupyter notebooks. Jupyter lets you create and edit documents with live Python code and rich comments and images. We suggest that students run their Jupyter notebooks via Google Colaboratory, and we will share them via Colab.</p>",
+      "<p><strong>Assignments: </strong>Individual homework and programming projects must be turned in to Brightspace by the specified deadline (11:59pm of the due date). Programming projects should be turned in as <em>evaluated</em> Jupyter notebooks. Do not clear the output before turning in. Note that some projects may include a competitive component or involve ranking based on performance, we will guide you on the submission for the same.  For written problem sets, we encourage using <a href=\"https://astrobites.org/2018/01/20/getting-started-with-latex/\" rel=\"noopener\" target=\"_blank\">LaTeX</a> or <a href=\"https://en.wikipedia.org/wiki/Markdown\" rel=\"noopener\" target=\"_blank\"> Markdown</a> (with <a href=\"http://support.typora.io/Math/\" rel=\"noopener\" target=\"_blank\">math support</a>.) You can use this <a href=\"https://www.overleaf.com/8961154795fmcsmfqgcbjt#69fe2a\" rel=\"noopener\" target=\"_blank\">template</a> for LaTeX. While there is a learning curve, these tools typically save  students time in the end! If you do write problems by hand, scan and  upload as a PDF. <span>Discussion is allowed on homework, but solutions and code must be written independently</span>. See the <a href=\"/docs/Syllabus-Computer-Vision-Fall-25.pdf\">syllabus</a> for policies. We have a zero tolerance policy for copied code or  solutions: any students with duplicate or very similar material will  receive a zero on the offending assignment.</p>",
+      "<p><strong>Late policy: </strong>Every hour that a project is late (rounded down) will cause 1% penalization of the total allotted grade. For example, a project or homework that is 11 hours 45 minutes late will have a maximum possible score of 89%.</p>",
+      "<p><strong>Textbooks: </strong>Computer Vision (2nd edition) by Szeliski will accompany the lectures that we cover and specific chapters from this book will be mentioned under reading materials in the schedule below. Textbook is freely available digitally at<a href=\"https://szeliski.org/Book/download.php\" rel=\"noopener\" target=\"_blank\"> https://szeliski.org/Book/download.php</a>.</p>",
+      "<p><strong>Tutorials:</strong> <a href=\"https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&amp;si=pFiWZ_-OtUUjNNLf\" rel=\"noopener\" target=\"_blank\">Linear algebra,</a> <a href=\"https://cs231n.github.io/setup-instructions/#working-remotely-on-google-colaboratory\" rel=\"noopener\" target=\"_blank\">Google Colab</a>,<a href=\"https://www.codecademy.com/learn/learn-python-3\" rel=\"noopener\" target=\"_blank\"> Python</a></p>"
+    ],
+    "schedule": {
+      "headers": [
+        "Date",
+        "Topic",
+        "Material",
+        "Homework/Projects<br/>"
+      ],
+      "rows": [
+        [
+          "<b>September 4, 2025</b><br/>",
+          "Intro and survey of topics, Image Formation and Filtering<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1jXp0jWzNaI6f_jJRi4GeK_Fcl2qHFiFrXwO_6HFGCxE/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 1 slides</span></a></u>, <u><a href=\"https://www.codecademy.com/learn/learn-python-3\" rel=\"noopener\" target=\"_blank\"><span>Python tutorial</span></a></u>, <u><a href=\"https://cs231n.github.io/setup-instructions/#working-remotely-on-google-colaboratory\" rel=\"noopener\" target=\"_blank\"><span>Google Colab Setup</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1Ge4n3nGRvnUGeW43TKQ7hLFLkvZ6SxQk#scrollTo=9_jJQTBrVhgw\" rel=\"noopener\" target=\"_blank\"><span>Code Lab</span></a></u>",
+          "Homework 0 out on Brightspace: Join slack <u><a href=\"https://nyucomputervision.slack.com\" rel=\"noopener\" target=\"_blank\"><span>nyucomputervision.slack.com</span></a></u> (Due September 11, 11:59pm)"
+        ],
+        [
+          "<b>September 11, 2025</b><br/>",
+          "Non-linear filtering and edge detection<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1FnZjy8IvQhV4BZO6HRIwkyLnZDujgbai3f9_ulwanXU/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 2 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1ccMHRBpFTHX4UlmLgZL0LLR6s-OIfLo3?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>, \n    Szeliski 2.2, 2.3, 3.1, 3.2",
+          "<u><a href=\"https://drive.google.com/file/d/1EpvWbUmgQo869X9rgLbvmPVWf-iKZw3w/view\" rel=\"noopener\" target=\"_blank\">Homework 1</a></u> out; \n    <u><a href=\"https://drive.google.com/file/d/1TyPmxDyI-I4U4_kbSkZmdAck5GBbwEYc/view?usp=drive_link\" rel=\"noopener\" target=\"_blank\">Project 1</a></u> out; \n    Kaggle Invitation Link: \n    <u><a href=\"https://www.kaggle.com/t/1cef540e921e11b45174f6b31d913de1\" rel=\"noopener\" target=\"_blank\">Join Here</a></u>",
+          "<b>September 18, 2025</b><br/>",
+          "Image recognition, Feature detection and matching<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1sgHGwIXkkmoNeSGi4bhUJxW1A0wW9hh-iJ9R2KdbaJ4/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 3 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1cq8ZDBlofM_E5b3J73H2r7s1P-WqKhFs?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "Homework 1 due - <a href=\"https://drive.google.com/file/d/1CqFwmz_ZMDOZ_72avUUSe-ibCoNyA9s-/view?usp=sharing\" rel=\"noopener\" target=\"_blank\"><u>Solutions</u></a>",
+          "<b>September 25, 2025<br/></b>",
+          "Contour tracking and Hough transforms<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1NU5EtHXm9KAAxiDgr3BswxsaPksaRnaeSJRJ6rTvSA8/edit?slide=id.g36623eaaff6_0_123#slide=id.g36623eaaff6_0_123\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 4 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1hvI0DdyfWfZAk83E0CPmZXvsyw4ZEGtZ?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>, \n    Szeliski 6, 7",
+          "Project 1 dueFinal project team selection due, September 22 10:59am",
+          "<b>October 2, 2025</b><br/>",
+          "Image alignment<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/11h0L7TrsTaac34QCq_zPmjhwJ5KrXZcc5RDxyVpx6Lk/edit?slide=id.g309f79a7519_0_17#slide=id.g309f79a7519_0_17\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 5 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1080mD-RQtSIbaWpu_G2X6OUZsFly9EtT?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "<u><a href=\"https://drive.google.com/file/d/1SczXjZ4yvLivTxp5PWrUASz1r46fdybb/view?usp=sharing\" rel=\"noopener\" target=\"_blank\">Homework 2</a></u> out",
+          "<b>October 9, 2025</b><br/>",
+          "Segmentation<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1feW0Io3w5qKpMtcvusW3iOEu_gJXo4Y_UENDztZpLDs/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 6 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1bpIpUDqBOXrAUzEJslE1No_oJ6q6As8_?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "Homework 2 due",
+          "<b>October 16, 2025</b><br/>",
+          "<b>Midterm exam (in class)</b><br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1qy3kZ3a3pbMVx0MCKkqSsCkgSM7XRjX7z6954Jf6ZQo/edit?usp=sharing\"><span>Lecture 7 slides</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/193iGdeHkO5FUasUd2n0A8KHagbyOcSx3?ouid=100773586740811093911&ts=671008c3&usp=drive-slack\"><span>Colab for Lecture 7</span></a></u>, Szeliski 7.5",
+          "<u><a href=\"https://drive.google.com/file/d/17a5ZzEWxB-kN4t9U43mK2AJotjzySFV4/view?usp=drive_link\" rel=\"noopener\" target=\"_blank\">Project 2</a></u> out",
+          "<b>October 23, 2025</b><br/>",
+          "Machine Learning ,Backprop with MLP, Neural Networks <br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/13x3SI8Y9Oj_CmiRa4JrvTvaqXZavY0SRi7S8855lOhw/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 7 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1V0528c3ysE4WV3nN_XL-vZqYwKrTUPuL#scrollTo=2c3c9abe\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "<u><a href=\"https://drive.google.com/file/d/1pLs9TAOR_bXNhWXyGPrKIlvQQ-YQHz7S/view?usp=sharing\"><span>Midterm Exam</span></a></u>, <u><a href=\"https://drive.google.com/file/d/1fh5kCFZrAjwf6PdCGKJB7rfjpg5nZ7yD/view?usp=sharing\"><span>Solution</span></a></u>",
+          "<b>October 30, 2025</b><br/>",
+          "Convolutional Neural Networks; YOLO",
+          "<u><a href=\"https://docs.google.com/presentation/d/1Wgr61HLvxRGI6UsxHw7Qyri-HAhe9qK0waX17xCqdII/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 8 slides</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1Tvm9yV4i-b283HlY7oZ7mGB7rnQvJFaA#scrollTo=PXTC5sCGWARb\" rel=\"noopener\" target=\"_blank\"><span>Colab for Lecture 8</span></a></u>",
+          "<u><a href=\"https://drive.google.com/file/d/1JfUJDYzzkXT45FpysfPK1wp-HUuIIYYf/view?usp=sharing\" rel=\"noopener\" target=\"_blank\">Homework 3</a></u> out \n; Project 2 due<u><a href=\"https://drive.google.com/file/d/1o68RxmnHie-eOIfM3Nzrovz_4-5Wpbqe/view?usp=sharing\"><span>Project 2</span></a></u> out (Due Nov. 18, 11:59am)",
+          "<b>November 6, 2025</b><br/>",
+          "Motion models, depth estimation and optical flow<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1XZ9IV_p1Kpv-vp8zipeP0dZSNaKeAKIcOiS_XFJ1Ll0/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 9 slides</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1bRDR8Kr3ZwoAkEaCT3CyyTObArPMzsqv?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Colab for Lecture 9</span></a></u>",
+          "Homework 3 due; Project 3 out<u><a href=\"https://drive.google.com/file/d/1g2pmRR8H1nLdztGlfHYh0E3NN_6v3opl/view?usp=sharing\"><span>Homework 3</span></a></u> out, Nov. 8 (Due Nov 21,10:59am)",
+          "<b>November 13, 2025</b><br/>",
+          "Self Supervised Learning, CLIP Embeddings<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1-bv79U7uMo_UYLKmw8lxmtK-yrOxTuZRSPHsdWYpUrY/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 10 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1w3E4wYig8_89eSNdaxZvN7cOmdYcbNkC?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "Project 2 due, November 18, 11:59am",
+          "<b>November 20, 2025</b>",
+          "Attention Mechanism, Vision Transformer<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1vOn1ZYalwfxgFS7uTlq29_APYieMfVbuKjNmJ8eaRgI/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 11 Slides</span>\n</a></u>, \n    <u><a href='https://colab.research.google.com/drive/1MeCzRJNzqwg14rtHfEfyyz5UfMLQdNmh?usp=sharing\"' rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "Project 3 due; Project 4 outHomework 3 due, November 21, 10:59am",
+          "<b>November 27, 2025</b><br/>",
+          "<b>THANKSGIVING BREAK (No class)</b><br/>",
+          "",
+          "",
+          "<b>December 4, 2025</b><br/>",
+          "Vision Language Models<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1CFbabZhzYZejd00dPqu6EjYWuTyRiLfR5SiH2XjUyXU/edit?slide=id.g3a6998d80ae_0_0#slide=id.g3a6998d80ae_0_0\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 12 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1ITQqXt18MoFZt5EGyU6-Y6NovMeaZJ3o?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "Project 3 due, December 6, 11:59pm",
+          "<b>December 11, 2025</b><br/>",
+          "Additional Topics<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1RSIAn6rU8BQ8bVO-8g6uuVtdMUWD5P_ms0WF2leGgP4/edit?slide=id.p#slide=id.p\" rel=\"noopener\" target=\"_blank\">\n<span>Wrap Up Slides</span>\n</a></u>",
+          "Video submission due December 12, 08:00am<br>Write-up and code due December 19, 11:59pm",
+          "<b>December 18, 2025</b><br/>",
+          "<b></b>No Class<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1E6seB3P4NYtiH4jlU0qLx6e1XndrY98HXgaCPJvHJAA/edit?usp=sharing\"><span>Presentation Info</span></a></u>",
+          "Project 4 dueVideo submission due December 12, 08:00am<br>Write-up and code due December 19, 11:59pm"
+        ],
+        [
+          "<b>September 18, 2025</b><br/>",
+          "Image recognition, Feature detection and matching<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1sgHGwIXkkmoNeSGi4bhUJxW1A0wW9hh-iJ9R2KdbaJ4/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 3 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1cq8ZDBlofM_E5b3J73H2r7s1P-WqKhFs?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "Homework 1 due - <a href=\"https://drive.google.com/file/d/1CqFwmz_ZMDOZ_72avUUSe-ibCoNyA9s-/view?usp=sharing\" rel=\"noopener\" target=\"_blank\"><u>Solutions</u></a>",
+          "<b>September 25, 2025<br/></b>",
+          "Contour tracking and Hough transforms<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1NU5EtHXm9KAAxiDgr3BswxsaPksaRnaeSJRJ6rTvSA8/edit?slide=id.g36623eaaff6_0_123#slide=id.g36623eaaff6_0_123\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 4 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1hvI0DdyfWfZAk83E0CPmZXvsyw4ZEGtZ?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>, \n    Szeliski 6, 7",
+          "Project 1 dueFinal project team selection due, September 22 10:59am",
+          "<b>October 2, 2025</b><br/>",
+          "Image alignment<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/11h0L7TrsTaac34QCq_zPmjhwJ5KrXZcc5RDxyVpx6Lk/edit?slide=id.g309f79a7519_0_17#slide=id.g309f79a7519_0_17\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 5 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1080mD-RQtSIbaWpu_G2X6OUZsFly9EtT?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "<u><a href=\"https://drive.google.com/file/d/1SczXjZ4yvLivTxp5PWrUASz1r46fdybb/view?usp=sharing\" rel=\"noopener\" target=\"_blank\">Homework 2</a></u> out",
+          "<b>October 9, 2025</b><br/>",
+          "Segmentation<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1feW0Io3w5qKpMtcvusW3iOEu_gJXo4Y_UENDztZpLDs/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 6 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1bpIpUDqBOXrAUzEJslE1No_oJ6q6As8_?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "Homework 2 due",
+          "<b>October 16, 2025</b><br/>",
+          "<b>Midterm exam (in class)</b><br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1qy3kZ3a3pbMVx0MCKkqSsCkgSM7XRjX7z6954Jf6ZQo/edit?usp=sharing\"><span>Lecture 7 slides</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/193iGdeHkO5FUasUd2n0A8KHagbyOcSx3?ouid=100773586740811093911&ts=671008c3&usp=drive-slack\"><span>Colab for Lecture 7</span></a></u>, Szeliski 7.5",
+          "<u><a href=\"https://drive.google.com/file/d/17a5ZzEWxB-kN4t9U43mK2AJotjzySFV4/view?usp=drive_link\" rel=\"noopener\" target=\"_blank\">Project 2</a></u> out",
+          "<b>October 23, 2025</b><br/>",
+          "Machine Learning ,Backprop with MLP, Neural Networks <br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/13x3SI8Y9Oj_CmiRa4JrvTvaqXZavY0SRi7S8855lOhw/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 7 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1V0528c3ysE4WV3nN_XL-vZqYwKrTUPuL#scrollTo=2c3c9abe\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "<u><a href=\"https://drive.google.com/file/d/1pLs9TAOR_bXNhWXyGPrKIlvQQ-YQHz7S/view?usp=sharing\"><span>Midterm Exam</span></a></u>, <u><a href=\"https://drive.google.com/file/d/1fh5kCFZrAjwf6PdCGKJB7rfjpg5nZ7yD/view?usp=sharing\"><span>Solution</span></a></u>",
+          "<b>October 30, 2025</b><br/>",
+          "Convolutional Neural Networks; YOLO",
+          "<u><a href=\"https://docs.google.com/presentation/d/1Wgr61HLvxRGI6UsxHw7Qyri-HAhe9qK0waX17xCqdII/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 8 slides</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1Tvm9yV4i-b283HlY7oZ7mGB7rnQvJFaA#scrollTo=PXTC5sCGWARb\" rel=\"noopener\" target=\"_blank\"><span>Colab for Lecture 8</span></a></u>",
+          "<u><a href=\"https://drive.google.com/file/d/1JfUJDYzzkXT45FpysfPK1wp-HUuIIYYf/view?usp=sharing\" rel=\"noopener\" target=\"_blank\">Homework 3</a></u> out \n; Project 2 due<u><a href=\"https://drive.google.com/file/d/1o68RxmnHie-eOIfM3Nzrovz_4-5Wpbqe/view?usp=sharing\"><span>Project 2</span></a></u> out (Due Nov. 18, 11:59am)",
+          "<b>November 6, 2025</b><br/>",
+          "Motion models, depth estimation and optical flow<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1XZ9IV_p1Kpv-vp8zipeP0dZSNaKeAKIcOiS_XFJ1Ll0/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 9 slides</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1bRDR8Kr3ZwoAkEaCT3CyyTObArPMzsqv?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Colab for Lecture 9</span></a></u>",
+          "Homework 3 due; Project 3 out<u><a href=\"https://drive.google.com/file/d/1g2pmRR8H1nLdztGlfHYh0E3NN_6v3opl/view?usp=sharing\"><span>Homework 3</span></a></u> out, Nov. 8 (Due Nov 21,10:59am)",
+          "<b>November 13, 2025</b><br/>",
+          "Self Supervised Learning, CLIP Embeddings<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1-bv79U7uMo_UYLKmw8lxmtK-yrOxTuZRSPHsdWYpUrY/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 10 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1w3E4wYig8_89eSNdaxZvN7cOmdYcbNkC?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "Project 2 due, November 18, 11:59am",
+          "<b>November 20, 2025</b>",
+          "Attention Mechanism, Vision Transformer<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1vOn1ZYalwfxgFS7uTlq29_APYieMfVbuKjNmJ8eaRgI/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 11 Slides</span>\n</a></u>, \n    <u><a href='https://colab.research.google.com/drive/1MeCzRJNzqwg14rtHfEfyyz5UfMLQdNmh?usp=sharing\"' rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "Project 3 due; Project 4 outHomework 3 due, November 21, 10:59am",
+          "<b>November 27, 2025</b><br/>",
+          "<b>THANKSGIVING BREAK (No class)</b><br/>",
+          "",
+          "",
+          "<b>December 4, 2025</b><br/>",
+          "Vision Language Models<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1CFbabZhzYZejd00dPqu6EjYWuTyRiLfR5SiH2XjUyXU/edit?slide=id.g3a6998d80ae_0_0#slide=id.g3a6998d80ae_0_0\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 12 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1ITQqXt18MoFZt5EGyU6-Y6NovMeaZJ3o?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "Project 3 due, December 6, 11:59pm",
+          "<b>December 11, 2025</b><br/>",
+          "Additional Topics<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1RSIAn6rU8BQ8bVO-8g6uuVtdMUWD5P_ms0WF2leGgP4/edit?slide=id.p#slide=id.p\" rel=\"noopener\" target=\"_blank\">\n<span>Wrap Up Slides</span>\n</a></u>",
+          "Video submission due December 12, 08:00am<br>Write-up and code due December 19, 11:59pm",
+          "<b>December 18, 2025</b><br/>",
+          "<b></b>No Class<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1E6seB3P4NYtiH4jlU0qLx6e1XndrY98HXgaCPJvHJAA/edit?usp=sharing\"><span>Presentation Info</span></a></u>",
+          "Project 4 dueVideo submission due December 12, 08:00am<br>Write-up and code due December 19, 11:59pm"
+        ],
+        [
+          "<b>September 25, 2025<br/></b>",
+          "Contour tracking and Hough transforms<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1NU5EtHXm9KAAxiDgr3BswxsaPksaRnaeSJRJ6rTvSA8/edit?slide=id.g36623eaaff6_0_123#slide=id.g36623eaaff6_0_123\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 4 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1hvI0DdyfWfZAk83E0CPmZXvsyw4ZEGtZ?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>, \n    Szeliski 6, 7",
+          "Project 1 dueFinal project team selection due, September 22 10:59am"
+        ],
+        [
+          "<b>October 2, 2025</b><br/>",
+          "Image alignment<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/11h0L7TrsTaac34QCq_zPmjhwJ5KrXZcc5RDxyVpx6Lk/edit?slide=id.g309f79a7519_0_17#slide=id.g309f79a7519_0_17\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 5 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1080mD-RQtSIbaWpu_G2X6OUZsFly9EtT?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "<u><a href=\"https://drive.google.com/file/d/1SczXjZ4yvLivTxp5PWrUASz1r46fdybb/view?usp=sharing\" rel=\"noopener\" target=\"_blank\">Homework 2</a></u> out"
+        ],
+        [
+          "<b>October 9, 2025</b><br/>",
+          "Segmentation<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1feW0Io3w5qKpMtcvusW3iOEu_gJXo4Y_UENDztZpLDs/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 6 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1bpIpUDqBOXrAUzEJslE1No_oJ6q6As8_?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "Homework 2 due"
+        ],
+        [
+          "<b>October 16, 2025</b><br/>",
+          "<b>Midterm exam (in class)</b><br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1qy3kZ3a3pbMVx0MCKkqSsCkgSM7XRjX7z6954Jf6ZQo/edit?usp=sharing\"><span>Lecture 7 slides</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/193iGdeHkO5FUasUd2n0A8KHagbyOcSx3?ouid=100773586740811093911&ts=671008c3&usp=drive-slack\"><span>Colab for Lecture 7</span></a></u>, Szeliski 7.5",
+          "<u><a href=\"https://drive.google.com/file/d/17a5ZzEWxB-kN4t9U43mK2AJotjzySFV4/view?usp=drive_link\" rel=\"noopener\" target=\"_blank\">Project 2</a></u> out"
+        ],
+        [
+          "<b>October 23, 2025</b><br/>",
+          "Machine Learning ,Backprop with MLP, Neural Networks <br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/13x3SI8Y9Oj_CmiRa4JrvTvaqXZavY0SRi7S8855lOhw/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 7 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1V0528c3ysE4WV3nN_XL-vZqYwKrTUPuL#scrollTo=2c3c9abe\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "<u><a href=\"https://drive.google.com/file/d/1pLs9TAOR_bXNhWXyGPrKIlvQQ-YQHz7S/view?usp=sharing\"><span>Midterm Exam</span></a></u>, <u><a href=\"https://drive.google.com/file/d/1fh5kCFZrAjwf6PdCGKJB7rfjpg5nZ7yD/view?usp=sharing\"><span>Solution</span></a></u>"
+        ],
+        [
+          "<b>October 30, 2025</b><br/>",
+          "Convolutional Neural Networks; YOLO",
+          "<u><a href=\"https://docs.google.com/presentation/d/1Wgr61HLvxRGI6UsxHw7Qyri-HAhe9qK0waX17xCqdII/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 8 slides</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1Tvm9yV4i-b283HlY7oZ7mGB7rnQvJFaA#scrollTo=PXTC5sCGWARb\" rel=\"noopener\" target=\"_blank\"><span>Colab for Lecture 8</span></a></u>",
+          "<u><a href=\"https://drive.google.com/file/d/1JfUJDYzzkXT45FpysfPK1wp-HUuIIYYf/view?usp=sharing\" rel=\"noopener\" target=\"_blank\">Homework 3</a></u> out \n; Project 2 due<u><a href=\"https://drive.google.com/file/d/1o68RxmnHie-eOIfM3Nzrovz_4-5Wpbqe/view?usp=sharing\"><span>Project 2</span></a></u> out (Due Nov. 18, 11:59am)"
+        ],
+        [
+          "<b>November 6, 2025</b><br/>",
+          "Motion models, depth estimation and optical flow<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1XZ9IV_p1Kpv-vp8zipeP0dZSNaKeAKIcOiS_XFJ1Ll0/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 9 slides</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1bRDR8Kr3ZwoAkEaCT3CyyTObArPMzsqv?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Colab for Lecture 9</span></a></u>",
+          "Homework 3 due; Project 3 out<u><a href=\"https://drive.google.com/file/d/1g2pmRR8H1nLdztGlfHYh0E3NN_6v3opl/view?usp=sharing\"><span>Homework 3</span></a></u> out, Nov. 8 (Due Nov 21,10:59am)"
+        ],
+        [
+          "<b>November 13, 2025</b><br/>",
+          "Self Supervised Learning, CLIP Embeddings<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1-bv79U7uMo_UYLKmw8lxmtK-yrOxTuZRSPHsdWYpUrY/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 10 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1w3E4wYig8_89eSNdaxZvN7cOmdYcbNkC?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "Project 2 due, November 18, 11:59am"
+        ],
+        [
+          "<b>November 20, 2025</b>",
+          "Attention Mechanism, Vision Transformer<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1vOn1ZYalwfxgFS7uTlq29_APYieMfVbuKjNmJ8eaRgI/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 11 Slides</span>\n</a></u>, \n    <u><a href='https://colab.research.google.com/drive/1MeCzRJNzqwg14rtHfEfyyz5UfMLQdNmh?usp=sharing\"' rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "Project 3 due; Project 4 outHomework 3 due, November 21, 10:59am"
+        ],
+        [
+          "<b>November 27, 2025</b><br/>",
+          "<b>THANKSGIVING BREAK (No class)</b><br/>",
+          "",
+          ""
+        ],
+        [
+          "<b>December 4, 2025</b><br/>",
+          "Vision Language Models<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1CFbabZhzYZejd00dPqu6EjYWuTyRiLfR5SiH2XjUyXU/edit?slide=id.g3a6998d80ae_0_0#slide=id.g3a6998d80ae_0_0\" rel=\"noopener\" target=\"_blank\">\n<span>Lecture 12 Slides</span>\n</a></u>, \n    <u><a href=\"https://colab.research.google.com/drive/1ITQqXt18MoFZt5EGyU6-Y6NovMeaZJ3o?usp=sharing\" rel=\"noopener\" target=\"_blank\">\n        Code Lab\n    </a></u>",
+          "Project 3 due, December 6, 11:59pm"
+        ],
+        [
+          "<b>December 11, 2025</b><br/>",
+          "Additional Topics<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1RSIAn6rU8BQ8bVO-8g6uuVtdMUWD5P_ms0WF2leGgP4/edit?slide=id.p#slide=id.p\" rel=\"noopener\" target=\"_blank\">\n<span>Wrap Up Slides</span>\n</a></u>",
+          "Video submission due December 12, 08:00am<br>Write-up and code due December 19, 11:59pm"
+        ],
+        [
+          "<b>December 18, 2025</b><br/>",
+          "<b></b>No Class<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1E6seB3P4NYtiH4jlU0qLx6e1XndrY98HXgaCPJvHJAA/edit?usp=sharing\"><span>Presentation Info</span></a></u>",
+          "Project 4 dueVideo submission due December 12, 08:00am<br>Write-up and code due December 19, 11:59pm"
+        ]
+      ]
+    },
+    "reads": [
+      "<p><strong>Textbooks: </strong></p>",
+      "<ul><li><p>Szeliski, R. (2022). <em>Computer vision: algorithms and applications</em>. Springer Nature.</p></li><li><p>Milan Sonka, Vaclav Hlavac, and Roger Boyle, Image Processing, Analysis, and Machine Vision, 4th Ed, 2015</p></li><li><p>David A. Forsyth and J Ponce, Computer Vision: A Modern Approach, 2012</p></li></ul>",
+      "<p><strong>Papers</strong></p>",
+      "<ul><li><p>(Under construction)</p></li></ul>",
+      "<p><strong>Courses</strong></p>",
+      "<ul><li><p><a href=\"https://www.sainingxie.com/cv-fall2024/\" rel=\"noopener\" target=\"_blank\">(Advanced) Computer Vision - NYU Courant (Saining Xie)</a></p></li><li><p><a href=\"https://cs231n.stanford.edu/schedule.html\" rel=\"noopener\" target=\"_blank\">Deep Learning for Computer Vision - Stanford (Fei- Fei Li)</a></p></li></ul>",
+      "<p>New York University</p>",
+      "<p>Tandon School of Engineering</p>",
+      "<p>370 Jay Street</p>",
+      "<p>Rooms 1158 (Office) 1166 (Lab)</p>",
+      "<p>Brooklyn, NY 11201</p>",
+      "<p>Contact: <a href=\"mailto:ev2240@nyu.edu\">ev2240@nyu.edu</a></p>"
+    ],
+    "syllabus": "/docs/Syllabus-Computer-Vision-Fall-25.pdf",
+    "previous": "",
+    "slug": "computer-vision-fall25",
+    "legacy": "/computer-vision-cs-gy-6643-1",
+    "label": "Computer Vision · Fall 2025"
+  },
+  "computer-vision-fall24": {
+    "title": "Computer Vision (CS-GY 6643)",
+    "term": "Fall 2024",
+    "summary": [
+      "<p>An important goal of signal processing and artificial intelligence (AI) is to equip computers with the capability of interpreting visual inputs. Computer vision is an area that deals with the construction of explicit, meaningful measurements and descriptions of physical objects from images. It includes many techniques from image processing, pattern recognition, geometric modeling, cognitive processing, and machine and deep learning. This course introduces students to the fundamental concepts and techniques in image processing and computer vision.</p>",
+      "<p><strong>This is a graduate level course requiring working knowledge of linear algebra, data structures  and proficiency in programming (python). Advanced undergraduates may enroll upon permission from instructor.</strong></p>"
+    ],
+    "overview": [
+      "<p>An important goal of signal processing and artificial intelligence (AI) is to equip computers with the capability of interpreting visual inputs. Computer vision is an area that deals with the construction of explicit, meaningful measurements and descriptions of physical objects from images. It includes many techniques from image processing, pattern recognition, geometric modeling, cognitive processing, and machine and deep learning. This course introduces students to the fundamental concepts and techniques in image processing and computer vision.</p>",
+      "<p><strong>This is a graduate level course requiring working knowledge of linear algebra, data structures  and proficiency in programming (python). Advanced undergraduates may enroll upon permission from instructor.</strong></p>",
+      "<p><strong>Course information:</strong> </p>",
+      "<p>Time: Thursdays 11am-1:30pm </p>",
+      "<p>Place: 2 MetroTech Center Room 801 </p>",
+      "<p>Slack channel: <a href=\"https://nyucomputervision.slack.com\" rel=\"noopener\" target=\"_blank\">nyucomputervision.slack.com</a></p>",
+      "<p><strong>Course team:</strong></p>",
+      "<p><strong>Instructor:</strong> Prof. Erdem Varol </p>",
+      "<p>Email: <a href=\"mailto:ev2240@nyu.edu?\">ev2240@nyu.edu</a> </p>",
+      "<p>Office Hours: On <a href=\"https://nyu.zoom.us/my/evarol\" rel=\"noopener\" target=\"_blank\">Zoom</a>,15 min <a href=\"https://calendar.app.google/Pkg8P79Lh762aKiy8\" rel=\"noopener\" target=\"_blank\">appointments</a>.</p>",
+      "<p><strong>TA:</strong> Rishabh Raj</p>",
+      "<p>Email: <a href=\"mailto:rr4574@nyu.edu\"><span>rr4574@nyu.edu</span></a></p>",
+      "<p>Office Hours: Tuesdays 1-2pm on <a href=\"https://nyu.zoom.us/j/99424531208\" rel=\"noopener\" target=\"_blank\">Zoom</a>.</p>",
+      "<p><strong>TA:</strong> Malhar Patel</p>",
+      "<p>Email: <a href=\"mailto:mkp6112@nyu.edu\"><span>mkp6112@nyu.edu</span></a></p>",
+      "<p>Office Hours: Mondays 1-2pm on <a href=\"https://nyu.zoom.us/j/99424531208\" rel=\"noopener\" target=\"_blank\">Zoom</a>.</p>",
+      "<p><strong>Grading breakdown:</strong> Individual homework 18%, Individual programming projects 45%, In-class midterm 15%, Final group project 22%</p>",
+      "<p><strong>Online Discussion:</strong> Preferred course communication will be via Slack, so please join our site from using this link: <a href=\"https://nyucomputervision.slack.com\" rel=\"noopener\" target=\"_blank\">nyucomputervision.slack.com</a>. All questions should also be posted to Slack (not sent via emails). We prefer that lectures or homework questions are asked publicly, since they will often help your classmates. Slack also supports private questions through direct messages for things relevant only to you.</p>",
+      "<p><strong>Python and Jupyter:</strong> Demos and labs in this class use Python, run through Jupyter notebooks. Jupyter lets you create and edit documents with live Python code and rich comments and images. We suggest that students run their Jupyter notebooks via Google Colaboratory, and we will share them via Colab.</p>",
+      "<p><strong>Assignments: </strong>Individual homework and programming projects must be turned in to Brightspace by the  specified deadline (11:59pm of the due date). Programming projects should be turned in as <em>evaluated</em> Jupyter notebooks. Do not clear the output before turning in. For written problem sets, we encourage using <a href=\"https://astrobites.org/2018/01/20/getting-started-with-latex/\" rel=\"noopener\" target=\"_blank\">LaTeX</a> or <a href=\"https://en.wikipedia.org/wiki/Markdown\" rel=\"noopener\" target=\"_blank\"> Markdown</a> (with <a href=\"http://support.typora.io/Math/\" rel=\"noopener\" target=\"_blank\">math support</a>.) You can use this <a href=\"https://www.overleaf.com/8961154795fmcsmfqgcbjt#69fe2a\" rel=\"noopener\" target=\"_blank\">template</a> for LaTeX. While there is a learning curve, these tools typically save  students time in the end! If you do write problems by hand, scan and  upload as a PDF. <span>Discussion is allowed on homework, but solutions and code must be written independently</span>. See the <a href=\"/docs/Syllabus-Computer-Vision-Fall-24.pdf\">syllabus</a> for policies. We have a zero tolerance policy for copied code or  solutions: any students with duplicate or very similar material will  receive a zero on the offending assignment.</p>",
+      "<p><strong>Late policy: </strong>Every hour that a project is late (rounded down) will cause 1% penalization of the total allotted grade. For example, a project or homework that is 11 hours 45 minutes late will have a maximum possible score of 89%.</p>",
+      "<p><strong>Textbooks: </strong>Computer Vision (2nd edition) by Szeliski will accompany the lectures that we cover and specific chapters from this book will be mentioned under reading materials in the schedule below. Textbook is freely available digitally at<a href=\"https://szeliski.org/Book/download.php\" rel=\"noopener\" target=\"_blank\"> https://szeliski.org/Book/download.php</a>.</p>",
+      "<p><strong>Tutorials:</strong> <a href=\"https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&amp;si=pFiWZ_-OtUUjNNLf\" rel=\"noopener\" target=\"_blank\">Linear algebra,</a> <a href=\"https://cs231n.github.io/setup-instructions/#working-remotely-on-google-colaboratory\" rel=\"noopener\" target=\"_blank\">Google Colab</a>,<a href=\"https://www.codecademy.com/learn/learn-python-3\" rel=\"noopener\" target=\"_blank\"> Python</a></p>"
+    ],
+    "schedule": {
+      "headers": [
+        "Date",
+        "Topic",
+        "Material",
+        "Homework/Projects<br/>"
+      ],
+      "rows": [
+        [
+          "<b>September 5, 2024</b><br/>",
+          "Intro and survey of topics<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1eRmtKcjsfSgXec8f1-5Zmqt1R8c3wHDeN79WP8lhDzM/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 1 slides</span></a></u>, <u><a href=\"https://www.codecademy.com/learn/learn-python-3\" rel=\"noopener\" target=\"_blank\"><span>Python tutorial</span></a></u>, <u><a href=\"https://cs231n.github.io/setup-instructions/#working-remotely-on-google-colaboratory\" rel=\"noopener\" target=\"_blank\"><span>Google Colab Setup</span></a></u>",
+          "Homework 0 out: Join slack <u><a><span>nyucomputervision.slack.com</span></a></u> (Due September 11, 11:59pm)"
+        ],
+        [
+          "<b>September 12, 2024</b><br/>",
+          "Image formation and filtering<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1oyTndkMATGU8Z1Ej9n0G59as5SmV-IX-yxfhGFUgDyQ/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 2 slides</span></a></u>,  <u><a href=\"https://colab.research.google.com/drive/19b00TXNfFc5-UZgeijD-EjN-WVkbXBwD?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Colab for Lecture 2</span></a></u>, Szeliski 2.2, 2.3, 3.1, 3.2",
+          "<u><a href=\"https://drive.google.com/file/d/1KHGxOkaBCfWCkAvOH7adAEzTFluMVjAR/view?usp=drive_link\" rel=\"noopener\" target=\"_blank\"><span>Homework 1</span></a></u> out, <u><a href=\"https://drive.google.com/file/d/1lxIAhb7TAZfhQpOwV4qKpPO6hjpgLUI7/view?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Project 1</span></a></u> out"
+        ],
+        [
+          "<b>September 19, 2024</b><br/>",
+          "Non-linear filtering and edge detection<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/11zTjGWPrLVYm-IwmBNObuQZPFUaI9IrnET3oFM-mIrM/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 3 slides</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1RL2SOMCiRrEJdjLPqUT19tlOiQGGT5y3?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Colab for Lecture 3</span></a></u>, Szeliski 3.3, 7.2",
+          "Homework 1 due, September 19 10:59a"
+        ],
+        [
+          "<b>September 26, 2024<br/></b>",
+          "Image recognition, Feature detection and matching<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1n_Rva24jxqVamb1Gbem4gR2t5D1Q2YzuUj8S3n3CSCw/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 4 slides</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1RtVc4RMqUqrL7zV4xciuVwSSE68ik9kq?usp=drive-slack\" rel=\"noopener\" target=\"_blank\"><span>Colab for Lecture 4</span></a></u>, Szeliski 6,7",
+          "Final project team selection due, September 22 10:59am"
+        ],
+        [
+          "<b>October 3, 2024</b><br/>",
+          "Contour tracking and Hough transforms<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1zPTou3xXJ6SPlcqHK6ZgdgauJV6tTy_ulSiFP42XSy8/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 5 slides</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/18TcggZQJsFC68ZN-vjlAleZI_Ahjf1t7?usp=drive-slack\" rel=\"noopener\" target=\"_blank\"><span>Colab for Lecture 5</span></a></u>, Szeliski 7.3,7.4",
+          "Project 1 due, October 4, 10:59am"
+        ],
+        [
+          "<b>October 10, 2024</b><br/>",
+          "Image alignment<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1zCsu0vg8Hn77SFsO0XsappR9ctLMfq-XqjW5MsMXVPI/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 6 slides</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/10kgS937dl9YAyAMYua6iYrVz-8W0yl8_?usp=drive-slack\" rel=\"noopener\" target=\"_blank\"><span>Colab for Lecture 6</span></a></u>, Szeliski 8.1,8.2",
+          "<u><a href=\"https://drive.google.com/file/d/1meLA_MyzqNtA16wIHHmLHOeqUE22kHlq/view?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Homework 2</span></a></u> out, Final project proposal due, October 11, 11:59pm"
+        ],
+        [
+          "<b>October 17, 2024</b><br/>",
+          "Segmentation<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1qy3kZ3a3pbMVx0MCKkqSsCkgSM7XRjX7z6954Jf6ZQo/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 7 slides</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/193iGdeHkO5FUasUd2n0A8KHagbyOcSx3?ouid=100773586740811093911&amp;ts=671008c3&amp;usp=drive-slack\" rel=\"noopener\" target=\"_blank\"><span>Colab for Lecture 7</span></a></u>, Szeliski 7.5",
+          "Homework 2 due, October 18, 11:59pm"
+        ],
+        [
+          "<b>October 24, 2024</b><br/>",
+          "<b>Midterm exam (in class)</b><br/>",
+          "",
+          "<u><a href=\"https://drive.google.com/file/d/1pLs9TAOR_bXNhWXyGPrKIlvQQ-YQHz7S/view?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Midterm Exam</span></a></u>, <u><a href=\"https://drive.google.com/file/d/1fh5kCFZrAjwf6PdCGKJB7rfjpg5nZ7yD/view?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Solution</span></a></u>"
+        ],
+        [
+          "<b>October 31, 2024</b><br/>",
+          "Machine learning, optimization",
+          "<u><a href=\"https://docs.google.com/presentation/d/1MqYIYivbNHVK7slmx6Y2ZgLWrKyl78oQcbxr_qwJoKk/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 8 slides</span></a></u>, <u><a href=\"https://colab.research.google.com/drive/1rvnHgjpkktCECuRo03S8AlxOKFtHsmYp?usp=drive-slack\" rel=\"noopener\" target=\"_blank\"><span>Colab for Lecture 8</span></a></u>",
+          "<u><a href=\"https://drive.google.com/file/d/1o68RxmnHie-eOIfM3Nzrovz_4-5Wpbqe/view?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Project 2</span></a></u> out (Due Nov. 18, 11:59am)"
+        ],
+        [
+          "<b>November 7, 2024</b><br/>",
+          "Convolutional Neural Nets<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1LAwAcnb13fhjDMb9EUGlI5Igj3OIm3zp_oZdDcvNPpM/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 9 slides</span></a></u>,  <u><a href=\"https://docs.google.com/presentation/d/14k2VWyOcJ3yaGfvvV6FG2iBcU6UYL7BezC6lreJBZnw/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Deep-STORM</span></a></u>,  <u><a href=\"https://docs.google.com/presentation/d/1KPkZTkd0xqV5oqz5UdeFwj4LBIJ4XoDjwgxEp0fBozk/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>3D CNNs</span></a></u>",
+          "<u><a href=\"https://drive.google.com/file/d/1g2pmRR8H1nLdztGlfHYh0E3NN_6v3opl/view?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Homework 3</span></a></u> out, Nov. 8 (Due Nov 21,10:59am)"
+        ],
+        [
+          "<b>November 14, 2024</b><br/>",
+          "Learning based recognition<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/17k6_nvLuKRQ5dYK8Vjk-hH4P5kjuaA6rXlPzif5kNQ8/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 10 slides</span></a></u>,  <u><a href=\"https://docs.google.com/presentation/d/1gEC3t3ulssA-P7SMYj_om71KGjvb8zdyoA0L3s8mx6w/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>GradCAM</span></a></u>,  <u><a href=\"https://colab.research.google.com/drive/1TyIB0gcyQORfr-tBMer2Wq76o6c7ePra?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>GradCAM Colab</span></a></u>",
+          "Project 2 due, November 18, 11:59am"
+        ],
+        [
+          "<b>November 21, 2024</b>",
+          "Motion models, depth estimation and optical flow<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1kRrmd8HFSnWLLSOpYgKxSbi5X851IAAGbFjNWtxF96I/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 11 slides</span></a></u>,  <u><a href=\"https://docs.google.com/presentation/d/1hMdCDiyYHvb3mzL00GSApc2bp0YdHMcbqwaPmD3TeZU/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>RAFT Paper Presentation</span></a></u>",
+          "Homework 3 due, November 21, 10:59am"
+        ],
+        [
+          "<b>November 28, 2024</b><br/>",
+          "<b>THANKSGIVING BREAK (No class)</b><br/>",
+          "",
+          ""
+        ],
+        [
+          "<b>December 5, 2024</b><br/>",
+          "Learning based segmentation<br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1yANxumjZxfGbr8-mIzmNabBgmdH6aQGzg08FmTjCcmo/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Lecture 12 slides</span></a></u>",
+          "Project 3 due, December 6, 11:59pm"
+        ],
+        [
+          "<b>December 12, 2024</b><br/>",
+          "<b>Final project presentations</b><br/>",
+          "<u><a href=\"https://docs.google.com/presentation/d/1E6seB3P4NYtiH4jlU0qLx6e1XndrY98HXgaCPJvHJAA/edit?usp=sharing\" rel=\"noopener\" target=\"_blank\"><span>Presentation Info</span></a></u>",
+          "Video submission due December 12, 08:00am<br/>Write-up and code due December 19, 11:59pm"
+        ]
+      ]
+    },
+    "reads": [
+      "<p><strong>Textbooks: </strong></p>",
+      "<ul><li><p>Szeliski, R. (2022). <em>Computer vision: algorithms and applications</em>. Springer Nature.</p></li><li><p>Milan Sonka, Vaclav Hlavac, and Roger Boyle, Image Processing, Analysis, and Machine Vision, 4th Ed, 2015</p></li><li><p>David A. Forsyth and J Ponce, Computer Vision: A Modern Approach, 2012</p></li></ul>",
+      "<p><strong>Papers</strong></p>",
+      "<ul><li><p>(Under construction)</p></li></ul>",
+      "<p>New York University</p>",
+      "<p>Tandon School of Engineering</p>",
+      "<p>370 Jay Street</p>",
+      "<p>Rooms 1158 (Office) 1166 (Lab)</p>",
+      "<p>Brooklyn, NY 11201</p>",
+      "<p>Contact: <a href=\"mailto:ev2240@nyu.edu\">ev2240@nyu.edu</a></p>"
+    ],
+    "syllabus": "/docs/Syllabus-Computer-Vision-Fall-24.pdf",
+    "previous": "",
+    "slug": "computer-vision-fall24",
+    "legacy": "/computer-vision-cs-gy-6643",
+    "label": "Computer Vision · Fall 2024"
+  }
+}

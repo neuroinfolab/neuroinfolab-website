@@ -1,0 +1,94 @@
+---
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import PageHead from '../../components/PageHead.astro';
+import { courses, LAB_NAME, type Course } from '../../data/lab';
+import { url, withBase } from '../../lib/url';
+import '../../styles/pages/teaching.css';
+
+export function getStaticPaths() {
+  return courses.map((course) => ({ params: { slug: course.slug }, props: { course } }));
+}
+
+interface Props {
+  course: Course;
+}
+
+const { course } = Astro.props;
+const previousHref = course.previous
+  ? course.previous.startsWith('/')
+    ? url(course.previous)
+    : course.previous
+  : '';
+---
+
+<Base
+  title={`${course.title} · ${course.term} · ${LAB_NAME}`}
+  description={course.description}
+>
+  <Header />
+
+  <main id="main">
+    <PageHead label={`Teaching · ${course.term}`} title={course.title}>
+      <div class="course-detail-meta">
+        <span>{course.code}</span>
+        <span>{course.when}</span>
+        <span>{course.where}</span>
+        {course.syllabus && <a href={url(course.syllabus)}>Syllabus PDF</a>}
+        {previousHref && <a href={previousHref}>Previous iteration →</a>}
+      </div>
+    </PageHead>
+
+    <section class="section">
+      <div class="shell">
+        <div class="course-prose" set:html={withBase(course.overview.join(''))} />
+
+        {course.schedule.rows.length > 0 && (
+          <div class="course-schedule">
+            <div class="section-head">
+              <h2>Schedule</h2>
+              <span class="label">{course.schedule.rows.length} sessions</span>
+            </div>
+            <div class="course-table-wrap">
+              <table class="course-table">
+                <thead>
+                  <tr>
+                    {course.schedule.headers.map((header) => (
+                      <th set:html={withBase(header)} />
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {course.schedule.rows.map((row) => (
+                    <tr>
+                      {row.map((cell) => (
+                        <td set:html={withBase(cell)} />
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+
+        {course.reads.length > 0 && (
+          <div class="course-reads">
+            <div class="section-head">
+              <h2>Essential reads</h2>
+            </div>
+            <div class="course-prose" set:html={withBase(course.reads.join(''))} />
+          </div>
+        )}
+
+        <div class="course-pager">
+          <a href={url('/teaching')}>← All teaching</a>
+          <a href={url('/join')}>Join the lab →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Base>

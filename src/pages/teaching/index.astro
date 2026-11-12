@@ -1,0 +1,79 @@
+---
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import PageHead from '../../components/PageHead.astro';
+import { LAB_NAME, currentCourses, pastCourses } from '../../data/lab';
+import { url } from '../../lib/url';
+import '../../styles/pages/teaching.css';
+---
+
+<Base
+  title={`Teaching · ${LAB_NAME}`}
+  description="Courses taught by Erdem Varol at NYU Tandon: Neuroinformatics and Computer Vision."
+>
+  <Header />
+
+  <main id="main">
+    <PageHead
+      label="Teaching"
+      title="Courses"
+      lede="Graduate courses on the models, signal processing and data tools behind modern neuroscience — and the computer vision that makes the imaging work."
+    />
+
+    <section class="section" aria-labelledby="current-title">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="current-title">Current</h2>
+          <span class="label">Spring &amp; Fall 2026</span>
+        </div>
+
+        <div class="course-grid">
+          {currentCourses.map((course) => (
+            <article class="course-card">
+              <span class="course-term">{course.term}</span>
+              <h2>
+                <a href={url(`/teaching/${course.slug}`)}>{course.title}</a>
+              </h2>
+              <span class="course-code">{course.code}</span>
+              <p>{course.description}</p>
+              <span class="course-when">{course.when} · {course.where}</span>
+              <div class="link-row">
+                <a href={url(`/teaching/${course.slug}`)}>Course page and schedule →</a>
+                {course.syllabus && <a href={url(course.syllabus)}>Syllabus PDF</a>}
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="past-title">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="past-title">Previous offerings</h2>
+          <span class="label">{pastCourses.length} course pages</span>
+        </div>
+
+        <div class="course-list">
+          {pastCourses.map((course) => (
+            <a class="course-row" href={url(`/teaching/${course.slug}`)}>
+              <span class="course-term">{course.term}</span>
+              <span>
+                <h3>{course.title}</h3>
+                <span class="course-row-meta">{course.code} · {course.when}</span>
+              </span>
+              <span class="course-row-link">Course page →</span>
+            </a>
+          ))}
+        </div>
+
+        <p class="team-note">
+          Course pages are ports of the old site; every lecture, codelab and reading link is kept.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Base>

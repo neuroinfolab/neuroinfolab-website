@@ -1,0 +1,25 @@
+/* Not-found page only. */
+.notfound {
+  display: grid;
+  align-content: center;
+  min-height: 62vh;
+  padding-block: clamp(3rem, 8vw, 7rem);
+}
+
+.notfound h1 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(3rem, 8vw, 8rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+
+.notfound p {
+  max-width: 52ch;
+  margin-top: 1.2rem;
+  color: var(--ink-soft);
+}
+
+.notfound .link-row {
+  margin-top: 1.8rem;
+}

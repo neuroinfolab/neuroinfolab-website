@@ -1,0 +1,63 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import PageHead from '../components/PageHead.astro';
+import { site, LAB_NAME, projects, links } from '../data/lab';
+import { url } from '../lib/url';
+import '../styles/pages/research.css';
+
+const intro = site.description.split('PDF document')[0].trim();
+---
+
+<Base title={`Research · ${LAB_NAME}`} description={intro}>
+  <Header />
+
+  <main id="main">
+    <PageHead label="Research" title="How the brain is wired, and what genes have to do with it." lede={intro}>
+      <div class="link-row">
+        <a href={url(links.projectSummary)}>Project details (PDF)</a>
+        <a href={url(links.labPrimer)}>Lab primer (PDF)</a>
+        <a href={url('/publications')}>Publications →</a>
+      </div>
+    </PageHead>
+
+    <section class="section" aria-label="Lab projects">
+      <div class="shell">
+        <div class="research-list">
+          {projects.map((p) => (
+            <article class="research-item" id={p.anchor} data-reveal>
+              <span class="research-index">{p.index}</span>
+              <div class="research-body">
+                <h2>{p.title}</h2>
+                <p>{p.desc}</p>
+                {p.collabLinks.length > 0 && (
+                  <p class="research-collab">
+                    With{' '}
+                    {p.collabLinks.map((c, i) => (
+                      <>
+                        {i > 0 && ' · '}
+                        {c.href ? (
+                          <a href={c.href} target="_blank" rel="noopener">{c.name}</a>
+                        ) : (
+                          c.name
+                        )}
+                      </>
+                    ))}
+                  </p>
+                )}
+              </div>
+              {p.poster && (
+                <div class="research-media">
+                  <img src={url(p.poster)} alt={p.title} width="1280" height="720" loading="lazy" />
+                </div>
+              )}
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Base>

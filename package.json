@@ -7,8 +7,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "sync": "node scripts/sync-publications.mjs",
-    "check": "astro check"
+    "sync:site": "python3 scripts/sync-site-text.py",
+    "sync:courses": "python3 scripts/sync-courses.py"
   },
   "dependencies": {
     "@fontsource-variable/instrument-sans": "^5.3.0",

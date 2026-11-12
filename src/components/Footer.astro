@@ -1,5 +1,15 @@
 ---
+import { url } from '../lib/url';
+import { ADDRESS, EMAIL, SCHOLAR, TWITTER, YOUTUBE, links } from '../data/lab';
+
 const year = new Date().getFullYear();
+const nav = [
+  { href: '/research', label: 'Research' },
+  { href: '/team', label: 'Team' },
+  { href: '/publications', label: 'Publications' },
+  { href: '/teaching', label: 'Teaching' },
+  { href: '/join', label: 'Join us' },
+];
 ---
 
 <footer class="site-footer">
@@ -8,19 +18,29 @@ const year = new Date().getFullYear();
       <div>
         <p class="footer-mark">Neuroinformatics Lab</p>
         <p class="label" style="margin-top:0.6rem">NYU Tandon · Computer Science &amp; Engineering</p>
+        <p class="footer-address" style="margin-top:0.9rem">{ADDRESS}</p>
       </div>
 
       <div>
-        <h3>Visit</h3>
-        <p>370 Jay Street, Room 1158<br />Brooklyn, NY 11201</p>
+        <h3>Explore</h3>
+        <p>
+          {nav.map((item, i) => (
+            <>
+              <a href={url(item.href)}>{item.label}</a>
+              {i < nav.length - 1 && <br />}
+            </>
+          ))}
+        </p>
       </div>
 
       <div>
         <h3>Contact</h3>
         <p>
-          <a href="mailto:ev2240@nyu.edu">ev2240@nyu.edu</a><br />
-          <a href="https://scholar.google.com/citations?user=7GlElV0AAAAJ">Google Scholar</a><br />
-          <a href="https://vida.engineering.nyu.edu">VIDA Center</a>
+          <a href={`mailto:${EMAIL}`}>{EMAIL}</a><br />
+          <a href={SCHOLAR} target="_blank" rel="noopener">Google Scholar</a><br />
+          <a href={TWITTER} target="_blank" rel="noopener">X / Twitter</a><br />
+          <a href={YOUTUBE} target="_blank" rel="noopener">YouTube</a><br />
+          <a href={links.vida} target="_blank" rel="noopener">VIDA Center</a>
         </p>
       </div>
     </div>

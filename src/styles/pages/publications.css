@@ -1,0 +1,41 @@
+/* Publications page only. Shared list styles live in global.css. */
+.pub-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1.6rem;
+}
+
+.pub-nav a {
+  padding: 0.34rem 0.6rem;
+  border: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: 0.63rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+.pub-nav a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.pub-year-group {
+  scroll-margin-top: calc(var(--header-h) + 24px);
+}
+
+.pub-year-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.pub-year-head span {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  text-transform: none;
+}

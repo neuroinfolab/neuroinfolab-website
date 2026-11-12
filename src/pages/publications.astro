@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import PageHead from '../components/PageHead.astro';
+import PubList from '../components/PubList.astro';
+import { site, LAB_NAME, publicationsByYear, SCHOLAR, EMAIL } from '../data/lab';
+import '../styles/pages/publications.css';
+
+const total = site.publications.length;
+const yearId = (year: string) => `y${year.slice(0, 4)}`;
+---
+
+<Base
+  title={`Publications · ${LAB_NAME}`}
+  description={`Publications from the Neuroinformatics Lab at NYU Tandon, ${publicationsByYear.at(-1)?.year}–${publicationsByYear[0]?.year}.`}
+>
+  <Header />
+
+  <main id="main">
+    <PageHead
+      label="Publications"
+      title="Papers"
+      lede={`${total} papers from the lab, newest first. The full and current list lives on Google Scholar.`}
+    >
+      <div class="pub-nav">
+        {publicationsByYear.map((group) => (
+          <a href={`#${yearId(group.year)}`}>{group.year}</a>
+        ))}
+      </div>
+      <div class="link-row">
+        <a href={SCHOLAR} target="_blank" rel="noopener">Google Scholar →</a>
+        <a href={`mailto:${EMAIL}`}>Request a paper</a>
+      </div>
+    </PageHead>
+
+    <section class="section" aria-label="All publications">
+      <div class="shell">
+        <PubList groups={publicationsByYear} />
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Base>

@@ -1,0 +1,95 @@
+/* Research page only. Shared tokens and components live in global.css. */
+.research-list {
+  border-top: 1px solid var(--rule);
+}
+
+.research-item {
+  display: grid;
+  grid-template-columns: 3.2rem minmax(0, 1fr);
+  gap: 0.4rem 1.4rem;
+  padding-block: clamp(1.6rem, 3vw, 2.6rem);
+  border-bottom: 1px solid var(--rule-soft);
+  scroll-margin-top: calc(var(--header-h) + 24px);
+}
+
+.research-item:last-child {
+  border-bottom: 0;
+}
+
+.research-item:target {
+  border-color: var(--accent);
+}
+
+.research-index {
+  padding-top: 0.45rem;
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+
+.research-body {
+  max-width: 82ch;
+}
+
+.research-item h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 2.4vw, 2.15rem);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+}
+
+.research-item p {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.research-collab {
+  margin-top: 0.85rem !important;
+  font-family: var(--mono);
+  font-size: 0.61rem !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted) !important;
+}
+
+.research-collab a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+}
+
+.research-collab a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.research-media {
+  grid-column: 2;
+  width: 100%;
+  max-width: 760px;
+  aspect-ratio: 16 / 9;
+  margin-top: 1.2rem;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  background: #0b0b0c;
+}
+
+.research-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .research-item {
+    grid-template-columns: 2.2rem minmax(0, 1fr);
+    gap: 0.3rem 0.8rem;
+  }
+
+  .research-item h2 {
+    font-size: clamp(1.35rem, 6vw, 1.8rem);
+  }
+}

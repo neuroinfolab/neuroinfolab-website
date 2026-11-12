@@ -2,22 +2,33 @@
 import { url } from '../lib/url';
 
 const links = [
-  { href: '/#projects', label: 'Projects' },
-  { href: '/#pi', label: 'Team' },
-  { href: '/#publications', label: 'Publications' },
+  { href: '/research', label: 'Research' },
+  { href: '/team', label: 'Team' },
+  { href: '/publications', label: 'Publications' },
+  { href: '/teaching', label: 'Teaching' },
+  { href: '/join', label: 'Join us' },
 ];
+
+const path = Astro.url.pathname;
+const isActive = (href: string) => path === url(href) || path.startsWith(`${url(href)}/`);
 ---
 
 <header class="site-header">
   <div class="shell">
-    <a class="brand" href={url('/')}>Neuroinformatics Lab</a>
+    <a class="brand" href={url('/')}>
+      Neuroinformatics Lab <span>NYU Tandon</span>
+    </a>
 
     <button class="menu-btn" type="button" data-menu aria-expanded="false" aria-controls="nav">
       Menu
     </button>
 
     <nav class="nav" id="nav" data-nav aria-label="Main">
-      {links.map((link) => <a href={url(link.href)}>{link.label}</a>)}
+      {links.map((link) => (
+        <a href={url(link.href)} aria-current={isActive(link.href) ? 'page' : undefined}>
+          {link.label}
+        </a>
+      ))}
     </nav>
   </div>
 </header>
