@@ -1755,9 +1755,6 @@ a.pub-title:hover {
   justify-content: center;
   gap: clamp(1.2rem, 3vw, 3rem);
   margin-bottom: 2rem;
-  padding: 1.2rem clamp(1rem, 3vw, 2rem);
-  background: #f3f1ec;
-  border: 1px solid var(--rule);
 }
 
 .logo-strip a {
