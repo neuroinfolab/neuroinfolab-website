@@ -1,0 +1,48 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import site from '../data/site.json';
+
+const years = [...new Set(site.publications.map((p) => p.year))];
+const byYear = years.map((y) => ({
+  year: y,
+  items: site.publications.filter((p) => p.year === y),
+}));
+---
+
+<Base title={`Publications · ${site.name}`} description={site.tagline}>
+  <Header />
+
+  <main id="main">
+    <section class="section page-head" aria-labelledby="pubs-title">
+      <div class="shell">
+        <span class="label">{site.publications.length} papers</span>
+        <h1 id="pubs-title" class="display">Publications</h1>
+        <a class="more" href="https://scholar.google.com/citations?user=7GlElV0AAAAJ">
+          Link to Google Scholar →
+        </a>
+      </div>
+    </section>
+
+    <section class="section" aria-label="All publications">
+      <div class="shell">
+        <div class="pubs">
+          {byYear.map((group) => (
+            <section class="pub-year-group">
+              <h2 class="pub-year-head">{group.year}</h2>
+              {group.items.map((p) => (
+                <article class="pub">
+                  <p class="pub-title">{p.title}</p>
+                  <span class="pub-venue">{p.authors} · {p.venue}</span>
+                </article>
+              ))}
+            </section>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Base>

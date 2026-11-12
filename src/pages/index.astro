@@ -1,0 +1,163 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import site from '../data/site.json';
+import { url } from '../lib/url';
+
+const projects = site.projects;
+
+const alumniImg: Record<string, string> = {
+  'Chenyi Li': '/img/alumni/li.jpg',
+  'Rohaan Advani': '/img/alumni/advani.jpg',
+  'Aditya Chichgare': '/img/alumni/chichgare.jpg',
+  'Allen Hung': '/img/alumni/hung.jpg',
+  'Justin Hwang': '/img/alumni/hwang.jpg',
+  'Rishabh Raj': '/img/alumni/raj.jpg',
+  'Chinmayan Pradeep': '/img/alumni/pradeep.jpg',
+  'Akshat Sachin Shaha': '/img/alumni/shaha.jpg',
+  'Malhar Patel': '/img/alumni/patel.jpg',
+  'Daniela Shoham': '/img/alumni/shoham.jpg',
+  'Rosanne Cui': '/img/alumni/cui.jpg',
+  'Anusha Kumar': '/img/alumni/kumar.jpg',
+};
+
+const people: Record<string, string> = {
+  'Alex Ratzan': '/img/team/ratzan.jpg',
+  'Tianxiao He': '/img/team/he.jpg',
+  'Margaret Conde Paredes': '/img/team/conde-paredes.jpg',
+  'Sid Goel': '/img/team/goel.jpg',
+  'Visweswar Sirish Parupudi': '/img/team/parupudi.jpg',
+  'Nalini Ramanathan': '/img/team/ramanathan.jpg',
+  'Lawrence Lu': '/img/team/lu.jpg',
+  'Subhrajit Dey': '/img/team/dey.jpg',
+  'Sherlock & Toby the Basset Hounds': '/img/team/sherlock-toby.jpg',
+};
+---
+
+<Base title={site.name} description={site.tagline}>
+  <Header />
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="grid-bg" aria-hidden="true"></div>
+      <div class="shell">
+        <div class="hero-inner">
+          <div>
+            <span class="label">Tandon School of Engineering, NYU</span>
+            <h1 id="hero-title" class="display" style="margin-top:1rem">{site.name}</h1>
+            <p class="hero-lede">{site.tagline}</p>
+          </div>
+
+          <figure class="hero-media">
+            <video
+              src={url('/media/transcriptomics.mp4')}
+              poster={url('/media/transcriptomics.jpg')}
+              muted
+              loop
+              autoplay
+              playsinline
+              preload="metadata"
+              aria-label="Spatiotemporal Integration of the Human Transcriptome and Connectome"
+            ></video>
+            <figcaption>
+              <span>Spatiotemporal Integration of the Human Transcriptome and Connectome</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pi" aria-labelledby="pi-title">
+      <div class="shell">
+        <div class="pi">
+          <div>
+            <span class="label">Principal investigator</span>
+            <h2 id="pi-title">{site.pi.name}</h2>
+            <p class="pi-bio">{site.pi.bio}</p>
+            <div class="pi-links">
+              <a href="mailto:ev2240@nyu.edu">Email: ev2240@nyu.edu</a>
+              <a href={url('/docs/varol_cv_1122.pdf')}>CV</a>
+              <a href="https://scholar.google.com/citations?user=7GlElV0AAAAJ">Google Scholar</a>
+              <a href="https://twitter.com/erdem___varol">Twitter</a>
+            </div>
+          </div>
+          <div class="pi-photo">
+            <img src={url('/img/team/varol.jpg')} alt={site.pi.name} width="480" height="600" />
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="group-head">
+            <h3>Team</h3>
+          </div>
+          <div class="people">
+            {site.team.map((p) => (
+              <div class="person">
+                <div class="person-media">
+                  {people[p.name] ? (
+                    <img src={url(people[p.name])} alt={p.name} loading="lazy" width="480" height="600" />
+                  ) : null}
+                </div>
+                <div class="person-name">{p.name}</div>
+                <div class="person-role">{p.role}</div>
+                {p.note && <div class="person-note">{p.note}</div>}
+                {p.prev && <div class="person-note">{p.prev}</div>}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="alumni">
+          <h3>Alumni</h3>
+          <div class="alumni-grid">
+            {site.alumni.map((a) => (
+              <div class="alum">
+                <div class="alum-media">
+                  {alumniImg[a.name] ? (
+                    <img src={url(alumniImg[a.name])} alt={a.name} loading="lazy" width="480" height="600" />
+                  ) : null}
+                </div>
+                <div class="alum-name">{a.name}</div>
+                <div class="alum-role">{a.role}</div>
+                {a.school && <div class="alum-role">{a.school}</div>}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="projects-title">Lab Projects</h2>
+        </div>
+
+        <div class="projects">
+          {projects.map((p, i) => (
+            <ProjectCard
+              index={String(i + 1).padStart(2, '0')}
+              title={p.title}
+              summary={p.desc}
+              poster={p.poster ? url(p.poster) : null}
+              collab={p.collab}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="funding" aria-labelledby="funding-title">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="funding-title">Funding sources</h2>
+        </div>
+        {site.funding.map((f) => <p class="funding">{f}</p>)}
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Base>

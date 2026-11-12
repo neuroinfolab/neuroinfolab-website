@@ -1,0 +1,29 @@
+---
+interface Props {
+  href?: string;
+  index?: string;
+  title: string;
+  summary: string;
+  poster?: string | null;
+  collab?: string[];
+}
+
+const { href, index, title, summary, poster, collab = [] } = Astro.props;
+const Tag = href ? 'a' : 'article';
+---
+
+<Tag class:list={['card', { 'card--text': !poster }]} href={href} data-reveal>
+  {poster ? (
+    <div class="card-media">
+      <img src={poster} alt="" loading="lazy" width="1280" height="720" />
+    </div>
+  ) : (
+    <span class="card-big-index">{index}</span>
+  )}
+  <div class="card-body">
+    {poster && index && <span class="card-index">{index}</span>}
+    <h3>{title}</h3>
+    <p>{summary}</p>
+    {collab.length > 0 && <span class="collab">with {collab.join(' · ')}</span>}
+  </div>
+</Tag>

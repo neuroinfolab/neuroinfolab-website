@@ -1,0 +1,23 @@
+---
+import { url } from '../lib/url';
+
+const links = [
+  { href: '/#projects', label: 'Projects' },
+  { href: '/#pi', label: 'Team' },
+  { href: '/publications', label: 'Publications' },
+];
+---
+
+<header class="site-header">
+  <div class="shell">
+    <a class="brand" href={url('/')}>Neuroinformatics Lab</a>
+
+    <button class="menu-btn" type="button" data-menu aria-expanded="false" aria-controls="nav">
+      Menu
+    </button>
+
+    <nav class="nav" id="nav" data-nav aria-label="Main">
+      {links.map((link) => <a href={url(link.href)}>{link.label}</a>)}
+    </nav>
+  </div>
+</header>

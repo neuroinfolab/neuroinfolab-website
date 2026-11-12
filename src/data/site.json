@@ -1,0 +1,732 @@
+{
+  "name": "Neuroinformatics lab",
+  "tagline": "We develop computational models and signal processing tools to decode brain connectivity and function using genomics and imaging. We are particularly interested in constructing a bridge between genetics and behavior through interpretable models that operate on multi-modal neural data at molecular, circuit and whole-brain resolutions.",
+  "description": "The overarching research theme of this lab is investigating the genetic underpinnings of brain connectivity at the circuit level and the behavioral and pathological phenotypes they present in neuropsychiatric disorders. We will investigate the structural and functional connectivity of the brain on a macro-scale using clinical neuroimaging datasets and on a micro-scale using single-neuron resolution imaging and genomics datasets collected from small animal model systems. Deciphering the genetic correlates of brain connectivity in health and disease will have a broader impact in basic neuroscience and clinical research to better understand neuropathogenesis and enable the design of precision medicine treatments. PDF document with project details can be found here. Slide deck that covers broad lab policies is found here.",
+  "pi": {
+    "name": "Erdem Varol (PI)",
+    "bio": "I’m an assistant professor at the Department of Computer Science & Engineering at Tandon School of Engineering, NYU. I’m also a part of the VIDA center. Previously, I was a postdoc at the Department of Statistics, Zuckerman Institute, Columbia University with Liam Paninski. Before that, I did my Ph.D. at the Department of Electrical & Systems Engineering at the University of Pennsylvania under Christos Davatzikos. Whilst at Penn, I also received an A.M degree in Statistics from the Wharton School. I recently received the NIH/NIMH K99/R00 award in 2022. I’m originally from Ankara, Turkey and grew up in New York City. I have two basset hounds."
+  },
+  "team": [
+    {
+      "name": "Alex Ratzan",
+      "role": "Ph.D student (2023 - present)",
+      "prev": "Previously @ Tufts University",
+      "site": ""
+    },
+    {
+      "name": "Tianxiao He",
+      "role": "Ph.D student (2023 - present)",
+      "prev": "Previously @ Columbia University",
+      "site": ""
+    },
+    {
+      "name": "Margaret Conde Paredes",
+      "note": "(co-advised w/ Attila Losonczy )",
+      "role": "Ph.D. student (2023 - present)",
+      "prev": "Previously @ UCL",
+      "site": "TBD"
+    },
+    {
+      "name": "Sid Goel",
+      "role": "Ph.D. student (2024 - present)",
+      "prev": "Previously @ UC Berkeley",
+      "site": ""
+    },
+    {
+      "name": "Visweswar Sirish Parupudi",
+      "role": "M.S. Student (2025 - present)",
+      "prev": "Previously @ BITS Pilani Hyderabad",
+      "site": ""
+    },
+    {
+      "name": "Nalini Ramanathan",
+      "role": "PhD student (2026 - present)",
+      "note": "(co-advised w/ Pavel Izmailov)",
+      "prev": "Previously @ Dartmouth College",
+      "site": ""
+    },
+    {
+      "name": "Lawrence Lu",
+      "role": "M.S. Student (2025 - present)",
+      "prev": "Previously @ National Taipei University of Technology",
+      "site": ""
+    },
+    {
+      "name": "Subhrajit Dey",
+      "role": "M.S. Student (2025 - present)",
+      "prev": "Previously @ Jadavpur University",
+      "site": ""
+    },
+    {
+      "name": "Sherlock & Toby the Basset Hounds",
+      "role": "Lab mascots",
+      "note": "(2017 - present, 2021 - present)",
+      "site": ""
+    }
+  ],
+  "alumni": [
+    {
+      "name": "Chenyi Li",
+      "role": "M.S. student (2024 - 2025) - Presently PhD student at Cornell",
+      "site": ""
+    },
+    {
+      "name": "Rohaan Advani",
+      "role": "M.S. student (2024 - 2025)",
+      "site": ""
+    },
+    {
+      "name": "Aditya Chichgare",
+      "role": "M.S. student (2024 - 2025)",
+      "site": ""
+    },
+    {
+      "name": "Allen Hung",
+      "role": "M.S. student (2024 - 2025)",
+      "site": ""
+    },
+    {
+      "name": "Justin Hwang",
+      "role": "M.S. student (2025)",
+      "site": ""
+    },
+    {
+      "name": "Rishabh Raj",
+      "role": "M.S. student (2024 - 2025) - Presently at Goldman Sachs",
+      "site": ""
+    },
+    {
+      "name": "Chinmayan Pradeep",
+      "role": "M.S. student (2024 - 2025)",
+      "site": ""
+    },
+    {
+      "name": "Akshat Sachin Shaha",
+      "role": "M.S. student (2024 - 2025)",
+      "site": ""
+    },
+    {
+      "name": "Malhar Patel",
+      "role": "M.S. Student (2024 - 2025) - Presently at Amazon",
+      "site": ""
+    },
+    {
+      "name": "Daniela Shoham",
+      "role": "Undergraduate SRI Scholar (2023 - present)",
+      "school": "Barnard College"
+    },
+    {
+      "name": "Rosanne Cui",
+      "role": "Undegraduate Student (2024 - present)",
+      "school": "New York University"
+    },
+    {
+      "name": "Anusha Kumar",
+      "role": "High School Summer Intern (2024 - present)",
+      "school": "Horace Mann School"
+    }
+  ],
+  "publications": [
+    {
+      "year": "2025",
+      "title": "Predicting Functional Brain Connectivity with Context-Aware Deep Neural Networks",
+      "authors": "A Ratzan, S Goel, J Wen, C Davatzikos, E Varol",
+      "venue": "Advances in Neural Information Processing Systems 39"
+    },
+    {
+      "year": "2025",
+      "title": "Self supervised learning for in vivo localization of microelectrode arrays using raw local field potential",
+      "authors": "T He, M Patel, C Li, A Maslarova, M Vöröslakos, N Ramanathan, W Hung, G Buzsaki, E Varol",
+      "venue": "Advances in Neural Information Processing Systems 39"
+    },
+    {
+      "year": "2025",
+      "title": "Neuroimaging endophenotypes reveal underlying mechanisms and genetic factors contributing to progression and development of four brain disorders",
+      "authors": "J Wen, I Skampardoni, YE Tian, Z Yang, Y Cui, G Erus, G Hwang, E Varol,...",
+      "venue": "Nature Biomedical Engineering, 1-18"
+    },
+    {
+      "year": "2025",
+      "title": "Alternative splicing across the C. elegans nervous system",
+      "authors": "A Weinreb, E Varol, A Barrett, RM McWhirter, SR Taylor, I Courtney,...",
+      "venue": "Nature communications 16 (1), 4508"
+    },
+    {
+      "year": "2025",
+      "title": "DREDge: robust motion correction for high-density extracellular recordings across species",
+      "authors": "C Windolf, H Yu, AC Paulk, D Meszéna, W Muñoz, J Boussard,...",
+      "venue": "Nature methods, 1-13"
+    },
+    {
+      "year": "2025",
+      "title": "Decoding neuronal wiring by joint inference of cell identity and synaptic connectivity",
+      "authors": "HP Gupta, AW Azevedo, K Xing, PA Sims, E Varol, RS Mann",
+      "venue": "bioRxiv"
+    },
+    {
+      "year": "2025",
+      "title": "Integrating bulk and single cell RNA-seq refines transcriptomic profiles of individual C. elegans neurons",
+      "authors": "A Barrett, E Varol, A Weinreb, SR Taylor, RM McWhirter, C Cros, B Vidal,...",
+      "venue": "BioRxiv, 2025.01. 26.634951"
+    },
+    {
+      "year": "2025",
+      "title": "WormID-Benchmark: Extracting Whole-Brain Neural Dynamics of C. elegans At the Neuron Resolution",
+      "authors": "J Adhinarta, J Dong, T He, J Huang, D Sprague, J Wan, HJ Lee, Z Yu,...",
+      "venue": "bioRxiv, 2025.01. 06.631621"
+    },
+    {
+      "year": "2025",
+      "title": "CellSpliceNet: Interpretable Multimodal Modeling of Alternative Splicing Across Neurons in C. elegans",
+      "authors": "A Afrasiyabi, J Kovalic, C Liu, E Castro, A Weinreb, E Varol, D Miller,...",
+      "venue": "bioRxiv, 2025.06. 22.660966"
+    },
+    {
+      "year": "2025",
+      "title": "Human single neural and columnar dynamics recorded by intraoperative high-density penetrating electrodes",
+      "authors": "D Meszena, A Paulk, W Munoz, M Jamali, I Caprara, B Coughlin,...",
+      "venue": "Neuroscience Applied 4, 105433"
+    },
+    {
+      "year": "2024",
+      "title": "Exploiting correlations across trials and behavioral sessions to improve neural decoding",
+      "authors": "Y Zhang, H Lyu, C Hurwitz, S Wang, C Findling, F Hubert, A Pouget,...",
+      "venue": "bioRxiv"
+    },
+    {
+      "year": "2024",
+      "title": "Genetic and clinical correlates of two neuroanatomical AI dimensions in the Alzheimer’s disease continuum",
+      "authors": "J Wen, Z Yang, IM Nasrallah, Y Cui, G Erus, D Srinivasan, A Abdulkadir,...",
+      "venue": "Translational psychiatry 14 (1), 420"
+    },
+    {
+      "year": "2024",
+      "title": "2P-NucTag: on-demand phototagging for molecular analysis of functionally identified cortical neurons",
+      "authors": "J Shi, B Nutkovich, D Kushinsky, BY Rao, SA Herrlinger, E Tsivourakis,...",
+      "venue": "bioRxiv"
+    },
+    {
+      "year": "2024",
+      "title": "Alternative splicing across theC. elegansnervous system",
+      "authors": "A Weinreb, E Varol, A Barrett, RM McWhirter, SR Taylor, I Courtney,...",
+      "venue": ""
+    },
+    {
+      "year": "2024",
+      "title": "Disorganized Inhibitory Dynamics in Hippocampal area CA1 of 22q11. 2 Deletion Mutant Mice",
+      "authors": "SA Herrlinger, BY Rao, MEC Paredes, AL Tuttman, H Arain, E Varol,...",
+      "venue": "bioRxiv, 2024.04. 28.591464"
+    },
+    {
+      "year": "2023",
+      "title": "Bypassing spike sorting: Density-based decoding using spike localization from dense multielectrode probes",
+      "authors": "Y Zhang, T He, J Boussard, C Windolf, O Winter, E Trautmann, N Roth,...",
+      "venue": "Advances in Neural Information Processing Systems 36, 77604-77631; NeurIPS 2023 ( Spotlight )"
+    },
+    {
+      "year": "2023",
+      "title": "Modified Neuropixels probes for recording human neurophysiology in the operating room",
+      "authors": "B Coughlin, W Muñoz, Y Kfir, MJ Young, D Meszéna, M Jamali, I Caprara,...",
+      "venue": "Nature protocols 18 (10), 2927-2953"
+    },
+    {
+      "year": "2023",
+      "title": "Neuroimaging-AI Endophenotypes of Brain Diseases in the General Population: Towards a Dimensional System of Vulnerability",
+      "authors": "J Wen, I Skampardoni, YE Tian, Z Yang, Y Cui, G Erus, G Hwang, E Varol,...",
+      "venue": "Medrxiv: the Preprint Server for Health Sciences"
+    },
+    {
+      "year": "2023",
+      "title": "Learning Probabilistic Piecewise Rigid Atlases of Model Organisms via Generative Deep Networks",
+      "authors": "A Nejatbakhsh, N Dey, V Venkatachalam, E Yemini, L Paninski, E Varol",
+      "venue": "International Conference on Information Processing in Medical Imaging, 332-343; IPMI 2023. ( Oral Presentation )"
+    },
+    {
+      "year": "2023",
+      "title": "Multimodal microscopy image alignment using spatial and shape information and a branch-and-bound algorithm",
+      "authors": "S Chen, BY Rao, S Herrlinger, A Losonczy, L Paninski, E Varol",
+      "venue": "ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and …"
+    },
+    {
+      "year": "2023",
+      "title": "Robust online multiband drift estimation in electrophysiology data",
+      "authors": "C Windolf, AC Paulk, Y Kfir, E Trautmann, D Meszéna, W Muñoz,...",
+      "venue": "ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and …; ICASSP 2023. ( Top 3% of papers )"
+    },
+    {
+      "year": "2023",
+      "title": "Assessment of neuroanatomical endophenotypes of autism spectrum disorder and association with characteristics of individuals with schizophrenia and the general population",
+      "authors": "G Hwang, J Wen, S Sotardi, ES Brodkin, GB Chand, DB Dwyer, G Erus,...",
+      "venue": "JAMA psychiatry 80 (5), 498-507"
+    },
+    {
+      "year": "2023",
+      "title": "Psychosis brain subtypes validated in first-episode cohorts and related to illness remission: results from the PHENOM consortium",
+      "authors": "DB Dwyer, GB Chand, A Pigoni, A Khuntia, J Wen, M Antoniades,...",
+      "venue": "Molecular psychiatry 28 (5), 2008-2017"
+    },
+    {
+      "year": "2023",
+      "title": "Subtyping brain diseases from imaging data",
+      "authors": "J Wen, E Varol, Z Yang, G Hwang, D Dwyer, AF Kazerooni, PA Lalousis,...",
+      "venue": "Machine Learning for Brain Disorders, 491-510"
+    },
+    {
+      "year": "2022",
+      "title": "Genetic, clinical underpinnings of brain change along two neuroanatomical dimensions of clinically-defined Alzheimer’s disease",
+      "authors": "J Wen, Z Yang, IM Nasrallah, Y Cui, G Erus, D Srinivasan, A Abdulkadir,...",
+      "venue": ""
+    },
+    {
+      "year": "2022",
+      "title": "Genetic, clinical underpinnings of subtle early brain change along Alzheimer’s dimensions",
+      "authors": "J Wen, Z Yang, IM Nasrallah, Y Cui, G Erus, D Srinivasan, A Abdulkadir,...",
+      "venue": "bioRxiv, 2022.09. 16.508329"
+    },
+    {
+      "year": "2022",
+      "title": "Schizophrenia imaging signatures and their associations with cognition, psychopathology, and genetics in the general population",
+      "authors": "GB Chand, P Singhal, DB Dwyer, J Wen, G Erus, J Doshi, D Srinivasan,...",
+      "venue": "American Journal of Psychiatry 179 (9), 650-660"
+    },
+    {
+      "year": "2022",
+      "title": "Three imaging endophenotypes characterize neuroanatomical heterogeneity of autism spectrum disorder",
+      "authors": "G Hwang, J Wen, S Sotardi, ES Brodkin, GB Chand, DB Dwyer, G Erus,...",
+      "venue": "medRxiv, 2022.06. 17.22276543"
+    },
+    {
+      "year": "2022",
+      "title": "P580. Two Schizophrenia Neuroanatomical Signatures From the PHENOM Consortium and Their Association With Psychopathology, Cognition, and Genetics in the Population-Level Samples",
+      "authors": "G Chand, P Singhal, DB Dwyer, J Wen, G Erus, E Varol, G Hwang,...",
+      "venue": "Biological Psychiatry 91 (9), S323-S324"
+    },
+    {
+      "year": "2022",
+      "title": "Characterizing heterogeneity in neuroimaging, cognition, clinical symptoms, and genetics among patients with late-life depression",
+      "authors": "J Wen, CHY Fu, D Tosun, Y Veturi, Z Yang, A Abdulkadir, E Mamourian,...",
+      "venue": "JAMA psychiatry 79 (5), 464-474"
+    },
+    {
+      "year": "2022",
+      "title": "Two schizophrenia imaging signatures and their associations with cognition, psychopathology, and genetics in the general population",
+      "authors": "GB Chand, P Singhal, DB Dwyer, J Wen, G Erus, J Doshi, D Srinivasan,...",
+      "venue": "medRxiv, 2022.01. 07.22268854"
+    },
+    {
+      "year": "2022",
+      "title": "CeNGEN Integrated mRNA data and bulk noncoding RNA lookup table",
+      "authors": "A Barrett, E Varol, A Weinreb, SR Taylor, R McWhirter, C Cros,...",
+      "venue": ""
+    },
+    {
+      "year": "2022",
+      "title": "Multi-scale semi-supervised clustering of brain images: deriving disease subtypes",
+      "authors": "J Wen, E Varol, A Sotiras, Z Yang, GB Chand, G Erus, H Shou,...",
+      "venue": "Medical Image Analysis 75, 102304"
+    },
+    {
+      "year": "2021",
+      "title": "Three-dimensional spike localization and improved motion correction for Neuropixels recordings",
+      "authors": "J Boussard, E Varol, HD Lee, N Dethe, L Paninski",
+      "venue": "Advances in Neural Information Processing Systems 34"
+    },
+    {
+      "year": "2021",
+      "title": "Non-parametric vignetting correction for sparse spatial transcriptomics images",
+      "authors": "BY Rao, AM Peterson, EK Kandror, S Herrlinger, A Losonczy, L Paninski,...",
+      "venue": "International Conference on Medical Image Computing and Computer-Assisted …"
+    },
+    {
+      "year": "2021",
+      "title": "Visualizing the organization and differentiation of the male-specific nervous system of C. elegans",
+      "authors": "T Tekieli, E Yemini, A Nejatbakhsh, C Wang, E Varol, RW Fernandez,...",
+      "venue": "Development 148 (18), dev199687"
+    },
+    {
+      "year": "2021",
+      "title": "Molecular topography of an entire nervous system",
+      "authors": "SR Taylor, G Santpere, A Weinreb, A Barrett, MB Reilly, C Xu, E Varol,...",
+      "venue": "Cell"
+    },
+    {
+      "year": "2021",
+      "title": "The Prop1-like homeobox gene unc-42 specifies the identity of synaptically connected neurons",
+      "authors": "EG Berghoff, L Glenwinkel, A Bhattacharya, HS Sun, E Varol,...",
+      "venue": "Elife 10, e64903"
+    },
+    {
+      "year": "2021",
+      "title": "Decentralized Motion Inference and Registration of Neuropixel Data",
+      "authors": "E Varol, J Boussard, N Dethe, O Winter, A Urai, TIB Laboratory,...",
+      "venue": "ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and …"
+    },
+    {
+      "year": "2021",
+      "title": "Three Distinct Neuroanatomical Subtypes of Autism Spectrum Disorder, Revealed via Machine Learning, and Their Similarities With Schizophrenia Subtypes",
+      "authors": "G Hwang, ES Brodkin, GB Chand, DB Dwyer, J Wen, G Erus, J Doshi,...",
+      "venue": "Biological Psychiatry 89 (9), S374-S375"
+    },
+    {
+      "year": "2021",
+      "title": "Neurocognitive and functional heterogeneity in depressed youth",
+      "authors": "EB Baller, AN Kaczkurkin, A Sotiras, A Adebimpe, DS Bassett, ME Calkins,...",
+      "venue": "Neuropsychopharmacology 46 (4), 783-790"
+    },
+    {
+      "year": "2021",
+      "title": "NeuroPAL Microfluidic Chip Images, GCaMP, and dNMF Neuronal Activity",
+      "authors": "E Yemini, O Hobert, A Nejatbakhsh, E Varol, L Paninski,...",
+      "venue": "(No Title)"
+    },
+    {
+      "year": "2021",
+      "title": "Interaction of the Joining Region in Junctophilin-2 With the L-Type Ca2+ Channel Is Pivotal for Cardiac Dyad Assembly and Intracellular Ca2+ Dynamics",
+      "authors": "P Gross, J Johnson, CM Romero, DM Eaton, C Poulet, J Sanchez-Alonso,...",
+      "venue": "Circulation research 128 (1), 92-114"
+    },
+    {
+      "year": "2021",
+      "title": "NeuroPAL: a multicolor atlas for Whole-Brain neuronal identification in C. elegans",
+      "authors": "E Yemini, A Lin, A Nejatbakhsh, E Varol, R Sun, GE Mena, ADT Samuel,...",
+      "venue": "Cell 184 (1), 272-288. e11"
+    },
+    {
+      "year": "2021",
+      "title": "Neuron matching in C. elegans with robust approximate linear regression without correspondence",
+      "authors": "A Nejatbakhsh, E Varol",
+      "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer …"
+    },
+    {
+      "year": "2020",
+      "title": "Statistical Atlas of C. elegans Neurons",
+      "authors": "E Varol, A Nejatbakhsh, R Sun, G Mena, E Yemini, O Hobert, L Paninski",
+      "venue": "International Conference on Medical Image Computing and Computer-Assisted …"
+    },
+    {
+      "year": "2020",
+      "title": "Demixing Calcium Imaging Data in C. elegans via Deformable Non-negative Matrix Factorization",
+      "authors": "A Nejatbakhsh, E Varol, E Yemini, V Venkatachalam, A Lin, ADT Samuel,...",
+      "venue": "International Conference on Medical Image Computing and Computer-Assisted …"
+    },
+    {
+      "year": "2020",
+      "title": "Probabilistic Joint Segmentation and Labeling of C. elegans Neurons",
+      "authors": "A Nejatbakhsh, E Varol, E Yemini, O Hobert, L Paninski",
+      "venue": "International conference on medical image computing and computer-assisted …"
+    },
+    {
+      "year": "2020",
+      "title": "MAGIC: Multi-scale heterogeneity analysis and clustering for brain diseases",
+      "authors": "J Wen, E Varol, G Chand, A Sotiras, C Davatzikos",
+      "venue": "International Conference on Medical Image Computing and Computer-Assisted …"
+    },
+    {
+      "year": "2020",
+      "title": "Unique homeobox codes delineate all the neuron classes of C. elegans",
+      "authors": "MB Reilly, C Cros, E Varol, E Yemini, O Hobert",
+      "venue": "Nature 584 (7822), 595-601"
+    },
+    {
+      "year": "2020",
+      "title": "Extracting neural signals from semi-immobilized animals with deformable non-negative matrix factorization",
+      "authors": "A Nejatbakhsh, E Varol, E Yemini, V Venkatachalam, A Lin, ADT Samuel,...",
+      "venue": "bioRxiv, 2020.07. 07.192120"
+    },
+    {
+      "year": "2020",
+      "title": "Sinkhorn em: an expectation-maximization algorithm based on entropic optimal transport",
+      "authors": "G Mena, A Nejatbakhsh, E Varol, J Niles-Weed",
+      "venue": "arXiv preprint arXiv:2006.16548"
+    },
+    {
+      "year": "2020",
+      "title": "NeuroPAL Data",
+      "authors": "E Yemini, A Lin, A Nejatbakhsh, E Varol, R Sun, G Mena, A Samuel,...",
+      "venue": "(No Title)"
+    },
+    {
+      "year": "2020",
+      "title": "Neurostructural Heterogeneity in Youth With Internalizing Symptoms",
+      "authors": "A Kaczkurkin, A Sotiras, E Baller, R Barzilay, ME Calkins, G Chand, Z Cui,...",
+      "venue": "Biological Psychiatry 87 (9), S28"
+    },
+    {
+      "year": "2020",
+      "title": "Two Neuroanatomical Subtypes of Schizophrenia Defined by Multi-Site Machine Learning",
+      "authors": "D Wolf, G Chand, D Dwyer, G Erus, A Sotiras, E Varol, D Srinivasan,...",
+      "venue": "Biological Psychiatry 87 (9), S28-S29"
+    },
+    {
+      "year": "2020",
+      "title": "Neuroanatomical Dimensional Phenotypes of Schizophrenia: Expression in Youth With Psychosis-Spectrum Symptoms and Correlation With Cognition",
+      "authors": "G Chand, DH Wolf, G Erus, D Srinivasan, DB Dwyer, R Pomponio,...",
+      "venue": "Biological Psychiatry 87 (9), S119"
+    },
+    {
+      "year": "2020",
+      "title": "Two distinct neuroanatomical subtypes of schizophrenia revealed using machine learning",
+      "authors": "GB Chand, DB Dwyer, G Erus, A Sotiras, E Varol, D Srinivasan, J Doshi,...",
+      "venue": "Brain 143 (3), 1027-1038"
+    },
+    {
+      "year": "2020",
+      "title": "Neurostructural heterogeneity in youths with internalizing symptoms",
+      "authors": "AN Kaczkurkin, A Sotiras, EB Baller, R Barzilay, ME Calkins, GB Chand,...",
+      "venue": "Biological psychiatry 87 (5), 473-482"
+    },
+    {
+      "year": "2020",
+      "title": "A multidimensional neural maturation index reveals reproducible developmental patterns in children and adolescents",
+      "authors": "M Truelove-Hill, G Erus, V Bashyam, E Varol, C Sako, RC Gur, RE Gur,...",
+      "venue": "Journal of Neuroscience 40 (6), 1265-1275"
+    },
+    {
+      "year": "2020",
+      "title": "Sinkhorn permutation variational marginal inference",
+      "authors": "G Mena, E Varol, A Nejatbakhsh, E Yemini, L Paninski",
+      "venue": "Symposium on advances in approximate Bayesian inference, 1-9"
+    },
+    {
+      "year": "2020",
+      "title": "NeuroPAL: a neuronal polychromatic atlas of landmarks for whole-brain imaging in C. elegans",
+      "authors": "E Yemini, A Lin, A Nejatbakhsh, E Varol, R Sun, GE Mena, ADT Samuel,...",
+      "venue": "BioRxiv, 676312"
+    },
+    {
+      "year": "2019",
+      "title": "Temporal Wasserstein non-negative matrix factorization for non-rigid motion segmentation and spatiotemporal deconvolution",
+      "authors": "E Varol, A Nejatbakhsh, C McGrory",
+      "venue": "arXiv preprint arXiv:1912.03463"
+    },
+    {
+      "year": "2019",
+      "title": "Neurocognitive and functional heterogeneity in depressed youth",
+      "authors": "EB Baller, AN Kaczkurkin, A Sotiras, A Adebimpe, DS Bassett, ME Calkins,...",
+      "venue": "bioRxiv, 778878"
+    },
+    {
+      "year": "2019",
+      "title": "T195. Neuroanatomical heterogeneity of schizophrenia quantified via semi-supervised machine learning reveals two distinct subtypes: Results from the PHENOM consortium",
+      "authors": "GB Chand, DB Dwyer, G Erus, A Sotiras, E Varol, D Srinivasan, RC Gur,...",
+      "venue": "Biological Psychiatry 85 (10), S205-S206"
+    },
+    {
+      "year": "2019",
+      "title": "Expression profiling of the mature C. elegans Nervous system by single-Cell RNA-sequencing. bioRxiv: 737577",
+      "authors": "SR Taylor, G Santpere, M Reilly, L Glenwinkel, A Poff, R McWhirter, C Xu,...",
+      "venue": "Publisher: Cold Spring Harbor Laboratory Section: New Results"
+    },
+    {
+      "year": "2018",
+      "title": "Semi-Supervised Machine Learning Reveals 3 Patterns of Cognitive Function in Depressed Youth",
+      "authors": "E Baller, A Kaczkurkin, A Sotiras, E Varol, T Moore, C Xia, M Calkins,...",
+      "venue": "NEUROPSYCHOPHARMACOLOGY 43, S443-S444"
+    },
+    {
+      "year": "2018",
+      "title": "Generative discriminative models for multivariate inference and statistical mapping in medical imaging",
+      "authors": "E Varol, A Sotiras, K Zeng, C Davatzikos",
+      "venue": "International Conference on Medical Image Computing and Computer-Assisted …"
+    },
+    {
+      "year": "2018",
+      "title": "MIDAS: Regionally linear multivariate discriminative statistical mapping",
+      "authors": "E Varol, A Sotiras, C Davatzikos",
+      "venue": "NeuroImage 174, 111-126"
+    },
+    {
+      "year": "2018",
+      "title": "Regionally discriminative multivariate statistical mapping",
+      "authors": "E Varol, A Sotiras, C Davatzikos",
+      "venue": "2018 IEEE 15th International Symposium on Biomedical Imaging (ISBI 2018 …"
+    },
+    {
+      "year": "2018",
+      "title": "Advancing Statistical Inference For Population Studies In Neuroimaging Using Machine Learning",
+      "authors": "E Varol",
+      "venue": "University of Pennsylvania"
+    },
+    {
+      "year": "2017",
+      "title": "Heterogeneity of neuroanatomical patterns in prodromal Alzheimer’s disease: links to cognition, progression and biomarkers",
+      "authors": "A Dong, JB Toledo, N Honnorat, J Doshi, E Varol, A Sotiras, D Wolk,...",
+      "venue": "Brain 140 (3), 735-747"
+    },
+    {
+      "year": "2017",
+      "title": "HYDRA: Revealing heterogeneity of imaging and genetic patterns through a multiple max-margin discriminative analysis framework",
+      "authors": "E Varol, A Sotiras, C Davatzikos, ADN Initiative",
+      "venue": "Neuroimage 145, 346-364"
+    },
+    {
+      "year": "2017",
+      "title": "Structured outlier detection in neuroimaging studies with minimal convex polytopes",
+      "authors": "E Varol, A Sotiras, C Davatzikos",
+      "venue": "International Conference on Medical Image Computing and Computer-Assisted …"
+    },
+    {
+      "year": "2017",
+      "title": "Automated Characterization and Quantification of Cardiomyocyte Proliferation and Apoptosis in Post Myocardial Infarction Tissue Images",
+      "authors": "P Gross, N Honnorat, E Varol, M Wallner, D Trappanese, T Sharp,...",
+      "venue": "Circulation Research 119 (suppl_1), A28-A28"
+    },
+    {
+      "year": "2017",
+      "title": "Crowdsourced estimation of cognitive decline and resilience in Alzheimer's disease",
+      "authors": "GI Allen, N Amoroso, C Anghel, V Balagurusamy, CJ Bare, D Beaton,...",
+      "venue": "Alzheimer's & Dementia 12 (6), 645-653"
+    },
+    {
+      "year": "2017",
+      "title": "Nuquantus: Machine learning software for the characterization and quantification of cell nuclei in complex immunofluorescent tissue images",
+      "authors": "P Gross, N Honnorat, E Varol, M Wallner, DM Trappanese, TE Sharp,...",
+      "venue": "Scientific reports 6 (1), 23431"
+    },
+    {
+      "year": "2017",
+      "title": "Heterogeneity of neuroanatomical patterns in prodromal Alzheimer’s disease: links to cognition, progression and biomarkers.",
+      "authors": "A Dong, JB Toledo, N Honnorat, J Doshi, E Varol, A Sotiras, D Wolk,...",
+      "venue": ""
+    },
+    {
+      "year": "2017",
+      "title": "Machine learning as a means toward precision diagnostics and prognostics",
+      "authors": "A Sotiras, B Gaonkar, H Eavani, N Honnorat, E Varol, A Dong,...",
+      "venue": "Machine learning and medical imaging, 299-334"
+    },
+    {
+      "year": "2017",
+      "title": "Disentangling disease heterogeneity with max-margin multiple hyperplane classifier",
+      "authors": "E Varol, A Sotiras, C Davatzikos",
+      "venue": "International Conference on Medical Image Computing and Computer-Assisted …"
+    },
+    {
+      "year": "2017",
+      "title": "Supervised block sparse dictionary learning for simultaneous clustering and classification in computational anatomy",
+      "authors": "E Varol, C Davatzikos",
+      "venue": "International Conference on Medical Image Computing and Computer-Assisted …"
+    },
+    {
+      "year": "2017",
+      "title": "Classifying medical images using morphological appearance manifolds",
+      "authors": "E Varol, B Gaonkar, C Davatzikos",
+      "venue": "2013 IEEE 10th International Symposium on Biomedical Imaging, 744-747"
+    },
+    {
+      "year": "2017",
+      "title": "Feature ranking based nested support vector machine ensemble for medical image classification",
+      "authors": "E Varol, B Gaonkar, G Erus, R Schultz, C Davatzikos",
+      "venue": "2012 9th IEEE international symposium on biomedical imaging (ISBI), 146-149"
+    },
+    {
+      "year": "2017",
+      "title": "Neuroanatomical Pattern Classification in Unmedicated First-Episode Psychosis: Influence of Different Imaging Feature Selection",
+      "authors": "MH Serpa, MV Zanetti, E Varol, TM Chaim, B Gaonkar, J Doshi, MT BILT,...",
+      "venue": "ELSEVIER SCIENCE INC"
+    },
+    {
+      "year": "2017",
+      "title": "High-Dimensional Pattern Classification of Brain Morphometric and DTI Data of Adult ADHD",
+      "authors": "TM Chaim, MA Silva, E Varol, J Doshi, MV Zanetti, B Gaonkar, M Serpa,...",
+      "venue": "ELSEVIER SCIENCE INC"
+    }
+  ],
+  "funding": [
+    "K99/R00 Award: Transcriptional basis of neural architectures (1K99MH128772-01A1) (2022-2027)"
+  ],
+  "projects": [
+    {
+      "title": "Spatiotemporal Integration of the Human Transcriptome and Connectome",
+      "desc": "A longstanding goal of systems neuroscience is to understand the molecular landscape underlying macro-scale brain structure and function. With increasing availability of diverse human neuroimaging and genomic datasets, there is now a unique opportunity to develop robust computational models to predict how gene expression influences neural connectivity across the adult lifespan and among clinical populations.",
+      "collab": [
+        "Junhao Wen",
+        "Christos Davatzikos"
+      ],
+      "poster": "/media/transcriptomics.jpg"
+    },
+    {
+      "title": "Genetic basis of the fruit fly connectome",
+      "desc": "We will use single-cell RNA sequencing data together with maps of brain connections from the fruit fly to study how gene activity relates to the way neurons are connected. Our goal is to create a computer-based method that can help predict and understand how synapses form and function.",
+      "collab": [
+        "Richard Mann",
+        "Himanshu Gupta"
+      ],
+      "poster": null
+    },
+    {
+      "title": "Connectivity and coactivity predicts cell-type in mouse hippocampus",
+      "desc": "Using paired transcriptional information and calcium activity, can we link cell type identity with connectivity information?",
+      "collab": [
+        "Losonczy Lab"
+      ],
+      "poster": "/media/invivo.jpg"
+    },
+    {
+      "title": "Seq2Connectome",
+      "desc": "Our goal is to predict the connectome of C. elegans from DNA sequence data. Because C. elegans is so well studied, we have a rich dataset upon which to build a computational model, which we hope to generalize to other organisms.",
+      "collab": [
+        "Arman Afrasiyabi",
+        "Alexis Weinreb"
+      ],
+      "poster": null
+    },
+    {
+      "title": "Disease gene classification using multi-species gene interaction network data",
+      "desc": "Our goal is to classify genes(represented as nodes in the graph) into disease association or non-disease association. There are set of nodes which are non-omim genes. By having done this we can study other genes which are at greater risk of being potentially associated with disease which are under studied and hence marked as non-disease genes.",
+      "collab": [
+        "Sandeep Wontakal"
+      ],
+      "poster": null
+    },
+    {
+      "title": "Multi-species blind localization of brain regions using local field potentials",
+      "desc": "In electrophysiology, precise in vivo localization of recording sites in deep brain structures is crucial for consistent targeting in multi-day recordings and accurate deep brain stimulation while current approaches are limited by either spatial or temporal resolution. Here we develop a learning-based automatic localizer to identify mice hippocampus sublayers from high-density extracellular recordings and apply our model to human chronic recordings.",
+      "collab": [
+        "Buzsaki Lab (Anna Maslarova, Mihály Vöröslakos)",
+        "Arman Afrasiyabi",
+        "Cole Hurwitz"
+      ],
+      "poster": null
+    },
+    {
+      "title": "Transcoding of voltage signal and hemodynamic response in human neuroimaging",
+      "desc": "Mobile non-invasive neuroimaging technologies such as electroencephalography (EEG) and functional Near-Infrared Spectroscopy (fNIRS) facilitate the recording of neural states in naturalistic settings. However, these modalities face significant resolution limitations. This work aims to denoise and up-resolve non-invasive BCI developing modality transcoding techniques of simultaneous EEG and fNIRS recordings.",
+      "collab": [
+        "Arman Afrasiyabi",
+        "Cole Hurwitz"
+      ],
+      "poster": null
+    },
+    {
+      "title": "Multimodal registration of in-vivo vs. ex-vivo cell populations using calcium imaging and spatial transcriptomics",
+      "desc": "The registration problem aims for precise mapping of cells integrating imaging from different modalities. The challenge arises from differences in scale, resolution, stability, tissue shrinkage and imaging at different angles in the brain.",
+      "collab": [
+        "Losonczy Lab"
+      ],
+      "poster": "/media/matching.jpg"
+    },
+    {
+      "title": "Voltage imaging event detection and clustering at subcellular resolution",
+      "desc": "Can we detect slow and fast spiking events at dendrites using voltage imaging?",
+      "collab": [
+        "Losonczy Lab"
+      ],
+      "poster": null
+    },
+    {
+      "title": "Whole-brain single-cell detection, identification and tracking of neurons in c. elegans during behavior",
+      "desc": "Can we develop high-throughput and robust tools to track, identify and extract the calcium activity for each neuron in the worm nervous system during behavior?",
+      "collab": [
+        "Donglai Wei"
+      ],
+      "poster": "/media/worm.jpg"
+    },
+    {
+      "title": "Connectome constrained Spiking Neural Networks",
+      "desc": "Can we train spiking neural networks whose connectivity or cell type specific intrinsic parameters are constrained by biological networks such as drosophila or mouse cortex? If we can show that connectome constrained SNN’s can be trained such that they faithfully recreate the internal dynamics of their target networks (e.g. a biological neural network), then we can treat the SNNs as a in-silico surrogate of a biological neural network in which perturbation experiments and other phenomena can be studied.",
+      "collab": [],
+      "poster": null
+    }
+  ]
+}
