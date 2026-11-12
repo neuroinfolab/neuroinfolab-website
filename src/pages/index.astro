@@ -4,9 +4,17 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import site from '../data/site.json';
+import doiData from '../data/dois.json';
 import { url } from '../lib/url';
 
 const projects = site.projects;
+
+const dois = doiData as Record<string, { doi: string }>;
+const normalizeTitle = (value: string) =>
+  value.toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim();
+const doiFor = (title: string) => dois[normalizeTitle(title)]?.doi;
+const splitAuthors = (authors: string) => authors.split(/(E(?:rdem)?\.?\s+Varol)/g);
+const isVarol = (part: string) => /^E(?:rdem)?\.?\s+Varol$/.test(part);
 
 const years = [...new Set(site.publications.map((p) => p.year))];
 const byYear = years.map((y) => ({
@@ -268,12 +276,34 @@ const life = [
           {byYear.map((group) => (
             <section class="pub-year-group">
               <h3 class="pub-year-head">{group.year}</h3>
-              {group.items.map((p) => (
-                <article class="pub">
-                  <p class="pub-title">{p.title}</p>
-                  <span class="pub-venue">{p.authors} · {p.venue}</span>
-                </article>
-              ))}
+              {group.items.map((p) => {
+                const doi = doiFor(p.title);
+                return (
+                  <article class="pub" title={`${p.title} — ${p.authors} — ${p.venue}`}>
+                    <p class="pub-line">
+                      {doi ? (
+                        <a
+                          class="pub-title"
+                          href={`https://doi.org/${doi}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title={`Open DOI: ${doi}`}
+                        >
+                          {p.title}
+                        </a>
+                      ) : (
+                        <span class="pub-title">{p.title}</span>
+                      )}
+                      <span class="pub-sep">·</span>
+                      <span class="pub-authors">
+                        {splitAuthors(p.authors).map((part) => (isVarol(part) ? <strong>{part}</strong> : part))}
+                      </span>
+                      <span class="pub-sep">·</span>
+                      <span class="pub-venue">{p.venue}</span>
+                    </p>
+                  </article>
+                );
+              })}
             </section>
           ))}
         </div>
