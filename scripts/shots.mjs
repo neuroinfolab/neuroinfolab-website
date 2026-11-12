@@ -8,6 +8,8 @@ mkdirSync(OUT, { recursive: true });
 const browser = await chromium.launch({ channel: 'chrome' });
 
 const shots = [
+  // Matches the lab's 2560×1440 Thunderbolt Display.
+  { name: 'imac', width: 2560, height: 1440, mobile: false },
   { name: 'desktop', width: 1440, height: 1000, mobile: false },
   { name: 'phone', width: 390, height: 844, mobile: true },
 ];
