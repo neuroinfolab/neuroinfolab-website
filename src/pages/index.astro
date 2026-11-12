@@ -40,6 +40,59 @@ const people: Record<string, string> = {
   'Subhrajit Dey': '/img/team/dey.jpg',
   'Sherlock & Toby the Basset Hounds': '/img/team/sherlock-toby.jpg',
 };
+
+const life = [
+  {
+    full: '/img/life/whiteboard-1.jpg',
+    thumb: '/img/life/whiteboard-1_sm.jpg',
+    alt: 'Working at the whiteboard in the lab',
+  },
+  {
+    full: '/img/life/class-winners-1.jpg',
+    thumb: '/img/life/class-winners-1_sm.jpg',
+    alt: 'Neuroinformatics class: Project 1 winners',
+  },
+  {
+    full: '/img/life/pumpkins.jpg',
+    thumb: '/img/life/pumpkins_sm.jpg',
+    alt: 'Lab outing: pumpkin picking',
+  },
+  {
+    full: '/img/life/whiteboard-3.jpg',
+    thumb: '/img/life/whiteboard-3_sm.jpg',
+    alt: 'Derivations on the lab whiteboard',
+  },
+  {
+    full: '/img/life/lab-meeting.jpg',
+    thumb: '/img/life/lab-meeting_sm.jpg',
+    alt: 'Lab meeting with pastries',
+  },
+  {
+    full: '/img/life/picnic.jpg',
+    thumb: '/img/life/picnic_sm.jpg',
+    alt: 'Lab picnic',
+  },
+  {
+    full: '/img/life/whiteboard-2.jpg',
+    thumb: '/img/life/whiteboard-2_sm.jpg',
+    alt: 'Lab discussion around the whiteboard',
+  },
+  {
+    full: '/img/life/class-winners-2.jpg',
+    thumb: '/img/life/class-winners-2_sm.jpg',
+    alt: 'Neuroinformatics class: Project 2 winners',
+  },
+  {
+    full: '/img/life/lab-meeting-2.jpg',
+    thumb: '/img/life/lab-meeting-2_sm.jpg',
+    alt: 'Lab meeting at 370 Jay Street',
+  },
+  {
+    full: '/img/life/marathon.jpg',
+    thumb: '/img/life/marathon_sm.jpg',
+    alt: 'Erdem with his marathon medal',
+  },
+];
 ---
 
 <Base title={site.name} description={site.tagline}>
@@ -155,6 +208,30 @@ const people: Record<string, string> = {
             ))}
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="life" aria-labelledby="life-title">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="life-title">Lab life</h2>
+        </div>
+
+        <ul class="gallery">
+          {life.map((photo) => (
+            <li>
+              <a href={url(photo.full)} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={url(photo.thumb)}
+                  alt={photo.alt}
+                  loading="lazy"
+                  width="720"
+                  height="540"
+                />
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
 
