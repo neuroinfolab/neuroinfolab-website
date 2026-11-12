@@ -13,7 +13,7 @@
   --rule-soft: #212125;
   --accent: #b48cff;
 
-  --display: 'Bricolage Grotesque Variable', 'Instrument Sans Variable', ui-sans-serif, system-ui, sans-serif;
+  --display: 'Fraunces Variable', 'Instrument Sans Variable', ui-sans-serif, system-ui, sans-serif;
   --sans: 'Instrument Sans Variable', ui-sans-serif, system-ui, -apple-system, sans-serif;
   --label: 'Space Grotesk Variable', 'Instrument Sans Variable', ui-sans-serif, sans-serif;
   --mono: var(--label);
@@ -370,13 +370,28 @@ html:not(.locked) .gate {
   text-transform: none;
 }
 
+.hero h1,
+.section-head h2,
+.pi h2,
+.course-head h1,
+.course-body h3,
+.brand,
+.footer-mark,
+.opening h3,
+.gate-form h1,
+.card-big-index,
+.card--more .count,
+.card--more h3 {
+  font-variation-settings: 'SOFT' 35, 'WONK' 1;
+}
+
 .hero h1 {
   font-family: var(--display);
   font-weight: 500;
-  font-size: clamp(2.8rem, 4.6vw, 5.6rem);
+  font-size: clamp(2.8rem, 4.4vw, 5rem);
   line-height: 0.98;
   letter-spacing: -0.035em;
-  max-width: 19ch;
+  max-width: 21ch;
 }
 
 .hero h1 em {
