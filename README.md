@@ -21,8 +21,7 @@ src/
   content.config.ts        Zod schema for each collection
   components/              Header, Footer, ProjectTile
   layouts/Base.astro       <head>, fonts, reveal + menu scripts
-  pages/index.astro        hero, PI, team, alumni, projects, funding
-  pages/publications.astro every paper, grouped by year
+  pages/index.astro        hero, PI, team, alumni, projects, all papers, funding
   styles/global.css        the whole design system
 scripts/
   shots.mjs        playwright screenshots at desktop + phone

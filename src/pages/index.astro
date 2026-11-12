@@ -8,6 +8,12 @@ import { url } from '../lib/url';
 
 const projects = site.projects;
 
+const years = [...new Set(site.publications.map((p) => p.year))];
+const byYear = years.map((y) => ({
+  year: y,
+  items: site.publications.filter((p) => p.year === y),
+}));
+
 const alumniImg: Record<string, string> = {
   'Chenyi Li': '/img/alumni/li.jpg',
   'Rohaan Advani': '/img/alumni/advani.jpg',
@@ -144,6 +150,31 @@ const people: Record<string, string> = {
               poster={p.poster ? url(p.poster) : null}
               collab={p.collab}
             />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publications" aria-labelledby="publications-title">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="publications-title">Publications</h2>
+          <a class="more" href="https://scholar.google.com/citations?user=7GlElV0AAAAJ">
+            Link to Google Scholar →
+          </a>
+        </div>
+
+        <div class="pubs">
+          {byYear.map((group) => (
+            <section class="pub-year-group">
+              <h3 class="pub-year-head">{group.year}</h3>
+              {group.items.map((p) => (
+                <article class="pub">
+                  <p class="pub-title">{p.title}</p>
+                  <span class="pub-venue">{p.authors} · {p.venue}</span>
+                </article>
+              ))}
+            </section>
           ))}
         </div>
       </div>
