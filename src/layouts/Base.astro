@@ -28,7 +28,7 @@ const lockHash = locked && passcode ? createHash('sha256').update(passcode).dige
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <meta name="theme-color" content="#1b1b1d" />
+    <meta name="theme-color" content="#101012" />
     {locked && <meta name="robots" content="noindex, nofollow" />}
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
@@ -87,6 +87,22 @@ const lockHash = locked && passcode ? createHash('sha256').update(passcode).dige
       menuBtn?.addEventListener('click', () => {
         const open = nav?.classList.toggle('is-open') ?? false;
         menuBtn.setAttribute('aria-expanded', String(open));
+      });
+
+      // Keep visitors on the site: every off-site link (and every PDF) opens
+      // in a new tab. Same-page anchors and internal navigation stay put.
+      document.querySelectorAll<HTMLAnchorElement>('a[href]').forEach((a) => {
+        const href = a.getAttribute('href');
+        if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
+        try {
+          const target = new URL(href, window.location.href);
+          if (target.origin !== window.location.origin || target.pathname.toLowerCase().endsWith('.pdf')) {
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+          }
+        } catch {
+          /* ignore malformed URLs */
+        }
       });
 
       const gateForm = document.getElementById('gate-form') as HTMLFormElement | null;

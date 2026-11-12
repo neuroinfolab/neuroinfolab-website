@@ -634,7 +634,10 @@
     }
   ],
   "funding": [
-    "K99/R00 Award: Transcriptional basis of neural architectures (1K99MH128772-01A1) (2022-2027)"
+    {
+      "text": "K99/R00 Award: Transcriptional basis of neural architectures (1K99MH128772-01A1) (2022-2027)",
+      "url": "https://reporter.nih.gov/search/5NKlWhoBEUav-buDakkgCw/project-details/10525865"
+    }
   ],
   "projects": [
     {

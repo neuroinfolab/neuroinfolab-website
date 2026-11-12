@@ -1,0 +1,242 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { url } from '../lib/url';
+
+export interface CourseLink {
+  label: string;
+  href: string;
+}
+
+export interface CourseInfo {
+  label: string;
+  text: string;
+  links?: CourseLink[];
+}
+
+export interface CoursePerson {
+  role: string;
+  name: string;
+  email?: string;
+  office?: string;
+  links?: CourseLink[];
+}
+
+export interface CourseRow {
+  date: string;
+  topic: string;
+  materials?: CourseLink[];
+  note?: string;
+}
+
+export interface ReadingGroup {
+  title: string;
+  items: Array<{ text: string; href?: string }>;
+}
+
+export interface CourseSection {
+  title: string;
+  paragraphs: string[];
+  links?: CourseLink[];
+  list?: string[];
+}
+
+interface Props {
+  title: string;
+  code: string;
+  term: string;
+  kicker?: string;
+  intro: string[];
+  info: CourseInfo[];
+  team: CoursePerson[];
+  sections?: CourseSection[];
+  schedule: CourseRow[];
+  readings: ReadingGroup[];
+  previous?: CourseLink;
+}
+
+const { title, code, term, kicker, intro, info, team, sections = [], schedule, readings, previous } = Astro.props;
+const href = (value: string) => (value.startsWith('/') ? url(value) : value);
+const description = intro[0] ?? '';
+---
+
+<Base title={`${title} (${code}) — ${term}`} description={description}>
+  <Header />
+
+  <main id="main">
+    <section class="course-head">
+      <div class="shell">
+        <span class="label">Course · {term}</span>
+        <h1>{title}</h1>
+        <p class="course-code">{code}</p>
+        {kicker && <p class="course-kicker">{kicker}</p>}
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="course-intro">
+          {intro.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <h2>Course information</h2>
+        </div>
+        <dl class="course-info">
+          {info.map((item) => (
+            <>
+              <dt>{item.label}</dt>
+              <dd>
+                {item.text}
+                {item.links?.map((link) => (
+                  <>
+                    {' '}
+                    <a href={href(link.href)}>{link.label}</a>
+                  </>
+                ))}
+              </dd>
+            </>
+          ))}
+        </dl>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <h2>Course team</h2>
+        </div>
+        <div class="course-team">
+          {team.map((person) => (
+            <div class="course-person">
+              <span class="role">{person.role}</span>
+              <span class="name">{person.name}</span>
+              {person.email && (
+                <span class="meta">
+                  <a href={`mailto:${person.email}`}>{person.email}</a>
+                </span>
+              )}
+              {person.office && (
+                <span class="meta">
+                  {person.office}
+                  {person.links?.map((link) => (
+                    <>
+                      {' '}
+                      <a href={href(link.href)}>{link.label}</a>
+                    </>
+                  ))}
+                </span>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {sections.length > 0 && (
+      <section class="section">
+        <div class="shell">
+          <div class="section-head">
+            <h2>Course details</h2>
+          </div>
+          <div class="course-body">
+            {sections.map((section) => (
+              <div style="margin-bottom:1.8rem">
+                <h3>{section.title}</h3>
+                {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+                {section.list && (
+                  <ul>
+                    {section.list.map((item) => <li>{item}</li>)}
+                  </ul>
+                )}
+                {section.links?.map((link) => (
+                  <p>
+                    <a href={href(link.href)}>{link.label}</a>
+                  </p>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <h2>Schedule</h2>
+        </div>
+        <div class="table-wrap">
+          <table class="schedule">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Topic</th>
+                <th>Materials</th>
+                <th>Assignments</th>
+              </tr>
+            </thead>
+            <tbody>
+              {schedule.map((row) => (
+                <tr>
+                  <td>{row.date}</td>
+                  <td>{row.topic}</td>
+                  <td class="materials">
+                    {row.materials?.map((material, index) => (
+                      <>
+                        {index > 0 && ', '}
+                        <a href={href(material.href)}>{material.label}</a>
+                      </>
+                    ))}
+                  </td>
+                  <td class="note">{row.note}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <h2>Essential reads</h2>
+        </div>
+        <div class="readings">
+          {readings.map((group) => (
+            <div class="reading-group">
+              <h3>{group.title}</h3>
+              <ul>
+                {group.items.map((item) => (
+                  <li>
+                    {item.text}
+                    {item.href && (
+                      <>
+                        {' '}
+                        <a href={href(item.href)}>[link]</a>
+                      </>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {previous && (
+          <p class="course-foot" style="margin-top:2rem">
+            Previous iteration: <a href={href(previous.href)}>{previous.label}</a>
+          </p>
+        )}
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Base>

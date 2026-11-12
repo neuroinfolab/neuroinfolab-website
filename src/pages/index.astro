@@ -47,13 +47,15 @@ const people: Record<string, string> = {
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="grid-bg" aria-hidden="true"></div>
       <div class="shell">
         <div class="hero-inner">
           <div>
             <span class="label">Tandon School of Engineering, NYU</span>
             <h1 id="hero-title" class="display" style="margin-top:1rem">{site.name}</h1>
             <p class="hero-lede">{site.tagline}</p>
+            <p class="hero-apply">
+              <a href="#openings">Apply for Ph.D. student and postdoctoral positions now →</a>
+            </p>
           </div>
 
           <figure class="hero-media">
@@ -84,9 +86,9 @@ const people: Record<string, string> = {
             <p class="pi-bio">{site.pi.bio}</p>
             <div class="pi-links">
               <a href="mailto:ev2240@nyu.edu">Email: ev2240@nyu.edu</a>
-              <a href={url('/docs/varol_cv_1122.pdf')}>CV</a>
-              <a href="https://scholar.google.com/citations?user=7GlElV0AAAAJ">Google Scholar</a>
-              <a href="https://twitter.com/erdem___varol">Twitter</a>
+              <a href={url('/docs/varol_cv_1122.pdf')} target="_blank" rel="noopener noreferrer">CV</a>
+              <a href="https://scholar.google.com/citations?user=7GlElV0AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+              <a href="https://twitter.com/erdem___varol" target="_blank" rel="noopener noreferrer">Twitter</a>
             </div>
           </div>
           <div class="pi-photo">
@@ -103,7 +105,13 @@ const people: Record<string, string> = {
               <div class="person">
                 <div class="person-media">
                   {people[p.name] ? (
-                    <img src={url(people[p.name])} alt={p.name} loading="lazy" width="480" height="600" />
+                    p.site ? (
+                      <a href={p.site} target="_blank" rel="noopener noreferrer" aria-label={`${p.name} website`}>
+                        <img src={url(people[p.name])} alt={p.name} loading="lazy" width="480" height="600" />
+                      </a>
+                    ) : (
+                      <img src={url(people[p.name])} alt={p.name} loading="lazy" width="480" height="600" />
+                    )
                   ) : null}
                 </div>
                 <div class="person-name">
@@ -128,7 +136,13 @@ const people: Record<string, string> = {
               <div class="alum">
                 <div class="alum-media">
                   {alumniImg[a.name] ? (
-                    <img src={url(alumniImg[a.name])} alt={a.name} loading="lazy" width="480" height="600" />
+                    a.site ? (
+                      <a href={a.site} target="_blank" rel="noopener noreferrer" aria-label={`${a.name} website`}>
+                        <img src={url(alumniImg[a.name])} alt={a.name} loading="lazy" width="480" height="600" />
+                      </a>
+                    ) : (
+                      <img src={url(alumniImg[a.name])} alt={a.name} loading="lazy" width="480" height="600" />
+                    )
                   ) : null}
                 </div>
                 <div class="alum-name">
@@ -197,7 +211,60 @@ const people: Record<string, string> = {
         <div class="section-head">
           <h2 id="funding-title">Funding sources</h2>
         </div>
-        {site.funding.map((f) => <p class="funding">{f}</p>)}
+        {site.funding.map((f) => (
+          <p class="funding">
+            <a href={f.url} target="_blank" rel="noopener noreferrer">{f.text}</a>
+          </p>
+        ))}
+      </div>
+    </section>
+
+    <section class="section" id="openings" aria-labelledby="openings-title">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="openings-title">Job openings</h2>
+        </div>
+
+        <div class="openings">
+          <article class="opening">
+            <h3>Ph.D. student openings</h3>
+            <p>
+              <strong>Requirements:</strong> Qualified Ph.D. student candidates should have strong computational
+              skills and a Bachelor of Science degree (or equivalent) from backgrounds such as computer science,
+              electrical engineering, statistics and biomedical engineering as well as an interest in applied
+              neuroscience problems.
+            </p>
+            <p>
+              <strong>Application process:</strong> Applications will need to be submitted to the NYU Computer
+              Science Ph.D. program <a href="https://cs.nyu.edu/dynamic/phd/admissions/" target="_blank" rel="noopener noreferrer">online portal</a>,
+              denoting the preference to work with Dr. Varol’s group. For 2025, the Ph.D. program application
+              deadline for Fall matriculation is Dec. 12.
+            </p>
+          </article>
+
+          <article class="opening">
+            <h3>Postdoctoral fellow openings</h3>
+            <p>
+              <a href={url('/docs/nyu_utsw_postdoc_ad.pdf')} target="_blank" rel="noopener noreferrer">
+                Joint NYU/UTSW Computational Systems Neuroscience Postdoctoral Research Scientist position
+              </a>{' '}
+              (Posted December 1 2025)
+            </p>
+          </article>
+
+          <article class="opening">
+            <h3>Other research openings</h3>
+            <p>
+              Review our website and indicate research interest via the below form and we will get in touch.
+              Must be a current NYU student.
+            </p>
+            <p>
+              <a href="https://forms.gle/BrtJcpdfhE7TJSoQ9" target="_blank" rel="noopener noreferrer">
+                https://forms.gle/BrtJcpdfhE7TJSoQ9
+              </a>
+            </p>
+          </article>
+        </div>
       </div>
     </section>
   </main>
