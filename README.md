@@ -83,10 +83,11 @@ All in `src/styles/global.css`, first block: `--bg`, `--ink`, `--muted`, `--rule
 
 ```
 PUBLIC_SITE_LOCKED=true
-SITE_PASSWORD=***REMOVED***
+SITE_PASSWORD=<set this locally; never commit it>
 ```
 
-`PUBLIC_SITE_LOCKED=false` builds plain pages. The password is never shipped — only its
+`PUBLIC_SITE_LOCKED=false` builds plain pages. On GitHub, the password is read from the
+`SITE_PASSWORD` Actions secret; keep the matching value in your local `.env` only. The password is never shipped — only its
 SHA-256 — and unlocking lasts for the browser session.
 
 **This is a deterrent, not real access control.** Static hosting serves the whole HTML to
