@@ -1,21 +1,15 @@
 ---
-interface Collaborator {
-  name: string;
-  href?: string;
-}
-
 interface Props {
   href?: string;
   index?: string;
   title: string;
   summary: string;
   poster?: string | null;
-  collab?: Array<string | Collaborator>;
+  collab?: string[];
 }
 
 const { href, index, title, summary, poster, collab = [] } = Astro.props;
 const Tag = href ? 'a' : 'article';
-const people = collab.map((c) => (typeof c === 'string' ? { name: c, href: '' } : { href: '', ...c }));
 ---
 
 <Tag class:list={['card', { 'card--text': !poster }]} href={href} data-reveal>
@@ -30,20 +24,6 @@ const people = collab.map((c) => (typeof c === 'string' ? { name: c, href: '' } 
     {poster && index && <span class="card-index">{index}</span>}
     <h3>{title}</h3>
     <p>{summary}</p>
-    {people.length > 0 && (
-      <span class="collab">
-        with{' '}
-        {people.map((c, i) => (
-          <>
-            {i > 0 && ' · '}
-            {c.href ? (
-              <a href={c.href} target="_blank" rel="noopener">{c.name}</a>
-            ) : (
-              c.name
-            )}
-          </>
-        ))}
-      </span>
-    )}
+    {collab.length > 0 && <span class="collab">with {collab.join(' · ')}</span>}
   </div>
 </Tag>
