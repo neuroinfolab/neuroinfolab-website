@@ -5,7 +5,7 @@
     "url": "https://neurips.cc/virtual/2026/poster/150561",
     "track": "Poster / Sydney Poster Session 6",
     "year": "2026",
-    "venue": "Advances in Neural Information Processing Systems 39"
+    "venue": "NeurIPS 2026"
   },
   {
     "title": "How Data Augmentation Shapes Neural Representations",
@@ -13,7 +13,7 @@
     "url": "https://neurips.cc/virtual/2026/poster/150878",
     "track": "Poster / Sydney Poster Session 2",
     "year": "2026",
-    "venue": "Advances in Neural Information Processing Systems 39"
+    "venue": "NeurIPS 2026"
   },
   {
     "title": "Learning Neuronal Wiring Rules from Morphological Token Sequences",
@@ -21,7 +21,7 @@
     "url": "https://neurips.cc/virtual/2026/poster/153800",
     "track": "Poster / Sydney Poster Session 5",
     "year": "2026",
-    "venue": "Advances in Neural Information Processing Systems 39"
+    "venue": "NeurIPS 2026"
   },
   {
     "title": "Predicting Functional Brain Connectivity with Context-Aware Deep Neural Networks",
@@ -29,7 +29,7 @@
     "url": "https://papers.nips.cc/paper_files/paper/2025/hash/7f09298fd090c13c5583549d22ec1158-Abstract-Conference.html",
     "track": "Main Conference Track",
     "year": "2025",
-    "venue": "Advances in Neural Information Processing Systems 38"
+    "venue": "NeurIPS 2025"
   },
   {
     "title": "Self supervised learning for in vivo localization of microelectrode arrays using raw local field potential",
@@ -37,7 +37,7 @@
     "url": "https://papers.nips.cc/paper_files/paper/2025/hash/b408053531ce6fd66a96bc3a86527bb9-Abstract-Conference.html",
     "track": "Main Conference Track",
     "year": "2025",
-    "venue": "Advances in Neural Information Processing Systems 38"
+    "venue": "NeurIPS 2025"
   },
   {
     "title": "Bypassing spike sorting: Density-based decoding using spike localization from dense multielectrode probes",
@@ -45,7 +45,7 @@
     "url": "https://papers.nips.cc/paper_files/paper/2023/hash/f499387f191d6be56e68966181095878-Abstract-Conference.html",
     "track": "Main Conference Track",
     "year": "2023",
-    "venue": "Advances in Neural Information Processing Systems 36"
+    "venue": "NeurIPS 2023"
   },
   {
     "title": "Three-dimensional spike localization and improved motion correction for Neuropixels recordings",
@@ -53,6 +53,6 @@
     "url": "https://papers.nips.cc/paper_files/paper/2021/hash/b950ea26ca12daae142bd74dba4427c8-Abstract.html",
     "track": "",
     "year": "2021",
-    "venue": "Advances in Neural Information Processing Systems 34"
+    "venue": "NeurIPS 2021"
   }
 ]

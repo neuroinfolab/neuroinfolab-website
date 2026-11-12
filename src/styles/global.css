@@ -879,12 +879,35 @@ html:not(.locked) .gate {
 }
 
 .pub-line {
+  position: relative;
   display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
   font-size: 0.98rem;
   line-height: 1.6;
+}
+
+/* Hangs in the left margin so titled rows and plain rows share the same
+   text edge. */
+.pub-star {
+  position: absolute;
+  top: 0.24em;
+  left: -0.9rem;
+  width: 0.72em;
+  height: 0.72em;
+  color: var(--accent);
+  cursor: help;
+}
+
+@media (max-width: 700px) {
+  .pub-star {
+    left: -0.75rem;
+  }
+}
+
+.pub-star svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .pub-title {
@@ -910,6 +933,13 @@ a.pub-title:hover {
 .pub-authors strong {
   color: var(--ink);
   font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (min-width: 901px) {
+  .pub-authors {
+    white-space: nowrap;
+  }
 }
 
 .pub-sep {
@@ -1888,9 +1918,6 @@ a.pub-title:hover {
   }
   .projects {
     grid-template-columns: 1fr;
-  }
-  .pub-line {
-    white-space: normal;
   }
   .people {
     grid-template-columns: repeat(4, minmax(0, 1fr));

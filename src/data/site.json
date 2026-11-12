@@ -129,16 +129,25 @@
   ],
   "publications": [
     {
+      "year": "2026",
+      "title": "2P-NucTag: On-demand phototagging for molecular analysis of functionally identified cortical neurons",
+      "authors": "J Shi, B Nutkovich, D Kushinsky, BY Rao, SA Herrlinger, E Tsivourakis, ..., E Varol",
+      "venue": "Neuron",
+      "doi": "10.1016/j.neuron.2026.03.016"
+    },
+    {
       "year": "2025",
       "title": "Predicting Functional Brain Connectivity with Context-Aware Deep Neural Networks",
       "authors": "A Ratzan, S Goel, J Wen, C Davatzikos, E Varol",
-      "venue": "Advances in Neural Information Processing Systems 39"
+      "venue": "NeurIPS 2025",
+      "url": "https://papers.nips.cc/paper_files/paper/2025/hash/7f09298fd090c13c5583549d22ec1158-Abstract-Conference.html"
     },
     {
       "year": "2025",
       "title": "Self supervised learning for in vivo localization of microelectrode arrays using raw local field potential",
       "authors": "T He, M Patel, C Li, A Maslarova, M Vöröslakos, N Ramanathan, W Hung, G Buzsaki, E Varol",
-      "venue": "Advances in Neural Information Processing Systems 39"
+      "venue": "NeurIPS 2025",
+      "url": "https://papers.nips.cc/paper_files/paper/2025/hash/b408053531ce6fd66a96bc3a86527bb9-Abstract-Conference.html"
     },
     {
       "year": "2025",
@@ -150,13 +159,14 @@
       "year": "2025",
       "title": "Alternative splicing across the C. elegans nervous system",
       "authors": "A Weinreb, E Varol, A Barrett, RM McWhirter, SR Taylor, I Courtney,...",
-      "venue": "Nature communications 16 (1), 4508"
+      "venue": "Nature Communications 16 (1), 4508",
+      "doi": "10.1038/s41467-025-58293-5"
     },
     {
       "year": "2025",
       "title": "DREDge: robust motion correction for high-density extracellular recordings across species",
-      "authors": "C Windolf, H Yu, AC Paulk, D Meszéna, W Muñoz, J Boussard,...",
-      "venue": "Nature methods, 1-13"
+      "authors": "C Windolf, H Yu, AC Paulk, D Meszéna, W Muñoz, J Boussard, ..., E Varol",
+      "venue": "Nature Methods, 1-13"
     },
     {
       "year": "2025",
@@ -168,79 +178,79 @@
       "year": "2025",
       "title": "Integrating bulk and single cell RNA-seq refines transcriptomic profiles of individual C. elegans neurons",
       "authors": "A Barrett, E Varol, A Weinreb, SR Taylor, RM McWhirter, C Cros, B Vidal,...",
-      "venue": "BioRxiv, 2025.01. 26.634951"
+      "venue": "bioRxiv, 2025.01.26.634951"
     },
     {
       "year": "2025",
-      "title": "WormID-Benchmark: Extracting Whole-Brain Neural Dynamics of C. elegans At the Neuron Resolution",
-      "authors": "J Adhinarta, J Dong, T He, J Huang, D Sprague, J Wan, HJ Lee, Z Yu,...",
-      "venue": "bioRxiv, 2025.01. 06.631621"
+      "title": "WormID-Bench: A Benchmark for Whole-Brain Activity Extraction in C. elegans",
+      "authors": "J Adhinarta, J Dong, T He, J Huang, D Sprague, J Wan, HJ Lee, Z Yu, ..., E Varol",
+      "venue": "bioRxiv, 2025.01.06.631621",
+      "doi": "10.1101/2025.01.06.631621"
     },
     {
       "year": "2025",
       "title": "CellSpliceNet: Interpretable Multimodal Modeling of Alternative Splicing Across Neurons in C. elegans",
       "authors": "A Afrasiyabi, J Kovalic, C Liu, E Castro, A Weinreb, E Varol, D Miller,...",
-      "venue": "bioRxiv, 2025.06. 22.660966"
+      "venue": "bioRxiv, 2025.06.22.660966",
+      "doi": "10.1101/2025.06.22.660966"
     },
     {
       "year": "2025",
       "title": "Human single neural and columnar dynamics recorded by intraoperative high-density penetrating electrodes",
-      "authors": "D Meszena, A Paulk, W Munoz, M Jamali, I Caprara, B Coughlin,...",
+      "authors": "D Meszena, A Paulk, W Munoz, M Jamali, I Caprara, B Coughlin, ..., E Varol",
       "venue": "Neuroscience Applied 4, 105433"
     },
     {
       "year": "2024",
       "title": "Exploiting correlations across trials and behavioral sessions to improve neural decoding",
-      "authors": "Y Zhang, H Lyu, C Hurwitz, S Wang, C Findling, F Hubert, A Pouget,...",
+      "authors": "Y Zhang, H Lyu, C Hurwitz, S Wang, C Findling, F Hubert, A Pouget, ..., E Varol",
       "venue": "bioRxiv"
     },
     {
       "year": "2024",
       "title": "Genetic and clinical correlates of two neuroanatomical AI dimensions in the Alzheimer’s disease continuum",
-      "authors": "J Wen, Z Yang, IM Nasrallah, Y Cui, G Erus, D Srinivasan, A Abdulkadir,...",
-      "venue": "Translational psychiatry 14 (1), 420"
+      "authors": "J Wen, Z Yang, IM Nasrallah, Y Cui, G Erus, D Srinivasan, A Abdulkadir, ..., E Varol",
+      "venue": "Translational Psychiatry 14 (1), 420"
     },
     {
       "year": "2024",
-      "title": "2P-NucTag: on-demand phototagging for molecular analysis of functionally identified cortical neurons",
-      "authors": "J Shi, B Nutkovich, D Kushinsky, BY Rao, SA Herrlinger, E Tsivourakis,...",
-      "venue": "bioRxiv"
-    },
-    {
-      "year": "2024",
-      "title": "Alternative splicing across theC. elegansnervous system",
+      "title": "Alternative splicing across the C. elegans nervous system",
       "authors": "A Weinreb, E Varol, A Barrett, RM McWhirter, SR Taylor, I Courtney,...",
-      "venue": ""
+      "venue": "bioRxiv, 2024.05.16.594567",
+      "doi": "10.1101/2024.05.16.594567"
     },
     {
       "year": "2024",
-      "title": "Disorganized Inhibitory Dynamics in Hippocampal area CA1 of 22q11. 2 Deletion Mutant Mice",
+      "title": "Disorganized Inhibitory Dynamics in Hippocampal area CA1 of 22q11.2 Deletion Mutant Mice",
       "authors": "SA Herrlinger, BY Rao, MEC Paredes, AL Tuttman, H Arain, E Varol,...",
-      "venue": "bioRxiv, 2024.04. 28.591464"
+      "venue": "bioRxiv, 2024.04.28.591464"
     },
     {
       "year": "2023",
       "title": "Bypassing spike sorting: Density-based decoding using spike localization from dense multielectrode probes",
-      "authors": "Y Zhang, T He, J Boussard, C Windolf, O Winter, E Trautmann, N Roth,...",
-      "venue": "Advances in Neural Information Processing Systems 36, 77604-77631; NeurIPS 2023 ( Spotlight )"
+      "authors": "Y Zhang, T He, J Boussard, C Windolf, O Winter, E Trautmann, N Roth, ..., E Varol",
+      "venue": "NeurIPS 2023",
+      "url": "https://papers.nips.cc/paper_files/paper/2023/hash/f499387f191d6be56e68966181095878-Abstract-Conference.html",
+      "note": "Spotlight"
     },
     {
       "year": "2023",
       "title": "Modified Neuropixels probes for recording human neurophysiology in the operating room",
-      "authors": "B Coughlin, W Muñoz, Y Kfir, MJ Young, D Meszéna, M Jamali, I Caprara,...",
-      "venue": "Nature protocols 18 (10), 2927-2953"
+      "authors": "B Coughlin, W Muñoz, Y Kfir, MJ Young, D Meszéna, M Jamali, I Caprara, ..., E Varol",
+      "venue": "Nature Protocols 18 (10), 2927-2953"
     },
     {
       "year": "2023",
       "title": "Neuroimaging-AI Endophenotypes of Brain Diseases in the General Population: Towards a Dimensional System of Vulnerability",
       "authors": "J Wen, I Skampardoni, YE Tian, Z Yang, Y Cui, G Erus, G Hwang, E Varol,...",
-      "venue": "Medrxiv: the Preprint Server for Health Sciences"
+      "venue": "medRxiv"
     },
     {
       "year": "2023",
       "title": "Learning Probabilistic Piecewise Rigid Atlases of Model Organisms via Generative Deep Networks",
       "authors": "A Nejatbakhsh, N Dey, V Venkatachalam, E Yemini, L Paninski, E Varol",
-      "venue": "International Conference on Information Processing in Medical Imaging, 332-343; IPMI 2023. ( Oral Presentation )"
+      "venue": "International Conference on Information Processing in Medical Imaging, 332-343; IPMI 2023.",
+      "note": "Oral Presentation"
     },
     {
       "year": "2023",
@@ -251,20 +261,21 @@
     {
       "year": "2023",
       "title": "Robust online multiband drift estimation in electrophysiology data",
-      "authors": "C Windolf, AC Paulk, Y Kfir, E Trautmann, D Meszéna, W Muñoz,...",
-      "venue": "ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and …; ICASSP 2023. ( Top 3% of papers )"
+      "authors": "C Windolf, AC Paulk, Y Kfir, E Trautmann, D Meszéna, W Muñoz, ..., E Varol",
+      "venue": "ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and …; ICASSP 2023.",
+      "note": "Top 3% of papers"
     },
     {
       "year": "2023",
       "title": "Assessment of neuroanatomical endophenotypes of autism spectrum disorder and association with characteristics of individuals with schizophrenia and the general population",
-      "authors": "G Hwang, J Wen, S Sotardi, ES Brodkin, GB Chand, DB Dwyer, G Erus,...",
-      "venue": "JAMA psychiatry 80 (5), 498-507"
+      "authors": "G Hwang, J Wen, S Sotardi, ES Brodkin, GB Chand, DB Dwyer, G Erus, ..., E Varol",
+      "venue": "JAMA Psychiatry 80 (5), 498-507"
     },
     {
       "year": "2023",
       "title": "Psychosis brain subtypes validated in first-episode cohorts and related to illness remission: results from the PHENOM consortium",
-      "authors": "DB Dwyer, GB Chand, A Pigoni, A Khuntia, J Wen, M Antoniades,...",
-      "venue": "Molecular psychiatry 28 (5), 2008-2017"
+      "authors": "DB Dwyer, GB Chand, A Pigoni, A Khuntia, J Wen, M Antoniades, ..., E Varol",
+      "venue": "Molecular Psychiatry 28 (5), 2008-2017"
     },
     {
       "year": "2023",
@@ -275,26 +286,22 @@
     {
       "year": "2022",
       "title": "Genetic, clinical underpinnings of brain change along two neuroanatomical dimensions of clinically-defined Alzheimer’s disease",
-      "authors": "J Wen, Z Yang, IM Nasrallah, Y Cui, G Erus, D Srinivasan, A Abdulkadir,...",
-      "venue": ""
-    },
-    {
-      "year": "2022",
-      "title": "Genetic, clinical underpinnings of subtle early brain change along Alzheimer’s dimensions",
-      "authors": "J Wen, Z Yang, IM Nasrallah, Y Cui, G Erus, D Srinivasan, A Abdulkadir,...",
-      "venue": "bioRxiv, 2022.09. 16.508329"
+      "authors": "J Wen, Z Yang, IM Nasrallah, Y Cui, G Erus, D Srinivasan, A Abdulkadir, ..., E Varol",
+      "venue": "bioRxiv, 2022.09.16.508329",
+      "doi": "10.1101/2022.09.16.508329"
     },
     {
       "year": "2022",
       "title": "Schizophrenia imaging signatures and their associations with cognition, psychopathology, and genetics in the general population",
-      "authors": "GB Chand, P Singhal, DB Dwyer, J Wen, G Erus, J Doshi, D Srinivasan,...",
+      "authors": "GB Chand, P Singhal, DB Dwyer, J Wen, G Erus, J Doshi, D Srinivasan, ..., E Varol",
       "venue": "American Journal of Psychiatry 179 (9), 650-660"
     },
     {
       "year": "2022",
       "title": "Three imaging endophenotypes characterize neuroanatomical heterogeneity of autism spectrum disorder",
-      "authors": "G Hwang, J Wen, S Sotardi, ES Brodkin, GB Chand, DB Dwyer, G Erus,...",
-      "venue": "medRxiv, 2022.06. 17.22276543"
+      "authors": "G Hwang, J Wen, S Sotardi, ES Brodkin, GB Chand, DB Dwyer, G Erus, ..., E Varol",
+      "venue": "medRxiv, 2022.06.17.22276543",
+      "doi": "10.1101/2022.06.17.22276543"
     },
     {
       "year": "2022",
@@ -305,56 +312,60 @@
     {
       "year": "2022",
       "title": "Characterizing heterogeneity in neuroimaging, cognition, clinical symptoms, and genetics among patients with late-life depression",
-      "authors": "J Wen, CHY Fu, D Tosun, Y Veturi, Z Yang, A Abdulkadir, E Mamourian,...",
-      "venue": "JAMA psychiatry 79 (5), 464-474"
+      "authors": "J Wen, CHY Fu, D Tosun, Y Veturi, Z Yang, A Abdulkadir, E Mamourian, ..., E Varol",
+      "venue": "JAMA Psychiatry 79 (5), 464-474"
     },
     {
       "year": "2022",
       "title": "Two schizophrenia imaging signatures and their associations with cognition, psychopathology, and genetics in the general population",
-      "authors": "GB Chand, P Singhal, DB Dwyer, J Wen, G Erus, J Doshi, D Srinivasan,...",
-      "venue": "medRxiv, 2022.01. 07.22268854"
+      "authors": "GB Chand, P Singhal, DB Dwyer, J Wen, G Erus, J Doshi, D Srinivasan, ..., E Varol",
+      "venue": "medRxiv, 2022.01.07.22268854"
     },
     {
       "year": "2022",
       "title": "CeNGEN Integrated mRNA data and bulk noncoding RNA lookup table",
       "authors": "A Barrett, E Varol, A Weinreb, SR Taylor, R McWhirter, C Cros,...",
-      "venue": ""
+      "venue": "Zenodo"
     },
     {
       "year": "2022",
       "title": "Multi-scale semi-supervised clustering of brain images: deriving disease subtypes",
       "authors": "J Wen, E Varol, A Sotiras, Z Yang, GB Chand, G Erus, H Shou,...",
-      "venue": "Medical Image Analysis 75, 102304"
+      "venue": "Medical Image Analysis 75, 102304",
+      "doi": "10.1016/j.media.2021.102304"
     },
     {
       "year": "2021",
       "title": "Three-dimensional spike localization and improved motion correction for Neuropixels recordings",
       "authors": "J Boussard, E Varol, HD Lee, N Dethe, L Paninski",
-      "venue": "Advances in Neural Information Processing Systems 34"
+      "venue": "NeurIPS 2021",
+      "url": "https://papers.nips.cc/paper_files/paper/2021/hash/b950ea26ca12daae142bd74dba4427c8-Abstract.html"
     },
     {
       "year": "2021",
       "title": "Non-parametric vignetting correction for sparse spatial transcriptomics images",
-      "authors": "BY Rao, AM Peterson, EK Kandror, S Herrlinger, A Losonczy, L Paninski,...",
+      "authors": "BY Rao, AM Peterson, EK Kandror, S Herrlinger, A Losonczy, L Paninski, ..., E Varol",
       "venue": "International Conference on Medical Image Computing and Computer-Assisted …"
     },
     {
       "year": "2021",
       "title": "Visualizing the organization and differentiation of the male-specific nervous system of C. elegans",
       "authors": "T Tekieli, E Yemini, A Nejatbakhsh, C Wang, E Varol, RW Fernandez,...",
-      "venue": "Development 148 (18), dev199687"
+      "venue": "Development 148 (18), dev199687",
+      "doi": "10.1242/dev.199687"
     },
     {
       "year": "2021",
       "title": "Molecular topography of an entire nervous system",
       "authors": "SR Taylor, G Santpere, A Weinreb, A Barrett, MB Reilly, C Xu, E Varol,...",
-      "venue": "Cell"
+      "venue": "Cell",
+      "doi": "10.1016/j.cell.2021.06.023"
     },
     {
       "year": "2021",
       "title": "The Prop1-like homeobox gene unc-42 specifies the identity of synaptically connected neurons",
       "authors": "EG Berghoff, L Glenwinkel, A Bhattacharya, HS Sun, E Varol,...",
-      "venue": "Elife 10, e64903"
+      "venue": "eLife 10, e64903"
     },
     {
       "year": "2021",
@@ -365,26 +376,27 @@
     {
       "year": "2021",
       "title": "Three Distinct Neuroanatomical Subtypes of Autism Spectrum Disorder, Revealed via Machine Learning, and Their Similarities With Schizophrenia Subtypes",
-      "authors": "G Hwang, ES Brodkin, GB Chand, DB Dwyer, J Wen, G Erus, J Doshi,...",
+      "authors": "G Hwang, ES Brodkin, GB Chand, DB Dwyer, J Wen, G Erus, J Doshi, ..., E Varol",
       "venue": "Biological Psychiatry 89 (9), S374-S375"
     },
     {
       "year": "2021",
       "title": "Neurocognitive and functional heterogeneity in depressed youth",
-      "authors": "EB Baller, AN Kaczkurkin, A Sotiras, A Adebimpe, DS Bassett, ME Calkins,...",
-      "venue": "Neuropsychopharmacology 46 (4), 783-790"
+      "authors": "EB Baller, AN Kaczkurkin, A Sotiras, A Adebimpe, DS Bassett, ME Calkins, ..., E Varol",
+      "venue": "Neuropsychopharmacology 46 (4), 783-790",
+      "doi": "10.1038/s41386-020-00871-w"
     },
     {
       "year": "2021",
       "title": "NeuroPAL Microfluidic Chip Images, GCaMP, and dNMF Neuronal Activity",
       "authors": "E Yemini, O Hobert, A Nejatbakhsh, E Varol, L Paninski,...",
-      "venue": "(No Title)"
+      "venue": "Zenodo"
     },
     {
       "year": "2021",
       "title": "Interaction of the Joining Region in Junctophilin-2 With the L-Type Ca2+ Channel Is Pivotal for Cardiac Dyad Assembly and Intracellular Ca2+ Dynamics",
-      "authors": "P Gross, J Johnson, CM Romero, DM Eaton, C Poulet, J Sanchez-Alonso,...",
-      "venue": "Circulation research 128 (1), 92-114"
+      "authors": "P Gross, J Johnson, CM Romero, DM Eaton, C Poulet, J Sanchez-Alonso, ..., E Varol",
+      "venue": "Circulation Research 128 (1), 92-114"
     },
     {
       "year": "2021",
@@ -432,7 +444,7 @@
       "year": "2020",
       "title": "Extracting neural signals from semi-immobilized animals with deformable non-negative matrix factorization",
       "authors": "A Nejatbakhsh, E Varol, E Yemini, V Venkatachalam, A Lin, ADT Samuel,...",
-      "venue": "bioRxiv, 2020.07. 07.192120"
+      "venue": "bioRxiv, 2020.07.07.192120"
     },
     {
       "year": "2020",
@@ -444,12 +456,12 @@
       "year": "2020",
       "title": "NeuroPAL Data",
       "authors": "E Yemini, A Lin, A Nejatbakhsh, E Varol, R Sun, G Mena, A Samuel,...",
-      "venue": "(No Title)"
+      "venue": "Zenodo"
     },
     {
       "year": "2020",
       "title": "Neurostructural Heterogeneity in Youth With Internalizing Symptoms",
-      "authors": "A Kaczkurkin, A Sotiras, E Baller, R Barzilay, ME Calkins, G Chand, Z Cui,...",
+      "authors": "A Kaczkurkin, A Sotiras, E Baller, R Barzilay, ME Calkins, G Chand, Z Cui, ..., E Varol",
       "venue": "Biological Psychiatry 87 (9), S28"
     },
     {
@@ -461,7 +473,7 @@
     {
       "year": "2020",
       "title": "Neuroanatomical Dimensional Phenotypes of Schizophrenia: Expression in Youth With Psychosis-Spectrum Symptoms and Correlation With Cognition",
-      "authors": "G Chand, DH Wolf, G Erus, D Srinivasan, DB Dwyer, R Pomponio,...",
+      "authors": "G Chand, DH Wolf, G Erus, D Srinivasan, DB Dwyer, R Pomponio, ..., E Varol",
       "venue": "Biological Psychiatry 87 (9), S119"
     },
     {
@@ -473,8 +485,8 @@
     {
       "year": "2020",
       "title": "Neurostructural heterogeneity in youths with internalizing symptoms",
-      "authors": "AN Kaczkurkin, A Sotiras, EB Baller, R Barzilay, ME Calkins, GB Chand,...",
-      "venue": "Biological psychiatry 87 (5), 473-482"
+      "authors": "AN Kaczkurkin, A Sotiras, EB Baller, R Barzilay, ME Calkins, GB Chand, ..., E Varol",
+      "venue": "Biological Psychiatry 87 (5), 473-482"
     },
     {
       "year": "2020",
@@ -486,13 +498,13 @@
       "year": "2020",
       "title": "Sinkhorn permutation variational marginal inference",
       "authors": "G Mena, E Varol, A Nejatbakhsh, E Yemini, L Paninski",
-      "venue": "Symposium on advances in approximate Bayesian inference, 1-9"
+      "venue": "Symposium on Advances in Approximate Bayesian Inference, 1-9"
     },
     {
       "year": "2020",
       "title": "NeuroPAL: a neuronal polychromatic atlas of landmarks for whole-brain imaging in C. elegans",
       "authors": "E Yemini, A Lin, A Nejatbakhsh, E Varol, R Sun, GE Mena, ADT Samuel,...",
-      "venue": "BioRxiv, 676312"
+      "venue": "bioRxiv, 676312"
     },
     {
       "year": "2019",
@@ -503,7 +515,7 @@
     {
       "year": "2019",
       "title": "Neurocognitive and functional heterogeneity in depressed youth",
-      "authors": "EB Baller, AN Kaczkurkin, A Sotiras, A Adebimpe, DS Bassett, ME Calkins,...",
+      "authors": "EB Baller, AN Kaczkurkin, A Sotiras, A Adebimpe, DS Bassett, ME Calkins, ..., E Varol",
       "venue": "bioRxiv, 778878"
     },
     {
@@ -514,15 +526,16 @@
     },
     {
       "year": "2019",
-      "title": "Expression profiling of the mature C. elegans Nervous system by single-Cell RNA-sequencing. bioRxiv: 737577",
+      "title": "Expression profiling of the mature C. elegans nervous system by single-cell RNA-sequencing",
       "authors": "SR Taylor, G Santpere, M Reilly, L Glenwinkel, A Poff, R McWhirter, C Xu,...",
-      "venue": "Publisher: Cold Spring Harbor Laboratory Section: New Results"
+      "venue": "bioRxiv, 737577",
+      "doi": "10.1101/737577"
     },
     {
       "year": "2018",
       "title": "Semi-Supervised Machine Learning Reveals 3 Patterns of Cognitive Function in Depressed Youth",
       "authors": "E Baller, A Kaczkurkin, A Sotiras, E Varol, T Moore, C Xia, M Calkins,...",
-      "venue": "NEUROPSYCHOPHARMACOLOGY 43, S443-S444"
+      "venue": "Neuropsychopharmacology 43, S443-S444"
     },
     {
       "year": "2018",
@@ -558,7 +571,7 @@
       "year": "2017",
       "title": "HYDRA: Revealing heterogeneity of imaging and genetic patterns through a multiple max-margin discriminative analysis framework",
       "authors": "E Varol, A Sotiras, C Davatzikos, ADN Initiative",
-      "venue": "Neuroimage 145, 346-364"
+      "venue": "NeuroImage 145, 346-364"
     },
     {
       "year": "2016 & Older",
@@ -575,26 +588,20 @@
     {
       "year": "2016 & Older",
       "title": "Crowdsourced estimation of cognitive decline and resilience in Alzheimer's disease",
-      "authors": "GI Allen, N Amoroso, C Anghel, V Balagurusamy, CJ Bare, D Beaton,...",
+      "authors": "GI Allen, N Amoroso, C Anghel, V Balagurusamy, CJ Bare, D Beaton, ..., E Varol",
       "venue": "Alzheimer's & Dementia 12 (6), 645-653"
     },
     {
       "year": "2016 & Older",
       "title": "Nuquantus: Machine learning software for the characterization and quantification of cell nuclei in complex immunofluorescent tissue images",
       "authors": "P Gross, N Honnorat, E Varol, M Wallner, DM Trappanese, TE Sharp,...",
-      "venue": "Scientific reports 6 (1), 23431"
-    },
-    {
-      "year": "2016 & Older",
-      "title": "Heterogeneity of neuroanatomical patterns in prodromal Alzheimer’s disease: links to cognition, progression and biomarkers.",
-      "authors": "A Dong, JB Toledo, N Honnorat, J Doshi, E Varol, A Sotiras, D Wolk,...",
-      "venue": ""
+      "venue": "Scientific Reports 6 (1), 23431"
     },
     {
       "year": "2016 & Older",
       "title": "Machine learning as a means toward precision diagnostics and prognostics",
       "authors": "A Sotiras, B Gaonkar, H Eavani, N Honnorat, E Varol, A Dong,...",
-      "venue": "Machine learning and medical imaging, 299-334"
+      "venue": "Machine Learning and Medical Imaging, 299-334"
     },
     {
       "year": "2016 & Older",
@@ -618,7 +625,7 @@
       "year": "2016 & Older",
       "title": "Feature ranking based nested support vector machine ensemble for medical image classification",
       "authors": "E Varol, B Gaonkar, G Erus, R Schultz, C Davatzikos",
-      "venue": "2012 9th IEEE international symposium on biomedical imaging (ISBI), 146-149"
+      "venue": "2012 9th IEEE International Symposium on Biomedical Imaging (ISBI), 146-149"
     },
     {
       "year": "2016 & Older",

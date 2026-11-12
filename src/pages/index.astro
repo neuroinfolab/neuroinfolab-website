@@ -9,17 +9,50 @@ import { url } from '../lib/url';
 
 const projects = site.projects;
 
+type Publication = {
+  year: string;
+  title: string;
+  authors: string;
+  venue: string;
+  doi?: string;
+  url?: string;
+  note?: string;
+};
+
+const publications = site.publications as Publication[];
 const dois = doiData as Record<string, { doi: string }>;
 const normalizeTitle = (value: string) =>
   value.toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim();
-const doiFor = (title: string) => dois[normalizeTitle(title)]?.doi;
-const splitAuthors = (authors: string) => authors.split(/(E(?:rdem)?\.?\s+Varol)/g);
-const isVarol = (part: string) => /^E(?:rdem)?\.?\s+Varol$/.test(part);
+// Per-entry DOI/URL overrides win over the title-keyed dois.json lookup.
+const doiFor = (publication: Publication) =>
+  publication.doi ?? dois[normalizeTitle(publication.title)]?.doi;
+const linkFor = (publication: Publication) => {
+  if (publication.url) return publication.url;
+  const doi = doiFor(publication);
+  // 10.52202 is Curran Associates; it resolves to proceedings.com, not the
+  // official NeurIPS proceedings. Those entries carry an explicit url instead.
+  if (!doi || doi.startsWith('10.52202/')) return null;
+  return `https://doi.org/${doi}`;
+};
 
-const years = [...new Set(site.publications.map((p) => p.year))];
+// Keep E Varol visible when a long author list has to be shortened.
+const varol = /^E(?:rdem)?\.?\s+Varol$/;
+const authorNames = (authors: string) => {
+  const names = authors
+    .split(',')
+    .map((name) => name.trim())
+    .filter((name) => name && !/^[.…]+$/.test(name));
+  const varolAt = names.findIndex((name) => varol.test(name));
+  if (varolAt === -1) return names.length > 4 ? [...names.slice(0, 3), '…'] : names;
+  if (names.length <= 5) return names;
+  if (varolAt < 3) return [...names.slice(0, 3), '…'];
+  return [...names.slice(0, 3), '…', names[varolAt]];
+};
+
+const years = [...new Set(publications.map((p) => p.year))];
 const byYear = years.map((y) => ({
   year: y,
-  items: site.publications.filter((p) => p.year === y),
+  items: publications.filter((p) => p.year === y),
 }));
 const openYears = new Set(byYear.slice(0, 4).map((group) => group.year));
 
@@ -150,7 +183,7 @@ const life = [
       <div class="shell">
         <div class="hero-inner">
           <div>
-            <span class="label">Tandon School of Engineering, NYU</span>
+            <span class="label">NYU</span>
             <h1 id="hero-title" class="display" style="margin-top:1rem">{site.name}</h1>
             <p class="hero-lede">{site.tagline}</p>
           </div>
@@ -218,7 +251,6 @@ const life = [
       <div class="shell">
         <div class="pi">
           <div>
-            <span class="label">Principal investigator</span>
             <h2 id="pi-title">{site.pi.name}</h2>
             <p class="pi-bio">{site.pi.bio}</p>
             <div class="pi-links">
@@ -357,17 +389,28 @@ const life = [
               <summary class="pub-year-head">{group.year}</summary>
               <div class="pub-year-body">
                 {group.items.map((p) => {
-                  const doi = doiFor(p.title);
+                  const href = linkFor(p);
+                  const doi = doiFor(p);
                   return (
                     <article class="pub" title={`${p.title} — ${p.authors} — ${p.venue}`}>
                       <p class="pub-line">
-                        {doi ? (
+                        {p.note && (
+                          <span class="pub-star" title={p.note} aria-label={p.note} role="img">
+                            <svg viewBox="0 0 16 16" aria-hidden="true">
+                              <path
+                                d="M8 1.4 9.9 5.3l4.3.6-3.1 3 .7 4.3L8 11.2l-3.8 2 .7-4.3-3.1-3 4.3-.6L8 1.4Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </span>
+                        )}
+                        {href ? (
                           <a
                             class="pub-title"
-                            href={`https://doi.org/${doi}`}
+                            href={href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            title={`Open DOI: ${doi}`}
+                            title={p.url ? 'Open paper' : `Open DOI: ${doi}`}
                           >
                             {p.title}
                           </a>
@@ -376,7 +419,12 @@ const life = [
                         )}
                         <span class="pub-sep">·</span>
                         <span class="pub-authors">
-                          {splitAuthors(p.authors).map((part) => (isVarol(part) ? <strong>{part}</strong> : part))}
+                          {authorNames(p.authors).map((name, i) => (
+                            <>
+                              {i > 0 ? ', ' : ''}
+                              {varol.test(name) ? <strong>{name}</strong> : name}
+                            </>
+                          ))}
                         </span>
                         <span class="pub-sep">·</span>
                         <span class="pub-venue">{p.venue}</span>
