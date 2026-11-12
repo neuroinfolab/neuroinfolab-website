@@ -21,7 +21,7 @@ pnpm preview    # serve dist/
 public/
   docs/           CV, syllabi, postdoc ad
   img/            team, alumni, lab life, courses, logos
-  media/          posters, source clips, Forecasting Motion GIF
+  media/          posters, Forecasting Motion GIF
   media/loops/    5 hero WebM loops + MP4 fallbacks
 src/
   components/     Header, Footer, ProjectCard, CoursePage
@@ -30,10 +30,9 @@ src/
   lib/            url.ts
   pages/          index.astro, neuroinformatics.astro, computer-vision.astro
   styles/         global.css
-  content/        reserved first-pass project files (not rendered)
 scripts/          sync_publications.py, check_publications.py,
                   publication-screenshots.mjs, scrape_nips.py, serp.py,
-                  sync-site-text.py, shots.mjs
+                  shots.mjs
 ```
 
 ## Pages
@@ -113,10 +112,6 @@ It does **not** auto-merge. Erdem Varol reviews the diff, screenshots, and DOI
 audit, then approves and merges. Repository branch protection on `main` must
 require that approval; the workflow cannot enforce reviewer identity.
 
-**Do not run `scripts/sync-site-text.py`.** It rebuilds `site.json` from
-`../_crawl`, writes `funding` as strings, and drops per-entry overrides, award
-notes, and manual metadata fixes. It is a full-file overwrite, not a merge.
-
 ## Design tokens
 
 All in `src/styles/global.css`, first block:
@@ -137,8 +132,7 @@ and a 7s auto-advance. Only the active video loads; the next is preloaded.
 ## Adding content
 
 **A project** — add the project to `src/data/site.json`; the page reads all 11
-projects from that file. The unused `src/content/projects/*.md` files are a
-first-pass experiment and are not rendered.
+projects from that file.
 
 **A person** — drop a 4:5 JPEG in `public/img/team/` or `public/img/alumni/`,
 add the entry to `src/data/site.json`, and add the image mapping in
@@ -179,18 +173,10 @@ For a custom domain, set `SITE_URL=https://www.neuroinformaticslab.com` and
 deploy. DNS needs the four `185.199.108–111.153` A records plus
 `www → pxndey.github.io`.
 
-## Current gaps
+## Known limitations
 
 - The monthly PR requires GitHub branch protection to enforce Erdem’s approval.
-- `scripts/sync-site-text.py` is unsafe until its funding schema and overwrite
-  behavior are fixed.
 - Six publications remain unlinked (see Data above).
 - The 2023 *Neuroimaging-AI Endophenotypes* medRxiv entry has no confident DOI
   match.
-- Known defects: course-page nav active state, carousel pause, stale homepage
-  dates, inconsistent course-term freshness, and the 2.8 MB eager-loaded CV GIF.
 - The UI backlog is closed by user decision; do not reopen it.
-- Scholar counters are not wired yet.
-
-`HANDOFF.md` is the authoritative status file, including the locked decisions
-and pipeline operations.
