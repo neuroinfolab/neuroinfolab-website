@@ -895,7 +895,6 @@ html:not(.locked) .gate {
   width: 0.72em;
   height: 0.72em;
   color: var(--accent);
-  cursor: help;
 }
 
 @media (max-width: 700px) {
