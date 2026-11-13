@@ -33,17 +33,17 @@
       "site": "https://wp.nyu.edu/sg/"
     },
     {
-      "name": "Visweswar Sirish Parupudi",
-      "role": "M.S. Student (2025 - present)",
-      "prev": "Previously @ BITS Pilani Hyderabad",
-      "site": "https://itssirish.github.io"
-    },
-    {
       "name": "Nalini Ramanathan",
       "role": "PhD student (2026 - present)",
       "note": "(co-advised w/ Pavel Izmailov)",
       "prev": "Previously @ Dartmouth College",
       "site": "https://nalinir.github.io/"
+    },
+    {
+      "name": "Visweswar Sirish Parupudi",
+      "role": "M.S. Student (2025 - present)",
+      "prev": "Previously @ BITS Pilani Hyderabad",
+      "site": "https://itssirish.github.io"
     },
     {
       "name": "Lawrence Lu",
@@ -160,6 +160,22 @@
       "name": "Anusha Kumar",
       "role": "High School Summer Intern (2024 - present)",
       "school": "Horace Mann School"
+    },
+    {
+      "name": "Adel Sahuc",
+      "role": "M.S. student (2024 - 2026) - Lorem ipsum dolor sit amet"
+    },
+    {
+      "name": "Refik Daghan Or",
+      "role": "M.S. student (2024 - 2026) - Lorem ipsum dolor sit amet"
+    },
+    {
+      "name": "Wenqi Xu",
+      "role": "M.S. student (2024 - 2026) - Lorem ipsum dolor sit amet"
+    },
+    {
+      "name": "Yixing Wang",
+      "role": "M.S. student (2024 - 2026) - Lorem ipsum dolor sit amet"
     }
   ],
   "publications": [
