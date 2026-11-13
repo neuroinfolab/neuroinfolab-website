@@ -141,8 +141,7 @@ projects from that file.
 
 **A person** — drop a 4:5 JPEG in `public/img/team/` or `public/img/alumni/`,
 add the entry to `src/data/site.json`, and add the image mapping in
-`src/pages/index.astro`. Use `public/img/team/placeholder.svg` when a portrait
-is not available yet.
+`src/pages/index.astro`. Leave the mapping out to show a blank portrait frame.
 
 **A publication** — edit `src/data/site.json` directly. Add a per-entry `doi` or
 `url` when the title-keyed lookup is wrong or a better official link exists.
