@@ -94,7 +94,6 @@ const byYear = years.map((y) => ({
   year: y,
   items: publications.filter((p) => p.year === y),
 }));
-const openYears = new Set(byYear.slice(0, 4).map((group) => group.year));
 
 const alumniImg: Record<string, string> = {
   'Chenyi Li': '/img/alumni/li.jpg',
@@ -435,7 +434,7 @@ const life = [
 
         <div class="pubs">
           {byYear.map((group) => (
-            <details class="pub-year-group" open={openYears.has(group.year)}>
+            <details class="pub-year-group">
               <summary class="pub-year-head">{group.year}</summary>
               <div class="pub-year-body">
                 {group.items.map((p) => {
