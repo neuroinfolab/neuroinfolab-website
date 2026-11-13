@@ -120,8 +120,8 @@ All in `src/styles/global.css`, first block:
   uses a warm off-white page with a deeper violet accent; the header toggle
   follows the OS on first visit and remembers the choice per browser. The
   footer stays dark in both themes.
-- Cardo for display type (the home hero title is Instrument Sans), Instrument
-  Sans for body, Space Grotesk for labels and metadata.
+- Instrument Sans for display and body type, Space Grotesk for labels and
+  metadata. No serif faces are loaded.
 - 1px rules, no radius, no shadows, no cards on a dark background.
 - Animated line grid: 84px cells, 9s loop, disabled under reduce-motion.
 - Root font scales `17px → 22px`; max content width 2400px at ≥2200px.
