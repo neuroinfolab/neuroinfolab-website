@@ -31,6 +31,24 @@ const lockHash = locked && passcode ? createHash('sha256').update(passcode).dige
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <meta name="theme-color" content="#101012" />
+    <script is:inline>
+      (() => {
+        const key = 'lab-theme';
+        let stored = null;
+        try {
+          stored = localStorage.getItem(key);
+        } catch (e) {}
+        const theme =
+          stored === 'light' || stored === 'dark'
+            ? stored
+            : window.matchMedia('(prefers-color-scheme: light)').matches
+              ? 'light'
+              : 'dark';
+        document.documentElement.dataset.theme = theme;
+        const meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', theme === 'light' ? '#f4f0e7' : '#101012');
+      })();
+    </script>
     {locked && <meta name="robots" content="noindex, nofollow" />}
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
@@ -116,6 +134,26 @@ const lockHash = locked && passcode ? createHash('sha256').update(passcode).dige
       menuBtn?.addEventListener('click', () => {
         const open = nav?.classList.toggle('is-open') ?? false;
         menuBtn.setAttribute('aria-expanded', String(open));
+      });
+
+      const themeToggle = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
+      const setThemeLabel = () => {
+        if (!themeToggle) return;
+        const light = document.documentElement.dataset.theme === 'light';
+        const label = light ? 'Switch to dark mode' : 'Switch to light mode';
+        themeToggle.setAttribute('aria-label', label);
+        themeToggle.setAttribute('title', label);
+      };
+      setThemeLabel();
+      themeToggle?.addEventListener('click', () => {
+        const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+        document.documentElement.dataset.theme = next;
+        try {
+          localStorage.setItem('lab-theme', next);
+        } catch (e) {}
+        const meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', next === 'light' ? '#f4f0e7' : '#101012');
+        setThemeLabel();
       });
 
       // Keep visitors on the site: every off-site link (and every PDF) opens

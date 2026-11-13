@@ -17,7 +17,14 @@ const current = Astro.url.pathname.slice(base.length) || '/';
 
 <header class="site-header">
   <div class="shell">
-    <a class="brand" href={url('/')}>Neuroinformatics Lab</a>
+    <a class="brand" href={url('/')} aria-label="Neuroinformatics Lab home">
+      <img
+        src={url('/img/logos/neuroinformatics-dark.png')}
+        alt="Neuroinformatics Lab"
+        width="762"
+        height="128"
+      />
+    </a>
 
     <div class="header-right">
       <button class="menu-btn" type="button" data-menu aria-expanded="false" aria-controls="nav">
@@ -31,6 +38,22 @@ const current = Astro.url.pathname.slice(base.length) || '/';
           </a>
         ))}
       </nav>
+
+      <button
+        class="theme-toggle"
+        type="button"
+        data-theme-toggle
+        aria-label="Switch to light mode"
+        title="Switch to light mode"
+      >
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 16 16" aria-hidden="true">
+          <circle cx="8" cy="8" r="3.1"></circle>
+          <path d="M8 1v1.6M8 13.4V15M1 8h1.6M13.4 8H15M3.05 3.05l1.13 1.13M11.82 11.82l1.13 1.13M12.95 3.05l-1.13 1.13M4.18 11.82l-1.13 1.13"></path>
+        </svg>
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M13.6 9.7A5.9 5.9 0 0 1 6.3 2.4 5.9 5.9 0 1 0 13.6 9.7Z"></path>
+        </svg>
+      </button>
 
       <div class="social" aria-label="Social links">
         <a
