@@ -144,13 +144,23 @@ const lockHash = locked && passcode ? createHash('sha256').update(passcode).dige
       setThemeLabel();
       themeToggle?.addEventListener('click', () => {
         const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
-        document.documentElement.dataset.theme = next;
-        try {
-          localStorage.setItem('lab-theme', next);
-        } catch (e) {}
-        const meta = document.querySelector('meta[name="theme-color"]');
-        if (meta) meta.setAttribute('content', next === 'light' ? '#f4f0e7' : '#101012');
-        setThemeLabel();
+        const applyTheme = () => {
+          document.documentElement.dataset.theme = next;
+          try {
+            localStorage.setItem('lab-theme', next);
+          } catch (e) {}
+          const meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute('content', next === 'light' ? '#f4f0e7' : '#101012');
+          setThemeLabel();
+        };
+        const doc = document as Document & {
+          startViewTransition?: (callback: () => void) => unknown;
+        };
+        if (doc.startViewTransition && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          doc.startViewTransition(applyTheme);
+        } else {
+          applyTheme();
+        }
       });
 
       // Keep visitors on the site: every off-site link (and every PDF) opens

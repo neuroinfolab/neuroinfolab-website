@@ -118,11 +118,13 @@ All in `src/styles/global.css`, first block:
 
 - Dark grey page `#101012`, ink `#f2f0eb`, violet accent `#b48cff`. Light mode
   uses a warm off-white page with a deeper violet accent; the header toggle
-  follows the OS on first visit and remembers the choice per browser. The
-  footer stays dark in both themes.
+  follows the OS on first visit and remembers the choice per browser, and
+  crossfades themes with the View Transitions API. The footer follows the
+  theme and swaps a light VIDA logo variant.
 - Instrument Sans for display and body type, Space Grotesk for labels and
   metadata. No serif faces are loaded.
-- 1px rules, no radius, no shadows, no cards on a dark background.
+- Hairline borders on cards, portraits, and media only; no separator rules
+  between sections, no radius, no shadows.
 - Animated line grid: 84px cells, 9s loop, disabled under reduce-motion.
 - Root font scales `17px → 22px`; max content width 2400px at ≥2200px.
 - Header collapses to the MENU button at ≤1280px.
@@ -139,7 +141,8 @@ projects from that file.
 
 **A person** — drop a 4:5 JPEG in `public/img/team/` or `public/img/alumni/`,
 add the entry to `src/data/site.json`, and add the image mapping in
-`src/pages/index.astro`.
+`src/pages/index.astro`. Use `public/img/team/placeholder.svg` when a portrait
+is not available yet.
 
 **A publication** — edit `src/data/site.json` directly. Add a per-entry `doi` or
 `url` when the title-keyed lookup is wrong or a better official link exists.

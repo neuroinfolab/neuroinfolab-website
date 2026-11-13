@@ -141,6 +141,24 @@ ol {
   outline-offset: 3px;
 }
 
+/* Theme crossfade, following ../portfolio's View Transitions approach. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+}
+
+html,
+body,
+body::before,
+.site-header,
+.site-footer {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
 /* ------------------------------------------------------------------
    Primitives
    ------------------------------------------------------------------ */
@@ -409,7 +427,6 @@ html:not(.locked) .gate {
 .hero {
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid var(--rule);
 }
 
 .hero-inner {
@@ -595,7 +612,6 @@ html:not(.locked) .gate {
   flex-wrap: wrap;
   gap: 0.5rem 2.5rem;
   padding-block: 1.1rem;
-  border-top: 1px solid var(--rule);
 }
 
 .stat {
@@ -616,7 +632,6 @@ html:not(.locked) .gate {
    ------------------------------------------------------------------ */
 .section {
   padding-block: clamp(2.6rem, 5vw, 4.6rem);
-  border-bottom: 1px solid var(--rule);
 }
 
 .page-head .shell {
@@ -643,8 +658,7 @@ html:not(.locked) .gate {
   align-items: baseline;
   justify-content: space-between;
   gap: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.5rem;
   margin-bottom: clamp(1.4rem, 2.5vw, 2rem);
 }
 
@@ -835,7 +849,6 @@ html:not(.locked) .gate {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: clamp(1.4rem, 3vw, 3rem);
   margin-top: 1.4rem;
-  border-top: 1px solid var(--rule);
 }
 
 .project-row {
@@ -843,7 +856,6 @@ html:not(.locked) .gate {
   grid-template-columns: 2.6rem minmax(0, 1fr);
   gap: 0.6rem;
   padding-block: 1.5rem;
-  border-bottom: 1px solid var(--rule-soft);
 }
 
 .project-num {
@@ -888,8 +900,7 @@ html:not(.locked) .gate {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1.2rem 0 0.45rem;
-  border-bottom: 1px solid var(--rule);
+  padding: 1.4rem 0 0.5rem;
   font-family: var(--label);
   font-size: 0.8rem;
   font-weight: 500;
@@ -929,12 +940,7 @@ html:not(.locked) .gate {
 }
 
 .pub {
-  padding-block: 0.3rem;
-  border-top: 1px solid var(--rule-soft);
-}
-
-.pub:first-of-type {
-  border-top: 0;
+  padding-block: 0.42rem;
 }
 
 .pub-line {
@@ -1081,7 +1087,6 @@ a.pub-title:hover {
   gap: clamp(1.8rem, 5vw, 5rem);
   align-items: start;
   padding-bottom: clamp(2rem, 4vw, 3rem);
-  border-bottom: 1px solid var(--rule);
 }
 
 .pi h2 {
@@ -1157,7 +1162,6 @@ a.pub-title:hover {
   align-items: baseline;
   gap: 1rem;
   padding-bottom: 0.7rem;
-  border-bottom: 1px solid var(--rule-soft);
   margin-bottom: 1.2rem;
 }
 
@@ -1245,9 +1249,8 @@ a.pub-title:hover {
 
 /* alumni */
 .alumni {
-  margin-top: clamp(2rem, 4vw, 3rem);
-  padding-top: 1.6rem;
-  border-top: 1px solid var(--rule);
+  margin-top: clamp(2.4rem, 4vw, 3.4rem);
+  padding-top: 0.4rem;
 }
 
 .alumni h3 {
@@ -1804,19 +1807,6 @@ a.pub-title:hover {
    Footer
    ------------------------------------------------------------------ */
 .site-footer {
-  /* The footer stays dark in both themes so the affiliation logos and the
-     inverted footer rules keep their contrast. */
-  --bg: #101012;
-  --bg-deep: #151517;
-  --panel: #18181b;
-  --ink: #f2f0eb;
-  --ink-soft: #ccc8c0;
-  --muted: #9c988f;
-  --muted-strong: #b5b0a6;
-  --rule: #2c2c31;
-  --rule-soft: #212125;
-  --accent: #b48cff;
-  background: var(--bg);
   padding-block: 2.8rem 2rem;
 }
 
@@ -1839,12 +1829,23 @@ a.pub-title:hover {
   height: clamp(26px, 2.6vw, 36px);
 }
 
+.logo--on-light {
+  display: none;
+}
+
+:root[data-theme='light'] .logo--on-dark {
+  display: none;
+}
+
+:root[data-theme='light'] .logo--on-light {
+  display: block;
+}
+
 .footer-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr auto;
   gap: 2rem;
   padding-bottom: 1.8rem;
-  border-bottom: 1px solid var(--rule);
 }
 
 .footer-grid h3 {
