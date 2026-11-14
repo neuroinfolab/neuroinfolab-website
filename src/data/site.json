@@ -101,6 +101,22 @@
   ],
   "alumni": [
     {
+      "name": "Adel Sahuc",
+      "role": "M.S. student (2024 - 2026) - Lorem ipsum dolor sit amet"
+    },
+    {
+      "name": "Refik Daghan Or",
+      "role": "M.S. student (2024 - 2026) - Lorem ipsum dolor sit amet"
+    },
+    {
+      "name": "Wenqi Xu",
+      "role": "M.S. student (2024 - 2026) - Lorem ipsum dolor sit amet"
+    },
+    {
+      "name": "Yixing Wang",
+      "role": "M.S. student (2024 - 2026) - Lorem ipsum dolor sit amet"
+    },
+    {
       "name": "Chenyi Li",
       "role": "M.S. student (2024 - 2025) - Presently PhD student at Cornell",
       "site": "https://www.chenyi-li.com/"
@@ -160,22 +176,6 @@
       "name": "Anusha Kumar",
       "role": "High School Summer Intern (2024 - present)",
       "school": "Horace Mann School"
-    },
-    {
-      "name": "Adel Sahuc",
-      "role": "M.S. student (2024 - 2026) - Lorem ipsum dolor sit amet"
-    },
-    {
-      "name": "Refik Daghan Or",
-      "role": "M.S. student (2024 - 2026) - Lorem ipsum dolor sit amet"
-    },
-    {
-      "name": "Wenqi Xu",
-      "role": "M.S. student (2024 - 2026) - Lorem ipsum dolor sit amet"
-    },
-    {
-      "name": "Yixing Wang",
-      "role": "M.S. student (2024 - 2026) - Lorem ipsum dolor sit amet"
     }
   ],
   "publications": [
