@@ -19,7 +19,15 @@ const current = Astro.url.pathname.slice(base.length) || '/';
   <div class="shell">
     <a class="brand" href={url('/')} aria-label="Neuroinformatics Lab home">
       <img
+        class="logo--on-dark"
         src={url('/img/logos/neuroinformatics-dark.png')}
+        alt="Neuroinformatics Lab"
+        width="762"
+        height="128"
+      />
+      <img
+        class="logo--on-light"
+        src={url('/img/logos/neuroinformatics-light.png')}
         alt="Neuroinformatics Lab"
         width="762"
         height="128"

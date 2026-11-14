@@ -8,7 +8,18 @@ const year = new Date().getFullYear();
   <div class="shell">
     <div class="logo-strip" aria-label="Affiliations and funding">
       <a href={url('/')} aria-label="Neuroinformatics Lab home">
-        <img src={url('/img/logos/neuroinformatics-dark.png')} alt="Neuroinformatics Lab" height="36" />
+        <img
+          class="logo--on-dark"
+          src={url('/img/logos/neuroinformatics-dark.png')}
+          alt="Neuroinformatics Lab"
+          height="36"
+        />
+        <img
+          class="logo--on-light"
+          src={url('/img/logos/neuroinformatics-light.png')}
+          alt="Neuroinformatics Lab"
+          height="36"
+        />
       </a>
       <a href="https://vida.engineering.nyu.edu" target="_blank" rel="noopener noreferrer" aria-label="VIDA Center">
         <img
