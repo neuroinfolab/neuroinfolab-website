@@ -434,7 +434,7 @@ const life = [
 
         <div class="pubs">
           {byYear.map((group) => (
-            <details class="pub-year-group">
+            <details class="pub-year-group" open={group.year === '2026'}>
               <summary class="pub-year-head">{group.year}</summary>
               <div class="pub-year-body">
                 {group.items.map((p) => {
