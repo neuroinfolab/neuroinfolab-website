@@ -4,9 +4,9 @@ The Neuroinformatics Lab site: Astro 7, static output, no backend or runtime
 dependencies. Most content is JSON; the course schedules and readings live in
 the course page frontmatter.
 
-**Live:** https://pxndey.github.io/neuroinfolab-demo/ (public — the Pages
+**Live:** https://pxndey.github.io/neuroinfolab-website/ (public — the Pages
 workflow disables the passcode gate)
-**Repo:** https://github.com/pxndey/neuroinfolab-demo
+**Repo:** https://github.com/pxndey/neuroinfolab-website
 
 ```bash
 pnpm install
@@ -171,7 +171,7 @@ protection.
 ## Deploy
 
 GitHub Actions → Pages. The workflow builds with
-`SITE_URL=https://pxndey.github.io` and `SITE_BASE=/neuroinfolab-demo` for the
+`SITE_URL=https://pxndey.github.io` and `SITE_BASE=/neuroinfolab-website` for the
 project-page URL, and sets `PUBLIC_SITE_LOCKED=false`.
 
 For a custom domain, set `SITE_URL=https://www.neuroinformaticslab.com` and

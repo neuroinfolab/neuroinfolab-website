@@ -35,18 +35,9 @@ jobs:
         run: pnpm build
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://pxndey.github.io' }}
-          SITE_BASE: ${{ vars.SITE_BASE || '/neuroinfolab-demo' }}
+          SITE_BASE: ${{ vars.SITE_BASE || '/neuroinfolab-website' }}
           PUBLIC_SITE_LOCKED: 'false'
           SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}
-
-      # Draft preview is taken offline until reviewed. Replace the built site
-      # with a 404-only artifact so nothing from the draft is served.
-      - name: Take draft offline
-        run: |
-          rm -rf dist
-          mkdir -p dist
-          printf '%s\n' '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>404 Not Found</title></head><body><h1>404</h1><p>There is no site here.</p></body></html>' > dist/404.html
-          printf 'User-agent: *\nDisallow: /\n' > dist/robots.txt
 
       - uses: actions/upload-pages-artifact@v3
         with:
