@@ -1877,14 +1877,6 @@ a.pub-title:hover {
   letter-spacing: -0.01em;
 }
 
-.footer-base {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-  padding-top: 1.1rem;
-}
-
 /* ------------------------------------------------------------------
    Reveal
    ------------------------------------------------------------------ */
