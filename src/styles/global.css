@@ -469,6 +469,22 @@ html:not(.locked) .gate {
   color: var(--ink-soft);
 }
 
+.hero-apply {
+  margin-top: 1.1rem;
+  font-size: clamp(1rem, 1.1vw, 1.12rem);
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+.hero-apply a {
+  color: var(--ink-soft);
+  text-underline-offset: 0.2em;
+}
+
+.hero-apply a:hover {
+  color: var(--accent);
+}
+
 .hero-meta {
   margin-top: 1.5rem;
   display: flex;
