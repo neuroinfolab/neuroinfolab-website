@@ -427,6 +427,9 @@ html:not(.locked) .gate {
 .hero {
   position: relative;
   overflow: hidden;
+  display: grid;
+  align-content: center;
+  min-height: min(calc(100svh - var(--header-h)), 1000px);
 }
 
 .hero-inner {
