@@ -1252,13 +1252,13 @@ a.pub-title:hover {
 
 .opening a {
   color: var(--ink);
-  text-decoration: none;
-  border-bottom: 1px solid var(--rule);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
 
 .opening a:hover {
   color: var(--accent);
-  border-color: var(--accent);
 }
 
 .opening .label {
