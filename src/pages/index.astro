@@ -476,10 +476,6 @@ const life = [
                       )}
                     </div>
                     <div class="pub-feature-body">
-                      <div class="pub-feature-kicker">
-                        {p && <span>{p.year}</span>}
-                        {p?.note && <span class="pub-feature-note">{p.note}</span>}
-                      </div>
                       <h3 class="pub-feature-title">
                         {href ? (
                           <a href={href} target="_blank" rel="noopener noreferrer">
@@ -499,11 +495,11 @@ const life = [
                           ))}
                         </p>
                       )}
-                      {p && <p class="pub-feature-venue">{venueLabel(p)}</p>}
-                      {href && (
-                        <a class="pub-feature-link" href={href} target="_blank" rel="noopener noreferrer">
-                          Paper <span aria-hidden="true">↗</span>
-                        </a>
+                      {p && (
+                        <p class="pub-feature-venue">
+                          {venueLabel(p)}
+                          {p.note && <span class="pub-feature-note"> · {p.note}</span>}
+                        </p>
                       )}
                     </div>
                   </article>

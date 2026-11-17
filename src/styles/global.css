@@ -911,29 +911,25 @@ html:not(.locked) .gate {
    Publications
    ------------------------------------------------------------------ */
 .pub-topic-head {
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.2rem;
   font-family: var(--label);
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--accent);
 }
 
 .pub-group + .pub-group .pub-topic-head {
-  margin-top: clamp(1.6rem, 3vw, 2.4rem);
-}
-
-.pub-featured {
-  border-top: 1px solid var(--rule-soft);
+  margin-top: clamp(1.1rem, 2vw, 1.6rem);
 }
 
 .pub-feature {
   display: grid;
-  grid-template-columns: minmax(96px, 136px) minmax(0, 1fr);
-  gap: clamp(0.8rem, 1.8vw, 1.4rem);
+  grid-template-columns: minmax(56px, 76px) minmax(0, 1fr);
+  gap: clamp(0.6rem, 1.2vw, 0.9rem);
   align-items: start;
-  padding-block: clamp(0.7rem, 1.4vw, 1rem);
+  padding-block: 0.4rem;
   border-bottom: 1px solid var(--rule-soft);
 }
 
@@ -963,27 +959,16 @@ html:not(.locked) .gate {
   transform: scale(1.03);
 }
 
-.pub-feature-kicker {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem 0.8rem;
-  font-family: var(--label);
-  font-size: 0.64rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted-strong);
-}
-
 .pub-feature-note {
   color: var(--muted-strong);
 }
 
 .pub-feature-title {
-  margin: 0.25rem 0 0.3rem;
+  margin: 0 0 0.12rem;
   font-family: var(--display);
-  font-size: clamp(1.05rem, 1.45vw, 1.3rem);
+  font-size: clamp(0.98rem, 1.1vw, 1.12rem);
   font-weight: 600;
-  line-height: 1.22;
+  line-height: 1.24;
   letter-spacing: -0.01em;
 }
 
@@ -999,8 +984,8 @@ html:not(.locked) .gate {
 }
 
 .pub-feature-authors {
-  font-size: 0.88rem;
-  line-height: 1.5;
+  font-size: 0.8rem;
+  line-height: 1.4;
   color: var(--muted);
 }
 
@@ -1009,31 +994,13 @@ html:not(.locked) .gate {
 }
 
 .pub-feature-venue {
-  margin-top: 0.2rem;
-  font-size: 0.84rem;
+  margin-top: 0.05rem;
+  font-size: 0.78rem;
   color: var(--ink-soft);
 }
 
-.pub-feature-link {
-  display: inline-block;
-  margin-top: 0.45rem;
-  padding-bottom: 2px;
-  border-bottom: 1px solid var(--rule);
-  font-family: var(--label);
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink);
-  text-decoration: none;
-}
-
-.pub-feature-link:hover {
-  color: var(--accent);
-  border-color: var(--accent);
-}
-
 .pub-archive {
-  margin-top: clamp(1.6rem, 3vw, 2.4rem);
+  margin-top: 0.8rem;
   border-top: 1px solid var(--rule);
 }
 
@@ -1041,9 +1008,9 @@ html:not(.locked) .gate {
   display: flex;
   align-items: baseline;
   gap: 0.9rem;
-  padding: 1rem 0;
+  padding: 0.65rem 0;
   font-family: var(--label);
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted);
@@ -1074,6 +1041,10 @@ html:not(.locked) .gate {
 
 .pub-archive[open] > .pub-archive-head::after {
   transform: rotate(-135deg);
+}
+
+#publications {
+  padding-block: clamp(1.8rem, 3vw, 2.8rem);
 }
 
 .pubs {
@@ -1149,20 +1120,20 @@ html:not(.locked) .gate {
 
 @media (max-width: 700px) {
   .pub-feature {
-    grid-template-columns: 96px minmax(0, 1fr);
-    gap: 1rem;
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 0.6rem;
   }
 
   .pub-feature-title {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .pub-feature-authors {
-    font-size: 0.84rem;
+    font-size: 0.76rem;
   }
 
   .pub-feature-venue {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
   .pub-star {
