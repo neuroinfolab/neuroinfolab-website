@@ -910,35 +910,18 @@ html:not(.locked) .gate {
 /* ------------------------------------------------------------------
    Publications
    ------------------------------------------------------------------ */
-.pub-topics {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  margin-bottom: clamp(1.2rem, 2.4vw, 1.8rem);
-}
-
-.pub-topic {
-  padding: 0.5rem 0.85rem;
-  border: 1px solid var(--rule);
-  background: transparent;
-  color: var(--muted);
+.pub-topic-head {
+  margin: 0 0 0.4rem;
   font-family: var(--label);
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  cursor: pointer;
-  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  color: var(--accent);
 }
 
-.pub-topic:hover {
-  color: var(--ink);
-  border-color: var(--muted);
-}
-
-.pub-topic.is-active {
-  color: var(--on-accent);
-  background: var(--accent);
-  border-color: var(--accent);
+.pub-group + .pub-group .pub-topic-head {
+  margin-top: clamp(1.6rem, 3vw, 2.4rem);
 }
 
 .pub-featured {
@@ -947,15 +930,11 @@ html:not(.locked) .gate {
 
 .pub-feature {
   display: grid;
-  grid-template-columns: minmax(120px, 168px) minmax(0, 1fr);
-  gap: clamp(1rem, 2.4vw, 1.8rem);
+  grid-template-columns: minmax(96px, 136px) minmax(0, 1fr);
+  gap: clamp(0.8rem, 1.8vw, 1.4rem);
   align-items: start;
-  padding-block: clamp(1.1rem, 2vw, 1.5rem);
+  padding-block: clamp(0.7rem, 1.4vw, 1rem);
   border-bottom: 1px solid var(--rule-soft);
-}
-
-.pub-feature[hidden] {
-  display: none;
 }
 
 .pub-feature-media {
@@ -989,10 +968,10 @@ html:not(.locked) .gate {
   flex-wrap: wrap;
   gap: 0.35rem 0.8rem;
   font-family: var(--label);
-  font-size: 0.66rem;
+  font-size: 0.64rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--muted-strong);
 }
 
 .pub-feature-note {
@@ -1000,9 +979,9 @@ html:not(.locked) .gate {
 }
 
 .pub-feature-title {
-  margin: 0.4rem 0 0.45rem;
+  margin: 0.25rem 0 0.3rem;
   font-family: var(--display);
-  font-size: clamp(1.05rem, 1.55vw, 1.4rem);
+  font-size: clamp(1.05rem, 1.45vw, 1.3rem);
   font-weight: 600;
   line-height: 1.22;
   letter-spacing: -0.01em;
@@ -1020,7 +999,7 @@ html:not(.locked) .gate {
 }
 
 .pub-feature-authors {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   line-height: 1.5;
   color: var(--muted);
 }
@@ -1031,13 +1010,13 @@ html:not(.locked) .gate {
 
 .pub-feature-venue {
   margin-top: 0.2rem;
-  font-size: 0.86rem;
+  font-size: 0.84rem;
   color: var(--ink-soft);
 }
 
 .pub-feature-link {
   display: inline-block;
-  margin-top: 0.6rem;
+  margin-top: 0.45rem;
   padding-bottom: 2px;
   border-bottom: 1px solid var(--rule);
   font-family: var(--label);
@@ -1067,10 +1046,14 @@ html:not(.locked) .gate {
   font-size: 0.78rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--ink);
+  color: var(--muted);
   cursor: pointer;
   list-style: none;
   user-select: none;
+}
+
+.pub-archive-head:hover {
+  color: var(--ink-soft);
 }
 
 .pub-archive-head::-webkit-details-marker {
@@ -1180,11 +1163,6 @@ html:not(.locked) .gate {
 
   .pub-feature-venue {
     font-size: 0.8rem;
-  }
-
-  .pub-topic {
-    padding: 0.42rem 0.65rem;
-    font-size: 0.66rem;
   }
 
   .pub-star {

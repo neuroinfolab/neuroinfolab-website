@@ -94,11 +94,20 @@ const byYear = years.map((y) => ({
 }));
 
 type FeaturedTopic = { id: string; label: string };
-type FeaturedPaper = { topic: string; title: string; image: string; alt: string };
+type FeaturedPaper = {
+  topic?: string;
+  topics?: string[];
+  title: string;
+  image: string;
+  alt: string;
+};
 const featuredTopics = featuredData.topics as FeaturedTopic[];
 const featured = (featuredData.papers as FeaturedPaper[])
   .map((paper, index) => ({
-    ...paper,
+    title: paper.title,
+    image: paper.image,
+    alt: paper.alt,
+    topics: paper.topics ?? (paper.topic ? [paper.topic] : []),
     index,
     publication: publications.find(
       (p) => normalizeTitle(p.title) === normalizeTitle(paper.title)
@@ -109,6 +118,12 @@ const featured = (featuredData.papers as FeaturedPaper[])
     const yearB = Number(b.publication?.year) || 0;
     return yearB - yearA || a.index - b.index;
   });
+const featuredGroups = featuredTopics
+  .map((topic) => ({
+    ...topic,
+    papers: featured.filter((paper) => paper.topics.includes(topic.id)),
+  }))
+  .filter((group) => group.papers.length > 0);
 
 const alumniImg: Record<string, string> = {
   'Chenyi Li': '/img/alumni/li.jpg',
@@ -430,83 +445,77 @@ const life = [
           </a>
         </div>
 
-        <div class="pub-topics" role="group" aria-label="Filter publications by topic">
-          <button type="button" class="pub-topic is-active" data-pub-filter="all" aria-pressed="true">All</button>
-          {featuredTopics.map((topic) => (
-            <button type="button" class="pub-topic" data-pub-filter={topic.id} aria-pressed="false">
-              {topic.label}
-            </button>
-          ))}
-        </div>
-
-        <div class="pub-featured">
-          {featured.map((item) => {
-            const p = item.publication;
-            const href = p ? linkFor(p) : null;
-            const topic = featuredTopics.find((t) => t.id === item.topic);
-            return (
-              <article class="pub-feature" data-pub-row data-topic={item.topic}>
-                <div class="pub-feature-media">
-                  {href ? (
-                    <a href={href} target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-                      <img
-                        src={url(item.image)}
-                        alt={item.alt}
-                        loading="lazy"
-                        width="600"
-                        height="600"
-                      />
-                    </a>
-                  ) : (
-                    <img
-                      src={url(item.image)}
-                      alt={item.alt}
-                      loading="lazy"
-                      width="600"
-                      height="600"
-                    />
-                  )}
-                </div>
-                <div class="pub-feature-body">
-                  <div class="pub-feature-kicker">
-                    <span>{topic?.label}</span>
-                    {p && <span>{p.year}</span>}
-                    {p?.note && <span class="pub-feature-note">{p.note}</span>}
-                  </div>
-                  <h3 class="pub-feature-title">
-                    {href ? (
-                      <a href={href} target="_blank" rel="noopener noreferrer">
-                        {p?.title ?? item.title}
-                      </a>
-                    ) : (
-                      p?.title ?? item.title
-                    )}
-                  </h3>
-                  {p && (
-                    <p class="pub-feature-authors">
-                      {authorNames(p.authors).map((name, i) => (
-                        <>
-                          {i > 0 ? ', ' : ''}
-                          {varol.test(name) ? <strong>{name}</strong> : name}
-                        </>
-                      ))}
-                    </p>
-                  )}
-                  {p && <p class="pub-feature-venue">{venueLabel(p)}</p>}
-                  {href && (
-                    <a class="pub-feature-link" href={href} target="_blank" rel="noopener noreferrer">
-                      Paper <span aria-hidden="true">↗</span>
-                    </a>
-                  )}
-                </div>
-              </article>
-            );
-          })}
-        </div>
+        {featuredGroups.map((group) => (
+          <section class="pub-group" aria-labelledby={`pub-topic-${group.id}`}>
+            <h3 class="pub-topic-head" id={`pub-topic-${group.id}`}>{group.label}</h3>
+            <div class="pub-featured">
+              {group.papers.map((item) => {
+                const p = item.publication;
+                const href = p ? linkFor(p) : null;
+                return (
+                  <article class="pub-feature">
+                    <div class="pub-feature-media">
+                      {href ? (
+                        <a href={href} target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                          <img
+                            src={url(item.image)}
+                            alt={item.alt}
+                            loading="lazy"
+                            width="600"
+                            height="600"
+                          />
+                        </a>
+                      ) : (
+                        <img
+                          src={url(item.image)}
+                          alt={item.alt}
+                          loading="lazy"
+                          width="600"
+                          height="600"
+                        />
+                      )}
+                    </div>
+                    <div class="pub-feature-body">
+                      <div class="pub-feature-kicker">
+                        {p && <span>{p.year}</span>}
+                        {p?.note && <span class="pub-feature-note">{p.note}</span>}
+                      </div>
+                      <h3 class="pub-feature-title">
+                        {href ? (
+                          <a href={href} target="_blank" rel="noopener noreferrer">
+                            {p?.title ?? item.title}
+                          </a>
+                        ) : (
+                          p?.title ?? item.title
+                        )}
+                      </h3>
+                      {p && (
+                        <p class="pub-feature-authors">
+                          {authorNames(p.authors).map((name, i) => (
+                            <>
+                              {i > 0 ? ', ' : ''}
+                              {varol.test(name) ? <strong>{name}</strong> : name}
+                            </>
+                          ))}
+                        </p>
+                      )}
+                      {p && <p class="pub-feature-venue">{venueLabel(p)}</p>}
+                      {href && (
+                        <a class="pub-feature-link" href={href} target="_blank" rel="noopener noreferrer">
+                          Paper <span aria-hidden="true">↗</span>
+                        </a>
+                      )}
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+        ))}
 
         <details class="pub-archive">
           <summary class="pub-archive-head">
-            <span>Full list by year</span>
+            <span>See full list</span>
           </summary>
           <div class="pubs">
             {byYear.map((group) => (
@@ -564,24 +573,6 @@ const life = [
         </details>
       </div>
     </section>
-
-    <script>
-      const pubFilters = document.querySelectorAll<HTMLButtonElement>('[data-pub-filter]');
-      const pubRows = document.querySelectorAll<HTMLElement>('[data-pub-row]');
-      const setPubFilter = (filter: string) => {
-        pubFilters.forEach((button) => {
-          const active = button.dataset.pubFilter === filter;
-          button.classList.toggle('is-active', active);
-          button.setAttribute('aria-pressed', String(active));
-        });
-        pubRows.forEach((row) => {
-          row.hidden = filter !== 'all' && row.dataset.topic !== filter;
-        });
-      };
-      pubFilters.forEach((button) => {
-        button.addEventListener('click', () => setPubFilter(button.dataset.pubFilter ?? 'all'));
-      });
-    </script>
 
     <section class="section" id="funding" aria-labelledby="funding-title">
       <div class="shell">

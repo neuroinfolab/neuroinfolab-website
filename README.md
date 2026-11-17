@@ -54,7 +54,7 @@ schedules, and readings are passed in from each page's frontmatter.
 | `src/data/dois.json` | 72 DOI matches keyed by normalized title; per-entry `doi`/`url` fields in `site.json` win. |
 | `src/data/nips.json` | 7 NeurIPS papers. Two 2026 papers are merged into `site.json`; the third is excluded. |
 | `src/data/publications.config.json` | Locked refresh policy: strategy B, GitHub PR, monthly cron, preprint policy 1, exact DOI/title matching, excluded titles. |
-| `src/data/featured-publications.json` | Curated top-K publication list and topic filters for the home page. Each entry points at an image in `public/img/pubs/`. |
+| `src/data/featured-publications.json` | Curated top-K publication list, grouped by topic for the home page. Each entry points at an image in `public/img/pubs/`. |
 
 Publication links resolve in this order: per-entry `url`, per-entry `doi`,
 normalized-title lookup in `dois.json`. `10.52202/` (Curran Associates) is
@@ -130,9 +130,9 @@ All in `src/styles/global.css`, first block:
 - Root font scales `17px → 22px`; max content width 2400px at ≥2200px.
 - Header collapses to the MENU button at ≤1280px.
 
-The home page is built around a figure-led top-K publication list with
-Omics / Ephys / Imaging / Spiking networks filters, followed by the full
-year-grouped archive, and a 16:11 hero carousel: five 4s, 1280×720, 24fps WebM
+The home page is built around a figure-led top-K publication list grouped by
+Omics, Imaging, and Ephys, followed by the full year-grouped archive, and a
+16:11 hero carousel: five 4s, 1280×720, 24fps WebM
 loops with MP4 fallbacks, dots, arrows, and a 7s auto-advance. Only the active
 video loads; the next is preloaded. `prefers-reduced-motion` keeps the poster
 static.

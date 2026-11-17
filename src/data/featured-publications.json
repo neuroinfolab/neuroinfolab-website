@@ -1,9 +1,8 @@
 {
   "topics": [
     { "id": "omics", "label": "Omics" },
-    { "id": "ephys", "label": "Ephys" },
     { "id": "imaging", "label": "Imaging" },
-    { "id": "snn", "label": "Spiking networks" }
+    { "id": "ephys", "label": "Ephys" }
   ],
   "papers": [
     {
@@ -67,7 +66,7 @@
       "alt": "Autism spectrum disorder neuroanatomical dimensions and brain maps"
     },
     {
-      "topic": "snn",
+      "topics": ["omics"],
       "title": "Learning Neuronal Wiring Rules from Morphological Token Sequences",
       "image": "/img/pubs/wiring.svg",
       "alt": "Schematic of a neuronal wiring graph"
