@@ -39,7 +39,7 @@ scripts/          sync_publications.py, check_publications.py,
 
 | Route | Contents |
 |---|---|
-| `/` | Hero carousel, PI bio, team, alumni, Lab life, projects, publications, funding, openings |
+| `/` | Hero carousel, PI bio, team, alumni, Lab life, publications, funding, openings |
 | `/neuroinformatics` | Neuroinformatics (CS-GY 9223 / CS-UY 3943), Spring 2026 |
 | `/computer-vision` | Computer Vision (CS-GY 6643), Fall 2026 |
 
@@ -54,6 +54,7 @@ schedules, and readings are passed in from each page's frontmatter.
 | `src/data/dois.json` | 72 DOI matches keyed by normalized title; per-entry `doi`/`url` fields in `site.json` win. |
 | `src/data/nips.json` | 7 NeurIPS papers. Two 2026 papers are merged into `site.json`; the third is excluded. |
 | `src/data/publications.config.json` | Locked refresh policy: strategy B, GitHub PR, monthly cron, preprint policy 1, exact DOI/title matching, excluded titles. |
+| `src/data/featured-publications.json` | Curated top-K publication list and topic filters for the home page. Each entry points at an image in `public/img/pubs/`. |
 
 Publication links resolve in this order: per-entry `url`, per-entry `doi`,
 normalized-title lookup in `dois.json`. `10.52202/` (Curran Associates) is
@@ -129,15 +130,20 @@ All in `src/styles/global.css`, first block:
 - Root font scales `17px → 22px`; max content width 2400px at ≥2200px.
 - Header collapses to the MENU button at ≤1280px.
 
-The home page is built around compact publication rows and a 16:11 hero
-carousel: five 4s, 1280×720, 24fps WebM loops with MP4 fallbacks, dots, arrows,
-and a 7s auto-advance. Only the active video loads; the next is preloaded.
-`prefers-reduced-motion` keeps the poster static.
+The home page is built around a figure-led top-K publication list with
+Omics / Ephys / Imaging / Spiking networks filters, followed by the full
+year-grouped archive, and a 16:11 hero carousel: five 4s, 1280×720, 24fps WebM
+loops with MP4 fallbacks, dots, arrows, and a 7s auto-advance. Only the active
+video loads; the next is preloaded. `prefers-reduced-motion` keeps the poster
+static.
 
 ## Adding content
 
-**A project** — add the project to `src/data/site.json`; the page reads all 11
-projects from that file.
+**A featured publication** — add the paper to
+`src/data/featured-publications.json`, put a square-ish figure in
+`public/img/pubs/`, and use a topic id from that file. The title must match
+`src/data/site.json` after punctuation normalization. The home page no longer
+renders the Projects section; project data remains in `site.json`.
 
 **A person** — drop a 4:5 JPEG in `public/img/team/` or `public/img/alumni/`,
 add the entry to `src/data/site.json`, and add the image mapping in

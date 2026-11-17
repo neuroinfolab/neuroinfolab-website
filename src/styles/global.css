@@ -910,6 +910,193 @@ html:not(.locked) .gate {
 /* ------------------------------------------------------------------
    Publications
    ------------------------------------------------------------------ */
+.pub-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: clamp(1.2rem, 2.4vw, 1.8rem);
+}
+
+.pub-topic {
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--rule);
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--label);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.pub-topic:hover {
+  color: var(--ink);
+  border-color: var(--muted);
+}
+
+.pub-topic.is-active {
+  color: var(--on-accent);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.pub-featured {
+  border-top: 1px solid var(--rule-soft);
+}
+
+.pub-feature {
+  display: grid;
+  grid-template-columns: minmax(120px, 168px) minmax(0, 1fr);
+  gap: clamp(1rem, 2.4vw, 1.8rem);
+  align-items: start;
+  padding-block: clamp(1.1rem, 2vw, 1.5rem);
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+.pub-feature[hidden] {
+  display: none;
+}
+
+.pub-feature-media {
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  background: var(--bg-deep);
+}
+
+.pub-feature-media a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.pub-feature-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 42%;
+  transition: transform 0.35s ease;
+}
+
+.pub-feature-media:hover img {
+  transform: scale(1.03);
+}
+
+.pub-feature-kicker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.8rem;
+  font-family: var(--label);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.pub-feature-note {
+  color: var(--muted-strong);
+}
+
+.pub-feature-title {
+  margin: 0.4rem 0 0.45rem;
+  font-family: var(--display);
+  font-size: clamp(1.05rem, 1.55vw, 1.4rem);
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+}
+
+.pub-feature-title a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.pub-feature-title a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.pub-feature-authors {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.pub-feature-authors strong {
+  color: var(--ink);
+}
+
+.pub-feature-venue {
+  margin-top: 0.2rem;
+  font-size: 0.86rem;
+  color: var(--ink-soft);
+}
+
+.pub-feature-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--label);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.pub-feature-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.pub-archive {
+  margin-top: clamp(1.6rem, 3vw, 2.4rem);
+  border-top: 1px solid var(--rule);
+}
+
+.pub-archive-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  padding: 1rem 0;
+  font-family: var(--label);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.pub-archive-head::-webkit-details-marker {
+  display: none;
+}
+
+.pub-archive-count {
+  color: var(--muted);
+}
+
+.pub-archive-head::after {
+  content: '';
+  width: 0.42rem;
+  height: 0.42rem;
+  margin-left: auto;
+  margin-right: 0.2rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 160ms ease;
+}
+
+.pub-archive[open] > .pub-archive-head::after {
+  transform: rotate(-135deg);
+}
+
 .pubs {
   display: block;
 }
@@ -982,6 +1169,28 @@ html:not(.locked) .gate {
 }
 
 @media (max-width: 700px) {
+  .pub-feature {
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .pub-feature-title {
+    font-size: 1rem;
+  }
+
+  .pub-feature-authors {
+    font-size: 0.84rem;
+  }
+
+  .pub-feature-venue {
+    font-size: 0.8rem;
+  }
+
+  .pub-topic {
+    padding: 0.42rem 0.65rem;
+    font-size: 0.66rem;
+  }
+
   .pub-star {
     left: -0.75rem;
   }

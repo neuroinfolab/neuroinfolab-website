@@ -2,12 +2,10 @@
 import Base from '../layouts/Base.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import ProjectCard from '../components/ProjectCard.astro';
 import site from '../data/site.json';
 import doiData from '../data/dois.json';
+import featuredData from '../data/featured-publications.json';
 import { url } from '../lib/url';
-
-const projects = site.projects;
 
 type Publication = {
   year: string;
@@ -93,6 +91,16 @@ const years = [...new Set(publications.map((p) => p.year))];
 const byYear = years.map((y) => ({
   year: y,
   items: publications.filter((p) => p.year === y),
+}));
+
+type FeaturedTopic = { id: string; label: string };
+type FeaturedPaper = { topic: string; title: string; image: string; alt: string };
+const featuredTopics = featuredData.topics as FeaturedTopic[];
+const featured = (featuredData.papers as FeaturedPaper[]).map((paper) => ({
+  ...paper,
+  publication: publications.find(
+    (p) => normalizeTitle(p.title) === normalizeTitle(paper.title)
+  ),
 }));
 
 const alumniImg: Record<string, string> = {
@@ -406,26 +414,6 @@ const life = [
       </div>
     </section>
 
-    <section class="section" id="projects" aria-labelledby="projects-title">
-      <div class="shell">
-        <div class="section-head">
-          <h2 id="projects-title">Lab Projects</h2>
-        </div>
-
-        <div class="projects">
-          {projects.map((p, i) => (
-            <ProjectCard
-              index={String(i + 1).padStart(2, '0')}
-              title={p.title}
-              summary={p.desc}
-              poster={p.poster ? url(p.poster) : null}
-              collab={p.collab}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
-
     <section class="section" id="publications" aria-labelledby="publications-title">
       <div class="shell">
         <div class="section-head">
@@ -435,61 +423,159 @@ const life = [
           </a>
         </div>
 
-        <div class="pubs">
-          {byYear.map((group) => (
-            <details class="pub-year-group" open={group.year === '2026'}>
-              <summary class="pub-year-head">{group.year}</summary>
-              <div class="pub-year-body">
-                {group.items.map((p) => {
-                  const href = linkFor(p);
-                  const doi = doiFor(p);
-                  return (
-                    <article class="pub" title={`${p.title} — ${p.authors} — ${p.venue}`}>
-                      <p class="pub-line">
-                        {p.note && (
-                          <span class="pub-star" title={p.note} aria-label={p.note} role="img">
-                            <svg viewBox="0 0 16 16" aria-hidden="true">
-                              <path
-                                d="M8 1.4 9.9 5.3l4.3.6-3.1 3 .7 4.3L8 11.2l-3.8 2 .7-4.3-3.1-3 4.3-.6L8 1.4Z"
-                                fill="currentColor"
-                              />
-                            </svg>
-                          </span>
-                        )}
-                        {href ? (
-                          <a
-                            class="pub-title"
-                            href={href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title={p.url ? 'Open paper' : `Open DOI: ${doi}`}
-                          >
-                            {p.title}
-                          </a>
-                        ) : (
-                          <span class="pub-title">{p.title}</span>
-                        )}
-                        <span class="pub-sep">·</span>
-                        <span class="pub-authors">
-                          {authorNames(p.authors).map((name, i) => (
-                            <>
-                              {i > 0 ? ', ' : ''}
-                              {varol.test(name) ? <strong>{name}</strong> : name}
-                            </>
-                          ))}
-                        </span>
-                        <span class="pub-sep">·</span>
-                        <span class="pub-venue">{venueLabel(p)}</span>
-                      </p>
-                    </article>
-                  );
-                })}
-              </div>
-            </details>
+        <div class="pub-topics" role="group" aria-label="Filter publications by topic">
+          <button type="button" class="pub-topic is-active" data-pub-filter="all" aria-pressed="true">All</button>
+          {featuredTopics.map((topic) => (
+            <button type="button" class="pub-topic" data-pub-filter={topic.id} aria-pressed="false">
+              {topic.label}
+            </button>
           ))}
         </div>
+
+        <div class="pub-featured">
+          {featured.map((item) => {
+            const p = item.publication;
+            const href = p ? linkFor(p) : null;
+            const topic = featuredTopics.find((t) => t.id === item.topic);
+            return (
+              <article class="pub-feature" data-pub-row data-topic={item.topic}>
+                <div class="pub-feature-media">
+                  {href ? (
+                    <a href={href} target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                      <img
+                        src={url(item.image)}
+                        alt={item.alt}
+                        loading="lazy"
+                        width="600"
+                        height="600"
+                      />
+                    </a>
+                  ) : (
+                    <img
+                      src={url(item.image)}
+                      alt={item.alt}
+                      loading="lazy"
+                      width="600"
+                      height="600"
+                    />
+                  )}
+                </div>
+                <div class="pub-feature-body">
+                  <div class="pub-feature-kicker">
+                    <span>{topic?.label}</span>
+                    {p && <span>{p.year}</span>}
+                    {p?.note && <span class="pub-feature-note">{p.note}</span>}
+                  </div>
+                  <h3 class="pub-feature-title">
+                    {href ? (
+                      <a href={href} target="_blank" rel="noopener noreferrer">
+                        {p?.title ?? item.title}
+                      </a>
+                    ) : (
+                      p?.title ?? item.title
+                    )}
+                  </h3>
+                  {p && (
+                    <p class="pub-feature-authors">
+                      {authorNames(p.authors).map((name, i) => (
+                        <>
+                          {i > 0 ? ', ' : ''}
+                          {varol.test(name) ? <strong>{name}</strong> : name}
+                        </>
+                      ))}
+                    </p>
+                  )}
+                  {p && <p class="pub-feature-venue">{venueLabel(p)}</p>}
+                  {href && (
+                    <a class="pub-feature-link" href={href} target="_blank" rel="noopener noreferrer">
+                      Paper <span aria-hidden="true">↗</span>
+                    </a>
+                  )}
+                </div>
+              </article>
+            );
+          })}
+        </div>
+
+        <details class="pub-archive">
+          <summary class="pub-archive-head">
+            <span>Full list by year</span>
+            <span class="pub-archive-count">{publications.length} publications</span>
+          </summary>
+          <div class="pubs">
+            {byYear.map((group) => (
+              <details class="pub-year-group">
+                <summary class="pub-year-head">{group.year}</summary>
+                <div class="pub-year-body">
+                  {group.items.map((p) => {
+                    const href = linkFor(p);
+                    const doi = doiFor(p);
+                    return (
+                      <article class="pub" title={`${p.title} — ${p.authors} — ${p.venue}`}>
+                        <p class="pub-line">
+                          {p.note && (
+                            <span class="pub-star" title={p.note} aria-label={p.note} role="img">
+                              <svg viewBox="0 0 16 16" aria-hidden="true">
+                                <path
+                                  d="M8 1.4 9.9 5.3l4.3.6-3.1 3 .7 4.3L8 11.2l-3.8 2 .7-4.3-3.1-3 4.3-.6L8 1.4Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </span>
+                          )}
+                          {href ? (
+                            <a
+                              class="pub-title"
+                              href={href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              title={p.url ? 'Open paper' : `Open DOI: ${doi}`}
+                            >
+                              {p.title}
+                            </a>
+                          ) : (
+                            <span class="pub-title">{p.title}</span>
+                          )}
+                          <span class="pub-sep">·</span>
+                          <span class="pub-authors">
+                            {authorNames(p.authors).map((name, i) => (
+                              <>
+                                {i > 0 ? ', ' : ''}
+                                {varol.test(name) ? <strong>{name}</strong> : name}
+                              </>
+                            ))}
+                          </span>
+                          <span class="pub-sep">·</span>
+                          <span class="pub-venue">{venueLabel(p)}</span>
+                        </p>
+                      </article>
+                    );
+                  })}
+                </div>
+              </details>
+            ))}
+          </div>
+        </details>
       </div>
     </section>
+
+    <script>
+      const pubFilters = document.querySelectorAll<HTMLButtonElement>('[data-pub-filter]');
+      const pubRows = document.querySelectorAll<HTMLElement>('[data-pub-row]');
+      const setPubFilter = (filter: string) => {
+        pubFilters.forEach((button) => {
+          const active = button.dataset.pubFilter === filter;
+          button.classList.toggle('is-active', active);
+          button.setAttribute('aria-pressed', String(active));
+        });
+        pubRows.forEach((row) => {
+          row.hidden = filter !== 'all' && row.dataset.topic !== filter;
+        });
+      };
+      pubFilters.forEach((button) => {
+        button.addEventListener('click', () => setPubFilter(button.dataset.pubFilter ?? 'all'));
+      });
+    </script>
 
     <section class="section" id="funding" aria-labelledby="funding-title">
       <div class="shell">

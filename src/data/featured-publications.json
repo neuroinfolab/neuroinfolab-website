@@ -1,0 +1,76 @@
+{
+  "topics": [
+    { "id": "omics", "label": "Omics" },
+    { "id": "ephys", "label": "Ephys" },
+    { "id": "imaging", "label": "Imaging" },
+    { "id": "snn", "label": "Spiking networks" }
+  ],
+  "papers": [
+    {
+      "topic": "omics",
+      "title": "NeuroPAL: a multicolor atlas for Whole-Brain neuronal identification in C. elegans",
+      "image": "/img/pubs/neuropal.jpg",
+      "alt": "NeuroPAL multicolor atlas of the C. elegans nervous system"
+    },
+    {
+      "topic": "omics",
+      "title": "Molecular topography of an entire nervous system",
+      "image": "/img/pubs/moltopo.jpg",
+      "alt": "Molecular topography figure showing neuronal cell types in a UMAP embedding"
+    },
+    {
+      "topic": "omics",
+      "title": "Alternative splicing across the C. elegans nervous system",
+      "image": "/img/pubs/splicing.jpg",
+      "alt": "Alternative splicing analysis pipeline and neuron-type comparison"
+    },
+    {
+      "topic": "ephys",
+      "title": "DREDge: robust motion correction for high-density extracellular recordings across species",
+      "image": "/img/pubs/dredge.jpg",
+      "alt": "DREDge motion correction pipeline for high-density electrophysiology"
+    },
+    {
+      "topic": "ephys",
+      "title": "Bypassing spike sorting: Density-based decoding using spike localization from dense multielectrode probes",
+      "image": "/img/pubs/bypass.jpg",
+      "alt": "Spike localization and decoding results across recording sessions"
+    },
+    {
+      "topic": "ephys",
+      "title": "Self supervised learning for in vivo localization of microelectrode arrays using raw local field potential",
+      "image": "/img/pubs/selfsup.jpg",
+      "alt": "Self-supervised LFP representation learning and brain-region decoding"
+    },
+    {
+      "topic": "ephys",
+      "title": "Geometry-Aware Self-Supervised Electrophysiology Representation Learning",
+      "image": "/img/pubs/geom.svg",
+      "alt": "Schematic of geometry-aware neural representations"
+    },
+    {
+      "topic": "imaging",
+      "title": "Neuroimaging endophenotypes reveal underlying mechanisms and genetic factors contributing to progression and development of four brain disorders",
+      "image": "/img/pubs/endophenotypes.jpg",
+      "alt": "Brain disease dimensions and multi-organ phenotypes"
+    },
+    {
+      "topic": "imaging",
+      "title": "Predicting Functional Brain Connectivity with Context-Aware Deep Neural Networks",
+      "image": "/img/pubs/fconn.jpg",
+      "alt": "Spatiomolecular transformer predicting functional connectivity from gene expression"
+    },
+    {
+      "topic": "imaging",
+      "title": "Assessment of neuroanatomical endophenotypes of autism spectrum disorder and association with characteristics of individuals with schizophrenia and the general population",
+      "image": "/img/pubs/asd.jpg",
+      "alt": "Autism spectrum disorder neuroanatomical dimensions and brain maps"
+    },
+    {
+      "topic": "snn",
+      "title": "Learning Neuronal Wiring Rules from Morphological Token Sequences",
+      "image": "/img/pubs/wiring.svg",
+      "alt": "Schematic of a neuronal wiring graph"
+    }
+  ]
+}
