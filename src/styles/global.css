@@ -960,7 +960,7 @@ html:not(.locked) .gate {
 }
 
 .pub-feature-note {
-  color: var(--muted-strong);
+  color: var(--accent);
 }
 
 .pub-feature-title {
