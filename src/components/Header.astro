@@ -7,11 +7,12 @@ const links = [
   { href: '/#publications', label: 'Publications' },
   { href: '/#funding', label: 'Funding' },
   { href: '/#openings', label: 'Job Openings' },
-  { href: '/neuroinformatics', label: 'Neuroinformatics' },
-  { href: '/computer-vision', label: 'Computer Vision' },
+  { href: '/neuroinformatics', label: 'Neuroinformatics', code: 'CS-GY 9223' },
+  { href: '/computer-vision', label: 'Computer Vision', code: 'CS-GY 6643' },
 ];
 
-const current = Astro.url.pathname.slice(base.length) || '/';
+const normalize = (path: string) => path.replace(/\/+$/, '') || '/';
+const current = normalize(Astro.url.pathname.slice(base.length));
 ---
 
 <header class="site-header">
@@ -40,8 +41,9 @@ const current = Astro.url.pathname.slice(base.length) || '/';
 
       <nav class="nav" id="nav" data-nav aria-label="Main">
         {links.map((link) => (
-          <a href={url(link.href)} aria-current={current === link.href ? 'page' : undefined}>
-            {link.label}
+          <a href={url(link.href)} aria-current={normalize(link.href) === current ? 'page' : undefined}>
+            <span class="nav-label">{link.label}</span>
+            {link.code && <span class="nav-code">{link.code}</span>}
           </a>
         ))}
       </nav>
