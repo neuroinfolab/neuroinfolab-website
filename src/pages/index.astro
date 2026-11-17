@@ -509,15 +509,15 @@ const life = [
           </section>
         ))}
 
-        <details class="pub-archive">
+        <details class="pub-archive" data-rollout>
           <summary class="pub-archive-head">
             <span>See full list</span>
           </summary>
-          <div class="pubs">
+          <div class="pubs" data-rollout-body>
             {byYear.map((group) => (
-              <details class="pub-year-group">
+              <details class="pub-year-group" data-rollout>
                 <summary class="pub-year-head">{group.year}</summary>
-                <div class="pub-year-body">
+                <div class="pub-year-body" data-rollout-body>
                   {group.items.map((p) => {
                     const href = linkFor(p);
                     const doi = doiFor(p);
@@ -726,5 +726,100 @@ const life = [
         schedule();
       }
     }
+  </script>
+
+  <script>
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+
+    document.querySelectorAll('details[data-rollout]').forEach((details) => {
+      const summary = details.querySelector(':scope > summary');
+      const body = details.querySelector(':scope > [data-rollout-body]');
+      if (!summary || !body) return;
+
+      details.classList.add('rollout-ready');
+
+      let expanded = details.hasAttribute('open');
+      let run = 0;
+      let endTimer = 0;
+
+      const settle = () => {
+        window.clearTimeout(endTimer);
+        body.classList.remove('is-rolling');
+        body.style.removeProperty('height');
+        body.style.removeProperty('--rollout-duration');
+        body.style.removeProperty('--rollout-ease');
+      };
+
+      const toggle = () => {
+        const myRun = ++run;
+        expanded = !expanded;
+
+        const from = body.getBoundingClientRect().height;
+
+        // Freeze at the current pixel height so a re-click mid-flight
+        // reverses from where the animation actually is.
+        window.clearTimeout(endTimer);
+        body.classList.remove('is-rolling');
+        body.style.height = `${from}px`;
+        void body.offsetHeight;
+
+        if (reduceMotion.matches) {
+          details.toggleAttribute('open', expanded);
+          settle();
+          return;
+        }
+
+        let to = 0;
+        if (expanded) {
+          details.setAttribute('open', '');
+          // Measure at auto height: overflow-y: clip has no scroll box, so
+          // scrollHeight is not reliable here. This happens before paint.
+          body.style.height = 'auto';
+          to = body.getBoundingClientRect().height;
+          body.style.height = `${from}px`;
+          void body.offsetHeight;
+        }
+        const distance = Math.abs(to - from);
+        // Longer lists get a little more travel time; year groups stay snappy.
+        const duration = expanded
+          ? clamp(320 + Math.sqrt(distance) * 6, 320, 640)
+          : clamp(220 + Math.sqrt(distance) * 4, 220, 420);
+
+        body.style.setProperty('--rollout-duration', `${Math.round(duration)}ms`);
+        body.style.setProperty(
+          '--rollout-ease',
+          expanded ? 'cubic-bezier(0.22, 1, 0.36, 1)' : 'cubic-bezier(0.55, 0, 0.55, 0.2)',
+        );
+
+        const done = () => {
+          if (myRun !== run) return;
+          if (!expanded) details.removeAttribute('open');
+          settle();
+        };
+
+        const onEnd = (event) => {
+          if (event.target !== body || event.propertyName !== 'height') return;
+          body.removeEventListener('transitionend', onEnd);
+          done();
+        };
+
+        body.addEventListener('transitionend', onEnd);
+        endTimer = window.setTimeout(() => {
+          body.removeEventListener('transitionend', onEnd);
+          done();
+        }, duration + 90);
+
+        body.classList.add('is-rolling');
+        void body.offsetHeight;
+        body.style.height = `${to}px`;
+      };
+
+      summary.addEventListener('click', (event) => {
+        event.preventDefault();
+        toggle();
+      });
+    });
   </script>
 </Base>

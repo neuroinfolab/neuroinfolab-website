@@ -27,6 +27,8 @@
   --gutter: clamp(1.15rem, 4vw, 4rem);
   --max: 2080px;
   --header-h: clamp(82px, 5.6vw, 96px);
+
+  --ease-rollout: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 :root[data-theme='light'] {
@@ -1036,11 +1038,33 @@ html:not(.locked) .gate {
   border-right: 1.5px solid currentColor;
   border-bottom: 1.5px solid currentColor;
   transform: rotate(45deg);
-  transition: transform 160ms ease;
+  transition: transform 360ms var(--ease-rollout);
 }
 
 .pub-archive[open] > .pub-archive-head::after {
   transform: rotate(-135deg);
+}
+
+/* Bezier rollout. JS upgrades each <details> and animates the measured pixel
+   height, so the page below is pushed down instead of jumping. Without JS the
+   native toggle still opens the list. */
+details[data-rollout] > [data-rollout-body] {
+  /* The star markers hang in the left margin; keep them visible while the
+     vertical overflow is clipped during the rollout. */
+  overflow-x: visible;
+  overflow-y: clip;
+}
+
+details[data-rollout].rollout-ready > [data-rollout-body] {
+  height: 0;
+}
+
+details[data-rollout].rollout-ready[open] > [data-rollout-body] {
+  height: auto;
+}
+
+details[data-rollout] > [data-rollout-body].is-rolling {
+  transition: height var(--rollout-duration, 560ms) var(--rollout-ease, var(--ease-rollout));
 }
 
 #publications {
@@ -1080,7 +1104,7 @@ html:not(.locked) .gate {
   border-right: 1.5px solid currentColor;
   border-bottom: 1.5px solid currentColor;
   transform: rotate(-45deg);
-  transition: transform 160ms ease;
+  transition: transform 360ms var(--ease-rollout);
 }
 
 .pub-year-group[open] > .pub-year-head::after {
