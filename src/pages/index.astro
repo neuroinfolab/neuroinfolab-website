@@ -96,12 +96,19 @@ const byYear = years.map((y) => ({
 type FeaturedTopic = { id: string; label: string };
 type FeaturedPaper = { topic: string; title: string; image: string; alt: string };
 const featuredTopics = featuredData.topics as FeaturedTopic[];
-const featured = (featuredData.papers as FeaturedPaper[]).map((paper) => ({
-  ...paper,
-  publication: publications.find(
-    (p) => normalizeTitle(p.title) === normalizeTitle(paper.title)
-  ),
-}));
+const featured = (featuredData.papers as FeaturedPaper[])
+  .map((paper, index) => ({
+    ...paper,
+    index,
+    publication: publications.find(
+      (p) => normalizeTitle(p.title) === normalizeTitle(paper.title)
+    ),
+  }))
+  .sort((a, b) => {
+    const yearA = Number(a.publication?.year) || 0;
+    const yearB = Number(b.publication?.year) || 0;
+    return yearB - yearA || a.index - b.index;
+  });
 
 const alumniImg: Record<string, string> = {
   'Chenyi Li': '/img/alumni/li.jpg',
@@ -500,7 +507,6 @@ const life = [
         <details class="pub-archive">
           <summary class="pub-archive-head">
             <span>Full list by year</span>
-            <span class="pub-archive-count">{publications.length} publications</span>
           </summary>
           <div class="pubs">
             {byYear.map((group) => (
