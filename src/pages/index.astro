@@ -252,6 +252,11 @@ const life = [
     thumb: '/img/life/lab-meeting-2_sm.jpg',
     alt: 'Lab meeting at 370 Jay Street',
   },
+  {
+    full: '/img/life/group-2026.jpg',
+    thumb: '/img/life/group-2026_sm.jpg',
+    alt: 'Lab members sitting outside 370 Jay Street',
+  },
 ];
 ---
 
@@ -417,18 +422,6 @@ const life = [
         <div class="section-head">
           <h2 id="life-title">Lab life</h2>
         </div>
-
-        <figure class="life-feature">
-          <a href={url('/img/life/group-2026.jpg')} target="_blank" rel="noopener noreferrer">
-            <img
-              src={url('/img/life/group-2026.jpg')}
-              alt="Lab members sitting outside 370 Jay Street"
-              loading="lazy"
-              width="1600"
-              height="889"
-            />
-          </a>
-        </figure>
 
         <ul class="gallery">
           {life.map((photo) => (
