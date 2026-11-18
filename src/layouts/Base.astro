@@ -17,14 +17,14 @@ const lockHash = locked && passcode ? createHash('sha256').update(passcode).dige
 ---
 
 <!doctype html>
-<html lang="en" class:list={{ locked }}>
+<html lang="en" data-theme="light" class:list={{ locked }}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <meta name="theme-color" content="#101012" />
+    <meta name="theme-color" content="#f4f0e7" />
     <script is:inline>
       (() => {
         const key = 'lab-theme';
@@ -32,12 +32,7 @@ const lockHash = locked && passcode ? createHash('sha256').update(passcode).dige
         try {
           stored = localStorage.getItem(key);
         } catch (e) {}
-        const theme =
-          stored === 'light' || stored === 'dark'
-            ? stored
-            : window.matchMedia('(prefers-color-scheme: light)').matches
-              ? 'light'
-              : 'dark';
+        const theme = stored === 'light' || stored === 'dark' ? stored : 'light';
         document.documentElement.dataset.theme = theme;
         const meta = document.querySelector('meta[name="theme-color"]');
         if (meta) meta.setAttribute('content', theme === 'light' ? '#f4f0e7' : '#101012');

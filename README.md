@@ -118,10 +118,10 @@ require that approval; the workflow cannot enforce reviewer identity.
 All in `src/styles/global.css`, first block:
 
 - Dark grey page `#101012`, ink `#f2f0eb`, violet accent `#b48cff`. Light mode
-  uses a warm off-white page with a deeper violet accent; the header toggle
-  follows the OS on first visit and remembers the choice per browser, and
-  crossfades themes with the View Transitions API. The footer follows the
-  theme and swaps a light VIDA logo variant.
+  uses a warm off-white page with a deeper violet accent; the site starts in
+  light mode and remembers the toggle choice per browser, and crossfades themes
+  with the View Transitions API. The footer follows the theme and swaps a light
+  VIDA logo variant.
 - One system sans everywhere — Arial, with Helvetica and generic sans fallbacks.
   No web fonts are loaded, including for captions and metadata.
 - Hairline borders on cards, portraits, and media only; no separator rules
