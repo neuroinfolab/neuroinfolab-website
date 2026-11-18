@@ -917,10 +917,10 @@ html:not(.locked) .gate {
 
 .pub-feature {
   display: grid;
-  grid-template-columns: clamp(104px, 8.6vw, 132px) minmax(0, 1fr);
-  gap: clamp(0.8rem, 1.4vw, 1.2rem);
-  align-items: start;
-  padding-block: 0.7rem;
+  grid-template-columns: clamp(170px, 17vw, 270px) minmax(0, 1fr);
+  gap: clamp(1rem, 1.6vw, 1.5rem);
+  align-items: center;
+  padding-block: 0.85rem;
   border-bottom: 1px solid var(--rule-soft);
 }
 
@@ -957,7 +957,7 @@ html:not(.locked) .gate {
 .pub-feature-title {
   margin: 0 0 0.1rem;
   font-family: var(--display);
-  font-size: clamp(0.9rem, 0.95vw, 0.98rem);
+  font-size: clamp(0.84rem, 0.9vw, 0.92rem);
   font-weight: 600;
   line-height: 1.26;
   letter-spacing: -0.01em;
@@ -975,7 +975,7 @@ html:not(.locked) .gate {
 }
 
 .pub-feature-authors {
-  font-size: 0.74rem;
+  font-size: 0.69rem;
   line-height: 1.42;
   color: var(--muted);
 }
@@ -986,7 +986,7 @@ html:not(.locked) .gate {
 
 .pub-feature-venue {
   margin-top: 0.05rem;
-  font-size: 0.72rem;
+  font-size: 0.67rem;
   color: var(--ink-soft);
 }
 
@@ -1133,21 +1133,21 @@ details[data-rollout] > [data-rollout-body].is-rolling {
 
 @media (max-width: 700px) {
   .pub-feature {
-    grid-template-columns: 96px minmax(0, 1fr);
-    gap: 0.7rem;
-    padding-block: 0.55rem;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 0.65rem;
+    padding-block: 0.6rem;
   }
 
   .pub-feature-title {
-    font-size: 0.86rem;
+    font-size: 0.8rem;
   }
 
   .pub-feature-authors {
-    font-size: 0.72rem;
+    font-size: 0.66rem;
   }
 
   .pub-feature-venue {
-    font-size: 0.7rem;
+    font-size: 0.64rem;
   }
 
   .pub-star {
