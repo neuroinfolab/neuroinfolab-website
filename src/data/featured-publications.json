@@ -1,24 +1,24 @@
 {
   "topics": [
-    { "id": "omics", "label": "Omics" },
-    { "id": "imaging", "label": "Imaging" },
-    { "id": "ephys", "label": "Ephys" }
+    { "id": "connectomics", "label": "Connectomics and Transcriptomics" },
+    { "id": "imaging", "label": "Neuroimaging" },
+    { "id": "ephys", "label": "Electrophysiology" }
   ],
   "papers": [
     {
-      "topic": "omics",
+      "topic": "connectomics",
       "title": "NeuroPAL: a multicolor atlas for Whole-Brain neuronal identification in C. elegans",
       "image": "/img/pubs/neuropal.jpg",
       "alt": "NeuroPAL multicolor atlas of the C. elegans nervous system"
     },
     {
-      "topic": "omics",
+      "topic": "connectomics",
       "title": "Molecular topography of an entire nervous system",
       "image": "/img/pubs/moltopo.jpg",
       "alt": "Molecular topography figure showing neuronal cell types in a UMAP embedding"
     },
     {
-      "topic": "omics",
+      "topic": "connectomics",
       "title": "Alternative splicing across the C. elegans nervous system",
       "image": "/img/pubs/splicing.jpg",
       "alt": "Alternative splicing analysis pipeline and neuron-type comparison"
@@ -66,7 +66,7 @@
       "alt": "Autism spectrum disorder neuroanatomical dimensions and brain maps"
     },
     {
-      "topics": ["omics"],
+      "topics": ["connectomics"],
       "title": "Learning Neuronal Wiring Rules from Morphological Token Sequences",
       "image": "/img/pubs/wiring.svg",
       "alt": "Schematic of a neuronal wiring graph"

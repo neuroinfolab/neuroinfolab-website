@@ -19,10 +19,10 @@
   --media-ring: rgba(255, 255, 255, 0.06);
   --error: #ff8f8f;
 
-  --display: 'Instrument Sans Variable', ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --sans: 'Instrument Sans Variable', ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --label: 'Space Grotesk Variable', 'Instrument Sans Variable', ui-sans-serif, sans-serif;
-  --mono: var(--label);
+  --display: Arial, Helvetica, sans-serif;
+  --sans: Arial, Helvetica, sans-serif;
+  --label: Arial, Helvetica, sans-serif;
+  --mono: Arial, Helvetica, sans-serif;
 
   --gutter: clamp(1.15rem, 4vw, 4rem);
   --max: 2080px;

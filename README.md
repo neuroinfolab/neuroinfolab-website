@@ -122,8 +122,8 @@ All in `src/styles/global.css`, first block:
   follows the OS on first visit and remembers the choice per browser, and
   crossfades themes with the View Transitions API. The footer follows the
   theme and swaps a light VIDA logo variant.
-- Instrument Sans for display and body type, Space Grotesk for labels and
-  metadata. No serif faces are loaded.
+- One system sans everywhere — Arial, with Helvetica and generic sans fallbacks.
+  No web fonts are loaded, including for captions and metadata.
 - Hairline borders on cards, portraits, and media only; no separator rules
   between sections, no radius, no shadows.
 - Animated line grid: 84px cells, 9s loop, disabled under reduce-motion.
@@ -131,7 +131,8 @@ All in `src/styles/global.css`, first block:
 - Header collapses to the MENU button at ≤1280px.
 
 The home page is built around a figure-led top-K publication list grouped by
-Omics, Imaging, and Ephys, followed by the full year-grouped archive, and a
+Connectomics and Transcriptomics, Neuroimaging, and Electrophysiology, followed
+by the full year-grouped archive, and a
 16:11 hero carousel: five 4s, 1280×720, 24fps WebM
 loops with MP4 fallbacks, dots, arrows, and a 7s auto-advance. Only the active
 video loads; the next is preloaded. `prefers-reduced-motion` keeps the poster
