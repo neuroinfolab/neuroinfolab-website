@@ -44,8 +44,8 @@
     {
       "topic": "ephys",
       "title": "Geometry-Aware Self-Supervised Electrophysiology Representation Learning",
-      "image": "/img/pubs/geom.svg",
-      "alt": "Schematic of geometry-aware neural representations"
+      "image": "/img/pubs/geom.jpg",
+      "alt": "LFPformer pipeline: geometry-aware self-supervised LFP representation learning"
     },
     {
       "topic": "imaging",
@@ -68,8 +68,8 @@
     {
       "topics": ["connectomics"],
       "title": "Learning Neuronal Wiring Rules from Morphological Token Sequences",
-      "image": "/img/pubs/wiring.svg",
-      "alt": "Schematic of a neuronal wiring graph"
+      "image": "/img/pubs/wiring.jpg",
+      "alt": "Connectoformer architecture for predicting synaptic connectivity from neuron morphology"
     }
   ]
 }
