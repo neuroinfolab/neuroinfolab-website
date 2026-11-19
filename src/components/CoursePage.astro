@@ -68,9 +68,10 @@ interface Props {
   schedule: CourseRow[];
   readings: ReadingGroup[];
   previous?: CourseLink | CourseLink[];
+  archiveNote?: string;
 }
 
-const { title, code, term, image, intro, info, team, sections = [], schedule, readings, previous } = Astro.props;
+const { title, code, term, image, intro, info, team, sections = [], schedule, readings, previous, archiveNote } = Astro.props;
 const href = (value: string) => (value.startsWith('/') ? url(value) : value);
 const previousLinks = previous ? (Array.isArray(previous) ? previous : [previous]) : [];
 const description = intro[0] ?? '';
@@ -278,18 +279,27 @@ const description = intro[0] ?? '';
       </section>
     )}
 
-    {previousLinks.length > 0 && (
+    {(previousLinks.length > 0 || archiveNote) && (
       <section class="section" style="padding-top:0">
         <div class="shell">
           <p class="course-foot">
-            {previousLinks.length === 1 ? 'Previous iteration' : 'Previous iterations'}:
-            {previousLinks.map((link, index) => (
+            {previousLinks.length > 0 ? (
               <>
-                {index > 0 && (index === previousLinks.length - 1 ? ' and ' : ', ')}
-                {' '}
-                <a href={href(link.href)}>{link.label}</a>
+                {previousLinks.length === 1
+                  ? 'The previous version of this course is available here: '
+                  : 'The previous versions of this course are available here: '}
+                {previousLinks.map((link, index) => (
+                  <>
+                    {index > 0 && (index === previousLinks.length - 1 ? ' and ' : ', ')}
+                    {' '}
+                    <a href={href(link.href)}>{link.label}</a>
+                  </>
+                ))}
+                {'.'}
               </>
-            ))}
+            ) : (
+              archiveNote
+            )}
           </p>
         </div>
       </section>

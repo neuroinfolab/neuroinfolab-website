@@ -593,9 +593,9 @@ html:not(.locked) .gate {
 }
 
 .hero-media figcaption span {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: block;
+  min-width: 0;
+  line-height: 1.35;
 }
 
 .hero-media figcaption {
@@ -609,8 +609,8 @@ html:not(.locked) .gate {
   color: #cfcbc2;
   font-family: var(--label);
   font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-transform: none;
   border-top: 1px solid #26262a;
 }
 
@@ -2300,6 +2300,13 @@ a.pub-title:hover {
   }
   html {
     font-size: 16px;
+  }
+  .hero-media figcaption {
+    font-size: 0.66rem;
+    padding: 0.6rem 0.7rem;
+  }
+  .hero-media figcaption span {
+    min-height: 2.7em;
   }
   .brand img {
     height: 28px;
