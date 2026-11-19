@@ -1306,12 +1306,12 @@ a.pub-title:hover {
   font-size: 0.7rem;
   font-weight: 500;
   letter-spacing: 0.04em;
-  color: var(--accent);
+  color: var(--ink);
 }
 
 .person-note {
   font-size: 0.76rem;
-  color: var(--ink-soft);
+  color: var(--ink);
   margin-top: 0.15rem;
 }
 
@@ -1535,7 +1535,7 @@ a.pub-title:hover {
   margin-top: 0.15rem;
   font-size: 0.76rem;
   line-height: 1.35;
-  color: var(--muted-strong);
+  color: var(--ink);
   text-wrap: pretty;
 }
 
