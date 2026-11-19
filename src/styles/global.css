@@ -1456,8 +1456,8 @@ a.pub-title:hover {
 
 .alumni-grid {
   display: grid;
-  grid-template-columns: repeat(9, minmax(0, 1fr));
-  gap: clamp(0.6rem, 1.1vw, 0.9rem);
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: clamp(0.7rem, 1.3vw, 1.1rem);
 }
 
 .alum-media {
@@ -2154,7 +2154,7 @@ a.pub-title:hover {
     grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
   }
   .alumni-grid {
-    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
   .course-team {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2180,7 +2180,7 @@ a.pub-title:hover {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .alumni-grid {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .openings,
   .readings {
@@ -2241,7 +2241,7 @@ a.pub-title:hover {
     text-align: left;
   }
   .alumni-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .course-info {
     gap: 1rem 1.4rem;
@@ -2260,7 +2260,7 @@ a.pub-title:hover {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .alumni-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .course-info {
     grid-template-columns: 1fr;
