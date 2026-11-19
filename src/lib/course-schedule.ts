@@ -1,14 +1,14 @@
 import { parse } from 'smol-toml';
 
-export interface CourseLink {
+export interface CourseMaterial {
   label: string;
-  href: string;
+  href?: string;
 }
 
 export interface CourseRow {
   date: string;
   topic: string;
-  materials?: CourseLink[];
+  materials?: CourseMaterial[];
   note?: string;
 }
 

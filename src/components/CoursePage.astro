@@ -26,10 +26,15 @@ export interface CoursePerson {
   links?: CourseLink[];
 }
 
+export interface CourseMaterial {
+  label: string;
+  href?: string;
+}
+
 export interface CourseRow {
   date: string;
   topic: string;
-  materials?: CourseLink[];
+  materials?: CourseMaterial[];
   note?: string;
 }
 
@@ -236,7 +241,11 @@ const description = intro[0] ?? '';
                     {row.materials?.map((material, index) => (
                       <>
                         {index > 0 && ', '}
-                        <a href={href(material.href)}>{material.label}</a>
+                        {material.href ? (
+                          <a href={href(material.href)}>{material.label}</a>
+                        ) : (
+                          <span>{material.label}</span>
+                        )}
                       </>
                     ))}
                   </td>

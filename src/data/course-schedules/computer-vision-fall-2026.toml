@@ -22,6 +22,9 @@ href = "https://www.codecademy.com/learn/learn-python-3"
 label = "Google Colab Setup"
 href = "https://cs231n.github.io/setup-instructions/#working-remotely-on-google-colaboratory"
 
+[[schedule.materials]]
+label = "Szeliski Ch. 1,3.1-3.2,3.3.1"
+
 [[schedule]]
 date = "September 10, 2026"
 topic = "Feature Detection & matching"
@@ -34,6 +37,9 @@ href = "https://docs.google.com/presentation/d/19TdNzejfe3PpJYfbcG9a0kmWNXxPL6_6
 label = "Codelab 2"
 href = "https://colab.research.google.com/drive/1cs0AQcsV_wncEMHGLDOyC8uv54PlpaTw?usp=sharing"
 
+[[schedule.materials]]
+label = "Szeliski Ch. 7.1.1-7.1.3,7.2.1-7.2.2"
+
 [[schedule]]
 date = "September 17, 2026"
 topic = "Image alignment"
@@ -45,6 +51,9 @@ href = "https://docs.google.com/presentation/d/1kJ7DZJuCqoZz66GTtbRt0dyjHcvJ06Ej
 [[schedule.materials]]
 label = "Codelab 3"
 href = "https://colab.research.google.com/drive/1L4wovxjgCWbDHUThAdSR7BdzLh4QlvX3?authuser=1#scrollTo=9f90f725"
+
+[[schedule.materials]]
+label = "Szeliski Ch. 2.1.1, 8.2"
 
 [[schedule]]
 date = "September 24, 2026"
@@ -59,6 +68,9 @@ href = "https://docs.google.com/presentation/d/1m9_cxjXtEzXbz5Ac0yZ-pZIghMu8do2H
 label = "Codelab 4"
 href = "https://colab.research.google.com/drive/1m7jmMHQI5DsTv0zPJlkuCKp7pKHa1cfJ?usp=sharing"
 
+[[schedule.materials]]
+label = "Szeliski Ch. 6.4"
+
 [[schedule]]
 date = "October 1, 2026"
 topic = "Machine Learning, Backprop with MLP, Neural Networks"
@@ -70,6 +82,9 @@ href = "https://docs.google.com/presentation/d/1REdoDn_LeLHpYYIw7ZqaiM-_aFaG_1J2
 [[schedule.materials]]
 label = "Codelab 5"
 href = "https://colab.research.google.com/drive/19NBSibp1WSTbe6DukSnnvft5fa5JzifM?usp=sharing"
+
+[[schedule.materials]]
+label = "Szeliski Ch. 5.3–5.4, 6.3.3"
 
 [[schedule]]
 date = "October 8, 2026"
@@ -83,6 +98,9 @@ href = "https://docs.google.com/presentation/d/1sVrDwTKCRNbQX-TnOIkxX9ecUWWu3bxI
 [[schedule.materials]]
 label = "Codelab 6"
 href = "https://colab.research.google.com/drive/1mDnNDmG2x8omopUl0x_gU61trM0Buqwu?usp=sharing"
+
+[[schedule.materials]]
+label = "Szeliski Ch. 5.1–5.3, 4.1.2, 4.3, 7.5"
 
 [[schedule]]
 date = "October 15, 2026"
