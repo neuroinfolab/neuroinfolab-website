@@ -162,6 +162,14 @@ date = "November 19, 2026"
 topic = "Structure from Motion"
 note = "Final Project Released, Fourth Project due"
 
+[[schedule.materials]]
+label = "Lecture 11"
+href = "https://docs.google.com/presentation/d/131c9-z7qVApc6h_Cdp0j2ZOMc-__EvOeMdcqkReJnDE/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Codelab 11"
+href = "https://colab.research.google.com/drive/1dpxydBA-V0vXqWr6eP1FkbBH-XL2oO5X?usp=sharing"
+
 [[schedule]]
 date = "November 26, 2026"
 topic = "THANKSGIVING"
