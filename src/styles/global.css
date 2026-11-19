@@ -1306,13 +1306,17 @@ a.pub-title:hover {
   font-size: 0.7rem;
   font-weight: 500;
   letter-spacing: 0.04em;
+  line-height: 1.35;
   color: var(--ink);
+  text-wrap: pretty;
 }
 
 .person-note {
-  font-size: 0.76rem;
-  color: var(--ink);
   margin-top: 0.15rem;
+  font-size: 0.76rem;
+  line-height: 1.35;
+  color: var(--ink);
+  text-wrap: pretty;
 }
 
 /* PI block */
@@ -1525,22 +1529,32 @@ a.pub-title:hover {
 }
 
 .alum-name {
-  margin-top: 0.4rem;
-  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  font-size: 1.12rem;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 .alum-role {
-  margin-top: 0.15rem;
-  font-size: 0.76rem;
+  margin-top: 0.2rem;
+  font-family: var(--label);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   line-height: 1.35;
   color: var(--ink);
   text-wrap: pretty;
 }
 
 .alum-role-present {
-  margin-top: 0.35rem;
+  margin-top: 0.15rem;
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.35;
+  color: var(--ink);
+  text-wrap: pretty;
 }
 
 /* lab life */
@@ -2320,6 +2334,7 @@ a.pub-title:hover {
   .pi-photo {
     max-width: 320px;
     order: -1;
+    justify-self: start;
   }
   .pub {
     grid-template-columns: 1fr;
