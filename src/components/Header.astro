@@ -1,18 +1,32 @@
 ---
 import { url, base } from '../lib/url';
 
-const links = [
+const links: Array<{ href: string; label: string; code?: string; match?: string }> = [
   { href: '/', label: 'Main' },
   { href: '/#pi', label: 'Team' },
   { href: '/#publications', label: 'Publications' },
   { href: '/#funding', label: 'Funding' },
   { href: '/#openings', label: 'Job Openings' },
-  { href: '/neuroinformatics', label: 'Neuroinformatics', code: 'CS-GY 9223' },
-  { href: '/computer-vision', label: 'Computer Vision', code: 'CS-GY 6643' },
+  {
+    href: '/neuroinformatics/spring-2026',
+    label: 'Neuroinformatics',
+    code: 'CS-GY 9223',
+    match: '/neuroinformatics',
+  },
+  {
+    href: '/computer-vision/fall-2026',
+    label: 'Computer Vision',
+    code: 'CS-GY 6643',
+    match: '/computer-vision',
+  },
 ];
 
 const normalize = (path: string) => path.replace(/\/+$/, '') || '/';
 const current = normalize(Astro.url.pathname.slice(base.length));
+const isCurrent = (href: string, match?: string) => {
+  const target = normalize(match ?? href);
+  return current === target || (target !== '/' && current.startsWith(`${target}/`));
+};
 ---
 
 <header class="site-header">
@@ -41,7 +55,7 @@ const current = normalize(Astro.url.pathname.slice(base.length));
 
       <nav class="nav" id="nav" data-nav aria-label="Main">
         {links.map((link) => (
-          <a href={url(link.href)} aria-current={normalize(link.href) === current ? 'page' : undefined}>
+          <a href={url(link.href)} aria-current={isCurrent(link.href, link.match) ? 'page' : undefined}>
             <span class="nav-label">{link.label}</span>
             {link.code && <span class="nav-code">{link.code}</span>}
           </a>

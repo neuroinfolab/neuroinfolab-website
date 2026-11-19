@@ -28,7 +28,7 @@ src/
   data/           site.json, dois.json, nips.json, publications.config.json
   layouts/        Base.astro
   lib/            url.ts
-  pages/          index.astro, neuroinformatics.astro, computer-vision.astro
+  pages/          index.astro, 404.astro, and term pages per course
   styles/         global.css
 scripts/          sync_publications.py, check_publications.py,
                   publication-screenshots.mjs, scrape_nips.py, serp.py,
@@ -40,11 +40,17 @@ scripts/          sync_publications.py, check_publications.py,
 | Route | Contents |
 |---|---|
 | `/` | Hero carousel, PI bio, team, alumni, Lab life, publications, funding, openings |
-| `/neuroinformatics` | Neuroinformatics (CS-GY 9223 / CS-UY 3943), Spring 2026 |
-| `/computer-vision` | Computer Vision (CS-GY 6643), Fall 2026 |
+| `/neuroinformatics/spring-2026` | Neuroinformatics (CS-GY 9223 / CS-UY 3943), Spring 2026 |
+| `/neuroinformatics/spring-2025` | Archived Neuroinformatics schedule, Spring 2025 |
+| `/neuroinformatics/spring-2024` | Archived Neuroinformatics schedule, Spring 2024 |
+| `/computer-vision/fall-2026` | Computer Vision (CS-GY 6643), Fall 2026 |
+| `/computer-vision/fall-2025` | Archived Computer Vision schedule, Fall 2025 |
+| `/computer-vision/fall-2024` | Archived Computer Vision schedule, Fall 2024 |
+| `/404` | Custom not-found page (emitted as `404.html`) |
 
-The two course pages share `src/components/CoursePage.astro`. Course images,
-schedules, and readings are passed in from each page's frontmatter.
+The course pages share `src/components/CoursePage.astro`. Course images,
+schedules, and readings are passed in from each page's frontmatter; archived
+schedules are kept in `src/data/course-archives.ts`.
 
 ## Data
 
@@ -185,6 +191,17 @@ For a custom domain, set `SITE_URL=https://www.neuroinformaticslab.com` and
 `SITE_BASE=/`, and add `public/CNAME` containing the domain before the first
 deploy. DNS needs the four `185.199.108–111.153` A records plus
 `www → pxndey.github.io`.
+
+### Search indexing
+
+- **Production:** `public/robots.txt` allows all crawlers.
+- **Preview:** `Base.astro` emits `noindex, nofollow` whenever the build host is
+  not `neuroinformaticslab.com` or `www.neuroinformaticslab.com`, so the GitHub
+  Pages project URL never competes with the real domain in search.
+- The meta tag, not `robots.txt`, is what excludes the preview: crawlers only
+  read `robots.txt` from the origin root, not from `/neuroinfolab-website/`.
+- Do not add a `Sitemap:` line to `robots.txt` until a sitemap actually exists.
+
 
 ## Known limitations
 

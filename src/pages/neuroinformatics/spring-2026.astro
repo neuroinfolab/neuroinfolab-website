@@ -1,5 +1,5 @@
 ---
-import CoursePage from '../components/CoursePage.astro';
+import CoursePage from '../../components/CoursePage.astro';
 
 const schedule = [
   {
@@ -410,5 +410,8 @@ const readings = [
   ]}
   schedule={schedule}
   readings={readings}
-  previous={{ label: 'Neuroinformatics, Spring 2025', href: 'https://www.neuroinformaticslab.com/neuroinformatics-cs-gy-9223' }}
+  previous={[
+    { label: 'Spring 2025', href: '/neuroinformatics/spring-2025' },
+    { label: 'Spring 2024', href: '/neuroinformatics/spring-2024' },
+  ]}
 />

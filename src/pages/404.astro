@@ -1,0 +1,38 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { url } from '../lib/url';
+
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/#pi', label: 'Team' },
+  { href: '/#publications', label: 'Publications' },
+  { href: '/#funding', label: 'Funding' },
+  { href: '/#openings', label: 'Openings' },
+  { href: '/neuroinformatics/spring-2026', label: 'Neuroinformatics' },
+  { href: '/computer-vision/fall-2026', label: 'Computer Vision' },
+];
+---
+
+<Base title="Page not found — Neuroinformatics Lab" description="The page you are looking for could not be found.">
+  <Header />
+
+  <main id="main">
+    <section class="section not-found">
+      <div class="shell">
+        <span class="label">404</span>
+        <h1>Page not found</h1>
+        <p>
+          The page you are looking for has moved, or it never existed. Try one of the links below
+          instead.
+        </p>
+        <nav class="not-found-links" aria-label="Site links">
+          {links.map((link) => <a href={url(link.href)}>{link.label}</a>)}
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Base>

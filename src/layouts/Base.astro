@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import { createHash } from 'node:crypto';
-import { url } from '../lib/url';
+import { base, url } from '../lib/url';
 
 interface Props {
   title: string;
@@ -14,6 +14,14 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 const locked = import.meta.env.PUBLIC_SITE_LOCKED === 'true';
 const passcode = import.meta.env.SITE_PASSWORD ?? '';
 const lockHash = locked && passcode ? createHash('sha256').update(passcode).digest('hex') : '';
+
+// The GitHub Pages project URL is a staging preview, not the public site. A
+// robots.txt under /neuroinfolab-website/ is ignored by crawlers (they only
+// read the origin root), so keep the preview out of search with a meta tag.
+const productionHosts = new Set(['neuroinformaticslab.com', 'www.neuroinformaticslab.com']);
+const siteHost = Astro.site?.hostname ?? '';
+const noindex = locked || (siteHost !== '' && !productionHosts.has(siteHost));
+const ogImage = new URL(`${base}/img/og/og-default.png`, Astro.site).href;
 ---
 
 <!doctype html>
@@ -38,12 +46,19 @@ const lockHash = locked && passcode ? createHash('sha256').update(passcode).dige
         if (meta) meta.setAttribute('content', theme === 'light' ? '#f4f0e7' : '#101012');
       })();
     </script>
-    {locked && <meta name="robots" content="noindex, nofollow" />}
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Neuroinformatics Lab at NYU Tandon" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={ogImage} />
+    <link rel="icon" href={url('/favicon.png')} type="image/png" sizes="512x512" />
+    <link rel="apple-touch-icon" href={url('/apple-touch-icon.png')} />
     {locked && (
       <script is:inline>
         try {
