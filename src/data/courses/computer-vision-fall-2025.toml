@@ -1,0 +1,264 @@
+title = "Computer Vision"
+code = "CS-GY 6643"
+term = "Fall 2025 (archive)"
+intro = [ "An important goal of signal processing and artificial intelligence (AI) is to equip computers with the capability of interpreting visual inputs. Computer vision is an area that deals with the construction of explicit, meaningful measurements and descriptions of physical objects from images. It includes many techniques from image processing, pattern recognition, geometric modeling, cognitive processing, and machine and deep learning. This course explores the core concepts and practical techniques of image processing and computer vision at an intermediate level of depth and application.", "This is a graduate level course requiring working knowledge of linear algebra, data structures and proficiency in programming (python). Advanced undergraduates may enroll upon permission from instructor." ]
+readings = []
+
+[image]
+src = "/img/courses/computer-vision-archive.jpg"
+srcSmall = "/img/courses/computer-vision-archive-sm.jpg"
+webp = "/img/courses/computer-vision-archive.webp"
+webpSmall = "/img/courses/computer-vision-archive-sm.webp"
+alt = "A cat with bounding boxes labelling its head, ears, eyes, and nose"
+tone = "light"
+
+[[info]]
+label = "Instructor"
+text = "Prof. Erdem Varol"
+
+[[info]]
+label = "Email"
+text = ""
+
+[[info.links]]
+label = "ev2240@nyu.edu"
+href = "mailto:ev2240@nyu.edu"
+
+[[info]]
+label = "Time"
+text = "Thursdays 11am-1:30pm"
+
+[[info]]
+label = "Place"
+text = "Room 202, 370 Jay St"
+
+[[info]]
+label = "Slack"
+text = "nyucomputervision.slack.com"
+href = "https://nyucomputervision.slack.com"
+
+[[team]]
+role = "Instructor"
+name = "Erdem Varol"
+email = "ev2240@nyu.edu"
+image = "/img/team/varol.jpg"
+
+[[team]]
+role = "TA"
+name = "Visweswar Sirish Parupudi"
+email = "vsp7230@nyu.edu"
+office = "Office hours: Thursday 1-5pm in-person, 4-5pm on Zoom"
+image = "/img/team/parupudi.jpg"
+
+[[team]]
+role = "TA"
+name = "Subhrajit Dey"
+email = "sd5963@nyu.edu"
+office = "Office hours: Wednesday 1-2pm on Zoom"
+image = "/img/team/dey.jpg"
+
+[[team]]
+role = "TA"
+name = "Nalini Ramanathan"
+email = "nar8991@nyu.edu"
+office = "Office hours: Mondays 2-3pm on Zoom"
+image = "/img/team/ramanathan.jpg"
+
+[[sections]]
+title = "Grading"
+paragraphs = [ "Individual homework 15%, in-class midterm 25%, and programming projects 60%. Twenty percent of the programming project grade was competition based." ]
+
+[[sections]]
+title = "Prerequisites"
+paragraphs = [ "Working knowledge of linear algebra and data structures, plus proficiency in Python. Advanced undergraduates may enroll upon permission of the instructor." ]
+
+[[sections]]
+title = "Assignments and late policy"
+paragraphs = [ "Homework and programming projects were submitted to Brightspace by 11:59pm on the due date. Programming projects were submitted as evaluated Jupyter notebooks.", "Every hour that a project was late (rounded down) caused a 1% penalty on the total allotted grade." ]
+
+[[schedule]]
+date = "September 4, 2025"
+topic = "Intro and survey of topics, Image Formation and Filtering"
+note = "Homework 0 out on Brightspace: Join slack nyucomputervision.slack.com (Due September 11, 11:59pm)"
+
+[[schedule.materials]]
+label = "Lecture 1 slides"
+href = "https://docs.google.com/presentation/d/1jXp0jWzNaI6f_jJRi4GeK_Fcl2qHFiFrXwO_6HFGCxE/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Python tutorial"
+href = "https://www.codecademy.com/learn/learn-python-3"
+
+[[schedule.materials]]
+label = "Google Colab Setup"
+href = "https://cs231n.github.io/setup-instructions/#working-remotely-on-google-colaboratory"
+
+[[schedule.materials]]
+label = "Code Lab"
+href = "https://colab.research.google.com/drive/1Ge4n3nGRvnUGeW43TKQ7hLFLkvZ6SxQk#scrollTo=9_jJQTBrVhgw"
+
+[[schedule]]
+date = "September 11, 2025"
+topic = "Non-linear filtering and edge detection"
+note = "Homework 1 out; Project 1 out; Kaggle Invitation Link: Join Here"
+
+[[schedule.materials]]
+label = "Lecture 2 Slides"
+href = "https://docs.google.com/presentation/d/1FnZjy8IvQhV4BZO6HRIwkyLnZDujgbai3f9_ulwanXU/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Code Lab"
+href = "https://colab.research.google.com/drive/1ccMHRBpFTHX4UlmLgZL0LLR6s-OIfLo3?usp=sharing"
+
+[[schedule]]
+date = "September 18, 2025"
+topic = "Image recognition, Feature detection and matching"
+note = "Homework 1 due - Solutions"
+
+[[schedule.materials]]
+label = "Lecture 3 Slides"
+href = "https://docs.google.com/presentation/d/1sgHGwIXkkmoNeSGi4bhUJxW1A0wW9hh-iJ9R2KdbaJ4/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Code Lab"
+href = "https://colab.research.google.com/drive/1cq8ZDBlofM_E5b3J73H2r7s1P-WqKhFs?usp=sharing"
+
+[[schedule]]
+date = "September 25, 2025"
+topic = "Contour tracking and Hough transforms"
+note = "Project 1 due"
+
+[[schedule.materials]]
+label = "Lecture 4 Slides"
+href = "https://docs.google.com/presentation/d/1NU5EtHXm9KAAxiDgr3BswxsaPksaRnaeSJRJ6rTvSA8/edit?slide=id.g36623eaaff6_0_123#slide=id.g36623eaaff6_0_123"
+
+[[schedule.materials]]
+label = "Code Lab"
+href = "https://colab.research.google.com/drive/1hvI0DdyfWfZAk83E0CPmZXvsyw4ZEGtZ?usp=sharing"
+
+[[schedule]]
+date = "October 2, 2025"
+topic = "Image alignment"
+note = "Homework 2 out"
+
+[[schedule.materials]]
+label = "Lecture 5 Slides"
+href = "https://docs.google.com/presentation/d/11h0L7TrsTaac34QCq_zPmjhwJ5KrXZcc5RDxyVpx6Lk/edit?slide=id.g309f79a7519_0_17#slide=id.g309f79a7519_0_17"
+
+[[schedule.materials]]
+label = "Code Lab"
+href = "https://colab.research.google.com/drive/1080mD-RQtSIbaWpu_G2X6OUZsFly9EtT?usp=sharing"
+
+[[schedule]]
+date = "October 9, 2025"
+topic = "Segmentation"
+note = "Homework 2 due"
+
+[[schedule.materials]]
+label = "Lecture 6 Slides"
+href = "https://docs.google.com/presentation/d/1feW0Io3w5qKpMtcvusW3iOEu_gJXo4Y_UENDztZpLDs/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Code Lab"
+href = "https://colab.research.google.com/drive/1bpIpUDqBOXrAUzEJslE1No_oJ6q6As8_?usp=sharing"
+
+[[schedule]]
+date = "October 16, 2025"
+topic = "Midterm exam (in class)"
+note = "Project 2 out"
+
+[[schedule]]
+date = "October 23, 2025"
+topic = "Machine Learning ,Backprop with MLP, Neural Networks"
+
+[[schedule.materials]]
+label = "Lecture 7 Slides"
+href = "https://docs.google.com/presentation/d/13x3SI8Y9Oj_CmiRa4JrvTvaqXZavY0SRi7S8855lOhw/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Code Lab"
+href = "https://colab.research.google.com/drive/1V0528c3ysE4WV3nN_XL-vZqYwKrTUPuL#scrollTo=2c3c9abe"
+
+[[schedule]]
+date = "October 30, 2025"
+topic = "Convolutional Neural Networks; YOLO"
+note = "Homework 3 out ; Project 2 due"
+
+[[schedule.materials]]
+label = "Lecture 8 slides"
+href = "https://docs.google.com/presentation/d/1Wgr61HLvxRGI6UsxHw7Qyri-HAhe9qK0waX17xCqdII/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Colab for Lecture 8"
+href = "https://colab.research.google.com/drive/1Tvm9yV4i-b283HlY7oZ7mGB7rnQvJFaA#scrollTo=PXTC5sCGWARb"
+
+[[schedule]]
+date = "November 6, 2025"
+topic = "Motion models, depth estimation and optical flow"
+note = "Homework 3 due; Project 3 out"
+
+[[schedule.materials]]
+label = "Lecture 9 slides"
+href = "https://docs.google.com/presentation/d/1XZ9IV_p1Kpv-vp8zipeP0dZSNaKeAKIcOiS_XFJ1Ll0/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Colab for Lecture 9"
+href = "https://colab.research.google.com/drive/1bRDR8Kr3ZwoAkEaCT3CyyTObArPMzsqv?usp=sharing"
+
+[[schedule]]
+date = "November 13, 2025"
+topic = "Self Supervised Learning, CLIP Embeddings"
+
+[[schedule.materials]]
+label = "Lecture 10 Slides"
+href = "https://docs.google.com/presentation/d/1-bv79U7uMo_UYLKmw8lxmtK-yrOxTuZRSPHsdWYpUrY/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Code Lab"
+href = "https://colab.research.google.com/drive/1w3E4wYig8_89eSNdaxZvN7cOmdYcbNkC?usp=sharing"
+
+[[schedule]]
+date = "November 20, 2025"
+topic = "Attention Mechanism, Vision Transformer"
+note = "Project 3 due; Project 4 out"
+
+[[schedule.materials]]
+label = "Lecture 11 Slides"
+href = "https://docs.google.com/presentation/d/1vOn1ZYalwfxgFS7uTlq29_APYieMfVbuKjNmJ8eaRgI/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Code Lab"
+href = "https://colab.research.google.com/drive/1MeCzRJNzqwg14rtHfEfyyz5UfMLQdNmh?usp=sharing"
+
+[[schedule]]
+date = "November 27, 2025"
+topic = "THANKSGIVING BREAK (No class)"
+
+[[schedule]]
+date = "December 4, 2025"
+topic = "Vision Language Models"
+
+[[schedule.materials]]
+label = "Lecture 12 Slides"
+href = "https://docs.google.com/presentation/d/1CFbabZhzYZejd00dPqu6EjYWuTyRiLfR5SiH2XjUyXU/edit?slide=id.g3a6998d80ae_0_0#slide=id.g3a6998d80ae_0_0"
+
+[[schedule.materials]]
+label = "Code Lab"
+href = "https://colab.research.google.com/drive/1ITQqXt18MoFZt5EGyU6-Y6NovMeaZJ3o?usp=sharing"
+
+[[schedule]]
+date = "December 11, 2025"
+topic = "Additional Topics"
+
+[[schedule.materials]]
+label = "Wrap Up Slides"
+href = "https://docs.google.com/presentation/d/1RSIAn6rU8BQ8bVO-8g6uuVtdMUWD5P_ms0WF2leGgP4/edit?slide=id.p#slide=id.p"
+
+[[schedule]]
+date = "December 18, 2025"
+topic = "No Class"
+note = "Project 4 due"
+
+[[previous]]
+label = "Fall 2024"
+href = "/computer-vision/fall-2024"

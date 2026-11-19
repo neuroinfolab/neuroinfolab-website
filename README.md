@@ -20,10 +20,10 @@ public/
   media/loops/    5 hero WebM loops + MP4 fallbacks
 src/
   components/     Header, Footer, ProjectCard, CoursePage
-  data/           site.json, course-archives.ts, dois.json, nips.json,
+  data/           site.json, courses/*.toml, dois.json, nips.json,
                   featured-publications.json, publications.config.json
   layouts/        Base.astro
-  lib/            url.ts
+  lib/            url.ts, course.ts
   pages/          index.astro, 404.astro, and term pages per course
   styles/         global.css
 scripts/          sync_publications.py, check_publications.py,
@@ -46,13 +46,14 @@ scripts/          sync_publications.py, check_publications.py,
 
 Components: `src/components/CoursePage.astro`. 
 
-Course images, schedules, and readings are passed in from each page's frontmatter; archived course schedules are kept in `src/data/course-archives.ts`.
+Course content is stored in `src/data/courses/<course>-<term>.toml`, including the archived offerings. Each term page under `src/pages/` is a thin route that loads its TOML file through `src/lib/course.ts`.
 
 ## Data
 
 | File | Purpose |
 |---|---|
 | `src/data/site.json` | Publications, team, alumni, projects, funding objects, bio. |
+| `src/data/courses/*.toml` | One file per course offering, current and archived: intro, info, team, details, schedule, readings, and previous-term links. |
 | `src/data/dois.json` | DOI matches keyed by title; per-entry `doi`/`url` fields in `site.json` |
 | `src/data/publications.config.json` | Locked refresh policy: strategy B, GitHub PR, monthly cron, preprint policy 1, exact DOI/title matching, excluded titles. |
 | `src/data/featured-publications.json` | Curated top-K publication list, grouped by topic for the home page. Each entry points at an image in `public/img/pubs/`. |
@@ -94,6 +95,10 @@ pnpm publications:shots   # screenshot the publications list
 add the entry to `src/data/site.json`, and add the image mapping in
 `src/pages/index.astro`. Use `public/img/team/placeholder.svg` when a portrait
 is not available yet.
+
+**A course term**: edit its file in `src/data/courses/`. To add a term, copy the
+closest existing TOML file, then add a route under `src/pages/<course>/` that
+calls `getCourse('<course>-<term>')`. Archived terms use the same format.
 
 **A publication**: edit `src/data/site.json` directly. Add a per-entry `doi` or
 `url` when the title-keyed lookup is wrong or a better official link exists.

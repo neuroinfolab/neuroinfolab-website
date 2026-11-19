@@ -1,0 +1,294 @@
+title = "Neuroinformatics"
+code = "CS-GY 9223 / CS-UY 3943"
+term = "Spring 2025 (archive)"
+intro = [ "Course theme: Chaos Circuitry.", "This is a Ph.D.-level topics course covering topics on modeling, signal processing as well as database management of neuroscience data. Students from statistics, neuroscience, and engineering are all welcome to attend. Neuroscience background is not required but self-motivated interest in neuroscience is highly recommended.", "Advanced undergraduates may enroll upon permission from instructor." ]
+readings = []
+
+[image]
+src = "/img/courses/neuroinformatics.jpg"
+srcSmall = "/img/courses/neuroinformatics-sm.jpg"
+webp = "/img/courses/neuroinformatics.webp"
+webpSmall = "/img/courses/neuroinformatics-sm.webp"
+alt = "Fluorescence microscopy of neural tissue labelled in cyan and gold"
+caption = "Photo: Yusha Sun and Xin Wang, University of Pennsylvania"
+creditHref = "https://braininitiative.nih.gov/news-events/brain-initiative-photo-and-video-contest"
+
+[[info]]
+label = "Instructor"
+text = "Prof. Erdem Varol"
+
+[[info]]
+label = "Email"
+text = ""
+
+[[info.links]]
+label = "ev2240@nyu.edu"
+href = "mailto:ev2240@nyu.edu"
+
+[[info]]
+label = "Time"
+text = "Tuesdays 2pm-4:30pm"
+
+[[info]]
+label = "Place"
+text = "6 MetroTech Center, Room 775 B"
+
+[[info]]
+label = "Slack"
+text = "neuroinfoclass.slack.com"
+href = "https://neuroinfoclass.slack.com"
+
+[[team]]
+role = "Instructor"
+name = "Erdem Varol"
+email = "ev2240@nyu.edu"
+image = "/img/team/varol.jpg"
+
+[[team]]
+role = "TA"
+name = "Rishabh Raj"
+email = "rr4574@nyu.edu"
+office = "Office hours: Mondays 2-3pm on Zoom"
+image = "/img/alumni/raj.jpg"
+
+[[team]]
+role = "TA"
+name = "Malhar Patel"
+email = "mkp6112@nyu.edu"
+office = "Office hours: Fridays 1-2pm on Zoom"
+image = "/img/alumni/patel.jpg"
+
+[[sections]]
+title = "Course goal"
+paragraphs = [ "We will introduce a number of advanced machine learning and computer vision tools relevant in neuroscience. Each technique will be illustrated via application to problems in neuroscience. We will cover topics including 1) computational models of the nervous system function and structure across several species, 2) development of computer vision and signal processing tools for analyzing neuroscience data and 3) tools and databases for management and sharing of large scale neural data." ]
+
+[[sections]]
+title = "Prerequisites"
+paragraphs = [ "A good working knowledge of basic statistical concepts such as likelihood, Bayes' rule, Gaussian random vectors and linear-algebraic concepts such as regression and principal components analysis. Coding experience in Python, Matlab and/or R is necessary for course projects." ]
+
+[[sections]]
+title = "Evaluation"
+paragraphs = [ "Final grades were based on class participation (20%), a midterm project (30%), and a final project (50%). Projects could involve either the implementation and justification of a novel analysis technique, or a standard analysis applied to a novel data set." ]
+
+[[schedule]]
+date = "January 21, 2025"
+topic = "Intro and survey of topics"
+
+[[schedule.materials]]
+label = "Stegle '15"
+href = "https://www.nature.com/articles/nrg3833"
+
+[[schedule.materials]]
+label = "Paninski '18"
+href = "https://www.biorxiv.org/content/early/2017/10/02/196949"
+
+[[schedule.materials]]
+label = "IBL '22"
+href = "https://www.biorxiv.org/content/10.1101/2022.05.09.491042v3"
+
+[[schedule.materials]]
+label = "Lecture 1"
+href = "https://docs.google.com/presentation/d/1U3PlnNo9BKDk6asEAwRSCqp2EwG7tdcA3IlAt73sMQo/edit#slide=id.p"
+
+[[schedule]]
+date = "January 28, 2025"
+topic = "Neuroimaging (Technologies)"
+
+[[schedule.materials]]
+label = "Ladd '18"
+href = "https://www.sciencedirect.com/science/article/pii/S007965651830013X"
+
+[[schedule.materials]]
+label = "Li '22"
+href = "https://www.mdpi.com/1424-8220/22/15/5865"
+
+[[schedule.materials]]
+label = "Lecture 2"
+href = "https://docs.google.com/presentation/d/1a2MsbN53lqGrL7upH4ZFkEsZ_7QdWTjsmJunit-IJxQ/edit?usp=sharing"
+
+[[schedule]]
+date = "February 4, 2025"
+topic = "Neuroimaging (Analysis pipelines)"
+
+[[schedule.materials]]
+label = "Lewicki '98"
+href = "http://www.stat.columbia.edu/~liam/teaching/neurostat-fall22/papers/EM/Lewicki-Network-98_1.pdf"
+
+[[schedule.materials]]
+label = "Pachitariu '16, Steinmetz '21"
+href = "https://www.science.org/doi/10.1126/science.abf4588"
+
+[[schedule.materials]]
+label = "Lecture 3"
+href = "https://docs.google.com/presentation/d/1kXrXON1eIL6Cqdun2nVQlTYeJmqXvZONXD_v9exejII/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "fMRI workshop"
+href = "https://colab.research.google.com/drive/1SQwRk5YsflF2b2uSRNkkxOxQMwYAOI50?usp=sharing"
+
+[[schedule]]
+date = "February 11, 2025"
+topic = "Machine learning for Neuroimaging"
+
+[[schedule.materials]]
+label = "Abdelfattah '22,"
+href = "https://www.spiedigitallibrary.org/journals/neurophotonics/volume-9/issue-S1/013001/Neurophotonic-Tools-for-Microscopic-Measurements-and-Manipulation-Status-Report/10.1117/1.NPh.9.S1.013001.full?SSO=1"
+
+[[schedule.materials]]
+label = "Pnevmatikakis '16"
+href = "https://www.cell.com/neuron/fulltext/S0896-6273(15)01084-3#%20"
+
+[[schedule.materials]]
+label = "Lecture 4"
+href = "https://docs.google.com/presentation/d/1gV3CE0hKw_U7z9eK1CkSOyQYUi-Bmot8mrJuNi975Jc/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Colab 1"
+href = "https://colab.research.google.com/drive/1RyC_fjcItRqZV6Y547rghs4xkXYEOke1"
+
+[[schedule.materials]]
+label = "Colab 2"
+href = "https://colab.research.google.com/drive/1AQZmMEsdvw_1lVAkopx1sGWVn52Ph5zZ?usp=sharing"
+
+[[schedule]]
+date = "February 18, 2025"
+topic = "LEGISLATIVE DAY (No Class)"
+
+[[schedule.materials]]
+label = "Journal Club on Graph-based networks"
+href = "https://nyu.zoom.us/rec/share/SFs57ybRTgniM6rPnJq5qGFrfIY4AjfGF-no3hVzP8humMQ9y5D7D4GDy_UN6i2U.tY2MsvcPzOWnY_Sb"
+
+[[schedule]]
+date = "February 25, 2025"
+topic = "Electrophysiology"
+note = "Vizualisation Report Due 11:59 PM"
+
+[[schedule.materials]]
+label = "Glaser' 20"
+href = "https://www.eneuro.org/content/7/4/ENEURO.0506-19.2020"
+
+[[schedule.materials]]
+label = "Zhang' 23"
+href = "https://www.biorxiv.org/content/10.1101/2023.09.21.558869v1.abstract"
+
+[[schedule.materials]]
+label = "Lecture 5"
+href = "https://docs.google.com/presentation/d/1WecJ_ZXWxyrOngfA-ss_udlCFY-vU15oHLBdYkz-s9w/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Allen Data Exploration"
+href = "https://colab.research.google.com/drive/1wYFfJtwG03EEpim8dq47AG8hOXnBoAt6?usp=sharing"
+
+[[schedule]]
+date = "March 4, 2025"
+topic = "Spike localization and drift correction"
+note = "Background and Baseline Methods Due 11:59 PM"
+
+[[schedule.materials]]
+label = "Condylis '22"
+href = "https://www.sciencedirect.com/science/article/pii/S0896627320301033"
+
+[[schedule.materials]]
+label = "Lecture 6"
+href = "https://docs.google.com/presentation/d/1pl5LAQ7db8TTqOUILPYKGoclPad1N5ok7LOxD7x5X3g/edit?usp=sharing"
+
+[[schedule]]
+date = "March 11, 2025"
+topic = "Neural Decoding: Guest lecture by Cole Hurwitz"
+note = "Baseline Results due 14 March 11:59 PM"
+
+[[schedule.materials]]
+label = "Sotiras '13,"
+href = "https://ieeexplore.ieee.org/abstract/document/6522524"
+
+[[schedule.materials]]
+label = "Windolf '23"
+href = "https://www.biorxiv.org/content/10.1101/2023.10.24.563768v1"
+
+[[schedule.materials]]
+label = "Lecture Recording"
+href = "https://urldefense.proofpoint.com/v2/url?u=https-3A__nyu.zoom.us_rec_share_MtJUGKZrzJ4Kvw9V1plGWD4JsMymikUpt1LIEFKrONLp66bzYUdA5y2XcOD25wc.T2SVX5AvoOgGc7bk&d=DwMFAw&c=slrrB7dE8n7gBJbeO0g-IQ&r=Ne4Cit5K1B0teTzZfVLjmw&m=8EG7qX6oZAg9oZMprx9QrhLgLWXkZStjLwFZFy6JjrpLGy_FtgPXwZwaP94BGaU9&s=V9RZJYdcncUb8Wuz1mVPCVzuiLm4VphxgWGdpRh3Wes&e="
+
+[[schedule.materials]]
+label = "Lecture Slides"
+href = "https://docs.google.com/presentation/d/1S3o4QMO1jnK5inZ8HvbaZQkLQo5bgKl_ygrx7t5MxHw/edit?usp=sharing"
+
+[[schedule]]
+date = "March 18, 2025"
+topic = "Midterm project presentations"
+note = "Write-up due 21 March 11:59 PM"
+
+[[schedule.materials]]
+label = "Announcements"
+href = "https://docs.google.com/presentation/d/1U7prwLVNd6c0LMwx6o5Tsg71eb-jTb5srMakcxzOdk0/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Presentations Recording"
+href = "https://nyu.zoom.us/rec/share/kBVCSNlExpZCYhJaGDDZrhlAN2uHfK-_N1X5ti-fDHi135XcutL5zNU2XR-TASOe.ZMNRjdu_jnRxTKWF?startTime=1742321835000"
+
+[[schedule]]
+date = "March 25, 2025"
+topic = "SPRING BREAK (No class)"
+
+[[schedule]]
+date = "April 1, 2025"
+topic = "Microscopy and Transcriptome: Theoritical"
+
+[[schedule.materials]]
+label = "Boussard '21"
+href = "https://proceedings.neurips.cc/paper/2021/hash/b950ea26ca12daae142bd74dba4427c8-Abstract.htmlCB0IC"
+
+[[schedule.materials]]
+label = "Saguy '23"
+href = "https://www.nature.com/articles/s41592-023-01966-0"
+
+[[schedule.materials]]
+label = "Lecture 8"
+href = "https://docs.google.com/presentation/d/1aNVnAw2u3nw1WPvb9p1l4l6z34irjTWat63iFcV466Q/edit?usp=sharing"
+
+[[schedule]]
+date = "April 8, 2025"
+topic = "Microscopy and Transcroptomics: Data Collection and Preprocessing"
+note = "Results from your method Due 11:59 PM, Friday 11th April"
+
+[[schedule.materials]]
+label = "Bugeon '22"
+href = "https://www.nature.com/articles/s41586-022-04915-7"
+
+[[schedule.materials]]
+label = "Lecture 9"
+href = "https://docs.google.com/presentation/d/1QsgdIJsssMBAMN3YvUFkj6QJ7k2lcH-GiBABoAp6R-c/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "DeepSTORM"
+href = "https://docs.google.com/presentation/d/14k2VWyOcJ3yaGfvvV6FG2iBcU6UYL7BezC6lreJBZnw/edit?usp=sharing"
+
+[[schedule]]
+date = "April 15, 2025"
+topic = "Microscopy and Transcriptomics: Modelling"
+
+[[schedule.materials]]
+label = "Bassett '17"
+href = "https://www.nature.com/articles/nn.4502"
+
+[[schedule.materials]]
+label = "Lecture recording"
+href = "https://nyu.zoom.us/rec/share/sExjZRNF0E64yJ9OFVGcp3pwSp7ntpm-dXZ5Dri5Mdt3nvSxP0V8qZCto3w1sZsW.PGNwwMdPN4UV-y6U"
+
+[[schedule]]
+date = "April 22, 2025"
+topic = "Transcriptomics & Connectomics: Modelling"
+note = "Finetuned results from your method with clean code on git Due 22 March 11:59 PM"
+
+[[schedule.materials]]
+label = "Triplett '23"
+href = "https://www.biorxiv.org/content/10.1101/2022.09.14.507926v1"
+
+[[schedule]]
+date = "April 29, 2025"
+topic = "Final project presentations"
+note = "Write-up Due 9 May 11:59 PM"
+
+[[previous]]
+label = "Spring 2024"
+href = "/neuroinformatics/spring-2024"

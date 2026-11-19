@@ -1,0 +1,253 @@
+title = "Computer Vision"
+code = "CS-GY 6643"
+term = "Fall 2024 (archive)"
+archiveNote = "This is the earliest archived version of this course."
+intro = [ "An important goal of signal processing and artificial intelligence (AI) is to equip computers with the capability of interpreting visual inputs. Computer vision is an area that deals with the construction of explicit, meaningful measurements and descriptions of physical objects from images. It includes many techniques from image processing, pattern recognition, geometric modeling, cognitive processing, and machine and deep learning. This course introduces students to the fundamental concepts and techniques in image processing and computer vision.", "This is a graduate level course requiring working knowledge of linear algebra, data structures and proficiency in programming (python). Advanced undergraduates may enroll upon permission from instructor." ]
+readings = []
+
+[image]
+src = "/img/courses/computer-vision-archive.jpg"
+srcSmall = "/img/courses/computer-vision-archive-sm.jpg"
+webp = "/img/courses/computer-vision-archive.webp"
+webpSmall = "/img/courses/computer-vision-archive-sm.webp"
+alt = "A cat with bounding boxes labelling its head, ears, eyes, and nose"
+tone = "light"
+
+[[info]]
+label = "Instructor"
+text = "Prof. Erdem Varol"
+
+[[info]]
+label = "Email"
+text = ""
+
+[[info.links]]
+label = "ev2240@nyu.edu"
+href = "mailto:ev2240@nyu.edu"
+
+[[info]]
+label = "Time"
+text = "Thursdays 11am-1:30pm"
+
+[[info]]
+label = "Place"
+text = "2 MetroTech Center, Room 801"
+
+[[info]]
+label = "Slack"
+text = "nyucomputervision.slack.com"
+href = "https://nyucomputervision.slack.com"
+
+[[team]]
+role = "Instructor"
+name = "Erdem Varol"
+email = "ev2240@nyu.edu"
+image = "/img/team/varol.jpg"
+
+[[team]]
+role = "TA"
+name = "Rishabh Raj"
+email = "rr4574@nyu.edu"
+office = "Office hours: Tuesdays 1-2pm on Zoom"
+image = "/img/alumni/raj.jpg"
+
+[[team]]
+role = "TA"
+name = "Malhar Patel"
+email = "mkp6112@nyu.edu"
+office = "Office hours: Mondays 1-2pm on Zoom"
+image = "/img/alumni/patel.jpg"
+
+[[sections]]
+title = "Grading"
+paragraphs = [ "Individual homework 18%, individual programming projects 45%, in-class midterm 15%, and final group project 22%." ]
+
+[[sections]]
+title = "Prerequisites"
+paragraphs = [ "Working knowledge of linear algebra and data structures, plus proficiency in Python. Advanced undergraduates may enroll upon permission of the instructor." ]
+
+[[sections]]
+title = "Assignments and late policy"
+paragraphs = [ "Homework and programming projects were submitted to Brightspace by 11:59pm on the due date. Programming projects were submitted as evaluated Jupyter notebooks.", "Every hour that a project was late (rounded down) caused a 1% penalty on the total allotted grade." ]
+
+[[schedule]]
+date = "September 5, 2024"
+topic = "Intro and survey of topics"
+note = "Homework 0 out: Join slack nyucomputervision.slack.com (Due September 11, 11:59pm)"
+
+[[schedule.materials]]
+label = "Lecture 1 slides"
+href = "https://docs.google.com/presentation/d/1eRmtKcjsfSgXec8f1-5Zmqt1R8c3wHDeN79WP8lhDzM/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Python tutorial"
+href = "https://www.codecademy.com/learn/learn-python-3"
+
+[[schedule.materials]]
+label = "Google Colab Setup"
+href = "https://cs231n.github.io/setup-instructions/#working-remotely-on-google-colaboratory"
+
+[[schedule]]
+date = "September 12, 2024"
+topic = "Image formation and filtering"
+note = "Homework 1 out, Project 1 out"
+
+[[schedule.materials]]
+label = "Lecture 2 slides"
+href = "https://docs.google.com/presentation/d/1oyTndkMATGU8Z1Ej9n0G59as5SmV-IX-yxfhGFUgDyQ/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Colab for Lecture 2"
+href = "https://colab.research.google.com/drive/19b00TXNfFc5-UZgeijD-EjN-WVkbXBwD?usp=sharing"
+
+[[schedule]]
+date = "September 19, 2024"
+topic = "Non-linear filtering and edge detection"
+note = "Homework 1 due, September 19 10:59a"
+
+[[schedule.materials]]
+label = "Lecture 3 slides"
+href = "https://docs.google.com/presentation/d/11zTjGWPrLVYm-IwmBNObuQZPFUaI9IrnET3oFM-mIrM/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Colab for Lecture 3"
+href = "https://colab.research.google.com/drive/1RL2SOMCiRrEJdjLPqUT19tlOiQGGT5y3?usp=sharing"
+
+[[schedule]]
+date = "September 26, 2024"
+topic = "Image recognition, Feature detection and matching"
+note = "Final project team selection due, September 22 10:59am"
+
+[[schedule.materials]]
+label = "Lecture 4 slides"
+href = "https://docs.google.com/presentation/d/1n_Rva24jxqVamb1Gbem4gR2t5D1Q2YzuUj8S3n3CSCw/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Colab for Lecture 4"
+href = "https://colab.research.google.com/drive/1RtVc4RMqUqrL7zV4xciuVwSSE68ik9kq?usp=drive-slack"
+
+[[schedule]]
+date = "October 3, 2024"
+topic = "Contour tracking and Hough transforms"
+note = "Project 1 due, October 4, 10:59am"
+
+[[schedule.materials]]
+label = "Lecture 5 slides"
+href = "https://docs.google.com/presentation/d/1zPTou3xXJ6SPlcqHK6ZgdgauJV6tTy_ulSiFP42XSy8/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Colab for Lecture 5"
+href = "https://colab.research.google.com/drive/18TcggZQJsFC68ZN-vjlAleZI_Ahjf1t7?usp=drive-slack"
+
+[[schedule]]
+date = "October 10, 2024"
+topic = "Image alignment"
+note = "Homework 2 out, Final project proposal due, October 11, 11:59pm"
+
+[[schedule.materials]]
+label = "Lecture 6 slides"
+href = "https://docs.google.com/presentation/d/1zCsu0vg8Hn77SFsO0XsappR9ctLMfq-XqjW5MsMXVPI/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Colab for Lecture 6"
+href = "https://colab.research.google.com/drive/10kgS937dl9YAyAMYua6iYrVz-8W0yl8_?usp=drive-slack"
+
+[[schedule]]
+date = "October 17, 2024"
+topic = "Segmentation"
+note = "Homework 2 due, October 18, 11:59pm"
+
+[[schedule.materials]]
+label = "Lecture 7 slides"
+href = "https://docs.google.com/presentation/d/1qy3kZ3a3pbMVx0MCKkqSsCkgSM7XRjX7z6954Jf6ZQo/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Colab for Lecture 7"
+href = "https://colab.research.google.com/drive/193iGdeHkO5FUasUd2n0A8KHagbyOcSx3?ouid=100773586740811093911&ts=671008c3&usp=drive-slack"
+
+[[schedule]]
+date = "October 24, 2024"
+topic = "Midterm exam (in class)"
+note = "Midterm Exam, Solution"
+
+[[schedule]]
+date = "October 31, 2024"
+topic = "Machine learning, optimization"
+note = "Project 2 out (Due Nov. 18, 11:59am)"
+
+[[schedule.materials]]
+label = "Lecture 8 slides"
+href = "https://docs.google.com/presentation/d/1MqYIYivbNHVK7slmx6Y2ZgLWrKyl78oQcbxr_qwJoKk/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Colab for Lecture 8"
+href = "https://colab.research.google.com/drive/1rvnHgjpkktCECuRo03S8AlxOKFtHsmYp?usp=drive-slack"
+
+[[schedule]]
+date = "November 7, 2024"
+topic = "Convolutional Neural Nets"
+note = "Homework 3 out, Nov. 8 (Due Nov 21,10:59am)"
+
+[[schedule.materials]]
+label = "Lecture 9 slides"
+href = "https://docs.google.com/presentation/d/1LAwAcnb13fhjDMb9EUGlI5Igj3OIm3zp_oZdDcvNPpM/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Deep-STORM"
+href = "https://docs.google.com/presentation/d/14k2VWyOcJ3yaGfvvV6FG2iBcU6UYL7BezC6lreJBZnw/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "3D CNNs"
+href = "https://docs.google.com/presentation/d/1KPkZTkd0xqV5oqz5UdeFwj4LBIJ4XoDjwgxEp0fBozk/edit?usp=sharing"
+
+[[schedule]]
+date = "November 14, 2024"
+topic = "Learning based recognition"
+note = "Project 2 due, November 18, 11:59am"
+
+[[schedule.materials]]
+label = "Lecture 10 slides"
+href = "https://docs.google.com/presentation/d/17k6_nvLuKRQ5dYK8Vjk-hH4P5kjuaA6rXlPzif5kNQ8/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "GradCAM"
+href = "https://docs.google.com/presentation/d/1gEC3t3ulssA-P7SMYj_om71KGjvb8zdyoA0L3s8mx6w/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "GradCAM Colab"
+href = "https://colab.research.google.com/drive/1TyIB0gcyQORfr-tBMer2Wq76o6c7ePra?usp=sharing"
+
+[[schedule]]
+date = "November 21, 2024"
+topic = "Motion models, depth estimation and optical flow"
+note = "Homework 3 due, November 21, 10:59am"
+
+[[schedule.materials]]
+label = "Lecture 11 slides"
+href = "https://docs.google.com/presentation/d/1kRrmd8HFSnWLLSOpYgKxSbi5X851IAAGbFjNWtxF96I/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "RAFT Paper Presentation"
+href = "https://docs.google.com/presentation/d/1hMdCDiyYHvb3mzL00GSApc2bp0YdHMcbqwaPmD3TeZU/edit?usp=sharing"
+
+[[schedule]]
+date = "November 28, 2024"
+topic = "THANKSGIVING BREAK (No class)"
+
+[[schedule]]
+date = "December 5, 2024"
+topic = "Learning based segmentation"
+note = "Project 3 due, December 6, 11:59pm"
+
+[[schedule.materials]]
+label = "Lecture 12 slides"
+href = "https://docs.google.com/presentation/d/1yANxumjZxfGbr8-mIzmNabBgmdH6aQGzg08FmTjCcmo/edit?usp=sharing"
+
+[[schedule]]
+date = "December 12, 2024"
+topic = "Final project presentations"
+note = "Video submission due December 12, 08:00am Write-up and code due December 19, 11:59pm"
+
+[[schedule.materials]]
+label = "Presentation Info"
+href = "https://docs.google.com/presentation/d/1E6seB3P4NYtiH4jlU0qLx6e1XndrY98HXgaCPJvHJAA/edit?usp=sharing"
