@@ -46,8 +46,6 @@ scripts/          sync_publications.py, check_publications.py,
 
 Components: `src/components/CoursePage.astro`. 
 
-Course schedules are stored in `src/data/course-schedules/<course>-<term>.toml`, including the archived offerings, and loaded through `src/lib/course-schedule.ts`. The rest of each course page stays in its `.astro` frontmatter.
-
 ## Data
 
 | File | Purpose |
@@ -61,7 +59,7 @@ Course schedules are stored in `src/data/course-schedules/<course>-<term>.toml`,
 Publication links resolve in this order: per-entry `url`, per-entry `doi`,
 title lookup in `dois.json`.
 
-Preprint policy is **1**: keep a preprint until a published version exists,
+Preprint policy is: keep a preprint until a published version exists,
 then remove the preprint row and show the published version. The
 removed titles are listed in `excludedTitles`.
 
