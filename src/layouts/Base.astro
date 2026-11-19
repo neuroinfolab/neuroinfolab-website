@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css';
-import { createHash } from 'node:crypto';
 import { base, url } from '../lib/url';
 
 interface Props {
@@ -11,21 +10,17 @@ interface Props {
 const { title, description } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 
-const locked = import.meta.env.PUBLIC_SITE_LOCKED === 'true';
-const passcode = import.meta.env.SITE_PASSWORD ?? '';
-const lockHash = locked && passcode ? createHash('sha256').update(passcode).digest('hex') : '';
-
 // The GitHub Pages project URL is a staging preview, not the public site. A
 // robots.txt under /neuroinfolab-website/ is ignored by crawlers (they only
 // read the origin root), so keep the preview out of search with a meta tag.
 const productionHosts = new Set(['neuroinformaticslab.com', 'www.neuroinformaticslab.com']);
 const siteHost = Astro.site?.hostname ?? '';
-const noindex = locked || (siteHost !== '' && !productionHosts.has(siteHost));
+const noindex = siteHost !== '' && !productionHosts.has(siteHost);
 const ogImage = new URL(`${base}/img/og/og-default.png`, Astro.site).href;
 ---
 
 <!doctype html>
-<html lang="en" data-theme="light" class:list={{ locked }}>
+<html lang="en" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -59,33 +54,10 @@ const ogImage = new URL(`${base}/img/og/og-default.png`, Astro.site).href;
     <meta name="twitter:image" content={ogImage} />
     <link rel="icon" href={url('/favicon.png?v=2')} type="image/png" sizes="512x512" />
     <link rel="apple-touch-icon" href={url('/apple-touch-icon.png?v=2')} />
-    {locked && (
-      <script is:inline>
-        try {
-          if (sessionStorage.getItem('lab-unlocked') === '1') {
-            document.documentElement.classList.remove('locked');
-          }
-        } catch (e) {}
-      </script>
-    )}
     <slot name="head" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
-
-    {locked && (
-      <div class="gate" id="gate">
-        <form class="gate-form" id="gate-form" data-hash={lockHash}>
-          <span class="label">Restricted</span>
-          <h1>Neuroinformatics Lab</h1>
-          <p>Enter the passcode to continue.</p>
-          <label class="label" for="code">Passcode</label>
-          <input id="code" name="code" type="password" autocomplete="current-password" required />
-          <button type="submit">Enter</button>
-          <p class="gate-error" id="gate-error" role="alert"></p>
-        </form>
-      </div>
-    )}
 
     <slot />
 
@@ -186,32 +158,6 @@ const ogImage = new URL(`${base}/img/og/og-default.png`, Astro.site).href;
         }
       });
 
-      const gateForm = document.getElementById('gate-form') as HTMLFormElement | null;
-      if (gateForm) {
-        const error = document.getElementById('gate-error');
-        gateForm.addEventListener('submit', async (event) => {
-          event.preventDefault();
-          const input = gateForm.querySelector<HTMLInputElement>('#code');
-          const value = input?.value ?? '';
-          const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(value));
-          const hex = Array.from(new Uint8Array(digest))
-            .map((b) => b.toString(16).padStart(2, '0'))
-            .join('');
-          if (hex === gateForm.dataset.hash) {
-            try {
-              sessionStorage.setItem('lab-unlocked', '1');
-            } catch (e) {}
-            document.documentElement.classList.remove('locked');
-            document.getElementById('gate')?.remove();
-          } else if (error) {
-            error.textContent = 'That passcode is not right.';
-            if (input) {
-              input.value = '';
-              input.focus();
-            }
-          }
-        });
-      }
     </script>
   </body>
 </html>

@@ -52,7 +52,6 @@ jobs:
 
       - name: Build site for screenshots
         env:
-          PUBLIC_SITE_LOCKED: 'false'
           SITE_URL: 'http://127.0.0.1:4321'
           SITE_BASE: '/'
         run: pnpm build

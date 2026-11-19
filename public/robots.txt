@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.neuroinformaticslab.com/sitemap-index.xml
+Sitemap: https://neuroinformaticslab.com/sitemap-index.xml

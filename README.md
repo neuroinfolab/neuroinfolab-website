@@ -19,7 +19,7 @@ public/
   media/          posters, Forecasting Motion GIF
   media/loops/    5 hero WebM loops + MP4 fallbacks
 src/
-  components/     Header, Footer, ProjectCard, CoursePage
+  components/     Header, Footer, CoursePage
   data/           site.json, course-schedules/*.toml, dois.json, nips.json,
                   featured-publications.json, publications.config.json
   layouts/        Base.astro
@@ -50,7 +50,7 @@ Components: `src/components/CoursePage.astro`.
 
 | File | Purpose |
 |---|---|
-| `src/data/site.json` | Publications, team, alumni, projects, funding objects, bio. |
+| `src/data/site.json` | Publications, team, alumni, funding objects, bio. |
 | `src/data/course-schedules/*.toml` | One schedule per course offering, current and archived: a `[[schedule]]` table per class meeting. |
 | `src/data/dois.json` | DOI matches keyed by title; per-entry `doi`/`url` fields in `site.json` |
 | `src/data/publications.config.json` | Locked refresh policy: strategy B, GitHub PR, monthly cron, preprint policy 1, exact DOI/title matching, excluded titles. |
@@ -91,8 +91,7 @@ pnpm publications:shots   # screenshot the publications list
 
 **A person**: drop a 4:5 JPEG in `public/img/team/` or `public/img/alumni/`,
 add the entry to `src/data/site.json`, and add the image mapping in
-`src/pages/index.astro`. Use `public/img/team/placeholder.svg` when a portrait
-is not available yet.
+`src/pages/index.astro`.
 
 **A course schedule**: edit the term's file in `src/data/course-schedules/`.
 To add a term, copy the closest existing TOML file, add a route under
@@ -109,7 +108,7 @@ pipeline will propose new papers for review; use
 ### Search indexing
 
 - **Production:** `public/robots.txt` allows all crawlers and points at
-  `https://www.neuroinformaticslab.com/sitemap-index.xml`.
+  `https://neuroinformaticslab.com/sitemap-index.xml`.
 - **Sitemap:** `@astrojs/sitemap` emits `sitemap-index.xml` plus shards at build
   time. The 404 page is excluded.
 - **Preview:** `Base.astro` emits `noindex, nofollow` whenever the build host is
