@@ -138,10 +138,10 @@ const alumniImg: Record<string, string> = {
   'Daniela Shoham': '/img/alumni/shoham.jpg',
   'Rosanne Cui': '/img/alumni/cui.jpg',
   'Anusha Kumar': '/img/alumni/kumar.jpg',
-  'Adel Sahuc': '/img/team/placeholder.svg',
-  'Refik Daghan Or': '/img/team/placeholder.svg',
-  'Wenqi Xu': '/img/team/placeholder.svg',
-  'Yixing Wang': '/img/team/placeholder.svg',
+  'Adel Sahuc': '/img/alumni/sahuc.jpg',
+  'Refik Daghan Or': '/img/alumni/or.jpg',
+  'Wenqi Xu': '/img/alumni/xu.jpg',
+  'Yixing Wang': '/img/alumni/wang.jpg',
 };
 
 const people: Record<string, string> = {
@@ -163,6 +163,18 @@ const people: Record<string, string> = {
   'William Zheng': '/img/team/william-zheng.jpg',
   'Sherlock & Toby the Basset Hounds': '/img/team/sherlock-toby.jpg',
 };
+
+// Alumni roles are stored as one JSON string. Split the "Presently ..." tail
+// onto its own line at render time so the source data stays easy to edit.
+const alumni = site.alumni.map((a) => {
+  const marker = ' - Presently ';
+  const at = a.role.indexOf(marker);
+  return {
+    ...a,
+    roleMain: at === -1 ? a.role : a.role.slice(0, at),
+    rolePresent: at === -1 ? null : a.role.slice(at + marker.length),
+  };
+});
 
 const motion = [
   {
@@ -389,7 +401,7 @@ const life = [
         <div class="alumni">
           <h3>Alumni</h3>
           <div class="alumni-grid">
-            {site.alumni.map((a) => (
+            {alumni.map((a) => (
               <div class="alum">
                 <div class="alum-media">
                   {alumniImg[a.name] ? (
@@ -409,8 +421,17 @@ const life = [
                     a.name
                   )}
                 </div>
-                <div class="alum-role">{a.role}</div>
-                {a.school && <div class="alum-role">{a.school}</div>}
+                <div class="alum-role">{a.roleMain}</div>
+                {a.rolePresent && (
+                  <div class="alum-role alum-role-present">
+                    <span class="alum-role-mark" aria-hidden="true">//</span> Presently {a.rolePresent}
+                  </div>
+                )}
+                {a.school && (
+                  <div class="alum-role alum-role-present">
+                    <span class="alum-role-mark" aria-hidden="true">//</span> Presently at {a.school}
+                  </div>
+                )}
               </div>
             ))}
           </div>

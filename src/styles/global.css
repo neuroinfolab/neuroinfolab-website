@@ -1488,6 +1488,16 @@ a.pub-title:hover {
   font-size: 0.76rem;
   line-height: 1.35;
   color: var(--muted-strong);
+  text-wrap: pretty;
+}
+
+.alum-role-present {
+  margin-top: 0.35rem;
+}
+
+.alum-role-mark {
+  margin-right: 0.35em;
+  color: var(--muted);
 }
 
 /* lab life */
