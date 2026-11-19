@@ -2044,3 +2044,53 @@ a.pub-title:hover {
     scroll-behavior: auto;
   }
 }
+
+/* ------------------------------------------------------------------
+   Inline links
+   ------------------------------------------------------------------ */
+/* Keep content links consistent: ink-colored with a real underline.
+   Navigation, buttons, social icons, and image links keep their UI style. */
+.course-intro a,
+.course-body a,
+.readings a,
+.course-info dd a,
+.course-person .meta a,
+.schedule .materials a,
+.course-foot a,
+.hero-apply a,
+.not-found-links a,
+.pub-feature-title a,
+a.pub-title,
+.person-name a,
+.alum-name a,
+.pi-links a,
+.funding a,
+.opening a,
+.footer-grid a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  border-bottom: 0;
+}
+
+.course-intro a:hover,
+.course-body a:hover,
+.readings a:hover,
+.course-info dd a:hover,
+.course-person .meta a:hover,
+.schedule .materials a:hover,
+.course-foot a:hover,
+.hero-apply a:hover,
+.not-found-links a:hover,
+.pub-feature-title a:hover,
+a.pub-title:hover,
+.person-name a:hover,
+.alum-name a:hover,
+.pi-links a:hover,
+.funding a:hover,
+.opening a:hover,
+.footer-grid a:hover {
+  color: var(--ink);
+  text-decoration-thickness: 2px;
+}
