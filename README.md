@@ -1,13 +1,7 @@
 # Neuroinformatics Lab site
 
-Astro 7, static output, no backend or runtime dependencies. Most content is
-JSON; the course schedules and readings live in the course page frontmatter.
 
-- **Preview:** https://pxndey.github.io/neuroinfolab-website/ (public — the Pages
-  workflow disables the passcode gate)
-- **Production:** https://www.neuroinformaticslab.com still points at the old
-  Squarespace site until the domain cutover.
-- **Repo:** https://github.com/pxndey/neuroinfolab-website
+Development Setup
 
 ```bash
 pnpm install
@@ -50,38 +44,25 @@ scripts/          sync_publications.py, check_publications.py,
 | `/computer-vision/fall-2024` | Archived Computer Vision schedule, Fall 2024 |
 | `/404` | Custom not-found page (emitted as `404.html`) |
 
-The course pages share `src/components/CoursePage.astro`. Course images,
-schedules, and readings are passed in from each page's frontmatter; archived
-schedules are kept in `src/data/course-archives.ts`.
+Components: `src/components/CoursePage.astro`. 
+
+Course images, schedules, and readings are passed in from each page's frontmatter; archived course schedules are kept in `src/data/course-archives.ts`.
 
 ## Data
 
 | File | Purpose |
 |---|---|
-| `src/data/site.json` | Curated baseline: 75 publications, team, alumni, projects, funding objects, PI bio. 15 entries carry a per-entry `doi`, 6 carry an official `url`, 3 carry an award `note`. |
-| `src/data/dois.json` | 72 DOI matches keyed by normalized title; per-entry `doi`/`url` fields in `site.json` win. |
-| `src/data/nips.json` | 7 NeurIPS papers. Two 2026 papers are merged into `site.json`; the third is excluded. |
+| `src/data/site.json` | Publications, team, alumni, projects, funding objects, bio. |
+| `src/data/dois.json` | DOI matches keyed by title; per-entry `doi`/`url` fields in `site.json` |
 | `src/data/publications.config.json` | Locked refresh policy: strategy B, GitHub PR, monthly cron, preprint policy 1, exact DOI/title matching, excluded titles. |
 | `src/data/featured-publications.json` | Curated top-K publication list, grouped by topic for the home page. Each entry points at an image in `public/img/pubs/`. |
 
 Publication links resolve in this order: per-entry `url`, per-entry `doi`,
-normalized-title lookup in `dois.json`. `10.52202/` (Curran Associates) is
-blocked in favor of the official NeurIPS page.
+title lookup in `dois.json`.
 
 Preprint policy is **1**: keep a preprint until a published version exists,
-then remove the preprint row and show the published version. The 2024
-*Alternative splicing* and 2019 *Neurocognitive and functional heterogeneity*
-preprints were removed under this policy, as were eight more on 2026-11-18
-(seven verified preprint/published pairs plus the *Exploiting correlations*
-bioRxiv, now a Neuron 2026 paper). Their published versions remain; the
+then remove the preprint row and show the published version. The
 removed titles are listed in `excludedTitles`.
-
-Venue labels are rendered as a **short label plus year** (`Neuron 2026`,
-`Nature Communications 2025`, `ICASSP 2023`). The full venue remains in the
-row tooltip.
-
-Five of the 75 entries have no link: conference abstracts, a dissertation, and
-the AABI Sinkhorn paper.
 
 ## Publications refresh
 
@@ -100,117 +81,34 @@ pnpm publications:shots   # screenshot the publications list
 - `publications-review/diff.md` — human-readable NEW / UPDATED / REPLACE / REMOVE / SKIPPED diff.
 - `publications-review/pr-body.md` — PR summary with screenshot placeholders.
 
-`publications:apply` refuses to run if `site.json` changed after the review was
-generated. It preserves team, alumni, projects, funding, and award notes.
-
-Sources: OpenAlex (PI works), SerpApi/Google Scholar (discovery), NeurIPS
-(`nips.json`), Europe PMC (bioRxiv/medRxiv preprints), and Crossref (exact-title
-DOI refresh). Matching is exact DOI first, then exact normalized title. There
-is no fuzzy title matching.
-
-### Monthly GitHub Action
-
-`.github/workflows/publications.yml` runs at `0 14 1 * *` (14:00 UTC on the
-first of each month) and on `workflow_dispatch`. It:
-
-1. Refreshes `nips.json`.
-2. Builds the review diff.
-3. Applies it to the `publications/monthly` branch.
-4. Audits every publication link.
-5. Builds the site and captures screenshots of the publication list.
-6. Opens or updates a PR.
-
-It does **not** auto-merge. Erdem Varol reviews the diff, screenshots, and DOI
-audit, then approves and merges. Repository branch protection on `main` must
-require that approval; the workflow cannot enforce reviewer identity.
-
-## Design tokens
-
-All in `src/styles/global.css`, first block:
-
-- Dark grey page `#101012`, ink `#f2f0eb`, violet accent `#b48cff`. Light mode
-  uses a warm off-white page with a deeper violet accent; the site starts in
-  light mode and remembers the toggle choice per browser, and crossfades themes
-  with the View Transitions API. The footer follows the theme and swaps a light
-  VIDA logo variant.
-- One system sans everywhere — Arial, with Helvetica and generic sans fallbacks.
-  No web fonts are loaded, including for captions and metadata.
-- Hairline borders on cards, portraits, and media only; no separator rules
-  between sections, no radius, no shadows.
-- Root font scales `18px → 24px` (`clamp(18px, 1vw, 24px)`); max content
-  width is 2080px, rising to 2400px at ≥2200px.
-- Header collapses to the MENU button at ≤1280px.
-
-The home page is built around a figure-led top-K publication list grouped by
-Connectomics and Transcriptomics, Neuroimaging, and Electrophysiology, followed
-by the full year-grouped archive, and a
-16:11 hero carousel: five 4s, 1280×720, 24fps WebM
-loops with MP4 fallbacks, dots, arrows, and a 7s auto-advance. Only the active
-video loads; the next is preloaded. `prefers-reduced-motion` keeps the poster
-static.
+`publications:apply` refuses to run if `site.json` changed after the review was generated. It preserves team, alumni, projects, funding, and award notes.
 
 ## Adding content
 
-**A featured publication** — add the paper to
+**A featured publication**: add the paper to
 `src/data/featured-publications.json`, put a square-ish figure in
 `public/img/pubs/`, and use a topic id from that file. The title must match
-`src/data/site.json` after punctuation normalization. The home page no longer
-renders the Projects section; project data remains in `site.json`.
+`src/data/site.json` after punctuation normalization. The home page no longer renders the Projects section
 
-**A person** — drop a 4:5 JPEG in `public/img/team/` or `public/img/alumni/`,
+**A person**: drop a 4:5 JPEG in `public/img/team/` or `public/img/alumni/`,
 add the entry to `src/data/site.json`, and add the image mapping in
 `src/pages/index.astro`. Use `public/img/team/placeholder.svg` when a portrait
 is not available yet.
 
-**A publication** — edit `src/data/site.json` directly. Add a per-entry `doi` or
+**A publication**: edit `src/data/site.json` directly. Add a per-entry `doi` or
 `url` when the title-keyed lookup is wrong or a better official link exists.
 Keep `note` short (Spotlight, Oral Presentation, Top 3% of papers). The monthly
 pipeline will propose new papers for review; use
 `src/data/publications.config.json` for titles that must never be imported.
 
-## Passcode gate
-
-The GitHub Pages build is **public**. The gate still exists for local previews:
-
-```bash
-# .env (gitignored)
-PUBLIC_SITE_LOCKED=true
-SITE_PASSWORD=<set this locally; never commit it>
-```
-
-`PUBLIC_SITE_LOCKED=false` builds plain pages. The password is never shipped —
-only its SHA-256 — and unlocking lasts for the browser session.
-
-**This is a deterrent, not real access control.** Static hosting serves the
-whole HTML to anyone who asks; the gate only hides it in the browser. For real
-protection put the site behind Cloudflare Access or Netlify password
-protection.
-
-## Deploy
-
-GitHub Actions → Pages. The workflow builds with
-`SITE_URL=https://pxndey.github.io` and `SITE_BASE=/neuroinfolab-website` for the
-project-page URL, and sets `PUBLIC_SITE_LOCKED=false`.
-
-For a custom domain, set `SITE_URL=https://www.neuroinformaticslab.com` and
-`SITE_BASE=/`, and add `public/CNAME` containing the domain before the first
-deploy. DNS needs the four `185.199.108–111.153` A records plus
-`www → pxndey.github.io`.
-
 ### Search indexing
 
-- **Production:** `public/robots.txt` allows all crawlers.
+- **Production:** `public/robots.txt` allows all crawlers and points at
+  `https://www.neuroinformaticslab.com/sitemap-index.xml`.
+- **Sitemap:** `@astrojs/sitemap` emits `sitemap-index.xml` plus shards at build
+  time. The 404 page is excluded.
 - **Preview:** `Base.astro` emits `noindex, nofollow` whenever the build host is
   not `neuroinformaticslab.com` or `www.neuroinformaticslab.com`, so the GitHub
   Pages project URL never competes with the real domain in search.
 - The meta tag, not `robots.txt`, is what excludes the preview: crawlers only
   read `robots.txt` from the origin root, not from `/neuroinfolab-website/`.
-- Do not add a `Sitemap:` line to `robots.txt` until a sitemap actually exists.
-
-## Known limitations
-
-- The monthly PR requires GitHub branch protection to enforce Erdem’s approval.
-- Five publications remain unlinked (see Data above).
-- There are no test, lint, or typecheck scripts; `pnpm build` is the only
-  automated check.
-- The UI backlog is closed by user decision; do not reopen it.

@@ -4,7 +4,7 @@
   "description": "The overarching research theme of this lab is investigating the genetic underpinnings of brain connectivity at the circuit level and the behavioral and pathological phenotypes they present in neuropsychiatric disorders. We will investigate the structural and functional connectivity of the brain on a macro-scale using clinical neuroimaging datasets and on a micro-scale using single-neuron resolution imaging and genomics datasets collected from small animal model systems. Deciphering the genetic correlates of brain connectivity in health and disease will have a broader impact in basic neuroscience and clinical research to better understand neuropathogenesis and enable the design of precision medicine treatments. PDF document with project details can be found here. Slide deck that covers broad lab policies is found here.",
   "pi": {
     "name": "Erdem Varol (PI)",
-    "bio": "I’m an assistant professor at the Department of Computer Science & Engineering at Tandon School of Engineering, NYU. I’m also a part of the VIDA center. Previously, I was a postdoc at the Department of Statistics, Zuckerman Institute, Columbia University with Liam Paninski. Before that, I did my Ph.D. at the Department of Electrical & Systems Engineering at the University of Pennsylvania under Christos Davatzikos. Whilst at Penn, I also received an A.M degree in Statistics from the Wharton School. I recently received the NIH/NIMH K99/R00 award in 2022. I’m originally from Ankara, Turkey and grew up in New York City. I have two basset hounds."
+    "bio": "I'm an assistant professor at the Department of Computer Science & Engineering at Tandon School of Engineering, NYU. I'm also a part of the VIDA center. Previously, I was a postdoc at the Department of Statistics, Zuckerman Institute, Columbia University with Liam Paninski. Before that, I did my Ph.D. at the Department of Electrical & Systems Engineering at the University of Pennsylvania under Christos Davatzikos. Whilst at Penn, I also received an A.M degree in Statistics from the Wharton School. I recently received the NIH/NIMH K99/R00 award in 2022. I'm originally from Ankara, Turkey and grew up in New York City. I have two basset hounds."
   },
   "team": [
     {
@@ -227,14 +227,14 @@
       "year": "2025",
       "title": "Predicting Functional Brain Connectivity with Context-Aware Deep Neural Networks",
       "authors": "A Ratzan, S Goel, J Wen, C Davatzikos, E Varol",
-      "venue": "NeurIPS 2025",
+      "venue": "NeurIPS 2025",
       "url": "https://papers.nips.cc/paper_files/paper/2025/hash/7f09298fd090c13c5583549d22ec1158-Abstract-Conference.html"
     },
     {
       "year": "2025",
       "title": "Self supervised learning for in vivo localization of microelectrode arrays using raw local field potential",
       "authors": "T He, M Patel, C Li, A Maslarova, M Vöröslakos, N Ramanathan, W Hung, G Buzsaki, E Varol",
-      "venue": "NeurIPS 2025",
+      "venue": "NeurIPS 2025",
       "url": "https://papers.nips.cc/paper_files/paper/2025/hash/b408053531ce6fd66a96bc3a86527bb9-Abstract-Conference.html"
     },
     {
@@ -306,7 +306,7 @@
       "year": "2023",
       "title": "Bypassing spike sorting: Density-based decoding using spike localization from dense multielectrode probes",
       "authors": "Y Zhang, T He, J Boussard, C Windolf, O Winter, E Trautmann, N Roth, ..., E Varol",
-      "venue": "NeurIPS 2023",
+      "venue": "NeurIPS 2023",
       "url": "https://papers.nips.cc/paper_files/paper/2023/hash/f499387f191d6be56e68966181095878-Abstract-Conference.html",
       "note": "Spotlight"
     },
@@ -391,7 +391,7 @@
       "year": "2021",
       "title": "Three-dimensional spike localization and improved motion correction for Neuropixels recordings",
       "authors": "J Boussard, E Varol, HD Lee, N Dethe, L Paninski",
-      "venue": "NeurIPS 2021",
+      "venue": "NeurIPS 2021",
       "url": "https://papers.nips.cc/paper_files/paper/2021/hash/b950ea26ca12daae142bd74dba4427c8-Abstract.html"
     },
     {
@@ -674,100 +674,6 @@
     {
       "text": "K99/R00 Award: Transcriptional basis of neural architectures (1K99MH128772-01A1) (2022-2027)",
       "url": "https://reporter.nih.gov/search/5NKlWhoBEUav-buDakkgCw/project-details/10525865"
-    }
-  ],
-  "projects": [
-    {
-      "title": "Spatiotemporal Integration of the Human Transcriptome and Connectome",
-      "desc": "A longstanding goal of systems neuroscience is to understand the molecular landscape underlying macro-scale brain structure and function. With increasing availability of diverse human neuroimaging and genomic datasets, there is now a unique opportunity to develop robust computational models to predict how gene expression influences neural connectivity across the adult lifespan and among clinical populations.",
-      "collab": [
-        "Junhao Wen",
-        "Christos Davatzikos"
-      ],
-      "poster": "/media/transcriptomics.jpg"
-    },
-    {
-      "title": "Genetic basis of the fruit fly connectome",
-      "desc": "We will use single-cell RNA sequencing data together with maps of brain connections from the fruit fly to study how gene activity relates to the way neurons are connected. Our goal is to create a computer-based method that can help predict and understand how synapses form and function.",
-      "collab": [
-        "Richard Mann",
-        "Himanshu Gupta"
-      ],
-      "poster": null
-    },
-    {
-      "title": "Connectivity and coactivity predicts cell-type in mouse hippocampus",
-      "desc": "Using paired transcriptional information and calcium activity, can we link cell type identity with connectivity information?",
-      "collab": [
-        "Losonczy Lab"
-      ],
-      "poster": "/media/invivo.jpg"
-    },
-    {
-      "title": "Seq2Connectome",
-      "desc": "Our goal is to predict the connectome of C. elegans from DNA sequence data. Because C. elegans is so well studied, we have a rich dataset upon which to build a computational model, which we hope to generalize to other organisms.",
-      "collab": [
-        "Arman Afrasiyabi",
-        "Alexis Weinreb"
-      ],
-      "poster": null
-    },
-    {
-      "title": "Disease gene classification using multi-species gene interaction network data",
-      "desc": "Our goal is to classify genes(represented as nodes in the graph) into disease association or non-disease association. There are set of nodes which are non-omim genes. By having done this we can study other genes which are at greater risk of being potentially associated with disease which are under studied and hence marked as non-disease genes.",
-      "collab": [
-        "Sandeep Wontakal"
-      ],
-      "poster": null
-    },
-    {
-      "title": "Multi-species blind localization of brain regions using local field potentials",
-      "desc": "In electrophysiology, precise in vivo localization of recording sites in deep brain structures is crucial for consistent targeting in multi-day recordings and accurate deep brain stimulation while current approaches are limited by either spatial or temporal resolution. Here we develop a learning-based automatic localizer to identify mice hippocampus sublayers from high-density extracellular recordings and apply our model to human chronic recordings.",
-      "collab": [
-        "Buzsaki Lab (Anna Maslarova, Mihály Vöröslakos)",
-        "Arman Afrasiyabi",
-        "Cole Hurwitz"
-      ],
-      "poster": null
-    },
-    {
-      "title": "Transcoding of voltage signal and hemodynamic response in human neuroimaging",
-      "desc": "Mobile non-invasive neuroimaging technologies such as electroencephalography (EEG) and functional Near-Infrared Spectroscopy (fNIRS) facilitate the recording of neural states in naturalistic settings. However, these modalities face significant resolution limitations. This work aims to denoise and up-resolve non-invasive BCI developing modality transcoding techniques of simultaneous EEG and fNIRS recordings.",
-      "collab": [
-        "Arman Afrasiyabi",
-        "Cole Hurwitz"
-      ],
-      "poster": null
-    },
-    {
-      "title": "Multimodal registration of in-vivo vs. ex-vivo cell populations using calcium imaging and spatial transcriptomics",
-      "desc": "The registration problem aims for precise mapping of cells integrating imaging from different modalities. The challenge arises from differences in scale, resolution, stability, tissue shrinkage and imaging at different angles in the brain.",
-      "collab": [
-        "Losonczy Lab"
-      ],
-      "poster": "/media/matching.jpg"
-    },
-    {
-      "title": "Voltage imaging event detection and clustering at subcellular resolution",
-      "desc": "Can we detect slow and fast spiking events at dendrites using voltage imaging?",
-      "collab": [
-        "Losonczy Lab"
-      ],
-      "poster": null
-    },
-    {
-      "title": "Whole-brain single-cell detection, identification and tracking of neurons in c. elegans during behavior",
-      "desc": "Can we develop high-throughput and robust tools to track, identify and extract the calcium activity for each neuron in the worm nervous system during behavior?",
-      "collab": [
-        "Donglai Wei"
-      ],
-      "poster": "/media/worm.jpg"
-    },
-    {
-      "title": "Connectome constrained Spiking Neural Networks",
-      "desc": "Can we train spiking neural networks whose connectivity or cell type specific intrinsic parameters are constrained by biological networks such as drosophila or mouse cortex? If we can show that connectome constrained SNN’s can be trained such that they faithfully recreate the internal dynamics of their target networks (e.g. a biological neural network), then we can treat the SNNs as a in-silico surrogate of a biological neural network in which perturbation experiments and other phenomena can be studied.",
-      "collab": [],
-      "poster": null
     }
   ]
 }
