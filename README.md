@@ -1,12 +1,13 @@
-# neuroinfolab-demo
+# Neuroinformatics Lab site
 
-The Neuroinformatics Lab site: Astro 7, static output, no backend or runtime
-dependencies. Most content is JSON; the course schedules and readings live in
-the course page frontmatter.
+Astro 7, static output, no backend or runtime dependencies. Most content is
+JSON; the course schedules and readings live in the course page frontmatter.
 
-**Live:** https://pxndey.github.io/neuroinfolab-website/ (public — the Pages
-workflow disables the passcode gate)
-**Repo:** https://github.com/pxndey/neuroinfolab-website
+- **Preview:** https://pxndey.github.io/neuroinfolab-website/ (public — the Pages
+  workflow disables the passcode gate)
+- **Production:** https://www.neuroinformaticslab.com still points at the old
+  Squarespace site until the domain cutover.
+- **Repo:** https://github.com/pxndey/neuroinfolab-website
 
 ```bash
 pnpm install
@@ -25,7 +26,8 @@ public/
   media/loops/    5 hero WebM loops + MP4 fallbacks
 src/
   components/     Header, Footer, ProjectCard, CoursePage
-  data/           site.json, dois.json, nips.json, publications.config.json
+  data/           site.json, course-archives.ts, dois.json, nips.json,
+                  featured-publications.json, publications.config.json
   layouts/        Base.astro
   lib/            url.ts
   pages/          index.astro, 404.astro, and term pages per course
@@ -69,7 +71,10 @@ blocked in favor of the official NeurIPS page.
 Preprint policy is **1**: keep a preprint until a published version exists,
 then remove the preprint row and show the published version. The 2024
 *Alternative splicing* and 2019 *Neurocognitive and functional heterogeneity*
-preprints were removed under this policy; their published versions remain.
+preprints were removed under this policy, as were eight more on 2026-11-18
+(seven verified preprint/published pairs plus the *Exploiting correlations*
+bioRxiv, now a Neuron 2026 paper). Their published versions remain; the
+removed titles are listed in `excludedTitles`.
 
 Venue labels are rendered as a **short label plus year** (`Neuron 2026`,
 `Nature Communications 2025`, `ICASSP 2023`). The full venue remains in the
@@ -132,8 +137,8 @@ All in `src/styles/global.css`, first block:
   No web fonts are loaded, including for captions and metadata.
 - Hairline borders on cards, portraits, and media only; no separator rules
   between sections, no radius, no shadows.
-- Animated line grid: 84px cells, 9s loop, disabled under reduce-motion.
-- Root font scales `17px → 22px`; max content width 2400px at ≥2200px.
+- Root font scales `18px → 24px` (`clamp(18px, 1vw, 24px)`); max content
+  width is 2080px, rising to 2400px at ≥2200px.
 - Header collapses to the MENU button at ≤1280px.
 
 The home page is built around a figure-led top-K publication list grouped by
@@ -202,11 +207,10 @@ deploy. DNS needs the four `185.199.108–111.153` A records plus
   read `robots.txt` from the origin root, not from `/neuroinfolab-website/`.
 - Do not add a `Sitemap:` line to `robots.txt` until a sitemap actually exists.
 
-
 ## Known limitations
 
 - The monthly PR requires GitHub branch protection to enforce Erdem’s approval.
-- Six publications remain unlinked (see Data above).
-- The 2023 *Neuroimaging-AI Endophenotypes* medRxiv entry has no confident DOI
-  match.
+- Five publications remain unlinked (see Data above).
+- There are no test, lint, or typecheck scripts; `pnpm build` is the only
+  automated check.
 - The UI backlog is closed by user decision; do not reopen it.
