@@ -197,6 +197,13 @@
   "publications": [
     {
       "year": "2026",
+      "title": "Exploiting correlations across trials and behavioral sessions to improve neural decoding",
+      "authors": "Y Zhang, H Lyu, C Hurwitz, S Wang, C Findling, Y Wang, F Hubert, A Pouget, E Varol, L Paninski",
+      "venue": "Neuron 114 (3), 536-551.e11",
+      "doi": "10.1016/j.neuron.2025.10.026"
+    },
+    {
+      "year": "2026",
       "title": "2P-NucTag: On-demand phototagging for molecular analysis of functionally identified cortical neurons",
       "authors": "J Shi, B Nutkovich, D Kushinsky, BY Rao, SA Herrlinger, E Tsivourakis, ..., E Varol",
       "venue": "Neuron",
@@ -234,7 +241,8 @@
       "year": "2025",
       "title": "Neuroimaging endophenotypes reveal underlying mechanisms and genetic factors contributing to progression and development of four brain disorders",
       "authors": "J Wen, I Skampardoni, YE Tian, Z Yang, Y Cui, G Erus, G Hwang, E Varol,...",
-      "venue": "Nature Biomedical Engineering, 1-18"
+      "venue": "Nature Biomedical Engineering, 1-18",
+      "doi": "10.1038/s41551-025-01412-w"
     },
     {
       "year": "2025",
@@ -283,15 +291,10 @@
     },
     {
       "year": "2024",
-      "title": "Exploiting correlations across trials and behavioral sessions to improve neural decoding",
-      "authors": "Y Zhang, H Lyu, C Hurwitz, S Wang, C Findling, F Hubert, A Pouget, ..., E Varol",
-      "venue": "bioRxiv"
-    },
-    {
-      "year": "2024",
       "title": "Genetic and clinical correlates of two neuroanatomical AI dimensions in the Alzheimer’s disease continuum",
       "authors": "J Wen, Z Yang, IM Nasrallah, Y Cui, G Erus, D Srinivasan, A Abdulkadir, ..., E Varol",
-      "venue": "Translational Psychiatry 14 (1), 420"
+      "venue": "Translational Psychiatry 14 (1), 420",
+      "doi": "10.1038/s41398-024-03121-5"
     },
     {
       "year": "2024",
@@ -312,12 +315,6 @@
       "title": "Modified Neuropixels probes for recording human neurophysiology in the operating room",
       "authors": "B Coughlin, W Muñoz, Y Kfir, MJ Young, D Meszéna, M Jamali, I Caprara, ..., E Varol",
       "venue": "Nature Protocols 18 (10), 2927-2953"
-    },
-    {
-      "year": "2023",
-      "title": "Neuroimaging-AI Endophenotypes of Brain Diseases in the General Population: Towards a Dimensional System of Vulnerability",
-      "authors": "J Wen, I Skampardoni, YE Tian, Z Yang, Y Cui, G Erus, G Hwang, E Varol,...",
-      "venue": "medRxiv"
     },
     {
       "year": "2023",
@@ -343,7 +340,8 @@
       "year": "2023",
       "title": "Assessment of neuroanatomical endophenotypes of autism spectrum disorder and association with characteristics of individuals with schizophrenia and the general population",
       "authors": "G Hwang, J Wen, S Sotardi, ES Brodkin, GB Chand, DB Dwyer, G Erus, ..., E Varol",
-      "venue": "JAMA Psychiatry 80 (5), 498-507"
+      "venue": "JAMA Psychiatry 80 (5), 498-507",
+      "doi": "10.1001/jamapsychiatry.2023.0409"
     },
     {
       "year": "2023",
@@ -359,23 +357,10 @@
     },
     {
       "year": "2022",
-      "title": "Genetic, clinical underpinnings of brain change along two neuroanatomical dimensions of clinically-defined Alzheimer’s disease",
-      "authors": "J Wen, Z Yang, IM Nasrallah, Y Cui, G Erus, D Srinivasan, A Abdulkadir, ..., E Varol",
-      "venue": "bioRxiv, 2022.09.16.508329",
-      "doi": "10.1101/2022.09.16.508329"
-    },
-    {
-      "year": "2022",
       "title": "Schizophrenia imaging signatures and their associations with cognition, psychopathology, and genetics in the general population",
       "authors": "GB Chand, P Singhal, DB Dwyer, J Wen, G Erus, J Doshi, D Srinivasan, ..., E Varol",
-      "venue": "American Journal of Psychiatry 179 (9), 650-660"
-    },
-    {
-      "year": "2022",
-      "title": "Three imaging endophenotypes characterize neuroanatomical heterogeneity of autism spectrum disorder",
-      "authors": "G Hwang, J Wen, S Sotardi, ES Brodkin, GB Chand, DB Dwyer, G Erus, ..., E Varol",
-      "venue": "medRxiv, 2022.06.17.22276543",
-      "doi": "10.1101/2022.06.17.22276543"
+      "venue": "American Journal of Psychiatry 179 (9), 650-660",
+      "doi": "10.1176/appi.ajp.21070686"
     },
     {
       "year": "2022",
@@ -388,12 +373,6 @@
       "title": "Characterizing heterogeneity in neuroimaging, cognition, clinical symptoms, and genetics among patients with late-life depression",
       "authors": "J Wen, CHY Fu, D Tosun, Y Veturi, Z Yang, A Abdulkadir, E Mamourian, ..., E Varol",
       "venue": "JAMA Psychiatry 79 (5), 464-474"
-    },
-    {
-      "year": "2022",
-      "title": "Two schizophrenia imaging signatures and their associations with cognition, psychopathology, and genetics in the general population",
-      "authors": "GB Chand, P Singhal, DB Dwyer, J Wen, G Erus, J Doshi, D Srinivasan, ..., E Varol",
-      "venue": "medRxiv, 2022.01.07.22268854"
     },
     {
       "year": "2022",
@@ -476,7 +455,8 @@
       "year": "2021",
       "title": "NeuroPAL: a multicolor atlas for Whole-Brain neuronal identification in C. elegans",
       "authors": "E Yemini, A Lin, A Nejatbakhsh, E Varol, R Sun, GE Mena, ADT Samuel,...",
-      "venue": "Cell 184 (1), 272-288. e11"
+      "venue": "Cell 184 (1), 272-288. e11",
+      "doi": "10.1016/j.cell.2020.12.012"
     },
     {
       "year": "2021",
@@ -494,7 +474,8 @@
       "year": "2020",
       "title": "Demixing Calcium Imaging Data in C. elegans via Deformable Non-negative Matrix Factorization",
       "authors": "A Nejatbakhsh, E Varol, E Yemini, V Venkatachalam, A Lin, ADT Samuel,...",
-      "venue": "International Conference on Medical Image Computing and Computer-Assisted …"
+      "venue": "International Conference on Medical Image Computing and Computer-Assisted …",
+      "doi": "10.1007/978-3-030-59722-1_2"
     },
     {
       "year": "2020",
@@ -513,12 +494,6 @@
       "title": "Unique homeobox codes delineate all the neuron classes of C. elegans",
       "authors": "MB Reilly, C Cros, E Varol, E Yemini, O Hobert",
       "venue": "Nature 584 (7822), 595-601"
-    },
-    {
-      "year": "2020",
-      "title": "Extracting neural signals from semi-immobilized animals with deformable non-negative matrix factorization",
-      "authors": "A Nejatbakhsh, E Varol, E Yemini, V Venkatachalam, A Lin, ADT Samuel,...",
-      "venue": "bioRxiv, 2020.07.07.192120"
     },
     {
       "year": "2020",
@@ -575,12 +550,6 @@
       "venue": "Symposium on Advances in Approximate Bayesian Inference, 1-9"
     },
     {
-      "year": "2020",
-      "title": "NeuroPAL: a neuronal polychromatic atlas of landmarks for whole-brain imaging in C. elegans",
-      "authors": "E Yemini, A Lin, A Nejatbakhsh, E Varol, R Sun, GE Mena, ADT Samuel,...",
-      "venue": "bioRxiv, 676312"
-    },
-    {
       "year": "2019",
       "title": "Temporal Wasserstein non-negative matrix factorization for non-rigid motion segmentation and spatiotemporal deconvolution",
       "authors": "E Varol, A Nejatbakhsh, C McGrory",
@@ -591,13 +560,6 @@
       "title": "T195. Neuroanatomical heterogeneity of schizophrenia quantified via semi-supervised machine learning reveals two distinct subtypes: Results from the PHENOM consortium",
       "authors": "GB Chand, DB Dwyer, G Erus, A Sotiras, E Varol, D Srinivasan, RC Gur,...",
       "venue": "Biological Psychiatry 85 (10), S205-S206"
-    },
-    {
-      "year": "2019",
-      "title": "Expression profiling of the mature C. elegans nervous system by single-cell RNA-sequencing",
-      "authors": "SR Taylor, G Santpere, M Reilly, L Glenwinkel, A Poff, R McWhirter, C Xu,...",
-      "venue": "bioRxiv, 737577",
-      "doi": "10.1101/737577"
     },
     {
       "year": "2018",

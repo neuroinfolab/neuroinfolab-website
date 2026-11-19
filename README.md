@@ -56,7 +56,7 @@ schedules are kept in `src/data/course-archives.ts`.
 
 | File | Purpose |
 |---|---|
-| `src/data/site.json` | Curated baseline: 82 publications, team, alumni, projects, funding objects, PI bio. 11 entries carry a per-entry `doi`, 6 carry an official `url`, 3 carry an award `note`. |
+| `src/data/site.json` | Curated baseline: 75 publications, team, alumni, projects, funding objects, PI bio. 15 entries carry a per-entry `doi`, 6 carry an official `url`, 3 carry an award `note`. |
 | `src/data/dois.json` | 72 DOI matches keyed by normalized title; per-entry `doi`/`url` fields in `site.json` win. |
 | `src/data/nips.json` | 7 NeurIPS papers. Two 2026 papers are merged into `site.json`; the third is excluded. |
 | `src/data/publications.config.json` | Locked refresh policy: strategy B, GitHub PR, monthly cron, preprint policy 1, exact DOI/title matching, excluded titles. |
@@ -75,8 +75,8 @@ Venue labels are rendered as a **short label plus year** (`Neuron 2026`,
 `Nature Communications 2025`, `ICASSP 2023`). The full venue remains in the
 row tooltip.
 
-Six of the 82 entries have no link: conference abstracts, a dissertation, the
-AABI Sinkhorn paper, and one medRxiv preprint without a confident DOI match.
+Five of the 75 entries have no link: conference abstracts, a dissertation, and
+the AABI Sinkhorn paper.
 
 ## Publications refresh
 

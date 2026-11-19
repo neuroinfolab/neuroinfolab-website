@@ -17,6 +17,15 @@
     "scholar": true
   },
   "excludedTitles": [
-    "How Data Augmentation Shapes Neural Representations"
+    "How Data Augmentation Shapes Neural Representations",
+    "NeuroPAL: a neuronal polychromatic atlas of landmarks for whole-brain imaging in C. elegans",
+    "Expression profiling of the mature C. elegans nervous system by single-cell RNA-sequencing",
+    "Extracting neural signals from semi-immobilized animals with deformable non-negative matrix factorization",
+    "Two schizophrenia imaging signatures and their associations with cognition, psychopathology, and genetics in the general population",
+    "Three imaging endophenotypes characterize neuroanatomical heterogeneity of autism spectrum disorder",
+    "Genetic, clinical underpinnings of brain change along two neuroanatomical dimensions of clinically-defined Alzheimer’s disease",
+    "Neuroimaging-AI Endophenotypes of Brain Diseases in the General Population: Towards a Dimensional System of Vulnerability",
+    "Exploiting correlations across trials and behavioral sessions to improve neural decoding",
+    "Genetic, clinical underpinnings of subtle early brain change along Alzheimer's dimensions"
   ]
 }
