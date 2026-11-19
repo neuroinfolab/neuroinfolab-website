@@ -1,0 +1,183 @@
+# Neuroinformatics — Spring 2026 schedule
+# Each [[schedule]] table is one class meeting; [[schedule.materials]] is one link.
+
+[[schedule]]
+date = "January 20, 2026"
+topic = "Intro and survey of topics"
+
+[[schedule.materials]]
+label = "Lecture 1"
+href = "https://docs.google.com/presentation/d/1KhA3jOgpjHK1VQSh8cB2gJP7lomXcWtvSigTjJxk9U4/edit?slide=id.p#slide=id.p"
+
+[[schedule]]
+date = "January 27, 2026"
+topic = "Neuroimaging (Technologies)"
+
+[[schedule.materials]]
+label = "Lecture 2"
+href = "https://docs.google.com/presentation/d/1_vO3enXKw1gEXSVXXJztlgzjbu5aorPNbhYfYH044nM/edit?pli=1&slide=id.p#slide=id.p"
+
+[[schedule.materials]]
+label = "Colab 2"
+href = "https://colab.research.google.com/drive/1rPv0AZdp2K_16GBreGyY154-MIRO-5FN?usp=sharing"
+
+[[schedule]]
+date = "February 3, 2026"
+topic = "Neuroimaging (Analysis pipelines)"
+
+[[schedule.materials]]
+label = "Lecture 3"
+href = "https://docs.google.com/presentation/d/1EMytmrDXBwkOdGfZkcFkxMD_Lbny2Lry5wPk-sa78AY/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Colab 3"
+href = "https://colab.research.google.com/drive/18D2hryK1-CLQ-R2_YU1zvw5ZFcYHAyJc?usp=sharing"
+
+[[schedule]]
+date = "February 10, 2026"
+topic = "Machine learning for Neuroimaging"
+
+[[schedule.materials]]
+label = "Lecture 4"
+href = "https://docs.google.com/presentation/d/1U5lQdTKR7sz-JlTBMdQ-KJ7WR-ZNLK8XkPV9_GIRw_w/edit?slide=id.g333d3a6744f_0_180#slide=id.g333d3a6744f_0_180"
+
+[[schedule.materials]]
+label = "Colab 4"
+href = "https://colab.research.google.com/drive/1GRUdWB2Eh29AKRZsqk-wab1qGAtf78pl#scrollTo=koVFCo1bixEu"
+
+[[schedule]]
+date = "February 17, 2026"
+topic = "LEGISLATIVE DAY (No Class)"
+note = "Project 1 Phase 1 Due"
+
+[[schedule]]
+date = "February 24, 2026"
+topic = "Electrophysiology"
+note = "Project 1 Phase 2 Due"
+
+[[schedule.materials]]
+label = "Lecture 5"
+href = "https://docs.google.com/presentation/d/1cij8d53RdOQFOaZYAAxO8Q7waLfRddLo93yqMJc7TJE/edit?slide=id.p#slide=id.p"
+
+[[schedule.materials]]
+label = "Colab 5"
+href = "https://colab.research.google.com/drive/1J2BBlKPnEZmtMW3OF3r7n3gKmxbVzxJs?usp=sharing"
+
+[[schedule]]
+date = "March 3, 2026"
+topic = "Spike localization and drift correction"
+note = "Project 1 Phase 2 Due"
+
+[[schedule.materials]]
+label = "Lecture 6"
+href = "https://docs.google.com/presentation/d/1SFraFgs9MyyUQuTeqAXONHAACK5Xz47f7ogYBWbiQNw/edit?slide=id.g3cc4aa379f6_0_92#slide=id.g3cc4aa379f6_0_92"
+
+[[schedule.materials]]
+label = "Colab 6"
+href = "https://colab.research.google.com/drive/1R2-wiVGWLNUy8Pl5BEOnWKQChbA-pjlD?usp=sharing"
+
+[[schedule]]
+date = "March 10, 2026"
+topic = "Electrophysiology Foundation Models"
+note = "Project 2 Phase 1 Due"
+
+[[schedule.materials]]
+label = "Lecture 7"
+href = "https://docs.google.com/presentation/d/1ashkxpPoTfrUOEbUKuIQwC0ENtlE3QtA1UBslZOSwMI/edit?slide=id.p#slide=id.p"
+
+[[schedule.materials]]
+label = "Colab 7"
+href = "https://colab.research.google.com/drive/1rALl8ttP76_LbAGTofjTYg4FTkzJna7z?usp=sharing"
+
+[[schedule]]
+date = "March 17, 2026"
+topic = "Spring Break"
+
+[[schedule]]
+date = "March 24, 2026"
+topic = "Neural Decoding"
+
+[[schedule.materials]]
+label = "Lecture 8"
+href = "https://docs.google.com/presentation/d/1BW9y7GHYeesu9suV8THq-xS52DbLl8SjPdowk7VPRXs/edit?slide=id.p#slide=id.p"
+
+[[schedule.materials]]
+label = "Colab 8"
+href = "https://colab.research.google.com/drive/1UXI5D3Uchumoqv49KLl9cOeehdBsnW_v?usp=sharing"
+
+[[schedule]]
+date = "March 31, 2026"
+topic = "Spiking Neural Networks/Spiking Models"
+note = "Project 2 Phase 2 Due"
+
+[[schedule.materials]]
+label = "Lecture 9"
+href = "https://docs.google.com/presentation/d/1qoHjWWXg5fXH7bpVC_Vb31gSorGime2hh0uUMATXlJk/edit?slide=id.p#slide=id.p"
+
+[[schedule.materials]]
+label = "Colab 9"
+href = "https://colab.research.google.com/drive/1O75SCcZnSnFA7zb6xiyxBg_BGHg2HfiE#scrollTo=4KZVJsrDqyO0"
+
+[[schedule]]
+date = "April 7, 2026"
+topic = "Microscopy and Transcriptomics: Theoretical"
+
+[[schedule.materials]]
+label = "Lecture 10"
+href = "https://docs.google.com/presentation/d/1kwlZvqFR-UgCTiw-2dCrDdsSmreDo23rJXlCydKNJ4Y/edit?slide=id.p#slide=id.p"
+
+[[schedule.materials]]
+label = "Colab 9 (SNNs)"
+href = "https://colab.research.google.com/drive/1O75SCcZnSnFA7zb6xiyxBg_BGHg2HfiE#scrollTo=4KZVJsrDqyO0"
+
+[[schedule]]
+date = "April 14, 2026"
+topic = "Guest Lecture: Prof. Robert Kreuger, Biomedical Data Visualization"
+
+[[schedule.materials]]
+label = "Lecture 11"
+href = "https://docs.google.com/presentation/d/1bDhwNXGhzpvlHxl6t68NYJGI0lPJDxLpk6MIzz5XQe0/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Colab 10/11"
+href = "https://colab.research.google.com/drive/12bkBNGr6QnsIzgDHBLFkPs0KTCTfBL5O?usp=sharing"
+
+[[schedule.materials]]
+label = "Lecture for InfoViz"
+href = "https://docs.google.com/presentation/d/1D6_dF1seeMnYj40PC5c0mhWUpR_x6TEITVghRd8Izns/edit?usp=sharing"
+
+[[schedule]]
+date = "April 21, 2026"
+topic = "Microscopy and Transcriptomics: Data Collection and Preprocessing"
+
+[[schedule.materials]]
+label = "Lecture 12"
+href = "https://docs.google.com/presentation/d/1mIPwuTeO994iavAHlO4lygCRnyO0fM1voyaYwPZUAls/edit?slide=id.p#slide=id.p"
+
+[[schedule.materials]]
+label = "Colab 12"
+href = "https://colab.research.google.com/drive/1gRF52pBSfczhkCrLd25A-5RBxy9_Vllf"
+
+[[schedule]]
+date = "April 28, 2026"
+topic = "Microscopy and Transcriptomics: Modelling"
+
+[[schedule.materials]]
+label = "Lecture 13"
+href = "https://docs.google.com/presentation/d/1k_YxqMtM_sBNUYQG9k-qroq8kuIl74HWFHjwZurZPPQ/edit?slide=id.p#slide=id.p"
+
+[[schedule.materials]]
+label = "Colab 13"
+href = "https://colab.research.google.com/drive/1bQN7aCKWbEP5TEsimP-MkKujuS028a_J?usp=sharing"
+
+[[schedule]]
+date = "May 5, 2026"
+topic = "Guest Lecture: Junhao (Hao) Wen"
+
+[[schedule.materials]]
+label = "Awards and Logistics"
+href = "https://docs.google.com/presentation/d/1Eql6bO0AHsWUyPYEgMJEfYCR-rcAxA6tz8l38a01icQ/edit?slide=id.p#slide=id.p"
+
+[[schedule.materials]]
+label = "Guest Lecture"
+href = "https://drive.google.com/file/d/1P2NWt9DisLkWXOOo1ZlYAP0mW6ESdktv/view?usp=sharing"

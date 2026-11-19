@@ -1,0 +1,150 @@
+# Computer Vision — Fall 2026 schedule
+# Each [[schedule]] table is one class meeting; [[schedule.materials]] is one link.
+
+[[schedule]]
+date = "September 3, 2026"
+topic = "Intro and survey of topics, Image Formation, Filtering and Edge Detection"
+note = "First Project Released"
+
+[[schedule.materials]]
+label = "Lecture 1"
+href = "https://docs.google.com/presentation/d/1QqLBZQEinWhBwA1Lfdo5ESZ_pzfZgb2GBui3gN_pS8s/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Codelab 1"
+href = "https://colab.research.google.com/drive/1iwHWYhxoqYqpPvAVtUu678L-HjjzyWOD?usp=sharing"
+
+[[schedule.materials]]
+label = "Python Tutorial"
+href = "https://www.codecademy.com/learn/learn-python-3"
+
+[[schedule.materials]]
+label = "Google Colab Setup"
+href = "https://cs231n.github.io/setup-instructions/#working-remotely-on-google-colaboratory"
+
+[[schedule]]
+date = "September 10, 2026"
+topic = "Feature Detection & matching"
+
+[[schedule.materials]]
+label = "Lecture 2"
+href = "https://docs.google.com/presentation/d/19TdNzejfe3PpJYfbcG9a0kmWNXxPL6_6k_cqTMDyyfw/edit?slide=id.p#slide=id.p"
+
+[[schedule.materials]]
+label = "Codelab 2"
+href = "https://colab.research.google.com/drive/1cs0AQcsV_wncEMHGLDOyC8uv54PlpaTw?usp=sharing"
+
+[[schedule]]
+date = "September 17, 2026"
+topic = "Image alignment"
+
+[[schedule.materials]]
+label = "Lecture 3"
+href = "https://docs.google.com/presentation/d/1kJ7DZJuCqoZz66GTtbRt0dyjHcvJ06EjJxsXXUNfSoo/edit?slide=id.p#slide=id.p"
+
+[[schedule.materials]]
+label = "Codelab 3"
+href = "https://colab.research.google.com/drive/1L4wovxjgCWbDHUThAdSR7BdzLh4QlvX3?authuser=1#scrollTo=9f90f725"
+
+[[schedule]]
+date = "September 24, 2026"
+topic = "Segmentation"
+note = "Second Project Released, First Project due"
+
+[[schedule.materials]]
+label = "Lecture 4"
+href = "https://docs.google.com/presentation/d/1m9_cxjXtEzXbz5Ac0yZ-pZIghMu8do2HMOXn6doDxOo/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Codelab 4"
+href = "https://colab.research.google.com/drive/1m7jmMHQI5DsTv0zPJlkuCKp7pKHa1cfJ?usp=sharing"
+
+[[schedule]]
+date = "October 1, 2026"
+topic = "Machine Learning, Backprop with MLP, Neural Networks"
+
+[[schedule.materials]]
+label = "Lecture 5"
+href = "https://docs.google.com/presentation/d/1REdoDn_LeLHpYYIw7ZqaiM-_aFaG_1J2avAtDH_tEJw/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Codelab 5"
+href = "https://colab.research.google.com/drive/19NBSibp1WSTbe6DukSnnvft5fa5JzifM?usp=sharing"
+
+[[schedule]]
+date = "October 8, 2026"
+topic = "Convolutional Neural Networks; YOLO"
+note = "Second Project due"
+
+[[schedule.materials]]
+label = "Lecture 6"
+href = "https://docs.google.com/presentation/d/1sVrDwTKCRNbQX-TnOIkxX9ecUWWu3bxIIFzJNfDMwq4/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Codelab 6"
+href = "https://colab.research.google.com/drive/1mDnNDmG2x8omopUl0x_gU61trM0Buqwu?usp=sharing"
+
+[[schedule]]
+date = "October 15, 2026"
+topic = "Midterm"
+note = "Midterm"
+
+[[schedule]]
+date = "October 22, 2026"
+topic = "Motion models, depth estimation and optical flow"
+note = "Third Project Released"
+
+[[schedule.materials]]
+label = "Lecture 7"
+href = "https://docs.google.com/presentation/d/1ItHB0R1R0p9Xrhr94yMhyl-KIppQbWh4H-23Ln60aRw/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Codelab 7"
+href = "https://colab.research.google.com/drive/13HNiSFHrwkZYTyMA62o9XhY3AGIf0h_-?usp=sharing&authuser=1"
+
+[[schedule]]
+date = "October 29, 2026"
+topic = "Self Supervised Learning, CLIP Embeddings"
+
+[[schedule.materials]]
+label = "Lecture 8"
+href = "https://docs.google.com/presentation/d/1-2d3CCVQX_l0dv9e9KbI9efkKe_2-UqrHfH0cZ2wqB4/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Codelab 8"
+href = "https://colab.research.google.com/drive/1ce3um-2uez42_9asRF5OMG_UIkiFAsny?usp=sharing"
+
+[[schedule]]
+date = "November 5, 2026"
+topic = "Attention Mechanism, Vision Transformer"
+note = "Fourth Project Released, Third Project due"
+
+[[schedule.materials]]
+label = "Lecture 9"
+href = "https://docs.google.com/presentation/d/1XEC-DXqqvSTzxfPO6KSD7eLSZMsdFjHeNaK3C23nioo/edit?slide=id.h3b1c6aa5f9aa52b8_2_0#slide=id.h3b1c6aa5f9aa52b8_2_0"
+
+[[schedule.materials]]
+label = "Codelab 9"
+href = "https://drive.google.com/file/d/1yY-NDTth5P7Th2Pu338A72vfwnEfNIQm/view?usp=sharing"
+
+[[schedule]]
+date = "November 12, 2026"
+topic = "Structure from Motion"
+
+[[schedule]]
+date = "November 19, 2026"
+topic = "Gaussian Splatting"
+note = "Final Project Released, Fourth Project due"
+
+[[schedule]]
+date = "November 26, 2026"
+topic = "THANKSGIVING"
+
+[[schedule]]
+date = "December 3, 2026"
+topic = "Guest Lecture: Neel Dey"
+
+[[schedule]]
+date = "December 10, 2026"
+topic = "Vision Language Models"
+note = "Final Project Due"

@@ -1,8 +1,85 @@
 ---
 import CoursePage from '../../components/CoursePage.astro';
-import { getCourse } from '../../lib/course';
+import { getSchedule } from '../../lib/course-schedule';
 
-const course = getCourse('neuroinformatics-spring-2025');
+const intro = [
+  'Course theme: Chaos Circuitry.',
+  'This is a Ph.D.-level topics course covering topics on modeling, signal processing as well as database management of neuroscience data. Students from statistics, neuroscience, and engineering are all welcome to attend. Neuroscience background is not required but self-motivated interest in neuroscience is highly recommended.',
+  'Advanced undergraduates may enroll upon permission from instructor.',
+];
+
+const schedule = getSchedule('neuroinformatics-spring-2025');
+
 ---
 
-<CoursePage {...course} />
+<CoursePage
+  title="Neuroinformatics"
+  code="CS-GY 9223 / CS-UY 3943"
+  term="Spring 2025 (archive)"
+  image={{
+    src: '/img/courses/neuroinformatics.jpg',
+    srcSmall: '/img/courses/neuroinformatics-sm.jpg',
+    webp: '/img/courses/neuroinformatics.webp',
+    webpSmall: '/img/courses/neuroinformatics-sm.webp',
+    alt: 'Fluorescence microscopy of neural tissue labelled in cyan and gold',
+    caption: 'Photo: Yusha Sun and Xin Wang, University of Pennsylvania',
+    creditHref: 'https://braininitiative.nih.gov/news-events/brain-initiative-photo-and-video-contest',
+  }}
+  intro={intro}
+  info={[
+    { label: 'Instructor', text: 'Prof. Erdem Varol' },
+    { label: 'Email', text: '', links: [{ label: 'ev2240@nyu.edu', href: 'mailto:ev2240@nyu.edu' }] },
+    { label: 'Time', text: 'Tuesdays 2pm-4:30pm' },
+    { label: 'Place', text: '6 MetroTech Center, Room 775 B' },
+    {
+      label: 'Slack',
+      text: 'neuroinfoclass.slack.com',
+      href: 'https://neuroinfoclass.slack.com',
+    },
+  ]}
+  team={[
+    {
+      role: 'Instructor',
+      name: 'Erdem Varol',
+      email: 'ev2240@nyu.edu',
+      image: '/img/team/varol.jpg',
+    },
+    {
+      role: 'TA',
+      name: 'Rishabh Raj',
+      email: 'rr4574@nyu.edu',
+      office: 'Office hours: Mondays 2-3pm on Zoom',
+      image: '/img/alumni/raj.jpg',
+    },
+    {
+      role: 'TA',
+      name: 'Malhar Patel',
+      email: 'mkp6112@nyu.edu',
+      office: 'Office hours: Fridays 1-2pm on Zoom',
+      image: '/img/alumni/patel.jpg',
+    },
+  ]}
+  sections={[
+    {
+      title: 'Course goal',
+      paragraphs: [
+        'We will introduce a number of advanced machine learning and computer vision tools relevant in neuroscience. Each technique will be illustrated via application to problems in neuroscience. We will cover topics including 1) computational models of the nervous system function and structure across several species, 2) development of computer vision and signal processing tools for analyzing neuroscience data and 3) tools and databases for management and sharing of large scale neural data.',
+      ],
+    },
+    {
+      title: 'Prerequisites',
+      paragraphs: [
+        "A good working knowledge of basic statistical concepts such as likelihood, Bayes' rule, Gaussian random vectors and linear-algebraic concepts such as regression and principal components analysis. Coding experience in Python, Matlab and/or R is necessary for course projects.",
+      ],
+    },
+    {
+      title: 'Evaluation',
+      paragraphs: [
+        'Final grades were based on class participation (20%), a midterm project (30%), and a final project (50%). Projects could involve either the implementation and justification of a novel analysis technique, or a standard analysis applied to a novel data set.',
+      ],
+    },
+  ]}
+  schedule={schedule}
+  readings={[]}
+  previous={{ label: 'Spring 2024', href: '/neuroinformatics/spring-2024' }}
+/>

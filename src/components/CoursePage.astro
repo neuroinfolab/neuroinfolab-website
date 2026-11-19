@@ -3,15 +3,58 @@ import Base from '../layouts/Base.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { url } from '../lib/url';
-import type {
-  CourseImage,
-  CourseInfo,
-  CourseLink,
-  CoursePerson,
-  CourseRow,
-  CourseSection,
-  ReadingGroup,
-} from '../lib/course';
+
+export interface CourseLink {
+  label: string;
+  href: string;
+}
+
+export interface CourseInfo {
+  label: string;
+  text: string;
+  href?: string;
+  links?: CourseLink[];
+}
+
+export interface CoursePerson {
+  role: string;
+  name: string;
+  email?: string;
+  office?: string;
+  officeAfter?: string;
+  image?: string;
+  links?: CourseLink[];
+}
+
+export interface CourseRow {
+  date: string;
+  topic: string;
+  materials?: CourseLink[];
+  note?: string;
+}
+
+export interface ReadingGroup {
+  title: string;
+  items: Array<{ text: string; href?: string }>;
+}
+
+export interface CourseSection {
+  title: string;
+  paragraphs: string[];
+  links?: CourseLink[];
+  list?: string[];
+}
+
+interface CourseImage {
+  src: string;
+  srcSmall?: string;
+  webp?: string;
+  webpSmall?: string;
+  alt: string;
+  caption?: string;
+  creditHref?: string;
+  tone?: 'light';
+}
 
 interface Props {
   title: string;

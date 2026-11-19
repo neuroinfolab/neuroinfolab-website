@@ -1,8 +1,91 @@
 ---
 import CoursePage from '../../components/CoursePage.astro';
-import { getCourse } from '../../lib/course';
+import { getSchedule } from '../../lib/course-schedule';
 
-const course = getCourse('computer-vision-fall-2025');
+const intro = [
+  'An important goal of signal processing and artificial intelligence (AI) is to equip computers with the capability of interpreting visual inputs. Computer vision is an area that deals with the construction of explicit, meaningful measurements and descriptions of physical objects from images. It includes many techniques from image processing, pattern recognition, geometric modeling, cognitive processing, and machine and deep learning. This course explores the core concepts and practical techniques of image processing and computer vision at an intermediate level of depth and application.',
+  'This is a graduate level course requiring working knowledge of linear algebra, data structures and proficiency in programming (python). Advanced undergraduates may enroll upon permission from instructor.',
+];
+
+const schedule = getSchedule('computer-vision-fall-2025');
+
 ---
 
-<CoursePage {...course} />
+<CoursePage
+  title="Computer Vision"
+  code="CS-GY 6643"
+  term="Fall 2025 (archive)"
+  image={{
+    src: '/img/courses/computer-vision-archive.jpg',
+    srcSmall: '/img/courses/computer-vision-archive-sm.jpg',
+    webp: '/img/courses/computer-vision-archive.webp',
+    webpSmall: '/img/courses/computer-vision-archive-sm.webp',
+    alt: 'A cat with bounding boxes labelling its head, ears, eyes, and nose',
+    tone: 'light',
+  }}
+  intro={intro}
+  info={[
+    { label: 'Instructor', text: 'Prof. Erdem Varol' },
+    { label: 'Email', text: '', links: [{ label: 'ev2240@nyu.edu', href: 'mailto:ev2240@nyu.edu' }] },
+    { label: 'Time', text: 'Thursdays 11am-1:30pm' },
+    { label: 'Place', text: 'Room 202, 370 Jay St' },
+    {
+      label: 'Slack',
+      text: 'nyucomputervision.slack.com',
+      href: 'https://nyucomputervision.slack.com',
+    },
+  ]}
+  team={[
+    {
+      role: 'Instructor',
+      name: 'Erdem Varol',
+      email: 'ev2240@nyu.edu',
+      image: '/img/team/varol.jpg',
+    },
+    {
+      role: 'TA',
+      name: 'Visweswar Sirish Parupudi',
+      email: 'vsp7230@nyu.edu',
+      office: 'Office hours: Thursday 1-5pm in-person, 4-5pm on Zoom',
+      image: '/img/team/parupudi.jpg',
+    },
+    {
+      role: 'TA',
+      name: 'Subhrajit Dey',
+      email: 'sd5963@nyu.edu',
+      office: 'Office hours: Wednesday 1-2pm on Zoom',
+      image: '/img/team/dey.jpg',
+    },
+    {
+      role: 'TA',
+      name: 'Nalini Ramanathan',
+      email: 'nar8991@nyu.edu',
+      office: 'Office hours: Mondays 2-3pm on Zoom',
+      image: '/img/team/ramanathan.jpg',
+    },
+  ]}
+  sections={[
+    {
+      title: 'Grading',
+      paragraphs: [
+        'Individual homework 15%, in-class midterm 25%, and programming projects 60%. Twenty percent of the programming project grade was competition based.',
+      ],
+    },
+    {
+      title: 'Prerequisites',
+      paragraphs: [
+        'Working knowledge of linear algebra and data structures, plus proficiency in Python. Advanced undergraduates may enroll upon permission of the instructor.',
+      ],
+    },
+    {
+      title: 'Assignments and late policy',
+      paragraphs: [
+        'Homework and programming projects were submitted to Brightspace by 11:59pm on the due date. Programming projects were submitted as evaluated Jupyter notebooks.',
+        'Every hour that a project was late (rounded down) caused a 1% penalty on the total allotted grade.',
+      ],
+    },
+  ]}
+  schedule={schedule}
+  readings={[]}
+  previous={{ label: 'Fall 2024', href: '/computer-vision/fall-2024' }}
+/>

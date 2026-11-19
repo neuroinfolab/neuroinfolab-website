@@ -1,74 +1,5 @@
-title = "Neuroinformatics"
-code = "CS-GY 9223 / CS-UY 3943"
-term = "Spring 2025 (archive)"
-intro = [ "Course theme: Chaos Circuitry.", "This is a Ph.D.-level topics course covering topics on modeling, signal processing as well as database management of neuroscience data. Students from statistics, neuroscience, and engineering are all welcome to attend. Neuroscience background is not required but self-motivated interest in neuroscience is highly recommended.", "Advanced undergraduates may enroll upon permission from instructor." ]
-readings = []
-
-[image]
-src = "/img/courses/neuroinformatics.jpg"
-srcSmall = "/img/courses/neuroinformatics-sm.jpg"
-webp = "/img/courses/neuroinformatics.webp"
-webpSmall = "/img/courses/neuroinformatics-sm.webp"
-alt = "Fluorescence microscopy of neural tissue labelled in cyan and gold"
-caption = "Photo: Yusha Sun and Xin Wang, University of Pennsylvania"
-creditHref = "https://braininitiative.nih.gov/news-events/brain-initiative-photo-and-video-contest"
-
-[[info]]
-label = "Instructor"
-text = "Prof. Erdem Varol"
-
-[[info]]
-label = "Email"
-text = ""
-
-[[info.links]]
-label = "ev2240@nyu.edu"
-href = "mailto:ev2240@nyu.edu"
-
-[[info]]
-label = "Time"
-text = "Tuesdays 2pm-4:30pm"
-
-[[info]]
-label = "Place"
-text = "6 MetroTech Center, Room 775 B"
-
-[[info]]
-label = "Slack"
-text = "neuroinfoclass.slack.com"
-href = "https://neuroinfoclass.slack.com"
-
-[[team]]
-role = "Instructor"
-name = "Erdem Varol"
-email = "ev2240@nyu.edu"
-image = "/img/team/varol.jpg"
-
-[[team]]
-role = "TA"
-name = "Rishabh Raj"
-email = "rr4574@nyu.edu"
-office = "Office hours: Mondays 2-3pm on Zoom"
-image = "/img/alumni/raj.jpg"
-
-[[team]]
-role = "TA"
-name = "Malhar Patel"
-email = "mkp6112@nyu.edu"
-office = "Office hours: Fridays 1-2pm on Zoom"
-image = "/img/alumni/patel.jpg"
-
-[[sections]]
-title = "Course goal"
-paragraphs = [ "We will introduce a number of advanced machine learning and computer vision tools relevant in neuroscience. Each technique will be illustrated via application to problems in neuroscience. We will cover topics including 1) computational models of the nervous system function and structure across several species, 2) development of computer vision and signal processing tools for analyzing neuroscience data and 3) tools and databases for management and sharing of large scale neural data." ]
-
-[[sections]]
-title = "Prerequisites"
-paragraphs = [ "A good working knowledge of basic statistical concepts such as likelihood, Bayes' rule, Gaussian random vectors and linear-algebraic concepts such as regression and principal components analysis. Coding experience in Python, Matlab and/or R is necessary for course projects." ]
-
-[[sections]]
-title = "Evaluation"
-paragraphs = [ "Final grades were based on class participation (20%), a midterm project (30%), and a final project (50%). Projects could involve either the implementation and justification of a novel analysis technique, or a standard analysis applied to a novel data set." ]
+# Neuroinformatics — Spring 2025 (archive) schedule
+# Each [[schedule]] table is one class meeting; [[schedule.materials]] is one link.
 
 [[schedule]]
 date = "January 21, 2025"
@@ -288,7 +219,3 @@ href = "https://www.biorxiv.org/content/10.1101/2022.09.14.507926v1"
 date = "April 29, 2025"
 topic = "Final project presentations"
 note = "Write-up Due 9 May 11:59 PM"
-
-[[previous]]
-label = "Spring 2024"
-href = "/neuroinformatics/spring-2024"
