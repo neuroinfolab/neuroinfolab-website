@@ -1525,6 +1525,49 @@ a.pub-title:hover {
   transform: scale(1.04);
 }
 
+.life-more-toggle {
+  width: 100%;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: 0.5rem;
+  padding: 0.65rem 0;
+  border: 0;
+  border-top: 1px solid var(--rule);
+  background: none;
+  font-family: var(--label);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.life-more-toggle:not([hidden]) {
+  display: inline-flex;
+}
+
+.life-more-toggle:hover {
+  color: var(--ink-soft);
+}
+
+.life-more-toggle::after {
+  content: '';
+  flex: none;
+  width: 0.42rem;
+  height: 0.42rem;
+  margin-left: auto;
+  margin-right: 0.2rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 360ms var(--ease-rollout);
+}
+
+.life-more-toggle[aria-expanded='true']::after {
+  transform: rotate(-135deg);
+}
+
 /* ------------------------------------------------------------------
    Course pages
    ------------------------------------------------------------------ */
@@ -2247,8 +2290,11 @@ a.pub-title:hover {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.5rem;
   }
-  .gallery li:nth-child(n + 4) {
+  .life-gallery.is-enhanced .gallery li:nth-child(n + 4) {
     display: none;
+  }
+  .life-gallery.is-enhanced .gallery.is-expanded li:nth-child(n + 4) {
+    display: list-item;
   }
   .course-info {
     gap: 1rem 1.4rem;

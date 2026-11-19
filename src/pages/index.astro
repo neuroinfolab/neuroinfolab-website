@@ -456,21 +456,33 @@ const life = [
           <h2 id="life-title">Lab life</h2>
         </div>
 
-        <ul class="gallery">
-          {life.map((photo) => (
-            <li>
-              <a href={url(photo.full)} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={url(photo.thumb)}
-                  alt={photo.alt}
-                  loading="lazy"
-                  width="720"
-                  height="540"
-                />
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div class="life-gallery" data-life-gallery>
+          <ul class="gallery" id="life-gallery">
+            {life.map((photo) => (
+              <li>
+                <a href={url(photo.full)} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={url(photo.thumb)}
+                    alt={photo.alt}
+                    loading="lazy"
+                    width="720"
+                    height="540"
+                  />
+                </a>
+              </li>
+            ))}
+          </ul>
+          <button
+            class="life-more-toggle"
+            type="button"
+            data-life-toggle
+            aria-expanded="false"
+            aria-controls="life-gallery"
+            hidden
+          >
+            <span data-life-label>See all photos</span>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -859,5 +871,36 @@ const life = [
         toggle();
       });
     });
+  </script>
+
+  <script>
+    const lifeGallery = document.querySelector('[data-life-gallery]');
+
+    if (lifeGallery) {
+      const list = lifeGallery.querySelector('.gallery');
+      const toggle = lifeGallery.querySelector('[data-life-toggle]');
+      const label = lifeGallery.querySelector('[data-life-label]');
+      const mobile = window.matchMedia('(max-width: 700px)');
+      let expanded = false;
+
+      const render = () => {
+        const isMobile = mobile.matches;
+        if (!isMobile) expanded = false;
+
+        lifeGallery.classList.toggle('is-enhanced', isMobile);
+        list.classList.toggle('is-expanded', isMobile && expanded);
+        toggle.hidden = !isMobile;
+        toggle.setAttribute('aria-expanded', String(isMobile && expanded));
+        label.textContent = expanded ? 'Show fewer photos' : 'See all photos';
+      };
+
+      toggle.addEventListener('click', () => {
+        expanded = !expanded;
+        render();
+      });
+
+      mobile.addEventListener('change', render);
+      render();
+    }
   </script>
 </Base>
