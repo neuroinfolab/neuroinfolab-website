@@ -1495,11 +1495,6 @@ a.pub-title:hover {
   margin-top: 0.35rem;
 }
 
-.alum-role-mark {
-  margin-right: 0.35em;
-  color: var(--muted);
-}
-
 /* lab life */
 .gallery {
   display: grid;

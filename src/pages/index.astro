@@ -423,14 +423,10 @@ const life = [
                 </div>
                 <div class="alum-role">{a.roleMain}</div>
                 {a.rolePresent && (
-                  <div class="alum-role alum-role-present">
-                    <span class="alum-role-mark" aria-hidden="true">//</span> Presently {a.rolePresent}
-                  </div>
+                  <div class="alum-role alum-role-present">Presently {a.rolePresent}</div>
                 )}
                 {a.school && (
-                  <div class="alum-role alum-role-present">
-                    <span class="alum-role-mark" aria-hidden="true">//</span> Presently at {a.school}
-                  </div>
+                  <div class="alum-role alum-role-present">Presently at {a.school}</div>
                 )}
               </div>
             ))}
