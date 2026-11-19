@@ -904,7 +904,7 @@ html:not(.locked) .gate {
 .pub-topic-head {
   margin: 0 0 0.3rem;
   font-family: var(--label);
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -957,7 +957,7 @@ html:not(.locked) .gate {
 .pub-feature-title {
   margin: 0 0 0.1rem;
   font-family: var(--display);
-  font-size: clamp(0.84rem, 0.9vw, 0.92rem);
+  font-size: clamp(0.94rem, 0.95vw, 1rem);
   font-weight: 600;
   line-height: 1.26;
   letter-spacing: -0.01em;
@@ -975,7 +975,7 @@ html:not(.locked) .gate {
 }
 
 .pub-feature-authors {
-  font-size: 0.69rem;
+  font-size: 0.77rem;
   line-height: 1.42;
   color: var(--muted);
 }
@@ -986,7 +986,7 @@ html:not(.locked) .gate {
 
 .pub-feature-venue {
   margin-top: 0.05rem;
-  font-size: 0.67rem;
+  font-size: 0.75rem;
   color: var(--ink-soft);
 }
 
@@ -1001,7 +1001,7 @@ html:not(.locked) .gate {
   gap: 0.9rem;
   padding: 0.65rem 0;
   font-family: var(--label);
-  font-size: 0.7rem;
+  font-size: 0.76rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted);
@@ -1071,7 +1071,7 @@ details[data-rollout] > [data-rollout-body].is-rolling {
   gap: 1rem;
   padding: 1.4rem 0 0.5rem;
   font-family: var(--label);
-  font-size: 0.8rem;
+  font-size: 0.86rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   color: var(--accent);
@@ -1116,7 +1116,7 @@ details[data-rollout] > [data-rollout-body].is-rolling {
   position: relative;
   display: block;
   white-space: normal;
-  font-size: 0.95rem;
+  font-size: 1.02rem;
   line-height: 1.6;
 }
 
@@ -1139,15 +1139,15 @@ details[data-rollout] > [data-rollout-body].is-rolling {
   }
 
   .pub-feature-title {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .pub-feature-authors {
-    font-size: 0.66rem;
+    font-size: 0.74rem;
   }
 
   .pub-feature-venue {
-    font-size: 0.64rem;
+    font-size: 0.72rem;
   }
 
   .pub-star {
