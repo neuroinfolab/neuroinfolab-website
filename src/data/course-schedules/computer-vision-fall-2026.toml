@@ -129,11 +129,19 @@ href = "https://drive.google.com/file/d/1yY-NDTth5P7Th2Pu338A72vfwnEfNIQm/view?u
 
 [[schedule]]
 date = "November 12, 2026"
-topic = "Structure from Motion"
+topic = "Vision Language Models"
+
+[[schedule.materials]]
+label = "Lecture 10"
+href = "https://docs.google.com/presentation/d/132vrXB_tP4z2SvqXEUvH0Db559fPw1Tr19myuLFiKaI/edit?usp=sharing"
+
+[[schedule.materials]]
+label = "Codelab 10"
+href = "https://colab.research.google.com/drive/1LqRwv_akBeTqflHzP9ro2yLljqtX9JBf?usp=sharing"
 
 [[schedule]]
 date = "November 19, 2026"
-topic = "Gaussian Splatting"
+topic = "Structure from Motion"
 note = "Final Project Released, Fourth Project due"
 
 [[schedule]]
@@ -146,5 +154,5 @@ topic = "Guest Lecture: Neel Dey"
 
 [[schedule]]
 date = "December 10, 2026"
-topic = "Vision Language Models"
+topic = "Guest Lecture: Robert Kruger"
 note = "Final Project Due"
